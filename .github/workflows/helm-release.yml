@@ -1,0 +1,38 @@
+name: Release Charts
+
+on:
+  workflow_dispatch: ## on button click
+  workflow_run:
+    workflows: ["Sync Charts"]
+    types: [completed]
+    branches:
+      - main
+  push:
+    paths:
+      - 'charts/**'
+      - '.github/workflows/helm*'
+    branches:
+      - main
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+    - 
+      name: Checkout
+      uses: actions/checkout@v3
+      with:
+        fetch-depth: 0
+    - 
+      name: Configure Git
+      run: |
+        git config user.name "$GITHUB_ACTOR"
+        git config user.email "$GITHUB_ACTOR@users.noreply.github.com"
+    - 
+      name: Run chart-releaser
+      uses: helm/chart-releaser-action@v1.5.0
+      with:
+        charts_dir: charts-bitnami
+      env:
+        CR_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
+        CR_RELEASE_NAME_TEMPLATE: "{{ .Name }}-{{ .Version }}"

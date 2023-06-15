@@ -1,0 +1,43 @@
+name: Sync Charts
+
+on:
+  workflow_dispatch: # on button click
+  schedule:
+    - cron: '0 */8 * * *' # every 8 hours
+
+  # push:
+  #   branches:
+  #     - main
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+    - 
+      uses: actions/checkout@v3
+      with:
+        persist-credentials: false
+        fetch-depth: 0
+    - 
+      name: Local changes
+      shell: bash
+      run: '.github/sync-charts.sh'
+    - 
+      name: Commit files
+      shell: bash
+      run: |
+        git config user.name "$GITHUB_ACTOR"
+        git config user.email "$GITHUB_ACTOR@users.noreply.github.com"
+        git add charts/ || echo "[warn] directory not exist"
+        git add chart*/ || echo "[warn] directory not exist"
+        if [[ -n "$(git status -s)" ]]; then
+          git commit -a -m "Sync Charts"
+        else
+          echo "No changes"
+        fi
+    - 
+      name: Push changes
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        branch: ${{ github.ref }}

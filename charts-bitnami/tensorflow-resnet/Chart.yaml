@@ -25,4 +25,4 @@ maintainers:
 name: tensorflow-resnet
 sources:
   - https://github.com/bitnami/charts/tree/main/bitnami/tensorflow-resnet
-version: 0.0.1
+version: 3.8.2

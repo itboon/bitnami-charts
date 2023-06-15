@@ -25,4 +25,4 @@ maintainers:
 name: dokuwiki
 sources:
   - https://github.com/bitnami/charts/tree/main/bitnami/dokuwiki
-version: 0.0.1
+version: 14.1.2

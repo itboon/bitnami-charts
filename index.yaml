@@ -364,6 +364,40 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 2.7.5
+    created: "2023-06-20T01:24:24.841541588Z"
+    dependencies:
+    - condition: redis.enabled
+      name: redis
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 17.x.x
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Argo CD is a continuous delivery tool for Kubernetes based on GitOps.
+    digest: 5658727180f5eb80fc90de4c2d015fe6e8928647a6421c441f3ac4bc168baf19
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/argo-cd/img/argo-cd-stack-220x234.png
+    keywords:
+    - Continuous delivery
+    - Continuous deployment
+    - Devops
+    - Kubernetes
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: argo-cd
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/argo-cd
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/argo-cd-4.7.11/argo-cd-4.7.11.tgz
+    version: 4.7.11
+  - annotations:
+      category: Infrastructure
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 2.7.5
     created: "2023-06-19T08:20:38.768435953Z"
     dependencies:
     - condition: redis.enabled
@@ -8216,6 +8250,49 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 6.2.2
+    created: "2023-06-20T01:24:25.030205557Z"
+    dependencies:
+    - condition: memcached.enabled
+      name: memcached
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 6.x.x
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 12.x.x
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: WordPress is the world's most popular blogging and content management
+      platform. Powerful yet simple, everyone from students to global corporations
+      use it to build beautiful, functional websites.
+    digest: a17a159ffed5a579cce4bbaaadd4a06e0aa994e925d2e9eb6f3b11ae442330e3
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/wordpress/img/wordpress-stack-220x234.png
+    keywords:
+    - application
+    - blog
+    - cms
+    - http
+    - php
+    - web
+    - wordpress
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: wordpress
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/wordpress
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/wordpress-16.1.17/wordpress-16.1.17.tgz
+    version: 16.1.17
+  - annotations:
+      category: CMS
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 6.2.2
     created: "2023-06-19T16:20:29.612013713Z"
     dependencies:
     - condition: memcached.enabled
@@ -8397,4 +8474,4 @@ entries:
     urls:
     - https://github.com/itboon/bitnami-charts/releases/download/zookeeper-0.0.1/zookeeper-0.0.1.tgz
     version: 0.0.1
-generated: "2023-06-19T16:20:29.612322218Z"
+generated: "2023-06-20T01:24:25.030651256Z"

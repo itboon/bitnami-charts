@@ -2108,6 +2108,36 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 1.17.1
+    created: "2023-06-26T02:18:59.160060378Z"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Apache Flink is a framework and distributed processing engine for
+      stateful computations over unbounded and bounded data streams.
+    digest: a11d40cac0f80c09ee9f8cfdf2f8b07c9eca62dc9ea3019c30630b91bd9bc8fb
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/flink/img/flink-stack-220x234.png
+    keywords:
+    - flink
+    - stream-processing
+    - batch-processing
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: flink
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/flink
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/flink-0.3.3/flink-0.3.3.tgz
+    version: 0.3.3
+  - annotations:
+      category: Infrastructure
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 1.17.1
     created: "2023-06-15T15:15:31.630339382Z"
     dependencies:
     - name: common
@@ -10438,4 +10468,4 @@ entries:
     urls:
     - https://github.com/itboon/bitnami-charts/releases/download/zookeeper-0.0.1/zookeeper-0.0.1.tgz
     version: 0.0.1
-generated: "2023-06-25T02:27:52.329501188Z"
+generated: "2023-06-26T02:18:59.160432879Z"

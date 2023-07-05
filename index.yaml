@@ -5,6 +5,46 @@ entries:
       category: WorkFlow
       licenses: Apache-2.0
     apiVersion: v2
+    appVersion: 2.6.2
+    created: "2023-07-05T02:14:16.939333055Z"
+    dependencies:
+    - condition: redis.enabled
+      name: redis
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 17.x.x
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 12.x.x
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Apache Airflow is a tool to express and execute workflows as directed
+      acyclic graphs (DAGs). It includes utilities to schedule tasks, monitor task
+      progress and handle task dependencies.
+    digest: 11a2e4e28304e419a88a504e28babd84fa529478f9cdbb7596c4b156a067f587
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/airflow/img/airflow-stack-220x234.png
+    keywords:
+    - apache
+    - airflow
+    - workflow
+    - dag
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: airflow
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/airflow
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/airflow-14.3.0/airflow-14.3.0.tgz
+    version: 14.3.0
+  - annotations:
+      category: WorkFlow
+      licenses: Apache-2.0
+    apiVersion: v2
     appVersion: 2.6.1
     created: "2023-06-15T15:15:27.721734242Z"
     dependencies:
@@ -1466,6 +1506,33 @@ entries:
     - https://github.com/itboon/bitnami-charts/releases/download/clickhouse-0.0.1/clickhouse-0.0.1.tgz
     version: 0.0.1
   common:
+  - annotations:
+      category: Infrastructure
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 2.6.0
+    created: "2023-07-05T02:14:17.069240134Z"
+    description: A Library Helm Chart for grouping common logic between bitnami charts.
+      This chart is not deployable by itself.
+    digest: 1e8bf1d3531c163ebc9572433c06b17fe5ec259cea5424cbc26059d96eafefe4
+    home: https://bitnami.com
+    icon: https://bitnami.com/downloads/logos/bitnami-mark.png
+    keywords:
+    - common
+    - helper
+    - template
+    - function
+    - bitnami
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: common
+    sources:
+    - https://github.com/bitnami/charts
+    type: library
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/common-2.6.0/common-2.6.0.tgz
+    version: 2.6.0
   - annotations:
       category: Infrastructure
       licenses: Apache-2.0
@@ -3473,6 +3540,43 @@ entries:
     - https://github.com/itboon/bitnami-charts/releases/download/ghost-0.0.1/ghost-0.0.1.tgz
     version: 0.0.1
   gitea:
+  - annotations:
+      category: Analytics
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 1.19.4
+    created: "2023-07-05T02:14:17.204429024Z"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 12.x.x
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Gitea is a lightweight code hosting solution. Written in Go, features
+      low resource consumption, easy upgrades and multiple databases.
+    digest: 85f7075955c32922e3ef2fb2282e7010ec07f1107b5a053d8ec8313a8f67b1fa
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/gitea/img/gitea-stack-220x234.png
+    keywords:
+    - gitea
+    - analytics
+    - http
+    - web
+    - application
+    - php
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: gitea
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/gitea
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/gitea-0.3.5/gitea-0.3.5.tgz
+    version: 0.3.5
   - annotations:
       category: Analytics
       licenses: Apache-2.0
@@ -6181,6 +6285,47 @@ entries:
     - https://github.com/itboon/bitnami-charts/releases/download/kube-state-metrics-0.0.1/kube-state-metrics-0.0.1.tgz
     version: 0.0.1
   kubeapps:
+  - annotations:
+      category: Infrastructure
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 2.8.0
+    created: "2023-07-05T02:14:17.360579159Z"
+    dependencies:
+    - condition: packaging.flux.enabled
+      name: redis
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 17.x.x
+    - condition: packaging.helm.enabled
+      name: postgresql
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 12.x.x
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Kubeapps is a web-based UI for launching and managing applications
+      on Kubernetes. It allows users to deploy trusted applications and operators
+      to control users access to the cluster.
+    digest: 84f92a935d5c3d8a1ea4235d2c7ee14c6fb1f455207f16c7860c1d4b54132dfa
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/kubeapps/img/kubeapps-stack-220x234.png
+    keywords:
+    - helm
+    - dashboard
+    - service catalog
+    - deployment
+    kubeVersion: '>=1.21.0-0'
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: kubeapps
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/kubeapps
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/kubeapps-12.4.5/kubeapps-12.4.5.tgz
+    version: 12.4.5
   - annotations:
       category: Infrastructure
       licenses: Apache-2.0
@@ -9788,6 +9933,40 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 15.3.0
+    created: "2023-07-05T02:14:17.498423054Z"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: PostgreSQL (Postgres) is an open source object-relational database
+      known for reliability and data integrity. ACID-compliant, it supports foreign
+      keys, joins, views, triggers and stored procedures.
+    digest: 1251fd8a3c66391d402f83b06dcb630c09234e2d945ae218f53b47cfac2d9195
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/postgresql/img/postgresql-stack-220x234.png
+    keywords:
+    - postgresql
+    - postgres
+    - database
+    - sql
+    - replication
+    - cluster
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: postgresql
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/postgresql
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/postgresql-12.6.2/postgresql-12.6.2.tgz
+    version: 12.6.2
+  - annotations:
+      category: Database
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 15.3.0
     created: "2023-06-30T02:09:15.637659858Z"
     dependencies:
     - name: common
@@ -10756,6 +10935,37 @@ entries:
     - https://github.com/itboon/bitnami-charts/releases/download/redis-0.0.1/redis-0.0.1.tgz
     version: 0.0.1
   redis-cluster:
+  - annotations:
+      category: Database
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 7.0.11
+    created: "2023-07-05T02:14:17.62681103Z"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Redis(R) is an open source, scalable, distributed in-memory cache
+      for applications. It can be used to store and serve data in the form of strings,
+      hashes, lists, sets and sorted sets.
+    digest: 06c06e84137aa9208c4ccc60a12a215b8551b1be3fea915fa5e413aa963ee3e8
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/redis/img/redis-stack-220x234.png
+    keywords:
+    - redis
+    - keyvalue
+    - database
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: redis-cluster
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/redis-cluster
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/redis-cluster-8.6.6/redis-cluster-8.6.6.tgz
+    version: 8.6.6
   - annotations:
       category: Database
       licenses: Apache-2.0
@@ -11987,6 +12197,44 @@ entries:
     - https://github.com/itboon/bitnami-charts/releases/download/suitecrm-0.0.1/suitecrm-0.0.1.tgz
     version: 0.0.1
   supabase:
+  - annotations:
+      category: CMS
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 0.23.5
+    created: "2023-07-05T02:14:17.783764766Z"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 12.x.x
+    - condition: kong.enabled
+      name: kong
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 9.x.x
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Supabase is an open source Firebase alternative. Provides all the
+      necessary backend features to build your application in a scalable way. Uses
+      PostgreSQL as datastore.
+    digest: a1afc54433a953a4b13dc1e57034642b4b6f3e30e42457337e0c6f68ce7d5592
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/supabase/img/supabase-stack-220x234.png
+    keywords:
+    - development
+    - dashboards
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: supabase
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/supabase
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/supabase-0.3.9/supabase-0.3.9.tgz
+    version: 0.3.9
   - annotations:
       category: CMS
       licenses: Apache-2.0
@@ -13318,4 +13566,4 @@ entries:
     urls:
     - https://github.com/itboon/bitnami-charts/releases/download/zookeeper-0.0.1/zookeeper-0.0.1.tgz
     version: 0.0.1
-generated: "2023-07-04T02:15:42.673200828Z"
+generated: "2023-07-05T02:14:17.784260967Z"

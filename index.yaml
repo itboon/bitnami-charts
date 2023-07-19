@@ -247,6 +247,40 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 2.4.57
+    created: "2023-07-19T03:12:25.020686369Z"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Apache HTTP Server is an open-source HTTP server. The goal of this
+      project is to provide a secure, efficient and extensible server that provides
+      HTTP services in sync with the current HTTP standards.
+    digest: 4d132db11673821368cbe813f9dde09a2dc6a0d1fabaab33fdff45aaafcb3038
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/apache/img/apache-stack-220x234.png
+    keywords:
+    - apache
+    - http
+    - https
+    - www
+    - web
+    - reverse proxy
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: apache
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/apache
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/apache-10.0.0/apache-10.0.0.tgz
+    version: 10.0.0
+  - annotations:
+      category: Infrastructure
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 2.4.57
     created: "2023-07-16T02:30:32.853219989Z"
     dependencies:
     - name: common
@@ -8558,6 +8592,46 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 0.66.0
+    created: "2023-07-19T03:12:25.271458035Z"
+    dependencies:
+    - condition: exporters.enabled,exporters.node-exporter.enabled
+      name: node-exporter
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 3.x.x
+    - condition: exporters.enabled,exporters.kube-state-metrics.enabled
+      name: kube-state-metrics
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 3.x.x
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Prometheus Operator provides easy monitoring definitions for Kubernetes
+      services and deployment and management of Prometheus instances.
+    digest: f953fc85067c97d14a6aa4ee78e43f7efe9db0687d1b7c055a3c6c641067f668
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/prometheus-operator/img/prometheus-operator-stack-220x234.png
+    keywords:
+    - prometheus
+    - alertmanager
+    - operator
+    - monitoring
+    kubeVersion: '>= 1.16.0-0'
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: kube-prometheus
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/kube-prometheus
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/kube-prometheus-8.15.3/kube-prometheus-8.15.3.tgz
+    version: 8.15.3
+  - annotations:
+      category: Analytics
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 0.66.0
     created: "2023-07-16T02:30:36.889687858Z"
     dependencies:
     - condition: exporters.enabled,exporters.node-exporter.enabled
@@ -11731,6 +11805,40 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 6.0.8
+    created: "2023-07-19T03:12:25.489165976Z"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: MongoDB(R) is a relational open source NoSQL database. Easy to use,
+      it stores data in JSON-like documents. Automated scalability and high-performance.
+      Ideal for developing cloud native applications.
+    digest: d12a147650b41a0f3c15a9c7d2b8c5e726945a2d986f277739c1a97685e63ed6
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/mongodb/img/mongodb-stack-220x234.png
+    keywords:
+    - mongodb
+    - database
+    - nosql
+    - cluster
+    - replicaset
+    - replication
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: mongodb
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/mongodb
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/mongodb-13.16.0/mongodb-13.16.0.tgz
+    version: 13.16.0
+  - annotations:
+      category: Database
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 6.0.8
     created: "2023-07-16T02:30:39.076919992Z"
     dependencies:
     - name: common
@@ -12102,6 +12210,41 @@ entries:
     - https://github.com/itboon/bitnami-charts/releases/download/mongodb-sharded-0.0.1/mongodb-sharded-0.0.1.tgz
     version: 0.0.1
   moodle:
+  - annotations:
+      category: E-Learning
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 4.2.1
+    created: "2023-07-19T03:12:25.688091032Z"
+    dependencies:
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 12.x.x
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Moodle(TM) LMS is an open source online Learning Management System
+      widely used at universities, schools, and corporations. It is modular and highly
+      adaptable to any type of online learning.
+    digest: aa2e537e44317cc0ea5d901baa33d7232e7f809d591604af8b1a6fbd0a1f1e9e
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/moodle/img/moodle-stack-220x234.png
+    keywords:
+    - moodle
+    - learning
+    - php
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: moodle
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/moodle
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/moodle-16.1.6/moodle-16.1.6.tgz
+    version: 16.1.6
   - annotations:
       category: E-Learning
       licenses: Apache-2.0
@@ -12593,6 +12736,39 @@ entries:
     - https://github.com/itboon/bitnami-charts/releases/download/mxnet-0.0.1/mxnet-0.0.1.tgz
     version: 0.0.1
   mysql:
+  - annotations:
+      category: Database
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 8.0.34
+    created: "2023-07-19T03:12:25.878668207Z"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: MySQL is a fast, reliable, scalable, and easy to use open source
+      relational database system. Designed to handle mission-critical, heavy-load
+      production applications.
+    digest: 89ae29954e812059b805a00442b4e2345bcd91c31a399e33b98581a723eb9914
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/mysql/img/mysql-stack-220x234.png
+    keywords:
+    - mysql
+    - database
+    - sql
+    - cluster
+    - high availability
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: mysql
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/mysql
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/mysql-9.10.7/mysql-9.10.7.tgz
+    version: 9.10.7
   - annotations:
       category: Database
       licenses: Apache-2.0
@@ -20208,6 +20384,34 @@ entries:
       category: Infrastructure
       licenses: Apache-2.0
     apiVersion: v2
+    appVersion: 3.8.2
+    created: "2023-07-19T03:12:26.094773432Z"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Apache ZooKeeper provides a reliable, centralized register of configuration
+      data and services for distributed applications.
+    digest: d5770ef48453489ddc0f930a88b3a0f73ba41850826c12193907a455e1b70e0f
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/zookeeper/img/zookeeper-stack-220x234.png
+    keywords:
+    - zookeeper
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: zookeeper
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/zookeeper
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/zookeeper-11.4.8/zookeeper-11.4.8.tgz
+    version: 11.4.8
+  - annotations:
+      category: Infrastructure
+      licenses: Apache-2.0
+    apiVersion: v2
     appVersion: 3.8.1
     created: "2023-07-18T02:23:31.018592499Z"
     dependencies:
@@ -20344,4 +20548,4 @@ entries:
     urls:
     - https://github.com/itboon/bitnami-charts/releases/download/zookeeper-0.0.1/zookeeper-0.0.1.tgz
     version: 0.0.1
-generated: "2023-07-18T02:23:31.019553798Z"
+generated: "2023-07-19T03:12:26.095862443Z"

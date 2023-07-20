@@ -908,6 +908,40 @@ entries:
       category: Infrastructure
       licenses: Apache-2.0
     apiVersion: v2
+    appVersion: 2.7.8
+    created: "2023-07-20T01:49:58.353259855Z"
+    dependencies:
+    - condition: redis.enabled
+      name: redis
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 17.x.x
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Argo CD is a continuous delivery tool for Kubernetes based on GitOps.
+    digest: b5174d9e40559e013f72e863ca936d107c88d994ab6a7e9edac37b20a6a2423a
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/argo-cd/img/argo-cd-stack-220x234.png
+    keywords:
+    - Continuous delivery
+    - Continuous deployment
+    - Devops
+    - Kubernetes
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: argo-cd
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/argo-cd
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/argo-cd-4.7.17/argo-cd-4.7.17.tgz
+    version: 4.7.17
+  - annotations:
+      category: Infrastructure
+      licenses: Apache-2.0
+    apiVersion: v2
     appVersion: 2.7.7
     created: "2023-07-14T02:18:00.077416771Z"
     dependencies:
@@ -2677,6 +2711,36 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 1.25.0
+    created: "2023-07-20T01:49:58.517822411Z"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Contour is an open source Kubernetes ingress controller that works
+      by deploying the Envoy proxy as a reverse proxy and load balancer.
+    digest: 43798e3aa60cfe31d6c4409df66572cf7cfd7c855cc618f4bd63cb43d4fae4e1
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/contour/img/contour-stack-220x234.png
+    keywords:
+    - ingress
+    - envoy
+    - contour
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: contour
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/contour
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/contour-12.2.0/contour-12.2.0.tgz
+    version: 12.2.0
+  - annotations:
+      category: Infrastructure
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 1.25.0
     created: "2023-07-14T02:18:00.881988311Z"
     dependencies:
     - name: common
@@ -3577,6 +3641,39 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 3.5.9
+    created: "2023-07-20T01:49:58.650771391Z"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: etcd is a distributed key-value store designed to securely store
+      data across a cluster. etcd is widely used in production on account of its reliability,
+      fault-tolerance and ease of use.
+    digest: 3ec3a085a9b0010a6ac1ce86d17eab8e4526d599883b866db8bdda7860b58900
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/etcd/img/etcd-stack-220x234.png
+    keywords:
+    - etcd
+    - cluster
+    - database
+    - cache
+    - key-value
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: etcd
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/etcd
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/etcd-9.0.6/etcd-9.0.6.tgz
+    version: 9.0.6
+  - annotations:
+      category: Database
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 3.5.9
     created: "2023-07-16T02:30:34.114107959Z"
     dependencies:
     - name: common
@@ -3895,6 +3992,36 @@ entries:
     - https://github.com/itboon/bitnami-charts/releases/download/external-dns-0.0.1/external-dns-0.0.1.tgz
     version: 0.0.1
   flink:
+  - annotations:
+      category: Infrastructure
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 1.17.1
+    created: "2023-07-20T01:49:58.786223061Z"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Apache Flink is a framework and distributed processing engine for
+      stateful computations over unbounded and bounded data streams.
+    digest: a4e43b9569229ccde81c8226494ca2b7576b93cbb32f58d84258a96009b6ed04
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/flink/img/flink-stack-220x234.png
+    keywords:
+    - flink
+    - stream-processing
+    - batch-processing
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: flink
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/flink
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/flink-0.3.5/flink-0.3.5.tgz
+    version: 0.3.5
   - annotations:
       category: Infrastructure
       licenses: Apache-2.0
@@ -4334,6 +4461,39 @@ entries:
     - https://github.com/itboon/bitnami-charts/releases/download/fluentd-0.0.1/fluentd-0.0.1.tgz
     version: 0.0.1
   flux:
+  - annotations:
+      category: Infrastructure
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 0.36.1
+    created: "2023-07-20T01:49:58.956245596Z"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Flux is a tool for keeping Kubernetes clusters in sync with sources
+      of configuration
+    digest: 958aafed51eff63c1d9924deca4fcdd48135fe1f2cd9c23914799b22f4653d19
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/fluxcd-kustomize-controller/img/fluxcd-kustomize-controller-stack-220x234.png
+    keywords:
+    - deployment
+    - gitops
+    - cd
+    - continuous-delivery
+    - helm
+    - kustomize
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: flux
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/flux
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/flux-0.3.7/flux-0.3.7.tgz
+    version: 0.3.7
   - annotations:
       category: Infrastructure
       licenses: Apache-2.0
@@ -11572,6 +11732,39 @@ entries:
       category: Infrastructure
       licenses: Apache-2.0
     apiVersion: v2
+    appVersion: 2023.7.18
+    created: "2023-07-20T01:49:59.104094717Z"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: MinIO(R) is an object storage server, compatible with Amazon S3 cloud
+      storage service, mainly used for storing unstructured data (such as photos,
+      videos, log files, etc.).
+    digest: 7aa39115168c19469b6ca725dc3ba38fa547a166315b80a74bc2c683ad32def8
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/minio/img/minio-stack-220x234.png
+    keywords:
+    - minio
+    - storage
+    - object-storage
+    - s3
+    - cluster
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: minio
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/minio
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/minio-12.6.10/minio-12.6.10.tgz
+    version: 12.6.10
+  - annotations:
+      category: Infrastructure
+      licenses: Apache-2.0
+    apiVersion: v2
     appVersion: 2023.7.11
     created: "2023-07-15T02:15:48.228171564Z"
     dependencies:
@@ -14977,6 +15170,40 @@ entries:
     - https://github.com/itboon/bitnami-charts/releases/download/pinniped-0.0.1/pinniped-0.0.1.tgz
     version: 0.0.1
   postgresql:
+  - annotations:
+      category: Database
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 15.3.0
+    created: "2023-07-20T01:49:59.423972265Z"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: PostgreSQL (Postgres) is an open source object-relational database
+      known for reliability and data integrity. ACID-compliant, it supports foreign
+      keys, joins, views, triggers and stored procedures.
+    digest: 63fb98dd9b695a891550d9d4ff4b0c8079683f573211d7e48e01d3135be15935
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/postgresql/img/postgresql-stack-220x234.png
+    keywords:
+    - postgresql
+    - postgres
+    - database
+    - sql
+    - replication
+    - cluster
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: postgresql
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/post
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/postgresql-12.6.7/postgresql-12.6.7.tgz
+    version: 12.6.7
   - annotations:
       category: Database
       licenses: Apache-2.0
@@ -18780,6 +19007,39 @@ entries:
       category: MachineLearning
       licenses: Apache-2.0
     apiVersion: v2
+    appVersion: 2.12.2
+    created: "2023-07-20T01:49:59.571593987Z"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: TensorFlow ResNet is a client utility for use with TensorFlow Serving
+      and ResNet models.
+    digest: b84b57232c06fa39917f42d992e181fe71242ae0639a6b8f26366ad8c2205080
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/tensorflow-inception/img/tensorflow-inception-stack-220x234.png
+    keywords:
+    - tensorflow
+    - serving
+    - resnet
+    - machine
+    - learning
+    - library
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: tensorflow-resnet
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/tensorflow-resnet
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/tensorflow-resnet-3.8.5/tensorflow-resnet-3.8.5.tgz
+    version: 3.8.5
+  - annotations:
+      category: MachineLearning
+      licenses: Apache-2.0
+    apiVersion: v2
     appVersion: 2.12.1
     created: "2023-07-16T02:30:42.700148422Z"
     dependencies:
@@ -18909,6 +19169,42 @@ entries:
     - https://github.com/itboon/bitnami-charts/releases/download/tensorflow-resnet-0.0.1/tensorflow-resnet-0.0.1.tgz
     version: 0.0.1
   thanos:
+  - annotations:
+      category: Analytics
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 0.31.0
+    created: "2023-07-20T01:49:59.751688183Z"
+    dependencies:
+    - condition: minio.enabled
+      name: minio
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 12.x.x
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Thanos is a highly available metrics system that can be added on
+      top of existing Prometheus deployments, providing a global query view across
+      all Prometheus installations.
+    digest: a679eb02f3aa8f69bafe1df0e91e192da130c2352190dc75de606c67f92aa52b
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/thanos/img/thanos-stack-220x234.png
+    keywords:
+    - analytics
+    - monitoring
+    - prometheus
+    - thanos
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: thanos
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/thanos
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/thanos-12.8.6/thanos-12.8.6.tgz
+    version: 12.8.6
   - annotations:
       category: Analytics
       licenses: Apache-2.0
@@ -19868,6 +20164,49 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 6.2.2
+    created: "2023-07-20T01:49:59.921997116Z"
+    dependencies:
+    - condition: memcached.enabled
+      name: memcached
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 6.x.x
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 12.x.x
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: WordPress is the world's most popular blogging and content management
+      platform. Powerful yet simple, everyone from students to global corporations
+      use it to build beautiful, functional websites.
+    digest: 07902b0b35792dbec068e4a1fb9ed42cd5bf2b7fef4f7bfb98476635d6d0f1c4
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/wordpress/img/wordpress-stack-220x234.png
+    keywords:
+    - application
+    - blog
+    - cms
+    - http
+    - php
+    - web
+    - wordpress
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: wordpress
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/wordpress
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/wordpress-16.1.30/wordpress-16.1.30.tgz
+    version: 16.1.30
+  - annotations:
+      category: CMS
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 6.2.2
     created: "2023-07-16T02:30:43.213724766Z"
     dependencies:
     - condition: memcached.enabled
@@ -20548,4 +20887,4 @@ entries:
     urls:
     - https://github.com/itboon/bitnami-charts/releases/download/zookeeper-0.0.1/zookeeper-0.0.1.tgz
     version: 0.0.1
-generated: "2023-07-19T03:12:26.095862443Z"
+generated: "2023-07-20T01:49:59.923234511Z"

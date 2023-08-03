@@ -2372,6 +2372,40 @@ entries:
       category: Database
       licenses: Apache-2.0
     apiVersion: v2
+    appVersion: 23.7.1
+    created: "2023-08-03T01:43:03.537737254Z"
+    dependencies:
+    - condition: zookeeper.enabled
+      name: zookeeper
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 11.x.x
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: ClickHouse is an open-source column-oriented OLAP database management
+      system. Use it to boost your database performance while providing linear scalability
+      and hardware efficiency.
+    digest: 055428ffa04d8b6936dd9f3934b2220661043313f8d03f32d4e4913eea11b6b0
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/clickhouse/img/clickhouse-stack-220x234.png
+    keywords:
+    - database
+    - sharding
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: clickhouse
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/clickhouse
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/clickhouse-3.5.8/clickhouse-3.5.8.tgz
+    version: 3.5.8
+  - annotations:
+      category: Database
+      licenses: Apache-2.0
+    apiVersion: v2
     appVersion: 23.6.2
     created: "2023-07-28T01:43:40.436656013Z"
     dependencies:
@@ -4033,6 +4067,45 @@ entries:
       category: CMS
       licenses: Apache-2.0
     apiVersion: v2
+    appVersion: 10.1.2
+    created: "2023-08-03T01:43:03.662727739Z"
+    dependencies:
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 13.x.x
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Drupal is one of the most versatile open source content management
+      systems in the world. It is pre-configured with the Ctools and Views modules,
+      Drush and Let's Encrypt auto-configuration support.
+    digest: cf2b15955a1891847e862e7e439d7077b032aca568ee3271a94756857e1a38eb
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/drupal/img/drupal-stack-220x234.png
+    keywords:
+    - drupal
+    - cms
+    - blog
+    - http
+    - web
+    - application
+    - php
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: drupal
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/drupal
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/drupal-15.0.1/drupal-15.0.1.tgz
+    version: 15.0.1
+  - annotations:
+      category: CMS
+      licenses: Apache-2.0
+    apiVersion: v2
     appVersion: 10.1.1
     created: "2023-08-02T01:41:48.090098555Z"
     dependencies:
@@ -5022,6 +5095,36 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 0.13.5
+    created: "2023-08-03T01:43:03.795299352Z"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: ExternalDNS is a Kubernetes addon that configures public DNS servers
+      with information about exposed Kubernetes services to make them discoverable.
+    digest: 5284adfce9439f48c3efa296cd078231d1b36aabbcea9dc90aa07b2b5a6ff1e2
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/external-dns/img/external-dns-stack-220x234.png
+    keywords:
+    - external-dns
+    - network
+    - dns
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: external-dns
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/external-dns
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/external-dns-6.22.0/external-dns-6.22.0.tgz
+    version: 6.22.0
+  - annotations:
+      category: DeveloperTools
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 0.13.5
     created: "2023-08-02T01:41:48.625941427Z"
     dependencies:
     - name: common
@@ -5989,6 +6092,47 @@ entries:
     - https://github.com/itboon/bitnami-charts/releases/download/flux-0.0.1/flux-0.0.1.tgz
     version: 0.0.1
   ghost:
+  - annotations:
+      category: CMS
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 5.57.2
+    created: "2023-08-03T01:43:03.967291904Z"
+    dependencies:
+    - condition: mysql.enabled
+      name: mysql
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - ghost-database
+      version: 9.x.x
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Ghost is an open source publishing platform designed to create blogs,
+      magazines, and news sites. It includes a simple markdown editor with preview,
+      theming, and SEO built-in to simplify editing.
+    digest: 95812ad6db9537b7b6f1dcd1258edc6a449d196849373f207257f74e3f69e26f
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/ghost/img/ghost-stack-220x234.png
+    keywords:
+    - ghost
+    - blog
+    - http
+    - web
+    - application
+    - nodejs
+    - javascript
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: ghost
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/ghost
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/ghost-19.3.33/ghost-19.3.33.tgz
+    version: 19.3.33
   - annotations:
       category: CMS
       licenses: Apache-2.0
@@ -7958,6 +8102,36 @@ entries:
     - https://github.com/itboon/bitnami-charts/releases/download/grafana-mimir-0.0.1/grafana-mimir-0.0.1.tgz
     version: 0.0.1
   grafana-operator:
+  - annotations:
+      category: Analytics
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 5.3.0
+    created: "2023-08-03T01:43:04.080018437Z"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Grafana Operator is a Kubernetes operator that enables the installation
+      and management of Grafana instances, dashboards and plugins.
+    digest: 3e04e8c9b4ba98c58e243e666a6e6337dd7d66a9f7cfadb629cd36086e84c57c
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/grafana/img/grafana-stack-220x234.png
+    keywords:
+    - grafana
+    - operator
+    - monitoring
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: grafana-operator
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/grafana-operator
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/grafana-operator-3.1.4/grafana-operator-3.1.4.tgz
+    version: 3.1.4
   - annotations:
       category: Analytics
       licenses: Apache-2.0
@@ -10054,6 +10228,40 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 4.0.1
+    created: "2023-08-03T01:43:04.216657232Z"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 12.x.x
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: JupyterHub brings the power of notebooks to groups of users. It gives
+      users access to computational environments and resources without burdening the
+      users with installation and maintenance tasks.
+    digest: 1314b44249ceecc0dcf896a5889d4dfede63f73a2b0888df662081a5e00dfb2b
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/jupyterhub/img/jupyterhub-stack-220x234.png
+    keywords:
+    - python
+    - scientific
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: jupyterhub
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/jupyterhub
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/jupyterhub-4.1.8/jupyterhub-4.1.8.tgz
+    version: 4.1.8
+  - annotations:
+      category: MachineLearning
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 4.0.1
     created: "2023-07-14T02:18:02.3994652Z"
     dependencies:
     - condition: postgresql.enabled
@@ -10596,6 +10804,40 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 22.0.1
+    created: "2023-08-03T01:43:04.353213222Z"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 12.x.x
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Keycloak is a high performance Java-based identity and access management
+      solution. It lets developers add an authentication layer to their applications
+      with minimum effort.
+    digest: 9253e3b6d7f98a2966d1d7a47b4b88266f52b5ec560a59761f19093952ad5fc1
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/keycloak/img/keycloak-stack-220x234.png
+    keywords:
+    - keycloak
+    - access-management
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: keycloak
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/keycloak
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/keycloak-16.0.2/keycloak-16.0.2.tgz
+    version: 16.0.2
+  - annotations:
+      category: DeveloperTools
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 22.0.1
     created: "2023-07-29T01:42:01.139731572Z"
     dependencies:
     - condition: postgresql.enabled
@@ -11045,6 +11287,39 @@ entries:
     - https://github.com/itboon/bitnami-charts/releases/download/kiam-0.0.1/kiam-0.0.1.tgz
     version: 0.0.1
   kibana:
+  - annotations:
+      category: Analytics
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 8.9.0
+    created: "2023-08-03T01:43:04.462999951Z"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Kibana is an open source, browser based analytics and search dashboard
+      for Elasticsearch. Kibana strives to be easy to get started with, while also
+      being flexible and powerful.
+    digest: 03673cc971ab3ebf160be0d6aa705db4edf7f25cb1a72f317c77706284bc4177
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/kibana/img/kibana-stack-220x234.png
+    keywords:
+    - kibana
+    - analytics
+    - monitoring
+    - metrics
+    - logs
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: kibana
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/kibana
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/kibana-10.4.7/kibana-10.4.7.tgz
+    version: 10.4.7
   - annotations:
       category: Analytics
       licenses: Apache-2.0
@@ -14692,6 +14967,41 @@ entries:
     - https://github.com/itboon/bitnami-charts/releases/download/memcached-0.0.1/memcached-0.0.1.tgz
     version: 0.0.1
   metallb:
+  - annotations:
+      category: Infrastructure
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 0.13.10
+    created: "2023-08-03T01:43:04.588027339Z"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: MetalLB is a load-balancer implementation for bare metal Kubernetes
+      clusters, using standard routing protocols.
+    digest: 575bc5aa68824496ea483d7344fcba2131a6d900e63c68f52966420da09066a7
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/metallb-speaker/img/metallb-speaker-stack-220x234.png
+    keywords:
+    - load-balancer
+    - balancer
+    - lb
+    - bgp
+    - arp
+    - vrrp
+    - vip
+    kubeVersion: '>= 1.19.0-0'
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: metallb
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/metallb
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/metallb-4.6.0/metallb-4.6.0.tgz
+    version: 4.6.0
   - annotations:
       category: Infrastructure
       licenses: Apache-2.0
@@ -18397,6 +18707,43 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 4.0.2-2
+    created: "2023-08-03T01:43:04.70215697Z"
+    dependencies:
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 13.x.x
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: OpenCart is free open source ecommerce platform for online merchants.
+      OpenCart provides a professional and reliable foundation from which to build
+      a successful online store.
+    digest: 5cd5c1a204a61b4e52b46c69bb731d00d03e3274c39ae2600c87fe4d5adeca9d
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/opencart/img/opencart-stack-220x234.png
+    keywords:
+    - opencart
+    - e-commerce
+    - http
+    - web
+    - php
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: opencart
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/opencart
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/opencart-15.0.0/opencart-15.0.0.tgz
+    version: 15.0.0
+  - annotations:
+      category: E-Commerce
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 4.0.2-2
     created: "2023-08-02T01:41:50.740233712Z"
     dependencies:
     - condition: mariadb.enabled
@@ -21942,6 +22289,37 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 7.0.12
+    created: "2023-08-03T01:43:04.816049184Z"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Redis(R) is an open source, advanced key-value store. It is often
+      referred to as a data structure server since keys can contain strings, hashes,
+      lists, sets and sorted sets.
+    digest: f8cb5e1db10c700d3e90fcda38e58b1765295939a7d638440bf384d4c1179246
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/redis/img/redis-stack-220x234.png
+    keywords:
+    - redis
+    - keyvalue
+    - database
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: redis
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/redis
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/redis-17.14.5/redis-17.14.5.tgz
+    version: 17.14.5
+  - annotations:
+      category: Database
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 7.0.12
     created: "2023-08-02T01:41:51.761339934Z"
     dependencies:
     - name: common
@@ -23463,6 +23841,41 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 9.3.0
+    created: "2023-08-03T01:43:04.926396953Z"
+    dependencies:
+    - condition: zookeeper.enabled
+      name: zookeeper
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 11.x.x
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Apache Solr is an extremely powerful, open source enterprise search
+      platform built on Apache Lucene. It is highly reliable and flexible, scalable,
+      and designed to add value very quickly after launch.
+    digest: ba94d8e948b274457ce8dc22c16615912273d9eb55a2e5e174c08008c6245c1b
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/solr/img/solr-stack-220x234.png
+    keywords:
+    - solr
+    - zookeeper
+    - apache
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: solr
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/solr
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/solr-7.5.7/solr-7.5.7.tgz
+    version: 7.5.7
+  - annotations:
+      category: Infrastructure
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 9.3.0
     created: "2023-08-01T01:54:42.21719281Z"
     dependencies:
     - condition: zookeeper.enabled
@@ -24138,6 +24551,51 @@ entries:
     - https://github.com/itboon/bitnami-charts/releases/download/spark-0.0.1/spark-0.0.1.tgz
     version: 0.0.1
   spring-cloud-dataflow:
+  - annotations:
+      category: DeveloperTools
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 2.10.3
+    created: "2023-08-03T01:43:05.078226204Z"
+    dependencies:
+    - condition: rabbitmq.enabled
+      name: rabbitmq
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 12.x.x
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - dataflow-database
+      version: 13.x.x
+    - condition: kafka.enabled
+      name: kafka
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 23.x.x
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Spring Cloud Data Flow is a microservices-based toolkit for building
+      streaming and batch data processing pipelines in Cloud Foundry and Kubernetes.
+    digest: 6c7bbe0db31b0159882bae8e3c21ed98624ef941f0018dbb7e0719a964dea816
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/spring-cloud-dataflow/img/spring-cloud-dataflow-stack-220x234.png
+    keywords:
+    - spring-cloud
+    - dataflow
+    - skipper
+    - spring
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: spring-cloud-dataflow
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/spring-cloud-dataflow
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/spring-cloud-dataflow-21.0.1/spring-cloud-dataflow-21.0.1.tgz
+    version: 21.0.1
   - annotations:
       category: DeveloperTools
       licenses: Apache-2.0
@@ -27321,4 +27779,4 @@ entries:
     urls:
     - https://github.com/itboon/bitnami-charts/releases/download/zookeeper-0.0.1/zookeeper-0.0.1.tgz
     version: 0.0.1
-generated: "2023-08-02T01:41:52.526688724Z"
+generated: "2023-08-03T01:43:05.079888129Z"

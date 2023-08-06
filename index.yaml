@@ -2413,6 +2413,45 @@ entries:
       category: Database
       images: |
         - name: clickhouse
+          image: docker.io/bitnami/clickhouse:23.7.3-debian-11-r0
+        - name: os-shell
+          image: docker.io/bitnami/os-shell:11-debian-11-r28
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 23.7.3
+    created: "2023-08-06T01:36:56.255818157Z"
+    dependencies:
+    - condition: zookeeper.enabled
+      name: zookeeper
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 11.x.x
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: ClickHouse is an open-source column-oriented OLAP database management
+      system. Use it to boost your database performance while providing linear scalability
+      and hardware efficiency.
+    digest: fecca4fd59ff857a22a21ca2ac45f43bf8b5ee8979d16d6673f0864e7950e06e
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/clickhouse/img/clickhouse-stack-220x234.png
+    keywords:
+    - database
+    - sharding
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: clickhouse
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/clickhouse
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/clickhouse-3.6.2/clickhouse-3.6.2.tgz
+    version: 3.6.2
+  - annotations:
+      category: Database
+      images: |
+        - name: clickhouse
           image: docker.io/bitnami/clickhouse:23.7.2-debian-11-r0
         - name: os-shell
           image: docker.io/bitnami/os-shell:11-debian-11-r25
@@ -29264,4 +29303,4 @@ entries:
     urls:
     - https://github.com/itboon/bitnami-charts/releases/download/zookeeper-0.0.1/zookeeper-0.0.1.tgz
     version: 0.0.1
-generated: "2023-08-05T01:41:55.7077453Z"
+generated: "2023-08-06T01:36:56.260437501Z"

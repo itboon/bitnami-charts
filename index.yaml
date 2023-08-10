@@ -1147,6 +1147,49 @@ entries:
   argo-cd:
   - annotations:
       category: Infrastructure
+      images: |
+        - name: argo-cd
+          image: docker.io/bitnami/argo-cd:2.8.0-debian-11-r0
+        - name: dex
+          image: docker.io/bitnami/dex:2.37.0-debian-11-r36
+        - name: os-shell
+          image: docker.io/bitnami/os-shell:11-debian-11-r31
+        - name: redis
+          image: docker.io/bitnami/redis:7.0.12-debian-11-r24
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 2.8.0
+    created: "2023-08-10T01:48:43.529216275Z"
+    dependencies:
+    - condition: redis.enabled
+      name: redis
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 17.x.x
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Argo CD is a continuous delivery tool for Kubernetes based on GitOps.
+    digest: bb6be0a78242c65e55fd16358fed9929248daef9794dc9c7b998b1764d33a70f
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/argo-cd/img/argo-cd-stack-220x234.png
+    keywords:
+    - Continuous delivery
+    - Continuous deployment
+    - Devops
+    - Kubernetes
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: argo-cd
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/argo-cd
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/argo-cd-4.7.21/argo-cd-4.7.21.tgz
+    version: 4.7.21
+  - annotations:
+      category: Infrastructure
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 2.7.10
@@ -3742,6 +3785,43 @@ entries:
   contour:
   - annotations:
       category: Infrastructure
+      images: |
+        - name: contour
+          image: docker.io/bitnami/contour:1.25.2-debian-11-r11
+        - name: envoy
+          image: docker.io/bitnami/envoy:1.26.4-debian-11-r11
+        - name: nginx
+          image: docker.io/bitnami/nginx:1.25.1-debian-11-r48
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 1.25.2
+    created: "2023-08-10T01:48:43.6935173Z"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Contour is an open source Kubernetes ingress controller that works
+      by deploying the Envoy proxy as a reverse proxy and load balancer.
+    digest: 024267af4c33bcdef1a9fb6a94bf5e9fdaa0c7cca06c9b164bb45f67696c6b00
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/contour/img/contour-stack-220x234.png
+    keywords:
+    - ingress
+    - envoy
+    - contour
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: contour
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/contour
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/contour-12.2.7/contour-12.2.7.tgz
+    version: 12.2.7
+  - annotations:
+      category: Infrastructure
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 1.25.2
@@ -4041,6 +4121,47 @@ entries:
     - https://github.com/itboon/bitnami-charts/releases/download/contour-0.0.1/contour-0.0.1.tgz
     version: 0.0.1
   deepspeed:
+  - annotations:
+      category: MachineLearning
+      images: |
+        - name: deepspeed
+          image: docker.io/bitnami/deepspeed:0.10.0-debian-11-r19
+        - name: git
+          image: docker.io/bitnami/git:2.41.0-debian-11-r64
+        - name: os-shell
+          image: docker.io/bitnami/os-shell:11-debian-11-r31
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 0.10.0
+    created: "2023-08-10T01:48:43.854571307Z"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: DeepSpeed is deep learning software suite for empowering ChatGPT-like
+      model training. Features dense or sparse model inference, high throughput and
+      high compression.
+    digest: 8692307ba52099e10dfc16f3f3627d81050acd24a2949ee941b7612cb7ce2b9b
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/deepspeed/img/deepspeed-stack-220x234.png
+    keywords:
+    - deepspeed
+    - pytorch
+    - python
+    - machine
+    - learning
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: deepspeed
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/deepspeed
+    - https://github.com/bitnami/charts/tree/main/bitnami/pytorch
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/deepspeed-1.1.0/deepspeed-1.1.0.tgz
+    version: 1.1.0
   - annotations:
       category: MachineLearning
       images: |
@@ -5363,6 +5484,39 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 3.5.9
+    created: "2023-08-10T01:48:44.007410167Z"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: etcd is a distributed key-value store designed to securely store
+      data across a cluster. etcd is widely used in production on account of its reliability,
+      fault-tolerance and ease of use.
+    digest: 520ee56da259d1310ed882abc63ec143ed403ca9658345df1c5105f8fc4731b4
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/etcd/img/etcd-stack-220x234.png
+    keywords:
+    - etcd
+    - cluster
+    - database
+    - cache
+    - key-value
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: etcd
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/etcd
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/etcd-9.2.0/etcd-9.2.0.tgz
+    version: 9.2.0
+  - annotations:
+      category: Database
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 3.5.9
     created: "2023-08-02T01:41:48.434171692Z"
     dependencies:
     - name: common
@@ -5689,6 +5843,36 @@ entries:
     - https://github.com/itboon/bitnami-charts/releases/download/etcd-0.0.1/etcd-0.0.1.tgz
     version: 0.0.1
   external-dns:
+  - annotations:
+      category: DeveloperTools
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 0.13.5
+    created: "2023-08-10T01:48:44.199970951Z"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: ExternalDNS is a Kubernetes addon that configures public DNS servers
+      with information about exposed Kubernetes services to make them discoverable.
+    digest: a59d4b5f0fb99c1bc6e2cbb4856c2f536e49d1751f5dff637b453fdf9e586ee4
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/external-dns/img/external-dns-stack-220x234.png
+    keywords:
+    - external-dns
+    - network
+    - dns
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: external-dns
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/external-dns
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/external-dns-6.23.3/external-dns-6.23.3.tgz
+    version: 6.23.3
   - annotations:
       category: DeveloperTools
       licenses: Apache-2.0
@@ -9430,6 +9614,40 @@ entries:
   haproxy:
   - annotations:
       category: Infrastructure
+      images: |
+        - name: haproxy
+          image: docker.io/bitnami/haproxy:2.8.2-debian-11-r0
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 2.8.2
+    created: "2023-08-10T01:48:44.358444843Z"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: HAProxy is a TCP proxy and a HTTP reverse proxy. It supports SSL
+      termination and offloading, TCP and HTTP normalization, traffic regulation,
+      caching and protection against DDoS attacks.
+    digest: 85601f53124124a6c2358cfafc801ca73cb5818f9ed0ad491569d33a10f2f9f7
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/haproxy/img/haproxy-stack-220x234.png
+    keywords:
+    - haproxy
+    - proxy
+    - infrastructure
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: haproxy
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/haproxy
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/haproxy-0.8.9/haproxy-0.8.9.tgz
+    version: 0.8.9
+  - annotations:
+      category: Infrastructure
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 2.8.1
@@ -9646,6 +9864,71 @@ entries:
     - https://github.com/itboon/bitnami-charts/releases/download/haproxy-0.0.1/haproxy-0.0.1.tgz
     version: 0.0.1
   harbor:
+  - annotations:
+      category: Infrastructure
+      images: |
+        - name: harbor-adapter-trivy
+          image: docker.io/bitnami/harbor-adapter-trivy:2.8.3-debian-11-r0
+        - name: harbor-core
+          image: docker.io/bitnami/harbor-core:2.8.3-debian-11-r0
+        - name: harbor-exporter
+          image: docker.io/bitnami/harbor-exporter:2.8.3-debian-11-r0
+        - name: harbor-jobservice
+          image: docker.io/bitnami/harbor-jobservice:2.8.3-debian-11-r0
+        - name: harbor-notary-server
+          image: docker.io/bitnami/harbor-notary-server:2.8.3-debian-11-r6
+        - name: harbor-notary-signer
+          image: docker.io/bitnami/harbor-notary-signer:2.8.3-debian-11-r6
+        - name: harbor-registry
+          image: docker.io/bitnami/harbor-registry:2.8.3-debian-11-r8
+        - name: harbor-registryctl
+          image: docker.io/bitnami/harbor-registryctl:2.8.3-debian-11-r0
+        - name: harbor-portal
+          image: docker.io/bitnami/harbor-portal:2.8.3-debian-11-r6
+        - name: nginx
+          image: docker.io/bitnami/nginx:1.25.1-debian-11-r48
+        - name: os-shell
+          image: docker.io/bitnami/os-shell:11-debian-11-r28
+        - name: postgresql
+          image: docker.io/bitnami/postgresql:13.11.0-debian-11-r80
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 2.8.3
+    created: "2023-08-10T01:48:44.564454302Z"
+    dependencies:
+    - condition: redis.enabled
+      name: redis
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 17.x.x
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 12.x.x
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Harbor is an open source trusted cloud-native registry to store,
+      sign, and scan content. It adds functionalities like security, identity, and
+      management to the open source Docker distribution.
+    digest: 691342317e959b84a74235c3b528ab900d508d182fd518a2acb5fa795673d843
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/harbor-core/img/harbor-core-stack-220x234.png
+    keywords:
+    - docker
+    - registry
+    - vulnerability
+    - scan
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: harbor
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/harbor
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/harbor-16.7.4/harbor-16.7.4.tgz
+    version: 16.7.4
   - annotations:
       category: Infrastructure
       images: |
@@ -11459,6 +11742,54 @@ entries:
         - name: kafka-exporter
           image: docker.io/bitnami/kafka-exporter:1.7.0-debian-11-r72
         - name: kafka
+          image: docker.io/bitnami/kafka:3.5.1-debian-11-r16
+        - name: kubectl
+          image: docker.io/bitnami/kubectl:1.25.12-debian-11-r17
+        - name: os-shell
+          image: docker.io/bitnami/os-shell:11-debian-11-r31
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 3.5.1
+    created: "2023-08-10T01:48:44.744169614Z"
+    dependencies:
+    - condition: zookeeper.enabled
+      name: zookeeper
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 11.x.x
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Apache Kafka is a distributed streaming platform designed to build
+      real-time pipelines and can be used as a message broker or as a replacement
+      for a log aggregation solution for big data applications.
+    digest: 0752a9ea1b64559b9846bf8fe156df1e83f7587f944778afc58727cc1ae0f6e0
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/kafka/img/kafka-stack-220x234.png
+    keywords:
+    - kafka
+    - zookeeper
+    - streaming
+    - producer
+    - consumer
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: kafka
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/kafka
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/kafka-24.0.8/kafka-24.0.8.tgz
+    version: 24.0.8
+  - annotations:
+      category: Infrastructure
+      images: |
+        - name: jmx-exporter
+          image: docker.io/bitnami/jmx-exporter:0.19.0-debian-11-r36
+        - name: kafka-exporter
+          image: docker.io/bitnami/kafka-exporter:1.7.0-debian-11-r72
+        - name: kafka
           image: docker.io/bitnami/kafka:3.5.1-debian-11-r14
         - name: kubectl
           image: docker.io/bitnami/kubectl:1.25.12-debian-11-r17
@@ -12979,6 +13310,57 @@ entries:
     - https://github.com/itboon/bitnami-charts/releases/download/kong-0.0.1/kong-0.0.1.tgz
     version: 0.0.1
   kube-prometheus:
+  - annotations:
+      category: Analytics
+      images: |
+        - name: alertmanager
+          image: docker.io/bitnami/alertmanager:0.25.0-debian-11-r171
+        - name: blackbox-exporter
+          image: docker.io/bitnami/blackbox-exporter:0.24.0-debian-11-r76
+        - name: prometheus-operator
+          image: docker.io/bitnami/prometheus-operator:0.67.1-debian-11-r0
+        - name: prometheus
+          image: docker.io/bitnami/prometheus:2.46.0-debian-11-r5
+        - name: thanos
+          image: docker.io/bitnami/thanos:0.31.0-scratch-r12
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 0.67.1
+    created: "2023-08-10T01:48:44.939835315Z"
+    dependencies:
+    - condition: exporters.enabled,exporters.node-exporter.enabled
+      name: node-exporter
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 3.x.x
+    - condition: exporters.enabled,exporters.kube-state-metrics.enabled
+      name: kube-state-metrics
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 3.x.x
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Prometheus Operator provides easy monitoring definitions for Kubernetes
+      services and deployment and management of Prometheus instances.
+    digest: 1ebbb5631c8f5148af35b93d87ebc6cd0c383b0dbcffbdee425edb30c3f7fa56
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/prometheus-operator/img/prometheus-operator-stack-220x234.png
+    keywords:
+    - prometheus
+    - alertmanager
+    - operator
+    - monitoring
+    kubeVersion: '>= 1.16.0-0'
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: kube-prometheus
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/kube-prometheus
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/kube-prometheus-8.16.2/kube-prometheus-8.16.2.tgz
+    version: 8.16.2
   - annotations:
       category: Analytics
       images: |
@@ -15946,6 +16328,50 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 4.15.1
+    created: "2023-08-10T01:48:45.109244568Z"
+    dependencies:
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 13.x.x
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Matomo, formerly known as Piwik, is a real time web analytics program.
+      It provides detailed reports on website visitors.
+    digest: 5343634a510cafaa98b6b0de349119df265197211d6017f554c4fc137979abde
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/matomo/img/matomo-stack-220x234.png
+    keywords:
+    - matomo
+    - analytics
+    - http
+    - web
+    - application
+    - php
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: matomo
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/matomo
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/matomo-2.0.3/matomo-2.0.3.tgz
+    version: 2.0.3
+  - annotations:
+      category: Analytics
+      images: |
+        - name: apache-exporter
+          image: docker.io/bitnami/apache-exporter:1.0.1-debian-11-r2
+        - name: matomo
+          image: docker.io/bitnami/matomo:4.15.1-debian-11-r0
+        - name: os-shell
+          image: docker.io/bitnami/os-shell:11-debian-11-r25
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 4.15.1
     created: "2023-08-04T01:45:47.06148089Z"
     dependencies:
     - condition: mariadb.enabled
@@ -17324,6 +17750,60 @@ entries:
   milvus:
   - annotations:
       category: Infrastructure
+      images: |
+        - name: attu
+          image: docker.io/bitnami/attu:2.2.7-debian-11-r32
+        - name: milvus
+          image: docker.io/bitnami/milvus:2.2.13-debian-11-r0
+        - name: os-shell
+          image: docker.io/bitnami/os-shell:11-debian-11-r31
+        - name: pymilvus
+          image: docker.io/bitnami/pymilvus:2.2.15-debian-11-r0
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 2.2.13
+    created: "2023-08-10T01:48:45.345693199Z"
+    dependencies:
+    - condition: etcd.enabled
+      name: etcd
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 9.x.x
+    - condition: kafka.enabled
+      name: kafka
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 24.x.x
+    - condition: minio.enabled
+      name: minio
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 12.x.x
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Milvus is a cloud-native, open-source vector database solution for
+      AI applications and similarity search. Features high scalability, hibrid search
+      and unified lambda structure.
+    digest: 9b4cb598a9a4803c7a36500033411eae7a746441a308e29f6404c0ca475d4260
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/milvus/img/milvus-stack-220x234.png
+    keywords:
+    - milvus
+    - ai
+    - database
+    - infrastructure
+    - attu
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: milvus
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/milvus
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/milvus-2.0.1/milvus-2.0.1.tgz
+    version: 2.0.1
+  - annotations:
+      category: Infrastructure
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 2.2.12
@@ -17969,6 +18449,40 @@ entries:
     - https://github.com/itboon/bitnami-charts/releases/download/minio-0.0.1/minio-0.0.1.tgz
     version: 0.0.1
   mongodb:
+  - annotations:
+      category: Database
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 6.0.8
+    created: "2023-08-10T01:48:45.504875295Z"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: MongoDB(R) is a relational open source NoSQL database. Easy to use,
+      it stores data in JSON-like documents. Automated scalability and high-performance.
+      Ideal for developing cloud native applications.
+    digest: bc9a28195e152566b2cf1aa10b3934708383d06942eca25d50d2ec35fd5c1cb0
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/mongodb/img/mongodb-stack-220x234.png
+    keywords:
+    - mongodb
+    - database
+    - nosql
+    - cluster
+    - replicaset
+    - replication
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: mongodb
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/mongodb
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/mongodb-13.16.3/mongodb-13.16.3.tgz
+    version: 13.16.3
   - annotations:
       category: Database
       licenses: Apache-2.0
@@ -24945,6 +25459,37 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 7.0.12
+    created: "2023-08-10T01:48:45.659347664Z"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Redis(R) is an open source, advanced key-value store. It is often
+      referred to as a data structure server since keys can contain strings, hashes,
+      lists, sets and sorted sets.
+    digest: 05b6d1b8601960673e0516c9104e218993d4f612b8d2ee45db999a77112b819a
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/redis/img/redis-stack-220x234.png
+    keywords:
+    - redis
+    - keyvalue
+    - database
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: redis
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/redis
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/redis-17.15.0/redis-17.15.0.tgz
+    version: 17.15.0
+  - annotations:
+      category: Database
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 7.0.12
     created: "2023-08-08T01:44:27.817091722Z"
     dependencies:
     - name: common
@@ -26373,6 +26918,37 @@ entries:
     - https://github.com/itboon/bitnami-charts/releases/download/schema-registry-0.0.1/schema-registry-0.0.1.tgz
     version: 0.0.1
   sealed-secrets:
+  - annotations:
+      category: DeveloperTools
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 0.23.0
+    created: "2023-08-10T01:48:45.85037624Z"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Sealed Secrets are "one-way" encrypted K8s Secrets that can be created
+      by anyone, but can only be decrypted by the controller running in the target
+      cluster recovering the original object.
+    digest: c11e1bc4359f9743826d33f9d80be05a78f217bbc81aab35de92621bd63cd0c5
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/sealed-secrets/img/sealed-secrets-stack-220x234.png
+    keywords:
+    - secrets
+    - sealed-secrets
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: sealed-secrets
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/sealed-secrets
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/sealed-secrets-1.4.9/sealed-secrets-1.4.9.tgz
+    version: 1.4.9
   - annotations:
       category: DeveloperTools
       licenses: Apache-2.0
@@ -28455,6 +29031,42 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 0.31.0
+    created: "2023-08-10T01:48:46.041516415Z"
+    dependencies:
+    - condition: minio.enabled
+      name: minio
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 12.x.x
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Thanos is a highly available metrics system that can be added on
+      top of existing Prometheus deployments, providing a global query view across
+      all Prometheus installations.
+    digest: c0d82313ace7a22eabcc88241d2bf893da401bfda9ddfcf9f8e897fc6f4a8a36
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/thanos/img/thanos-stack-220x234.png
+    keywords:
+    - analytics
+    - monitoring
+    - prometheus
+    - thanos
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: thanos
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/thanos
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/thanos-12.11.0/thanos-12.11.0.tgz
+    version: 12.11.0
+  - annotations:
+      category: Analytics
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 0.31.0
     created: "2023-08-01T01:54:42.400907809Z"
     dependencies:
     - condition: minio.enabled
@@ -28847,6 +29459,47 @@ entries:
     - https://github.com/itboon/bitnami-charts/releases/download/thanos-0.0.1/thanos-0.0.1.tgz
     version: 0.0.1
   tomcat:
+  - annotations:
+      category: ApplicationServer
+      images: |
+        - name: jmx-exporter
+          image: docker.io/bitnami/jmx-exporter:0.19.0-debian-11-r36
+        - name: os-shell
+          image: docker.io/bitnami/os-shell:11-debian-11-r31
+        - name: tomcat
+          image: docker.io/bitnami/tomcat:10.1.11-debian-11-r25
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 10.1.11
+    created: "2023-08-10T01:48:46.203318726Z"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Apache Tomcat is an open-source web server designed to host and run
+      Java-based web applications. It is a lightweight server with a good performance
+      for applications running in production environments.
+    digest: cc497cce6bd573dc35c388b43733e078a26afb03d809c5ffc266aa27f08b855c
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/tomcat/img/tomcat-stack-220x234.png
+    keywords:
+    - tomcat
+    - java
+    - http
+    - web
+    - application server
+    - jsp
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: tomcat
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/tomcat
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/tomcat-10.9.7/tomcat-10.9.7.tgz
+    version: 10.9.7
   - annotations:
       category: ApplicationServer
       licenses: Apache-2.0
@@ -30722,4 +31375,4 @@ entries:
     urls:
     - https://github.com/itboon/bitnami-charts/releases/download/zookeeper-0.0.1/zookeeper-0.0.1.tgz
     version: 0.0.1
-generated: "2023-08-09T01:45:18.46378275Z"
+generated: "2023-08-10T01:48:46.205521739Z"

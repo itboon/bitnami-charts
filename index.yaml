@@ -4338,6 +4338,47 @@ entries:
       category: MachineLearning
       images: |
         - name: deepspeed
+          image: docker.io/bitnami/deepspeed:0.10.0-debian-11-r28
+        - name: git
+          image: docker.io/bitnami/git:2.41.0-debian-11-r69
+        - name: os-shell
+          image: docker.io/bitnami/os-shell:11-debian-11-r34
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 0.10.0
+    created: "2023-08-14T01:30:33.396634706Z"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: DeepSpeed is deep learning software suite for empowering ChatGPT-like
+      model training. Features dense or sparse model inference, high throughput and
+      high compression.
+    digest: f700097666469eecec00e19109acaa6e7bcb93ebabce4514857f62dcda2f4ba4
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/deepspeed/img/deepspeed-stack-220x234.png
+    keywords:
+    - deepspeed
+    - pytorch
+    - python
+    - machine
+    - learning
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: deepspeed
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/deepspeed
+    - https://github.com/bitnami/charts/tree/main/bitnami/pytorch
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/deepspeed-1.1.2/deepspeed-1.1.2.tgz
+    version: 1.1.2
+  - annotations:
+      category: MachineLearning
+      images: |
+        - name: deepspeed
           image: docker.io/bitnami/deepspeed:0.10.0-debian-11-r19
         - name: git
           image: docker.io/bitnami/git:2.41.0-debian-11-r64
@@ -32131,4 +32172,4 @@ entries:
     urls:
     - https://github.com/itboon/bitnami-charts/releases/download/zookeeper-0.0.1/zookeeper-0.0.1.tgz
     version: 0.0.1
-generated: "2023-08-13T01:32:33.509823947Z"
+generated: "2023-08-14T01:30:33.397924721Z"

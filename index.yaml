@@ -2767,6 +2767,45 @@ entries:
       category: Database
       images: |
         - name: clickhouse
+          image: docker.io/bitnami/clickhouse:23.7.4-debian-11-r0
+        - name: os-shell
+          image: docker.io/bitnami/os-shell:11-debian-11-r37
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 23.7.4
+    created: "2023-08-15T01:30:05.641176561Z"
+    dependencies:
+    - condition: zookeeper.enabled
+      name: zookeeper
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 11.x.x
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: ClickHouse is an open-source column-oriented OLAP database management
+      system. Use it to boost your database performance while providing linear scalability
+      and hardware efficiency.
+    digest: 6a129dfd87572e10619fd90afa4778eebbf98cc599e7b35cfb6aba64ca588d6a
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/clickhouse/img/clickhouse-stack-220x234.png
+    keywords:
+    - database
+    - sharding
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: clickhouse
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/clickhouse
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/clickhouse-3.6.4/clickhouse-3.6.4.tgz
+    version: 3.6.4
+  - annotations:
+      category: Database
+      images: |
+        - name: clickhouse
           image: docker.io/bitnami/clickhouse:23.7.3-debian-11-r0
         - name: os-shell
           image: docker.io/bitnami/os-shell:11-debian-11-r28
@@ -4008,6 +4047,43 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 1.25.2
+    created: "2023-08-15T01:30:05.867651088Z"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Contour is an open source Kubernetes ingress controller that works
+      by deploying the Envoy proxy as a reverse proxy and load balancer.
+    digest: 7ba6955639f6351f2c072d75cdb2326cc0577133869bd2c5aafe39f5a8c49b94
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/contour/img/contour-stack-220x234.png
+    keywords:
+    - ingress
+    - envoy
+    - contour
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: contour
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/contour
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/contour-12.2.8/contour-12.2.8.tgz
+    version: 12.2.8
+  - annotations:
+      category: Infrastructure
+      images: |
+        - name: contour
+          image: docker.io/bitnami/contour:1.25.2-debian-11-r11
+        - name: envoy
+          image: docker.io/bitnami/envoy:1.26.4-debian-11-r11
+        - name: nginx
+          image: docker.io/bitnami/nginx:1.25.1-debian-11-r48
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 1.25.2
     created: "2023-08-10T01:48:43.6935173Z"
     dependencies:
     - name: common
@@ -4334,6 +4410,47 @@ entries:
     - https://github.com/itboon/bitnami-charts/releases/download/contour-0.0.1/contour-0.0.1.tgz
     version: 0.0.1
   deepspeed:
+  - annotations:
+      category: MachineLearning
+      images: |
+        - name: deepspeed
+          image: docker.io/bitnami/deepspeed:0.10.0-debian-11-r29
+        - name: git
+          image: docker.io/bitnami/git:2.41.0-debian-11-r71
+        - name: os-shell
+          image: docker.io/bitnami/os-shell:11-debian-11-r37
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 0.10.0
+    created: "2023-08-15T01:30:06.047730597Z"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: DeepSpeed is deep learning software suite for empowering ChatGPT-like
+      model training. Features dense or sparse model inference, high throughput and
+      high compression.
+    digest: a7850250e783330d8b0efaa1686e5f827e241924f410fc8075b7f656e7131f70
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/deepspeed/img/deepspeed-stack-220x234.png
+    keywords:
+    - deepspeed
+    - pytorch
+    - python
+    - machine
+    - learning
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: deepspeed
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/deepspeed
+    - https://github.com/bitnami/charts/tree/main/bitnami/pytorch
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/deepspeed-1.1.3/deepspeed-1.1.3.tgz
+    version: 1.1.3
   - annotations:
       category: MachineLearning
       images: |
@@ -16477,6 +16594,61 @@ entries:
       category: CMS
       images: |
         - name: mastodon
+          image: docker.io/bitnami/mastodon:4.1.6-debian-11-r13
+        - name: os-shell
+          image: docker.io/bitnami/os-shell:11-debian-11-r37
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 4.1.6
+    created: "2023-08-15T01:30:06.266198341Z"
+    dependencies:
+    - condition: redis.enabled
+      name: redis
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 17.x.x
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 12.x.x
+    - condition: elasticsearch.enabled
+      name: elasticsearch
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 19.x.x
+    - condition: minio.enabled
+      name: minio
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 12.x.x
+    - condition: apache.enabled
+      name: apache
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 9.x.x
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Mastodon is self-hosted social network server based on ActivityPub.
+      Written in Ruby, features real-time updates, multimedia attachments and no vendor
+      lock-in.
+    digest: 1dcb44b06f98b2aac647c52582a17e92ff5f7c7e925b72ae0bf3e4611d52c26f
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/mastodon/img/mastodon-stack-220x234.png
+    keywords:
+    - development
+    - dashboards
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: mastodon
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/mastodon
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/mastodon-1.5.11/mastodon-1.5.11.tgz
+    version: 1.5.11
+  - annotations:
+      category: CMS
+      images: |
+        - name: mastodon
           image: docker.io/bitnami/mastodon:4.1.6-debian-11-r0
         - name: os-shell
           image: docker.io/bitnami/os-shell:11-debian-11-r25
@@ -19641,6 +19813,48 @@ entries:
     - https://github.com/itboon/bitnami-charts/releases/download/mongodb-sharded-0.0.1/mongodb-sharded-0.0.1.tgz
     version: 0.0.1
   moodle:
+  - annotations:
+      category: E-Learning
+      images: |
+        - name: apache-exporter
+          image: docker.io/bitnami/apache-exporter:1.0.1-debian-11-r14
+        - name: moodle
+          image: docker.io/bitnami/moodle:4.2.2-debian-11-r0
+        - name: os-shell
+          image: docker.io/bitnami/os-shell:11-debian-11-r37
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 4.2.2
+    created: "2023-08-15T01:30:06.436422479Z"
+    dependencies:
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 13.x.x
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Moodle(TM) LMS is an open source online Learning Management System
+      widely used at universities, schools, and corporations. It is modular and highly
+      adaptable to any type of online learning.
+    digest: fb976fa0c10b144a6bd3a9b6abee8700d8034eb86a2177972a6c6286a0aada79
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/moodle/img/moodle-stack-220x234.png
+    keywords:
+    - moodle
+    - learning
+    - php
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: moodle
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/moodle
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/moodle-17.0.2/moodle-17.0.2.tgz
+    version: 17.0.2
   - annotations:
       category: E-Learning
       images: |
@@ -32172,4 +32386,4 @@ entries:
     urls:
     - https://github.com/itboon/bitnami-charts/releases/download/zookeeper-0.0.1/zookeeper-0.0.1.tgz
     version: 0.0.1
-generated: "2023-08-14T01:30:33.397924721Z"
+generated: "2023-08-15T01:30:06.438023055Z"

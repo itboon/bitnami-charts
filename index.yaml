@@ -42506,6 +42506,47 @@ entries:
         - name: os-shell
           image: docker.io/bitnami/os-shell:11-debian-11-r48
         - name: tomcat
+          image: docker.io/bitnami/tomcat:10.1.13-debian-11-r0
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 10.1.13
+    created: "2023-08-27T01:34:03.696126825Z"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Apache Tomcat is an open-source web server designed to host and run
+      Java-based web applications. It is a lightweight server with a good performance
+      for applications running in production environments.
+    digest: 00698421160f071ce75699da4a5389b4069ba69f331d74f149bbe7254e07f8e7
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/tomcat/img/tomcat-stack-220x234.png
+    keywords:
+    - tomcat
+    - java
+    - http
+    - web
+    - application server
+    - jsp
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: tomcat
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/tomcat
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/tomcat-10.10.2/tomcat-10.10.2.tgz
+    version: 10.10.2
+  - annotations:
+      category: ApplicationServer
+      images: |
+        - name: jmx-exporter
+          image: docker.io/bitnami/jmx-exporter:0.19.0-debian-11-r54
+        - name: os-shell
+          image: docker.io/bitnami/os-shell:11-debian-11-r48
+        - name: tomcat
           image: docker.io/bitnami/tomcat:10.1.12-debian-11-r9
       licenses: Apache-2.0
     apiVersion: v2
@@ -45328,4 +45369,4 @@ entries:
     urls:
     - https://github.com/itboon/bitnami-charts/releases/download/zookeeper-0.0.1/zookeeper-0.0.1.tgz
     version: 0.0.1
-generated: "2023-08-26T01:29:07.867298465Z"
+generated: "2023-08-27T01:34:03.698317474Z"

@@ -8706,6 +8706,53 @@ entries:
       category: Forum
       images: |
         - name: discourse
+          image: docker.io/bitnami/discourse:3.1.1-debian-11-r0
+        - name: os-shell
+          image: docker.io/bitnami/os-shell:11-debian-11-r66
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 3.1.1
+    created: "2023-09-14T01:31:20.439347121Z"
+    dependencies:
+    - condition: redis.enabled
+      name: redis
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 18.X.X
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 12.X.X
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Discourse is an open source discussion platform with built-in moderation
+      and governance systems that let discussion communities protect themselves from
+      bad actors even without official moderators.
+    digest: 03250d39eb47fa3eb253853130f8f22d74544b97035bf9b5cdfe30778757cb0a
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/discourse/img/discourse-stack-220x234.png
+    keywords:
+    - community
+    - forum
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    - email: username.taken@gmail.com
+      name: paulczar
+    - email: preteluca@gmail.com
+      name: lucaprete
+    name: discourse
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/discourse
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/discourse-11.0.3/discourse-11.0.3.tgz
+    version: 11.0.3
+  - annotations:
+      category: Forum
+      images: |
+        - name: discourse
           image: docker.io/bitnami/discourse:3.1.0-debian-11-r0
         - name: os-shell
           image: docker.io/bitnami/os-shell:11-debian-11-r63
@@ -11683,6 +11730,39 @@ entries:
     - https://github.com/itboon/bitnami-charts/releases/download/etcd-0.0.1/etcd-0.0.1.tgz
     version: 0.0.1
   external-dns:
+  - annotations:
+      category: DeveloperTools
+      images: |
+        - name: external-dns
+          image: docker.io/bitnami/external-dns:0.13.6-debian-11-r0
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 0.13.6
+    created: "2023-09-14T01:31:20.57085725Z"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: ExternalDNS is a Kubernetes addon that configures public DNS servers
+      with information about exposed Kubernetes services to make them discoverable.
+    digest: b77d123496a9c589899c5dadbdae2f299831a97d5c1797dbbe8918dbb6c8bb73
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/external-dns/img/external-dns-stack-220x234.png
+    keywords:
+    - external-dns
+    - network
+    - dns
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: external-dns
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/external-dns
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/external-dns-6.26.0/external-dns-6.26.0.tgz
+    version: 6.26.0
   - annotations:
       category: DeveloperTools
       images: |
@@ -28241,6 +28321,60 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 2.4.6
+    created: "2023-09-14T01:31:20.742247537Z"
+    dependencies:
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - magento-database
+      version: 13.x.x
+    - condition: elasticsearch.enabled
+      name: elasticsearch
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 19.x.x
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Magento is a powerful open source e-commerce platform. With easy
+      customizations and rich features, it allows retailers to grow their online businesses
+      in a cost-effective way.
+    digest: 835df43e20240db7d914089f20324298bf66e7085af961c6a4f2859e42bcd0d2
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/magento/img/magento-stack-220x234.png
+    keywords:
+    - magento
+    - e-commerce
+    - http
+    - web
+    - php
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: magento
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/magento
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/magento-23.1.2/magento-23.1.2.tgz
+    version: 23.1.2
+  - annotations:
+      category: E-Commerce
+      images: |
+        - name: apache-exporter
+          image: docker.io/bitnami/apache-exporter:1.0.1-debian-11-r21
+        - name: elasticsearch
+          image: docker.io/bitnami/elasticsearch:7.17.12-debian-11-r21
+        - name: magento
+          image: docker.io/bitnami/magento:2.4.6-debian-11-r69
+        - name: mariadb
+          image: docker.io/bitnami/mariadb:10.6.15-debian-11-r2
+        - name: os-shell
+          image: docker.io/bitnami/os-shell:11-debian-11-r43
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 2.4.6
     created: "2023-09-09T01:29:56.910111678Z"
     dependencies:
     - condition: mariadb.enabled
@@ -42713,6 +42847,52 @@ entries:
       category: Database
       images: |
         - name: os-shell
+          image: docker.io/bitnami/os-shell:11-debian-11-r66
+        - name: pgpool
+          image: docker.io/bitnami/pgpool:4.4.4-debian-11-r24
+        - name: postgres-exporter
+          image: docker.io/bitnami/postgres-exporter:0.13.2-debian-11-r48
+        - name: postgresql-repmgr
+          image: docker.io/bitnami/postgresql-repmgr:15.4.0-debian-11-r31
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 15.4.0
+    created: "2023-09-14T01:31:20.895841257Z"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: This PostgreSQL cluster solution includes the PostgreSQL replication
+      manager, an open-source tool for managing replication and failover on PostgreSQL
+      clusters.
+    digest: 1ad48e2062f72c832bae5dc7d50ee91bbb48bd4a20756f5af8ddda67593cf2a6
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/postgresql/img/postgresql-stack-220x234.png
+    keywords:
+    - postgresql
+    - repmgr
+    - pgpool
+    - postgres
+    - database
+    - sql
+    - replication
+    - cluster
+    - high availability
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: postgresql-ha
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/postgresql-ha
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/postgresql-ha-11.9.4/postgresql-ha-11.9.4.tgz
+    version: 11.9.4
+  - annotations:
+      category: Database
+      images: |
+        - name: os-shell
           image: docker.io/bitnami/os-shell:11-debian-11-r54
         - name: pgpool
           image: docker.io/bitnami/pgpool:4.4.4-debian-11-r13
@@ -56431,4 +56611,4 @@ entries:
     urls:
     - https://github.com/itboon/bitnami-charts/releases/download/zookeeper-0.0.1/zookeeper-0.0.1.tgz
     version: 0.0.1
-generated: "2023-09-13T01:33:42.652922702Z"
+generated: "2023-09-14T01:31:20.898159652Z"

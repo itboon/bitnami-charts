@@ -10927,6 +10927,46 @@ entries:
       category: CertificateAuthority
       images: |
         - name: ejbca
+          image: docker.io/bitnami/ejbca:8.0.20230531-debian-11-r29
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 8.0.20230531
+    created: "2023-09-22T01:32:54.797309463Z"
+    dependencies:
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - ejbca-database
+      version: 13.x.x
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: EJBCA is an enterprise class PKI Certificate Authority software,
+      built using Java (JEE) technology.
+    digest: 613fdd863b8ca2c13788d5f7b592f213ca02b47ce057cd9adcc6d67647541696
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/ejbca/img/ejbca-stack-220x234.png
+    keywords:
+    - ejbca
+    - ca
+    - pki
+    - certificate
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: ejbca
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/ejbca
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/ejbca-9.0.2/ejbca-9.0.2.tgz
+    version: 9.0.2
+  - annotations:
+      category: CertificateAuthority
+      images: |
+        - name: ejbca
           image: docker.io/bitnami/ejbca:8.0.20230531-debian-11-r0
       licenses: Apache-2.0
     apiVersion: v2
@@ -29904,6 +29944,42 @@ entries:
       category: LogManagement
       images: |
         - name: logstash
+          image: docker.io/bitnami/logstash:8.10.2-debian-11-r0
+        - name: os-shell
+          image: docker.io/bitnami/os-shell:11-debian-11-r72
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 8.10.2
+    created: "2023-09-22T01:32:54.925787535Z"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Logstash is an open source data processing engine. It ingests data
+      from multiple sources, processes it, and sends the output to final destination
+      in real-time. It is a core component of the ELK stack.
+    digest: 4a7339ce89e4e8703e7dbe7aeaa83d9b626f0783cea943de2714b0bc16b46a8b
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/logstash/img/logstash-stack-220x234.png
+    keywords:
+    - logstash
+    - logging
+    - elk
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: logstash
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/logstash
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/logstash-5.5.6/logstash-5.5.6.tgz
+    version: 5.5.6
+  - annotations:
+      category: LogManagement
+      images: |
+        - name: logstash
           image: docker.io/bitnami/logstash:8.10.1-debian-11-r0
         - name: os-shell
           image: docker.io/bitnami/os-shell:11-debian-11-r72
@@ -36144,6 +36220,46 @@ entries:
       category: Infrastructure
       images: |
         - name: minio-client
+          image: docker.io/bitnami/minio-client:2023.9.20-debian-11-r0
+        - name: minio
+          image: docker.io/bitnami/minio:2023.9.20-debian-11-r0
+        - name: os-shell
+          image: docker.io/bitnami/os-shell:11-debian-11-r72
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 2023.9.20
+    created: "2023-09-22T01:32:55.059993523Z"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: MinIO(R) is an object storage server, compatible with Amazon S3 cloud
+      storage service, mainly used for storing unstructured data (such as photos,
+      videos, log files, etc.).
+    digest: ea491e9c92ad1dad78e849663c32eec944145ecde7fb24795c280bfadc624840
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/minio/img/minio-stack-220x234.png
+    keywords:
+    - minio
+    - storage
+    - object-storage
+    - s3
+    - cluster
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: minio
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/minio
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/minio-12.8.7/minio-12.8.7.tgz
+    version: 12.8.7
+  - annotations:
+      category: Infrastructure
+      images: |
+        - name: minio-client
           image: docker.io/bitnami/minio-client:2023.9.13-debian-11-r2
         - name: minio
           image: docker.io/bitnami/minio:2023.9.16-debian-11-r3
@@ -36770,6 +36886,51 @@ entries:
     - https://github.com/itboon/bitnami-charts/releases/download/minio-0.0.1/minio-0.0.1.tgz
     version: 0.0.1
   mongodb:
+  - annotations:
+      category: Database
+      images: |
+        - name: kubectl
+          image: docker.io/bitnami/kubectl:1.25.14-debian-11-r5
+        - name: mongodb-exporter
+          image: docker.io/bitnami/mongodb-exporter:0.39.0-debian-11-r106
+        - name: mongodb
+          image: docker.io/bitnami/mongodb:6.0.10-debian-11-r8
+        - name: nginx
+          image: docker.io/bitnami/nginx:1.25.2-debian-11-r32
+        - name: os-shell
+          image: docker.io/bitnami/os-shell:11-debian-11-r72
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 6.0.10
+    created: "2023-09-22T01:32:55.19016813Z"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: MongoDB(R) is a relational open source NoSQL database. Easy to use,
+      it stores data in JSON-like documents. Automated scalability and high-performance.
+      Ideal for developing cloud native applications.
+    digest: 136775862827660b180e316066c525d53744086c476f6374f0ded17c51ac847c
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/mongodb/img/mongodb-stack-220x234.png
+    keywords:
+    - mongodb
+    - database
+    - nosql
+    - cluster
+    - replicaset
+    - replication
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: mongodb
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/mongodb
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/mongodb-13.18.5/mongodb-13.18.5.tgz
+    version: 13.18.5
   - annotations:
       category: Database
       images: |
@@ -37426,6 +37587,47 @@ entries:
     - https://github.com/itboon/bitnami-charts/releases/download/mongodb-0.0.1/mongodb-0.0.1.tgz
     version: 0.0.1
   mongodb-sharded:
+  - annotations:
+      category: Database
+      images: |
+        - name: mongodb-exporter
+          image: docker.io/bitnami/mongodb-exporter:0.39.0-debian-11-r106
+        - name: mongodb-sharded
+          image: docker.io/bitnami/mongodb-sharded:6.0.10-debian-11-r8
+        - name: os-shell
+          image: docker.io/bitnami/os-shell:11-debian-11-r72
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 6.0.10
+    created: "2023-09-22T01:32:55.332348077Z"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: MongoDB(R) is an open source NoSQL database that uses JSON for data
+      storage. MongoDB(TM) Sharded improves scalability and reliability for large
+      datasets by distributing data across multiple machines.
+    digest: 7cb64a57fe5721c19ade3f453f6420acc4c292b6cd99289cc003899d5ac5e1a8
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/mongodb/img/mongodb-stack-220x234.png
+    keywords:
+    - mongodb
+    - database
+    - nosql
+    - cluster
+    - replicaset
+    - replication
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: mongodb-sharded
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/mongodb-sharded
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/mongodb-sharded-6.6.7/mongodb-sharded-6.6.7.tgz
+    version: 6.6.7
   - annotations:
       category: Database
       images: |
@@ -39996,6 +40198,46 @@ entries:
     - https://github.com/itboon/bitnami-charts/releases/download/nats-0.0.1/nats-0.0.1.tgz
     version: 0.0.1
   nginx:
+  - annotations:
+      category: Infrastructure
+      images: |
+        - name: git
+          image: docker.io/bitnami/git:2.41.0-debian-11-r76
+        - name: nginx-exporter
+          image: docker.io/bitnami/nginx-exporter:0.11.0-debian-11-r324
+        - name: nginx
+          image: docker.io/bitnami/nginx:1.25.2-debian-11-r3
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 1.25.2
+    created: "2023-09-22T01:32:55.454145016Z"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: NGINX Open Source is a web server that can be also used as a reverse
+      proxy, load balancer, and HTTP cache. Recommended for high-demanding sites due
+      to its ability to provide faster content.
+    digest: 7198a9c7a2166c316d85e5e930452d6a1cd37e9dacc99948148615459201ec0e
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/nginx/img/nginx-stack-220x234.png
+    keywords:
+    - nginx
+    - http
+    - web
+    - www
+    - reverse proxy
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: nginx
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/nginx
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/nginx-15.3.0/nginx-15.3.0.tgz
+    version: 15.3.0
   - annotations:
       category: Infrastructure
       images: |
@@ -46366,6 +46608,52 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 15.4.0
+    created: "2023-09-22T01:32:55.593594708Z"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: This PostgreSQL cluster solution includes the PostgreSQL replication
+      manager, an open-source tool for managing replication and failover on PostgreSQL
+      clusters.
+    digest: 7086624ba78ff2f5058e2e173d99469a6133eae740a0e5fec50c5cad5dda2409
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/postgresql/img/postgresql-stack-220x234.png
+    keywords:
+    - postgresql
+    - repmgr
+    - pgpool
+    - postgres
+    - database
+    - sql
+    - replication
+    - cluster
+    - high availability
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: postgresql-ha
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/postgresql-ha
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/postgresql-ha-11.9.6/postgresql-ha-11.9.6.tgz
+    version: 11.9.6
+  - annotations:
+      category: Database
+      images: |
+        - name: os-shell
+          image: docker.io/bitnami/os-shell:11-debian-11-r66
+        - name: pgpool
+          image: docker.io/bitnami/pgpool:4.4.4-debian-11-r24
+        - name: postgres-exporter
+          image: docker.io/bitnami/postgres-exporter:0.13.2-debian-11-r48
+        - name: postgresql-repmgr
+          image: docker.io/bitnami/postgresql-repmgr:15.4.0-debian-11-r31
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 15.4.0
     created: "2023-09-21T01:33:35.883030513Z"
     dependencies:
     - name: common
@@ -47684,6 +47972,47 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 2.47.0
+    created: "2023-09-22T01:32:55.721845877Z"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Prometheus is an open source monitoring and alerting system. It enables
+      sysadmins to monitor their infrastructures by collecting metrics from configured
+      targets at given intervals.
+    digest: 71944c859b3657397ce46be7686c0626c2fac47e0e9df5d892666a27758bb5af
+    home: https://github.com/prometheus/prometheus
+    icon: https://bitnami.com/assets/stacks/prometheus/img/prometheus-stack-220x234.png
+    keywords:
+    - prometheus
+    - monitoring
+    maintainers:
+    - name: Bitnami
+      url: https://github.com/bitnami/charts
+    name: prometheus
+    sources:
+    - https://github.com/bitnami/containers/tree/main/bitnami/prometheus
+    - https://github.com/prometheus/prometheus
+    - https://github.com/prometheus-community/helm-charts
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/prometheus-0.2.3/prometheus-0.2.3.tgz
+    version: 0.2.3
+  - annotations:
+      category: Analytics
+      images: |
+        - name: alertmanager
+          image: docker.io/bitnami/alertmanager:0.26.0-debian-11-r11
+        - name: os-shell
+          image: docker.io/bitnami/os-shell:11-debian-11-r57
+        - name: prometheus
+          image: docker.io/bitnami/prometheus:2.47.0-debian-11-r0
+        - name: thanos
+          image: docker.io/bitnami/thanos:0.32.2-debian-11-r2
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 2.47.0
     created: "2023-09-08T01:34:54.902939969Z"
     dependencies:
     - name: common
@@ -48440,6 +48769,42 @@ entries:
     - https://github.com/itboon/bitnami-charts/releases/download/pytorch-0.0.1/pytorch-0.0.1.tgz
     version: 0.0.1
   rabbitmq:
+  - annotations:
+      category: Infrastructure
+      images: |
+        - name: os-shell
+          image: docker.io/bitnami/os-shell:11-debian-11-r72
+        - name: rabbitmq
+          image: docker.io/bitnami/rabbitmq:3.12.5-debian-11-r0
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 3.12.5
+    created: "2023-09-22T01:32:55.904550435Z"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: RabbitMQ is an open source general-purpose message broker that is
+      designed for consistent, highly-available messaging scenarios (both synchronous
+      and asynchronous).
+    digest: 2df05a7d0d2be17a6c1577fa1c7eccc5333f7399ce4314ad35550476115cc4d5
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/rabbitmq/img/rabbitmq-stack-220x234.png
+    keywords:
+    - rabbitmq
+    - message queue
+    - AMQP
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: rabbitmq
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/rabbitmq
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/rabbitmq-12.1.5/rabbitmq-12.1.5.tgz
+    version: 12.1.5
   - annotations:
       category: Infrastructure
       images: |
@@ -55901,6 +56266,44 @@ entries:
       category: MachineLearning
       images: |
         - name: tensorflow-resnet
+          image: docker.io/bitnami/tensorflow-resnet:2.13.0-debian-11-r54
+        - name: tensorflow-serving
+          image: docker.io/bitnami/tensorflow-serving:2.13.0-debian-11-r50
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 2.13.0
+    created: "2023-09-22T01:32:56.027401396Z"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: TensorFlow ResNet is a client utility for use with TensorFlow Serving
+      and ResNet models.
+    digest: 31c4ac789814ab104ce8ee655cf764006aaa668ede137ab7cac68b51b21cad64
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/tensorflow-inception/img/tensorflow-inception-stack-220x234.png
+    keywords:
+    - tensorflow
+    - serving
+    - resnet
+    - machine
+    - learning
+    - library
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: tensorflow-resnet
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/tensorflow-resnet
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/tensorflow-resnet-3.9.3/tensorflow-resnet-3.9.3.tgz
+    version: 3.9.3
+  - annotations:
+      category: MachineLearning
+      images: |
+        - name: tensorflow-resnet
           image: docker.io/bitnami/tensorflow-resnet:2.13.0-debian-11-r49
         - name: tensorflow-serving
           image: docker.io/bitnami/tensorflow-serving:2.13.0-debian-11-r50
@@ -60905,4 +61308,4 @@ entries:
     urls:
     - https://github.com/itboon/bitnami-charts/releases/download/zookeeper-0.0.1/zookeeper-0.0.1.tgz
     version: 0.0.1
-generated: "2023-09-21T01:33:37.715869423Z"
+generated: "2023-09-22T01:32:56.030571459Z"

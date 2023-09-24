@@ -13520,6 +13520,40 @@ entries:
       category: Analytics
       images: |
         - name: fluent-bit
+          image: docker.io/bitnami/fluent-bit:2.1.10-debian-11-r0
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 2.1.10
+    created: "2023-09-24T01:36:00.620773312Z"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Fluent Bit is a Fast and Lightweight Log Processor and Forwarder.
+      It has been made with a strong focus on performance to allow the collection
+      of events from different sources without complexity.
+    digest: d18baa1d57d15f7a43ffaa7fcdd21be886cec21f02cdbeabf0e607f7e6eb3df2
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/fluent-bit/img/fluent-bit-stack-220x234.png
+    keywords:
+    - fluent-bit
+    - logging
+    - monitoring
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: fluent-bit
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/fluent-bit
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/fluent-bit-0.5.3/fluent-bit-0.5.3.tgz
+    version: 0.5.3
+  - annotations:
+      category: Analytics
+      images: |
+        - name: fluent-bit
           image: docker.io/bitnami/fluent-bit:2.1.9-debian-11-r0
       licenses: Apache-2.0
     apiVersion: v2
@@ -32234,6 +32268,61 @@ entries:
       category: CMS
       images: |
         - name: mastodon
+          image: docker.io/bitnami/mastodon:4.2.0-debian-11-r0
+        - name: os-shell
+          image: docker.io/bitnami/os-shell:11-debian-11-r75
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 4.2.0
+    created: "2023-09-24T01:36:00.809813013Z"
+    dependencies:
+    - condition: redis.enabled
+      name: redis
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 18.x.x
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 12.x.x
+    - condition: elasticsearch.enabled
+      name: elasticsearch
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 19.x.x
+    - condition: minio.enabled
+      name: minio
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 12.x.x
+    - condition: apache.enabled
+      name: apache
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 9.x.x
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Mastodon is self-hosted social network server based on ActivityPub.
+      Written in Ruby, features real-time updates, multimedia attachments and no vendor
+      lock-in.
+    digest: 00ae735d2515a8191b272c88059757cf7b1d678961fde4a789d4363e8412fb43
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/mastodon/img/mastodon-stack-220x234.png
+    keywords:
+    - development
+    - dashboards
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: mastodon
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/mastodon
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/mastodon-2.1.7/mastodon-2.1.7.tgz
+    version: 2.1.7
+  - annotations:
+      category: CMS
+      images: |
+        - name: mastodon
           image: docker.io/bitnami/mastodon:4.1.9-debian-11-r0
         - name: os-shell
           image: docker.io/bitnami/os-shell:11-debian-11-r72
@@ -40809,6 +40898,45 @@ entries:
     - https://github.com/itboon/bitnami-charts/releases/download/nginx-0.0.1/nginx-0.0.1.tgz
     version: 0.0.1
   nginx-ingress-controller:
+  - annotations:
+      category: Infrastructure
+      images: |
+        - name: nginx-ingress-controller
+          image: docker.io/bitnami/nginx-ingress-controller:1.9.0-debian-11-r0
+        - name: nginx
+          image: docker.io/bitnami/nginx:1.25.2-debian-11-r34
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 1.9.0
+    created: "2023-09-24T01:36:00.946349375Z"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: NGINX Ingress Controller is an Ingress controller that manages external
+      access to HTTP services in a Kubernetes cluster using NGINX.
+    digest: 4d2f4423e55466bb20188a842b857a4f87abdb78b7e7c233e6d3e82b85f16235
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/nginx-ingress-controller/img/nginx-ingress-controller-stack-220x234.png
+    keywords:
+    - ingress
+    - nginx
+    - http
+    - web
+    - www
+    - reverse proxy
+    kubeVersion: '>= 1.20.0-0'
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: nginx-ingress-controller
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/nginx-ingress-controller
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/nginx-ingress-controller-9.8.5/nginx-ingress-controller-9.8.5.tgz
+    version: 9.8.5
   - annotations:
       category: Infrastructure
       images: |
@@ -61836,4 +61964,4 @@ entries:
     urls:
     - https://github.com/itboon/bitnami-charts/releases/download/zookeeper-0.0.1/zookeeper-0.0.1.tgz
     version: 0.0.1
-generated: "2023-09-23T01:30:12.777118839Z"
+generated: "2023-09-24T01:36:00.949457243Z"

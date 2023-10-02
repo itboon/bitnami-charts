@@ -4804,6 +4804,44 @@ entries:
       category: Database
       images: |
         - name: cassandra-exporter
+          image: docker.io/bitnami/cassandra-exporter:2.3.8-debian-11-r423
+        - name: cassandra
+          image: docker.io/bitnami/cassandra:4.1.3-debian-11-r63
+        - name: os-shell
+          image: docker.io/bitnami/os-shell:11-debian-11-r83
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 4.1.3
+    created: "2023-10-02T01:34:07.965865539Z"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Apache Cassandra is an open source distributed database management
+      system designed to handle large amounts of data across many servers, providing
+      high availability with no single point of failure.
+    digest: aa6a95106df32d79907522b2d528366bb4dfc02a949169c380ad9b752f72037b
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/cassandra/img/cassandra-stack-220x234.png
+    keywords:
+    - cassandra
+    - database
+    - nosql
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: cassandra
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/cassandra
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/cassandra-10.5.5/cassandra-10.5.5.tgz
+    version: 10.5.5
+  - annotations:
+      category: Database
+      images: |
+        - name: cassandra-exporter
           image: docker.io/bitnami/cassandra-exporter:2.3.8-debian-11-r394
         - name: cassandra
           image: docker.io/bitnami/cassandra:4.1.3-debian-11-r37
@@ -14806,6 +14844,41 @@ entries:
     - https://github.com/itboon/bitnami-charts/releases/download/fluent-bit-0.0.1/fluent-bit-0.0.1.tgz
     version: 0.0.1
   fluentd:
+  - annotations:
+      category: Analytics
+      images: |
+        - name: fluentd
+          image: docker.io/bitnami/fluentd:1.16.2-debian-11-r72
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 1.16.2
+    created: "2023-10-02T01:34:08.196375289Z"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Fluentd collects events from various data sources and writes them
+      to files, RDBMS, NoSQL, IaaS, SaaS, Hadoop and so on.
+    digest: 17dd765366d70af73994ab71be739d3d55a3d9b575af63dd2d9dd6c7258c58dc
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/fluentd/img/fluentd-stack-220x234.png
+    keywords:
+    - fluentd
+    - logging
+    - logs
+    - data
+    - collector
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: fluentd
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/fluentd
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/fluentd-5.9.5/fluentd-5.9.5.tgz
+    version: 5.9.5
   - annotations:
       category: Analytics
       images: |
@@ -57425,6 +57498,46 @@ entries:
       category: Infrastructure
       images: |
         - name: os-shell
+          image: docker.io/bitnami/os-shell:11-debian-11-r83
+        - name: solr
+          image: docker.io/bitnami/solr:9.3.0-debian-11-r63
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 9.3.0
+    created: "2023-10-02T01:34:08.413444256Z"
+    dependencies:
+    - condition: zookeeper.enabled
+      name: zookeeper
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 12.x.x
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Apache Solr is an extremely powerful, open source enterprise search
+      platform built on Apache Lucene. It is highly reliable and flexible, scalable,
+      and designed to add value very quickly after launch.
+    digest: 7aa0f2363ac0511ddc35be8a480f091cd5a7b9f1ebdb6e929bcea7f46e41524d
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/solr/img/solr-stack-220x234.png
+    keywords:
+    - solr
+    - zookeeper
+    - apache
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: solr
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/solr
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/solr-8.1.5/solr-8.1.5.tgz
+    version: 8.1.5
+  - annotations:
+      category: Infrastructure
+      images: |
+        - name: os-shell
           image: docker.io/bitnami/os-shell:11-debian-11-r54
         - name: solr
           image: docker.io/bitnami/solr:9.3.0-debian-11-r34
@@ -66454,4 +66567,4 @@ entries:
     urls:
     - https://github.com/itboon/bitnami-charts/releases/download/zookeeper-0.0.1/zookeeper-0.0.1.tgz
     version: 0.0.1
-generated: "2023-10-01T01:42:11.272044053Z"
+generated: "2023-10-02T01:34:08.418054453Z"

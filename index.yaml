@@ -5,6 +5,59 @@ entries:
       category: WorkFlow
       images: |
         - name: airflow-exporter
+          image: docker.io/bitnami/airflow-exporter:0.20220314.0-debian-11-r433
+        - name: airflow-scheduler
+          image: docker.io/bitnami/airflow-scheduler:2.7.1-debian-11-r27
+        - name: airflow-worker
+          image: docker.io/bitnami/airflow-worker:2.7.1-debian-11-r27
+        - name: airflow
+          image: docker.io/bitnami/airflow:2.7.1-debian-11-r28
+        - name: git
+          image: docker.io/bitnami/git:2.42.0-debian-11-r41
+        - name: os-shell
+          image: docker.io/bitnami/os-shell:11-debian-11-r86
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 2.7.1
+    created: "2023-10-07T01:34:38.28979154Z"
+    dependencies:
+    - condition: redis.enabled
+      name: redis
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 18.x.x
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 13.x.x
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Apache Airflow is a tool to express and execute workflows as directed
+      acyclic graphs (DAGs). It includes utilities to schedule tasks, monitor task
+      progress and handle task dependencies.
+    digest: 7d491e5281c05de020998bb990abe3cf2a5ea4a89c230657be903bdc887ec62d
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/airflow/img/airflow-stack-220x234.png
+    keywords:
+    - apache
+    - airflow
+    - workflow
+    - dag
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: airflow
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/airflow
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/airflow-16.0.2/airflow-16.0.2.tgz
+    version: 16.0.2
+  - annotations:
+      category: WorkFlow
+      images: |
+        - name: airflow-exporter
           image: docker.io/bitnami/airflow-exporter:0.20220314.0-debian-11-r422
         - name: airflow-scheduler
           image: docker.io/bitnami/airflow-scheduler:2.7.1-debian-11-r14
@@ -11182,6 +11235,47 @@ entries:
       category: Wiki
       images: |
         - name: apache-exporter
+          image: docker.io/bitnami/apache-exporter:1.0.2-debian-11-r5
+        - name: dokuwiki
+          image: docker.io/bitnami/dokuwiki:20230404.1.0-debian-11-r100
+        - name: os-shell
+          image: docker.io/bitnami/os-shell:11-debian-11-r86
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 20230404.1.0
+    created: "2023-10-07T01:34:41.202133989Z"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: DokuWiki is a standards-compliant wiki optimized for creating documentation.
+      Designed to be simple to use for small organizations, it stores all data in
+      plain text files so no database is required.
+    digest: e41d448139548d3a16e63f0257eaffcb65080902d817f7a020937c187b154a54
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/dokuwiki/img/dokuwiki-stack-220x234.png
+    keywords:
+    - dokuwiki
+    - wiki
+    - http
+    - web
+    - application
+    - php
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: dokuwiki
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/dokuwiki
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/dokuwiki-14.2.3/dokuwiki-14.2.3.tgz
+    version: 14.2.3
+  - annotations:
+      category: Wiki
+      images: |
+        - name: apache-exporter
           image: docker.io/bitnami/apache-exporter:1.0.1-debian-11-r47
         - name: dokuwiki
           image: docker.io/bitnami/dokuwiki:20230404.1.0-debian-11-r80
@@ -11629,6 +11723,52 @@ entries:
     - https://github.com/itboon/bitnami-charts/releases/download/dokuwiki-0.0.1/dokuwiki-0.0.1.tgz
     version: 0.0.1
   drupal:
+  - annotations:
+      category: CMS
+      images: |
+        - name: apache-exporter
+          image: docker.io/bitnami/apache-exporter:1.0.2-debian-11-r5
+        - name: drupal
+          image: docker.io/bitnami/drupal:10.1.5-debian-11-r1
+        - name: os-shell
+          image: docker.io/bitnami/os-shell:11-debian-11-r86
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 10.1.5
+    created: "2023-10-07T01:34:41.409650145Z"
+    dependencies:
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 13.x.x
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Drupal is one of the most versatile open source content management
+      systems in the world. It is pre-configured with the Ctools and Views modules,
+      Drush and Let's Encrypt auto-configuration support.
+    digest: 50240f5e4a35bf0bc97425d6d1cac9b55befc9f9a41e1bfa4122f55513f705f6
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/drupal/img/drupal-stack-220x234.png
+    keywords:
+    - drupal
+    - cms
+    - blog
+    - http
+    - web
+    - application
+    - php
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: drupal
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/drupal
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/drupal-15.1.7/drupal-15.1.7.tgz
+    version: 15.1.7
   - annotations:
       category: CMS
       images: |
@@ -16568,6 +16708,52 @@ entries:
       category: CMS
       images: |
         - name: ghost
+          image: docker.io/bitnami/ghost:5.67.0-debian-11-r0
+        - name: os-shell
+          image: docker.io/bitnami/os-shell:11-debian-11-r86
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 5.67.0
+    created: "2023-10-07T01:34:43.002658562Z"
+    dependencies:
+    - condition: mysql.enabled
+      name: mysql
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - ghost-database
+      version: 9.x.x
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Ghost is an open source publishing platform designed to create blogs,
+      magazines, and news sites. It includes a simple markdown editor with preview,
+      theming, and SEO built-in to simplify editing.
+    digest: dd023bf4404358f5474f60615ad803c8c9fd34ec4161f05d936bc1ffc194230c
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/ghost/img/ghost-stack-220x234.png
+    keywords:
+    - ghost
+    - blog
+    - http
+    - web
+    - application
+    - nodejs
+    - javascript
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: ghost
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/ghost
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/ghost-19.5.12/ghost-19.5.12.tgz
+    version: 19.5.12
+  - annotations:
+      category: CMS
+      images: |
+        - name: ghost
           image: docker.io/bitnami/ghost:5.66.1-debian-11-r0
         - name: os-shell
           image: docker.io/bitnami/os-shell:11-debian-11-r86
@@ -18682,6 +18868,44 @@ entries:
     - https://github.com/itboon/bitnami-charts/releases/download/gitea-0.0.1/gitea-0.0.1.tgz
     version: 0.0.1
   grafana:
+  - annotations:
+      category: Analytics
+      images: |
+        - name: grafana-image-renderer
+          image: docker.io/bitnami/grafana-image-renderer:3.8.3-debian-11-r3
+        - name: grafana
+          image: docker.io/bitnami/grafana:10.1.4-debian-11-r3
+        - name: os-shell
+          image: docker.io/bitnami/os-shell:11-debian-11-r86
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 10.1.4
+    created: "2023-10-07T01:34:43.328672765Z"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Grafana is an open source metric analytics and visualization suite
+      for visualizing time series data that supports various types of data sources.
+    digest: 24070f3f575a587f1859106a4b2a297348aed85e9b67458877d95ceafb2ad6c3
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/grafana/img/grafana-stack-220x234.png
+    keywords:
+    - analytics
+    - monitoring
+    - metrics
+    - logs
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: grafana
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/grafana
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/grafana-9.2.4/grafana-9.2.4.tgz
+    version: 9.2.4
   - annotations:
       category: Analytics
       images: |
@@ -25691,6 +25915,48 @@ entries:
     - https://github.com/itboon/bitnami-charts/releases/download/jenkins-0.0.1/jenkins-0.0.1.tgz
     version: 0.0.1
   joomla:
+  - annotations:
+      category: CMS
+      images: |
+        - name: apache-exporter
+          image: docker.io/bitnami/apache-exporter:1.0.2-debian-11-r5
+        - name: joomla
+          image: docker.io/bitnami/joomla:4.3.4-debian-11-r34
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 4.3.4
+    created: "2023-10-07T01:34:45.296062882Z"
+    dependencies:
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 13.x.x
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Joomla! is an award winning open source CMS platform for building
+      websites and applications. It includes page caching, page compression and Let's
+      Encrypt auto-configuration support.
+    digest: 2f69e4cabf8c64c139087e15ddbb49e8e81ef3722a43dded5ce0b54222e3ccb8
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/joomla/img/joomla-stack-220x234.png
+    keywords:
+    - joomla
+    - cms
+    - blog
+    - http
+    - php
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: joomla
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/joomla
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/joomla-15.1.4/joomla-15.1.4.tgz
+    version: 15.1.4
   - annotations:
       category: CMS
       images: |
@@ -37995,6 +38261,51 @@ entries:
         - name: apache-exporter
           image: docker.io/bitnami/apache-exporter:1.0.2-debian-11-r5
         - name: mediawiki
+          image: docker.io/bitnami/mediawiki:1.40.1-debian-11-r2
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 1.40.1
+    created: "2023-10-07T01:34:48.837688312Z"
+    dependencies:
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - mediawiki-database
+      version: 13.x.x
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: MediaWiki is the free and open source wiki software that powers Wikipedia.
+      Used by thousands of organizations, it is extremely powerful, scalable software
+      and a feature-rich wiki implementation.
+    digest: c86cb474536a04b5c8c5455281b909b08058ea4ef550a45b3610853162a54df1
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/mediawiki/img/mediawiki-stack-220x234.png
+    keywords:
+    - mediawiki
+    - wiki
+    - http
+    - web
+    - application
+    - php
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: mediawiki
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/mediawiki
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/mediawiki-16.1.4/mediawiki-16.1.4.tgz
+    version: 16.1.4
+  - annotations:
+      category: Wiki
+      images: |
+        - name: apache-exporter
+          image: docker.io/bitnami/apache-exporter:1.0.2-debian-11-r5
+        - name: mediawiki
           image: docker.io/bitnami/mediawiki:1.40.1-debian-11-r0
       licenses: Apache-2.0
     apiVersion: v2
@@ -43946,6 +44257,45 @@ entries:
         - name: git
           image: docker.io/bitnami/git:2.42.0-debian-11-r41
         - name: mxnet
+          image: docker.io/bitnami/mxnet:1.9.1-debian-11-r408
+        - name: os-shell
+          image: docker.io/bitnami/os-shell:11-debian-11-r86
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 1.9.1
+    created: "2023-10-07T01:34:50.548020797Z"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Apache MXNet (Incubating) is a flexible and efficient library for
+      deep learning designed to work as a neural network. Bitnami image ships OpenBLAS
+      as math library.
+    digest: 71d755e1213a6d9f1c9a77522d1416ca6b5d9e04d22d0e9e449a99f0743e00af
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/mxnet/img/mxnet-stack-220x234.png
+    keywords:
+    - mxnet
+    - python
+    - machine
+    - learning
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: mxnet
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/mxnet
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/mxnet-3.4.4/mxnet-3.4.4.tgz
+    version: 3.4.4
+  - annotations:
+      category: MachineLearning
+      images: |
+        - name: git
+          image: docker.io/bitnami/git:2.42.0-debian-11-r41
+        - name: mxnet
           image: docker.io/bitnami/mxnet:1.9.1-debian-11-r404
         - name: os-shell
           image: docker.io/bitnami/os-shell:11-debian-11-r86
@@ -48761,6 +49111,52 @@ entries:
     - https://github.com/itboon/bitnami-charts/releases/download/opensearch-0.1.0/opensearch-0.1.0.tgz
     version: 0.1.0
   osclass:
+  - annotations:
+      category: CMS
+      images: |
+        - name: apache-exporter
+          image: docker.io/bitnami/apache-exporter:1.0.2-debian-11-r5
+        - name: os-shell
+          image: docker.io/bitnami/os-shell:11-debian-11-r86
+        - name: osclass
+          image: docker.io/bitnami/osclass:8.1.2-debian-11-r98
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 8.1.2
+    created: "2023-10-07T01:34:52.356411052Z"
+    dependencies:
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - osclass-database
+      version: 13.x.x
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Osclass allows you to easily create a classifieds site without any
+      technical knowledge. It provides support for presenting general ads or specialized
+      ads, is customizable, extensible and multilingual.
+    digest: 4e12a67be8feae0aa2b5f089de7d4d9445974f9dcbe0501d7c72718baf279536
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/osclass/img/osclass-stack-220x234.png
+    keywords:
+    - osclass
+    - classifieds
+    - http
+    - web
+    - php
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: osclass
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/osclass
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/osclass-16.1.3/osclass-16.1.3.tgz
+    version: 16.1.3
   - annotations:
       category: CMS
       images: |
@@ -69575,4 +69971,4 @@ entries:
     urls:
     - https://github.com/itboon/bitnami-charts/releases/download/zookeeper-0.0.1/zookeeper-0.0.1.tgz
     version: 0.0.1
-generated: "2023-10-06T01:33:40.421366687Z"
+generated: "2023-10-07T01:34:57.582591063Z"

@@ -26,8 +26,8 @@ Looking to use MediaWiki in production? Try [VMware Application Catalog](https:/
 
 ## Prerequisites
 
-- Kubernetes 1.19+
-- Helm 3.2.0+
+- Kubernetes 1.23+
+- Helm 3.8.0+
 - PV provisioner support in the underlying infrastructure
 - ReadWriteMany volumes for deployment scaling
 
@@ -81,7 +81,7 @@ The command removes all the Kubernetes components associated with the chart and 
 | -------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------- |
 | `image.registry`     | MediaWiki image registry                                                                                                                           | `docker.io`           |
 | `image.repository`   | MediaWiki image repository                                                                                                                         | `bitnami/mediawiki`   |
-| `image.tag`          | MediaWiki image tag (immutable tags are recommended)                                                                                               | `1.40.1-debian-11-r0` |
+| `image.tag`          | MediaWiki image tag (immutable tags are recommended)                                                                                               | `1.40.1-debian-11-r2` |
 | `image.digest`       | MediaWiki image digest in the way sha256:aa.... Please note this parameter, if set, will override the tag                                          | `""`                  |
 | `image.pullPolicy`   | Image pull policy                                                                                                                                  | `IfNotPresent`        |
 | `image.pullSecrets`  | Specify docker-registry secret names as an array                                                                                                   | `[]`                  |

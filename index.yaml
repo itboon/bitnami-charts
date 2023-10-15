@@ -7,6 +7,59 @@ entries:
         - name: airflow-exporter
           image: docker.io/bitnami/airflow-exporter:0.20220314.0-debian-11-r438
         - name: airflow-scheduler
+          image: docker.io/bitnami/airflow-scheduler:2.7.2-debian-11-r0
+        - name: airflow-worker
+          image: docker.io/bitnami/airflow-worker:2.7.2-debian-11-r0
+        - name: airflow
+          image: docker.io/bitnami/airflow:2.7.2-debian-11-r0
+        - name: git
+          image: docker.io/bitnami/git:2.42.0-debian-11-r45
+        - name: os-shell
+          image: docker.io/bitnami/os-shell:11-debian-11-r90
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 2.7.2
+    created: "2023-10-15T01:37:51.398089044Z"
+    dependencies:
+    - condition: redis.enabled
+      name: redis
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 18.x.x
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 13.x.x
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Apache Airflow is a tool to express and execute workflows as directed
+      acyclic graphs (DAGs). It includes utilities to schedule tasks, monitor task
+      progress and handle task dependencies.
+    digest: 41549ec4813a86207881cbf2240e1928cf88c855da4c5e87fec270b71ddd315a
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/airflow/img/airflow-stack-220x234.png
+    keywords:
+    - apache
+    - airflow
+    - workflow
+    - dag
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: airflow
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/airflow
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/airflow-16.0.5/airflow-16.0.5.tgz
+    version: 16.0.5
+  - annotations:
+      category: WorkFlow
+      images: |
+        - name: airflow-exporter
+          image: docker.io/bitnami/airflow-exporter:0.20220314.0-debian-11-r438
+        - name: airflow-scheduler
           image: docker.io/bitnami/airflow-scheduler:2.7.1-debian-11-r28
         - name: airflow-worker
           image: docker.io/bitnami/airflow-worker:2.7.1-debian-11-r28
@@ -46280,6 +46333,46 @@ entries:
       category: Infrastructure
       images: |
         - name: minio-client
+          image: docker.io/bitnami/minio-client:2023.10.14-debian-11-r0
+        - name: minio
+          image: docker.io/bitnami/minio:2023.10.14-debian-11-r0
+        - name: os-shell
+          image: docker.io/bitnami/os-shell:11-debian-11-r90
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 2023.10.14
+    created: "2023-10-15T01:37:51.641451519Z"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: MinIO(R) is an object storage server, compatible with Amazon S3 cloud
+      storage service, mainly used for storing unstructured data (such as photos,
+      videos, log files, etc.).
+    digest: dc707c3131aa4f1608ccf87ae4a07c69fa4688ca4de83a9beae954eeea11157a
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/minio/img/minio-stack-220x234.png
+    keywords:
+    - minio
+    - storage
+    - object-storage
+    - s3
+    - cluster
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: minio
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/minio
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/minio-12.8.14/minio-12.8.14.tgz
+    version: 12.8.14
+  - annotations:
+      category: Infrastructure
+      images: |
+        - name: minio-client
           image: docker.io/bitnami/minio-client:2023.10.4-debian-11-r1
         - name: minio
           image: docker.io/bitnami/minio:2023.10.7-debian-11-r2
@@ -79975,4 +80068,4 @@ entries:
     urls:
     - https://github.com/itboon/bitnami-charts/releases/download/zookeeper-0.0.1/zookeeper-0.0.1.tgz
     version: 0.0.1
-generated: "2023-10-14T01:31:08.981563872Z"
+generated: "2023-10-15T01:37:51.646244443Z"

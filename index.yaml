@@ -19366,6 +19366,52 @@ entries:
       category: CMS
       images: |
         - name: ghost
+          image: docker.io/bitnami/ghost:5.70.1-debian-11-r0
+        - name: os-shell
+          image: docker.io/bitnami/os-shell:11-debian-11-r90
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 5.70.1
+    created: "2023-10-21T01:32:12.66181964Z"
+    dependencies:
+    - condition: mysql.enabled
+      name: mysql
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - ghost-database
+      version: 9.x.x
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Ghost is an open source publishing platform designed to create blogs,
+      magazines, and news sites. It includes a simple markdown editor with preview,
+      theming, and SEO built-in to simplify editing.
+    digest: a337b1421904c10b4d31cbd4f857a2d7096ad55f45c0222443544b9b4d9d7718
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/ghost/img/ghost-stack-220x234.png
+    keywords:
+    - ghost
+    - blog
+    - http
+    - web
+    - application
+    - nodejs
+    - javascript
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: ghost
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/ghost
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/ghost-19.5.20/ghost-19.5.20.tgz
+    version: 19.5.20
+  - annotations:
+      category: CMS
+      images: |
+        - name: ghost
           image: docker.io/bitnami/ghost:5.69.3-debian-11-r0
         - name: os-shell
           image: docker.io/bitnami/os-shell:11-debian-11-r90
@@ -31938,6 +31984,54 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 3.6.0
+    created: "2023-10-21T01:32:14.548899734Z"
+    dependencies:
+    - condition: zookeeper.enabled
+      name: zookeeper
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 12.x.x
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Apache Kafka is a distributed streaming platform designed to build
+      real-time pipelines and can be used as a message broker or as a replacement
+      for a log aggregation solution for big data applications.
+    digest: 78065635a5095e414a037173e5d3e54702da4bc11cf45196f1db902cda6f394c
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/kafka/img/kafka-stack-220x234.png
+    keywords:
+    - kafka
+    - zookeeper
+    - streaming
+    - producer
+    - consumer
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: kafka
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/kafka
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/kafka-26.2.0/kafka-26.2.0.tgz
+    version: 26.2.0
+  - annotations:
+      category: Infrastructure
+      images: |
+        - name: jmx-exporter
+          image: docker.io/bitnami/jmx-exporter:0.19.0-debian-11-r95
+        - name: kafka-exporter
+          image: docker.io/bitnami/kafka-exporter:1.7.0-debian-11-r132
+        - name: kafka
+          image: docker.io/bitnami/kafka:3.6.0-debian-11-r0
+        - name: kubectl
+          image: docker.io/bitnami/kubectl:1.28.2-debian-11-r16
+        - name: os-shell
+          image: docker.io/bitnami/os-shell:11-debian-11-r90
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 3.6.0
     created: "2023-10-20T01:33:40.57255352Z"
     dependencies:
     - condition: zookeeper.enabled
@@ -41288,6 +41382,46 @@ entries:
       category: Database
       images: |
         - name: mariadb
+          image: docker.io/bitnami/mariadb:11.1.2-debian-11-r1
+        - name: mysqld-exporter
+          image: docker.io/bitnami/mysqld-exporter:0.15.0-debian-11-r70
+        - name: os-shell
+          image: docker.io/bitnami/os-shell:11-debian-11-r90
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 11.1.2
+    created: "2023-10-21T01:32:15.94230886Z"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: MariaDB is an open source, community-developed SQL database server
+      that is widely in use around the world due to its enterprise features, flexibility,
+      and collaboration with leading tech firms.
+    digest: 4850650c19f372ebd31b4e40a08db1b6e8453820f23516ab6e903246b238696d
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/mariadb/img/mariadb-stack-220x234.png
+    keywords:
+    - mariadb
+    - mysql
+    - database
+    - sql
+    - prometheus
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: mariadb
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/mariadb
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/mariadb-14.0.3/mariadb-14.0.3.tgz
+    version: 14.0.3
+  - annotations:
+      category: Database
+      images: |
+        - name: mariadb
           image: docker.io/bitnami/mariadb:11.1.2-debian-11-r0
         - name: mysqld-exporter
           image: docker.io/bitnami/mysqld-exporter:0.15.0-debian-11-r70
@@ -41956,6 +42090,44 @@ entries:
     - https://github.com/itboon/bitnami-charts/releases/download/mariadb-0.0.1/mariadb-0.0.1.tgz
     version: 0.0.1
   mariadb-galera:
+  - annotations:
+      category: Database
+      images: |
+        - name: mariadb-galera
+          image: docker.io/bitnami/mariadb-galera:11.1.2-debian-11-r2
+        - name: mysqld-exporter
+          image: docker.io/bitnami/mysqld-exporter:0.15.0-debian-11-r70
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 11.1.2
+    created: "2023-10-21T01:32:16.063988219Z"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: MariaDB Galera is a multi-primary database cluster solution for synchronous
+      replication and high availability.
+    digest: 8c5f344d195b7c82683bcf238c53877365f3b01155b4e8e745d5d63cb8f8c7a7
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/mariadb-galera/img/mariadb-galera-stack-220x234.png
+    keywords:
+    - mariadb
+    - mysql
+    - database
+    - sql
+    - prometheus
+    - galera
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: mariadb-galera
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/mariadb-galera
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/mariadb-galera-10.0.3/mariadb-galera-10.0.3.tgz
+    version: 10.0.3
   - annotations:
       category: Database
       images: |
@@ -46196,6 +46368,46 @@ entries:
       category: Infrastructure
       images: |
         - name: metallb-speaker
+          image: docker.io/bitnami/metallb-speaker:0.13.12-debian-11-r0
+        - name: metallb-controller
+          image: docker.io/bitnami/metallb-controller:0.13.12-debian-11-r0
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 0.13.12
+    created: "2023-10-21T01:32:16.901022847Z"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: MetalLB is a load-balancer implementation for bare metal Kubernetes
+      clusters, using standard routing protocols.
+    digest: 0efb15377fe2f3f72500a2a2b66352cd5f9fc31e28255058dc199117cc62fd13
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/metallb-speaker/img/metallb-speaker-stack-220x234.png
+    keywords:
+    - load-balancer
+    - balancer
+    - lb
+    - bgp
+    - arp
+    - vrrp
+    - vip
+    kubeVersion: '>= 1.19.0-0'
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: metallb
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/metallb
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/metallb-4.7.11/metallb-4.7.11.tgz
+    version: 4.7.11
+  - annotations:
+      category: Infrastructure
+      images: |
+        - name: metallb-speaker
           image: docker.io/bitnami/metallb-speaker:0.13.11-debian-11-r31
         - name: metallb-controller
           image: docker.io/bitnami/metallb-controller:0.13.11-debian-11-r29
@@ -49287,6 +49499,51 @@ entries:
       category: Database
       images: |
         - name: kubectl
+          image: docker.io/bitnami/kubectl:1.28.3-debian-11-r0
+        - name: mongodb-exporter
+          image: docker.io/bitnami/mongodb-exporter:0.39.0-debian-11-r123
+        - name: mongodb
+          image: docker.io/bitnami/mongodb:7.0.2-debian-11-r7
+        - name: nginx
+          image: docker.io/bitnami/nginx:1.25.2-debian-11-r47
+        - name: os-shell
+          image: docker.io/bitnami/os-shell:11-debian-11-r90
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 7.0.2
+    created: "2023-10-21T01:32:17.560667447Z"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: MongoDB(R) is a relational open source NoSQL database. Easy to use,
+      it stores data in JSON-like documents. Automated scalability and high-performance.
+      Ideal for developing cloud native applications.
+    digest: 5b93f744fc3f0cf49e2c542df59cba689073675bf9e464179856e0138d0775f0
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/mongodb/img/mongodb-stack-220x234.png
+    keywords:
+    - mongodb
+    - database
+    - nosql
+    - cluster
+    - replicaset
+    - replication
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: mongodb
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/mongodb
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/mongodb-14.0.12/mongodb-14.0.12.tgz
+    version: 14.0.12
+  - annotations:
+      category: Database
+      images: |
+        - name: kubectl
           image: docker.io/bitnami/kubectl:1.28.2-debian-11-r16
         - name: mongodb-exporter
           image: docker.io/bitnami/mongodb-exporter:0.39.0-debian-11-r123
@@ -50389,6 +50646,47 @@ entries:
     - https://github.com/itboon/bitnami-charts/releases/download/mongodb-0.0.1/mongodb-0.0.1.tgz
     version: 0.0.1
   mongodb-sharded:
+  - annotations:
+      category: Database
+      images: |
+        - name: mongodb-exporter
+          image: docker.io/bitnami/mongodb-exporter:0.39.0-debian-11-r123
+        - name: mongodb-sharded
+          image: docker.io/bitnami/mongodb-sharded:7.0.2-debian-11-r7
+        - name: os-shell
+          image: docker.io/bitnami/os-shell:11-debian-11-r90
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 7.0.2
+    created: "2023-10-21T01:32:17.681276514Z"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: MongoDB(R) is an open source NoSQL database that uses JSON for data
+      storage. MongoDB(TM) Sharded improves scalability and reliability for large
+      datasets by distributing data across multiple machines.
+    digest: c9b7834e502e94ff36867e0487a3dbde7c541c88e98b0af1e240eb926c0986f9
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/mongodb/img/mongodb-stack-220x234.png
+    keywords:
+    - mongodb
+    - database
+    - nosql
+    - cluster
+    - replicaset
+    - replication
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: mongodb-sharded
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/mongodb-sharded
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/mongodb-sharded-7.0.5/mongodb-sharded-7.0.5.tgz
+    version: 7.0.5
   - annotations:
       category: Database
       images: |
@@ -66566,6 +66864,48 @@ entries:
     - https://github.com/itboon/bitnami-charts/releases/download/rabbitmq-0.0.1/rabbitmq-0.0.1.tgz
     version: 0.0.1
   rabbitmq-cluster-operator:
+  - annotations:
+      category: Infrastructure
+      images: |
+        - name: rabbitmq-cluster-operator
+          image: docker.io/bitnami/rabbitmq-cluster-operator:2.5.0-debian-11-r37
+        - name: rabbitmq
+          image: docker.io/bitnami/rabbitmq:3.11.23-debian-11-r23
+        - name: rmq-default-credential-updater
+          image: docker.io/bitnami/rmq-default-credential-updater:1.0.4-debian-11-r0
+        - name: rmq-messaging-topology-operator
+          image: docker.io/bitnami/rmq-messaging-topology-operator:1.12.0-debian-11-r58
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 2.5.0
+    created: "2023-10-21T01:32:20.624107349Z"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: The RabbitMQ Cluster Kubernetes Operator automates provisioning,
+      management, and operations of RabbitMQ clusters running on Kubernetes.
+    digest: 3a6d996ae7a152c6e8948b291ec04ba7056b039b8b480b1ce5a4ad407a2503e6
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/rabbitmq-cluster-operator/img/rabbitmq-cluster-operator-stack-220x234.png
+    keywords:
+    - rabbitmq
+    - operator
+    - infrastructure
+    - message queue
+    - AMQP
+    kubeVersion: '>= 1.19.0-0'
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: rabbitmq-cluster-operator
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/rabbitmq-cluster-operator
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/rabbitmq-cluster-operator-3.9.0/rabbitmq-cluster-operator-3.9.0.tgz
+    version: 3.9.0
   - annotations:
       category: Infrastructure
       images: |
@@ -82964,4 +83304,4 @@ entries:
     urls:
     - https://github.com/itboon/bitnami-charts/releases/download/zookeeper-0.0.1/zookeeper-0.0.1.tgz
     version: 0.0.1
-generated: "2023-10-20T01:33:41.172386723Z"
+generated: "2023-10-21T01:32:23.003450287Z"

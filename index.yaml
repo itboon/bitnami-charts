@@ -11628,6 +11628,47 @@ entries:
       category: MachineLearning
       images: |
         - name: deepspeed
+          image: docker.io/bitnami/deepspeed:0.11.1-debian-11-r0
+        - name: git
+          image: docker.io/bitnami/git:2.42.0-debian-11-r45
+        - name: os-shell
+          image: docker.io/bitnami/os-shell:11-debian-11-r90
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 0.11.1
+    created: "2023-10-24T01:35:33.27601388Z"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: DeepSpeed is deep learning software suite for empowering ChatGPT-like
+      model training. Features dense or sparse model inference, high throughput and
+      high compression.
+    digest: a569428ef41799fb2fd3832e0151f6ba6f85213426db470f2ed8458d052c8afb
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/deepspeed/img/deepspeed-stack-220x234.png
+    keywords:
+    - deepspeed
+    - pytorch
+    - python
+    - machine
+    - learning
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: deepspeed
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/deepspeed
+    - https://github.com/bitnami/charts/tree/main/bitnami/pytorch
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/deepspeed-1.2.7/deepspeed-1.2.7.tgz
+    version: 1.2.7
+  - annotations:
+      category: MachineLearning
+      images: |
+        - name: deepspeed
           image: docker.io/bitnami/deepspeed:0.10.3-debian-11-r24
         - name: git
           image: docker.io/bitnami/git:2.42.0-debian-11-r45
@@ -17716,6 +17757,40 @@ entries:
     - https://github.com/itboon/bitnami-charts/releases/download/flink-0.0.1/flink-0.0.1.tgz
     version: 0.0.1
   fluent-bit:
+  - annotations:
+      category: Analytics
+      images: |
+        - name: fluent-bit
+          image: docker.io/bitnami/fluent-bit:2.1.10-debian-11-r12
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 2.1.10
+    created: "2023-10-24T01:35:34.684545379Z"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Fluent Bit is a Fast and Lightweight Log Processor and Forwarder.
+      It has been made with a strong focus on performance to allow the collection
+      of events from different sources without complexity.
+    digest: 7c4422af2242a27cae3e4e6d4cfdc0e6c15fb214b7ecb67e6cfdd378dd9bc30d
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/fluent-bit/img/fluent-bit-stack-220x234.png
+    keywords:
+    - fluent-bit
+    - logging
+    - monitoring
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: fluent-bit
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/fluent-bit
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/fluent-bit-0.5.5/fluent-bit-0.5.5.tgz
+    version: 0.5.5
   - annotations:
       category: Analytics
       images: |
@@ -30610,6 +30685,48 @@ entries:
     - https://github.com/itboon/bitnami-charts/releases/download/jenkins-0.0.1/jenkins-0.0.1.tgz
     version: 0.0.1
   joomla:
+  - annotations:
+      category: CMS
+      images: |
+        - name: apache-exporter
+          image: docker.io/bitnami/apache-exporter:1.0.3-debian-11-r0
+        - name: joomla
+          image: docker.io/bitnami/joomla:5.0.0-debian-11-r1
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 5.0.0
+    created: "2023-10-24T01:35:37.116688089Z"
+    dependencies:
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 14.x.x
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Joomla! is an award winning open source CMS platform for building
+      websites and applications. It includes page caching, page compression and Let's
+      Encrypt auto-configuration support.
+    digest: 05660e48b06263b5d0263dfff1e8da220e146ca48d81247571e7d68077e09676
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/joomla/img/joomla-stack-220x234.png
+    keywords:
+    - joomla
+    - cms
+    - blog
+    - http
+    - php
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: joomla
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/joomla
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/joomla-17.0.0/joomla-17.0.0.tgz
+    version: 17.0.0
   - annotations:
       category: CMS
       images: |
@@ -53166,6 +53283,46 @@ entries:
     - https://github.com/itboon/bitnami-charts/releases/download/mxnet-0.0.1/mxnet-0.0.1.tgz
     version: 0.0.1
   mysql:
+  - annotations:
+      category: Database
+      images: |
+        - name: mysql
+          image: docker.io/bitnami/mysql:8.0.34-debian-11-r75
+        - name: mysqld-exporter
+          image: docker.io/bitnami/mysqld-exporter:0.15.0-debian-11-r70
+        - name: os-shell
+          image: docker.io/bitnami/os-shell:11-debian-11-r90
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 8.0.34
+    created: "2023-10-24T01:35:41.617272969Z"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: MySQL is a fast, reliable, scalable, and easy to use open source
+      relational database system. Designed to handle mission-critical, heavy-load
+      production applications.
+    digest: c960773fcc946de9339946d9908ffa2d0aa5292fe6f078ceaed44fbb0ed64792
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/mysql/img/mysql-stack-220x234.png
+    keywords:
+    - mysql
+    - database
+    - sql
+    - cluster
+    - high availability
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: mysql
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/mysql
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/mysql-9.13.0/mysql-9.13.0.tgz
+    version: 9.13.0
   - annotations:
       category: Database
       images: |
@@ -80968,6 +81125,56 @@ entries:
       category: CMS
       images: |
         - name: apache-exporter
+          image: docker.io/bitnami/apache-exporter:1.0.3-debian-11-r0
+        - name: os-shell
+          image: docker.io/bitnami/os-shell:11-debian-11-r90
+        - name: wordpress
+          image: docker.io/bitnami/wordpress:6.3.2-debian-11-r1
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 6.3.2
+    created: "2023-10-24T01:35:47.878200842Z"
+    dependencies:
+    - condition: memcached.enabled
+      name: memcached
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 6.x.x
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 14.x.x
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: WordPress is the world's most popular blogging and content management
+      platform. Powerful yet simple, everyone from students to global corporations
+      use it to build beautiful, functional websites.
+    digest: cf97ccf00b2c560d908594873e916429f93acf6bc03859edc1420176a2eb470f
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/wordpress/img/wordpress-stack-220x234.png
+    keywords:
+    - application
+    - blog
+    - cms
+    - http
+    - php
+    - web
+    - wordpress
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: wordpress
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/wordpress
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/wordpress-18.0.8/wordpress-18.0.8.tgz
+    version: 18.0.8
+  - annotations:
+      category: CMS
+      images: |
+        - name: apache-exporter
           image: docker.io/bitnami/apache-exporter:1.0.2-debian-11-r10
         - name: os-shell
           image: docker.io/bitnami/os-shell:11-debian-11-r90
@@ -83424,4 +83631,4 @@ entries:
     urls:
     - https://github.com/itboon/bitnami-charts/releases/download/zookeeper-0.0.1/zookeeper-0.0.1.tgz
     version: 0.0.1
-generated: "2023-10-23T01:34:14.562469624Z"
+generated: "2023-10-24T01:35:48.033630822Z"

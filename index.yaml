@@ -16052,6 +16052,44 @@ entries:
       category: Database
       images: |
         - name: etcd
+          image: docker.io/bitnami/etcd:3.5.10-debian-11-r0
+        - name: os-shell
+          image: docker.io/bitnami/os-shell:11-debian-11-r90
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 3.5.10
+    created: "2023-10-28T01:30:38.698050943Z"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: etcd is a distributed key-value store designed to securely store
+      data across a cluster. etcd is widely used in production on account of its reliability,
+      fault-tolerance and ease of use.
+    digest: f95ff6935345e4f5eaf9c460295968a60c3603a529a443f21bc5115c290dd975
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/etcd/img/etcd-stack-220x234.png
+    keywords:
+    - etcd
+    - cluster
+    - database
+    - cache
+    - key-value
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: etcd
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/etcd
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/etcd-9.5.7/etcd-9.5.7.tgz
+    version: 9.5.7
+  - annotations:
+      category: Database
+      images: |
+        - name: etcd
           image: docker.io/bitnami/etcd:3.5.9-debian-11-r148
         - name: os-shell
           image: docker.io/bitnami/os-shell:11-debian-11-r90
@@ -34585,6 +34623,45 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 22.0.5
+    created: "2023-10-28T01:30:38.893054756Z"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 13.x.x
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Keycloak is a high performance Java-based identity and access management
+      solution. It lets developers add an authentication layer to their applications
+      with minimum effort.
+    digest: 17792df04d1a6f9b4993c882c79e4bd355b0ec9df0b31645afd16312258452a9
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/keycloak/img/keycloak-stack-220x234.png
+    keywords:
+    - keycloak
+    - access-management
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: keycloak
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/keycloak
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/keycloak-17.2.0/keycloak-17.2.0.tgz
+    version: 17.2.0
+  - annotations:
+      category: DeveloperTools
+      images: |
+        - name: keycloak-config-cli
+          image: docker.io/bitnami/keycloak-config-cli:5.9.0-debian-11-r0
+        - name: keycloak
+          image: docker.io/bitnami/keycloak:22.0.5-debian-11-r0
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 22.0.5
     created: "2023-10-25T01:33:35.035222122Z"
     dependencies:
     - condition: postgresql.enabled
@@ -50514,6 +50591,55 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 2.7.1
+    created: "2023-10-28T01:30:39.067179207Z"
+    dependencies:
+    - condition: minio.enabled
+      name: minio
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 12.x.x
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 13.x.x
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: MLflow is an open-source platform designed to manage the end-to-end
+      machine learning lifecycle. It allows you to track experiments, package code
+      into reproducible runs, and share and deploy models.
+    digest: 88fd02572d4d0e592a143d73155f2f88c77f34c8b1fc00772a9bee1a97163242
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/mlflow/img/mlflow-stack-220x234.png
+    keywords:
+    - mlflow
+    - models
+    - python
+    - machine
+    - learning
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: mlflow
+    sources:
+    - https://github.com/bitnami/containers/tree/main/bitnami/mlflow
+    - https://github.com/mlflow/mlflow
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/mlflow-0.1.3/mlflow-0.1.3.tgz
+    version: 0.1.3
+  - annotations:
+      category: MachineLearning
+      images: |
+        - name: git
+          image: docker.io/bitnami/git:2.42.0-debian-11-r45
+        - name: mlflow
+          image: docker.io/bitnami/mlflow:2.7.1-debian-11-r0
+        - name: os-shell
+          image: docker.io/bitnami/os-shell:11-debian-11-r90
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 2.7.1
     created: "2023-10-17T01:35:20.313491466Z"
     dependencies:
     - condition: minio.enabled
@@ -50552,6 +50678,51 @@ entries:
     - https://github.com/itboon/bitnami-charts/releases/download/mlflow-0.1.2/mlflow-0.1.2.tgz
     version: 0.1.2
   mongodb:
+  - annotations:
+      category: Database
+      images: |
+        - name: kubectl
+          image: docker.io/bitnami/kubectl:1.28.3-debian-11-r0
+        - name: mongodb-exporter
+          image: docker.io/bitnami/mongodb-exporter:0.39.0-debian-11-r123
+        - name: mongodb
+          image: docker.io/bitnami/mongodb:7.0.2-debian-11-r7
+        - name: nginx
+          image: docker.io/bitnami/nginx:1.25.2-debian-11-r47
+        - name: os-shell
+          image: docker.io/bitnami/os-shell:11-debian-11-r90
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 7.0.2
+    created: "2023-10-28T01:30:39.226566743Z"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: MongoDB(R) is a relational open source NoSQL database. Easy to use,
+      it stores data in JSON-like documents. Automated scalability and high-performance.
+      Ideal for developing cloud native applications.
+    digest: ae9a4239735ef51d70365fcf4929e8e4738122089f77aed9d1e9d3082e2b204d
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/mongodb/img/mongodb-stack-220x234.png
+    keywords:
+    - mongodb
+    - database
+    - nosql
+    - cluster
+    - replicaset
+    - replication
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: mongodb
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/mongodb
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/mongodb-14.0.14/mongodb-14.0.14.tgz
+    version: 14.0.14
   - annotations:
       category: Database
       images: |
@@ -54966,6 +55137,43 @@ entries:
     - https://github.com/itboon/bitnami-charts/releases/download/mysql-0.0.1/mysql-0.0.1.tgz
     version: 0.0.1
   nats:
+  - annotations:
+      category: Infrastructure
+      images: |
+        - name: nats-exporter
+          image: docker.io/bitnami/nats-exporter:0.12.0-debian-11-r97
+        - name: nats
+          image: docker.io/bitnami/nats:2.10.4-debian-11-r0
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 2.10.4
+    created: "2023-10-28T01:30:39.396200359Z"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: NATS is an open source, lightweight and high-performance messaging
+      system. It is ideal for distributed systems and supports modern cloud architectures
+      and pub-sub, request-reply and queuing models.
+    digest: 4631fd9cff5a595fbe8dd4e1a3f22b23d6f1bca990fccdb50269fe17e01e64ca
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/nats/img/nats-stack-220x234.png
+    keywords:
+    - nats
+    - messaging
+    - addressing
+    - discovery
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: nats
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/nats
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/nats-7.9.10/nats-7.9.10.tgz
+    version: 7.9.10
   - annotations:
       category: Infrastructure
       images: |
@@ -69373,6 +69581,46 @@ entries:
     - https://github.com/itboon/bitnami-charts/releases/download/rabbitmq-cluster-operator-0.0.1/rabbitmq-cluster-operator-0.0.1.tgz
     version: 0.0.1
   redis:
+  - annotations:
+      category: Database
+      images: |
+        - name: os-shell
+          image: docker.io/bitnami/os-shell:11-debian-11-r90
+        - name: redis-exporter
+          image: docker.io/bitnami/redis-exporter:1.55.0-debian-11-r0
+        - name: redis-sentinel
+          image: docker.io/bitnami/redis-sentinel:7.2.2-debian-11-r0
+        - name: redis
+          image: docker.io/bitnami/redis:7.2.2-debian-11-r0
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 7.2.2
+    created: "2023-10-28T01:30:39.554604688Z"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Redis(R) is an open source, advanced key-value store. It is often
+      referred to as a data structure server since keys can contain strings, hashes,
+      lists, sets and sorted sets.
+    digest: 3f28f3b43dc86bf25484a3cfa83273d08786f12e8b380a3fbf12a106ce8b62ac
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/redis/img/redis-stack-220x234.png
+    keywords:
+    - redis
+    - keyvalue
+    - database
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: redis
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/redis
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/redis-18.2.0/redis-18.2.0.tgz
+    version: 18.2.0
   - annotations:
       category: Database
       images: |
@@ -85229,4 +85477,4 @@ entries:
     urls:
     - https://github.com/itboon/bitnami-charts/releases/download/zookeeper-0.0.1/zookeeper-0.0.1.tgz
     version: 0.0.1
-generated: "2023-10-27T01:32:02.252693088Z"
+generated: "2023-10-28T01:30:39.559331425Z"

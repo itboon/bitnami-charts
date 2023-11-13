@@ -64891,6 +64891,39 @@ entries:
       category: Analytics
       images: |
         - name: node-exporter
+          image: docker.io/bitnami/node-exporter:1.7.0-debian-11-r0
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 1.7.0
+    created: "2023-11-13T01:37:42.703427835Z"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Prometheus exporter for hardware and OS metrics exposed by UNIX kernels,
+      with pluggable metric collectors.
+    digest: c135592293847ee0f0bb26cafb44cb8cd55a53c05ef032372f25054a6350365f
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/node-exporter/img/node-exporter-stack-220x234.png
+    keywords:
+    - prometheus
+    - node-exporter
+    - monitoring
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: node-exporter
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/node-exporter
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/node-exporter-3.9.3/node-exporter-3.9.3.tgz
+    version: 3.9.3
+  - annotations:
+      category: Analytics
+      images: |
+        - name: node-exporter
           image: docker.io/bitnami/node-exporter:1.6.1-debian-11-r79
       licenses: Apache-2.0
     apiVersion: v2
@@ -97868,4 +97901,4 @@ entries:
     urls:
     - https://github.com/itboon/bitnami-charts/releases/download/zookeeper-0.0.1/zookeeper-0.0.1.tgz
     version: 0.0.1
-generated: "2023-11-12T01:39:29.64574133Z"
+generated: "2023-11-13T01:37:42.70844985Z"

@@ -13468,6 +13468,47 @@ entries:
       category: MachineLearning
       images: |
         - name: deepspeed
+          image: docker.io/bitnami/deepspeed:0.12.3-debian-11-r0
+        - name: git
+          image: docker.io/bitnami/git:2.42.1-debian-11-r0
+        - name: os-shell
+          image: docker.io/bitnami/os-shell:11-debian-11-r91
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 0.12.3
+    created: "2023-11-14T01:35:49.122338217Z"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: DeepSpeed is deep learning software suite for empowering ChatGPT-like
+      model training. Features dense or sparse model inference, high throughput and
+      high compression.
+    digest: 3bf373bea07c2354e587a7a8b74421d488b972552b8c4469090cdec6a8ab13f0
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/deepspeed/img/deepspeed-stack-220x234.png
+    keywords:
+    - deepspeed
+    - pytorch
+    - python
+    - machine
+    - learning
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: deepspeed
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/deepspeed
+    - https://github.com/bitnami/charts/tree/main/bitnami/pytorch
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/deepspeed-1.3.2/deepspeed-1.3.2.tgz
+    version: 1.3.2
+  - annotations:
+      category: MachineLearning
+      images: |
+        - name: deepspeed
           image: docker.io/bitnami/deepspeed:0.12.2-debian-11-r1
         - name: git
           image: docker.io/bitnami/git:2.42.1-debian-11-r0
@@ -17399,6 +17440,46 @@ entries:
     - https://github.com/itboon/bitnami-charts/releases/download/ejbca-0.0.1/ejbca-0.0.1.tgz
     version: 0.0.1
   elasticsearch:
+  - annotations:
+      category: Analytics
+      images: |
+        - name: elasticsearch-exporter
+          image: docker.io/bitnami/elasticsearch-exporter:1.6.0-debian-11-r96
+        - name: elasticsearch
+          image: docker.io/bitnami/elasticsearch:8.11.1-debian-11-r0
+        - name: os-shell
+          image: docker.io/bitnami/os-shell:11-debian-11-r91
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 8.11.1
+    created: "2023-11-14T01:35:49.387788018Z"
+    dependencies:
+    - condition: global.kibanaEnabled
+      name: kibana
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 10.x.x
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Elasticsearch is a distributed search and analytics engine. It is
+      used for web search, log monitoring, and real-time analytics. Ideal for Big
+      Data applications.
+    digest: c6e6843cda5c34524a28c5d20799a391bb24799259e6423c5413e3141060acdc
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/elasticsearch/img/elasticsearch-stack-220x234.png
+    keywords:
+    - elasticsearch
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: elasticsearch
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/elasticsearch
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/elasticsearch-19.13.10/elasticsearch-19.13.10.tgz
+    version: 19.13.10
   - annotations:
       category: Analytics
       images: |
@@ -46623,6 +46704,42 @@ entries:
       category: LogManagement
       images: |
         - name: logstash
+          image: docker.io/bitnami/logstash:8.11.1-debian-11-r0
+        - name: os-shell
+          image: docker.io/bitnami/os-shell:11-debian-11-r91
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 8.11.1
+    created: "2023-11-14T01:35:49.610540322Z"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Logstash is an open source data processing engine. It ingests data
+      from multiple sources, processes it, and sends the output to final destination
+      in real-time. It is a core component of the ELK stack.
+    digest: 5c47547bb5c602a79a8e9cd580cbd46a1c6d9699977db4d2494e9558287e2302
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/logstash/img/logstash-stack-220x234.png
+    keywords:
+    - logstash
+    - logging
+    - elk
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: logstash
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/logstash
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/logstash-5.6.4/logstash-5.6.4.tgz
+    version: 5.6.4
+  - annotations:
+      category: LogManagement
+      images: |
+        - name: logstash
           image: docker.io/bitnami/logstash:8.11.0-debian-11-r1
         - name: os-shell
           image: docker.io/bitnami/os-shell:11-debian-11-r90
@@ -56248,6 +56365,46 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 2023.11.11
+    created: "2023-11-14T01:35:49.80680457Z"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: MinIO(R) is an object storage server, compatible with Amazon S3 cloud
+      storage service, mainly used for storing unstructured data (such as photos,
+      videos, log files, etc.).
+    digest: 27be0e9ea629f7334830d31e5535be47ff26dc3e95ba327add513f44988d98fa
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/minio/img/minio-stack-220x234.png
+    keywords:
+    - minio
+    - storage
+    - object-storage
+    - s3
+    - cluster
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: minio
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/minio
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/minio-12.10.0/minio-12.10.0.tgz
+    version: 12.10.0
+  - annotations:
+      category: Infrastructure
+      images: |
+        - name: minio-client
+          image: docker.io/bitnami/minio-client:2023.11.6-debian-11-r1
+        - name: minio
+          image: docker.io/bitnami/minio:2023.11.11-debian-11-r0
+        - name: os-shell
+          image: docker.io/bitnami/os-shell:11-debian-11-r91
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 2023.11.11
     created: "2023-11-12T01:39:29.639890395Z"
     dependencies:
     - name: common
@@ -65565,6 +65722,47 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 7.5.1
+    created: "2023-11-14T01:35:50.027908655Z"
+    dependencies:
+    - condition: redis.enabled
+      name: redis
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 18.x.x
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: A reverse proxy and static file server that provides authentication
+      using Providers (Google, GitHub, and others) to validate accounts by email,
+      domain or group.
+    digest: c80072aeb07bcd24ed72c625a0a1979f8ca4c624eade5cf22cc059cbf15bdb3c
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/oauth2-proxy/img/oauth2-proxy-stack-220x234.png
+    keywords:
+    - kubernetes
+    - oauth
+    - oauth2
+    - authentication
+    - google
+    - github
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: oauth2-proxy
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/oauth2-proxy
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/oauth2-proxy-4.3.3/oauth2-proxy-4.3.3.tgz
+    version: 4.3.3
+  - annotations:
+      category: Infrastructure
+      images: |
+        - name: oauth2-proxy
+          image: docker.io/bitnami/oauth2-proxy:7.5.1-debian-11-r11
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 7.5.1
     created: "2023-11-10T01:36:29.213426318Z"
     dependencies:
     - condition: redis.enabled
@@ -72179,6 +72377,47 @@ entries:
     - https://github.com/itboon/bitnami-charts/releases/download/pinniped-0.0.1/pinniped-0.0.1.tgz
     version: 0.0.1
   postgresql:
+  - annotations:
+      category: Database
+      images: |
+        - name: os-shell
+          image: docker.io/bitnami/os-shell:11-debian-11-r91
+        - name: postgres-exporter
+          image: docker.io/bitnami/postgres-exporter:0.15.0-debian-11-r2
+        - name: postgresql
+          image: docker.io/bitnami/postgresql:16.1.0-debian-11-r4
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 16.1.0
+    created: "2023-11-14T01:35:50.245265965Z"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: PostgreSQL (Postgres) is an open source object-relational database
+      known for reliability and data integrity. ACID-compliant, it supports foreign
+      keys, joins, views, triggers and stored procedures.
+    digest: 84aaef4e86a51280284a9ed6698f28f33899cde0ca1083f1d4b04348e9714318
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/postgresql/img/postgresql-stack-220x234.png
+    keywords:
+    - postgresql
+    - postgres
+    - database
+    - sql
+    - replication
+    - cluster
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: postgresql
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/postgresql
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/postgresql-13.2.9/postgresql-13.2.9.tgz
+    version: 13.2.9
   - annotations:
       category: Database
       images: |
@@ -94867,6 +95106,56 @@ entries:
         - name: os-shell
           image: docker.io/bitnami/os-shell:11-debian-11-r91
         - name: wordpress
+          image: docker.io/bitnami/wordpress:6.4.1-debian-11-r4
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 6.4.1
+    created: "2023-11-14T01:35:50.693861481Z"
+    dependencies:
+    - condition: memcached.enabled
+      name: memcached
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 6.x.x
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 14.x.x
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: WordPress is the world's most popular blogging and content management
+      platform. Powerful yet simple, everyone from students to global corporations
+      use it to build beautiful, functional websites.
+    digest: e4fcdb94ea456e747ef15d8f8d65c25d6be0d33cfb61033af52fe4b99f2908d5
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/wordpress/img/wordpress-stack-220x234.png
+    keywords:
+    - application
+    - blog
+    - cms
+    - http
+    - php
+    - web
+    - wordpress
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: wordpress
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/wordpress
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/wordpress-18.1.14/wordpress-18.1.14.tgz
+    version: 18.1.14
+  - annotations:
+      category: CMS
+      images: |
+        - name: apache-exporter
+          image: docker.io/bitnami/apache-exporter:1.0.3-debian-11-r1
+        - name: os-shell
+          image: docker.io/bitnami/os-shell:11-debian-11-r91
+        - name: wordpress
           image: docker.io/bitnami/wordpress:6.4.1-debian-11-r1
       licenses: Apache-2.0
     apiVersion: v2
@@ -97901,4 +98190,4 @@ entries:
     urls:
     - https://github.com/itboon/bitnami-charts/releases/download/zookeeper-0.0.1/zookeeper-0.0.1.tgz
     version: 0.0.1
-generated: "2023-11-13T01:37:42.70844985Z"
+generated: "2023-11-14T01:35:50.697678053Z"

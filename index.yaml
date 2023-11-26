@@ -3219,6 +3219,48 @@ entries:
       category: CMS
       images: |
         - name: appsmith
+          image: docker.io/bitnami/appsmith:1.9.47-debian-11-r1
+        - name: os-shell
+          image: docker.io/bitnami/os-shell:11-debian-11-r91
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 1.9.47
+    created: "2023-11-26T01:41:05.972072874Z"
+    dependencies:
+    - condition: redis.enabled
+      name: redis
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 18.x.x
+    - condition: mongodb.enabled
+      name: mongodb
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 14.x.x
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Appsmith is an open source platform for building and maintaining
+      internal tools, such as custom dashboards, admin panels or CRUD apps.
+    digest: 7d8f41905cc9c88539a29fa8bb5af3a1f93f84c071d9650f6c2bfd186e58ecc9
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/appsmith/img/appsmith-stack-220x234.png
+    keywords:
+    - development
+    - dashboards
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: appsmith
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/appsmith
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/appsmith-2.1.6/appsmith-2.1.6.tgz
+    version: 2.1.6
+  - annotations:
+      category: CMS
+      images: |
+        - name: appsmith
           image: docker.io/bitnami/appsmith:1.9.46-debian-11-r0
         - name: os-shell
           image: docker.io/bitnami/os-shell:11-debian-11-r91
@@ -9526,6 +9568,47 @@ entries:
     - https://github.com/itboon/bitnami-charts/releases/download/cert-manager-0.0.1/cert-manager-0.0.1.tgz
     version: 0.0.1
   clickhouse:
+  - annotations:
+      category: Database
+      images: |
+        - name: clickhouse
+          image: docker.io/bitnami/clickhouse:23.10.5-debian-11-r0
+        - name: os-shell
+          image: docker.io/bitnami/os-shell:11-debian-11-r91
+        - name: zookeeper
+          image: docker.io/bitnami/zookeeper:3.8.3-debian-11-r2
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 23.10.5
+    created: "2023-11-26T01:41:06.114776616Z"
+    dependencies:
+    - condition: zookeeper.enabled
+      name: zookeeper
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 12.x.x
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: ClickHouse is an open-source column-oriented OLAP database management
+      system. Use it to boost your database performance while providing linear scalability
+      and hardware efficiency.
+    digest: 1fdeaaa0f5521098bb7642a40fe972ffaefa5b13de435dc30119861dc52fb918
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/clickhouse/img/clickhouse-stack-220x234.png
+    keywords:
+    - database
+    - sharding
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: clickhouse
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/clickhouse
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/clickhouse-4.1.8/clickhouse-4.1.8.tgz
+    version: 4.1.8
   - annotations:
       category: Database
       images: |
@@ -23079,6 +23162,41 @@ entries:
       category: Analytics
       images: |
         - name: fluentd
+          image: docker.io/bitnami/fluentd:1.16.3-debian-11-r1
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 1.16.3
+    created: "2023-11-26T01:41:06.240699549Z"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Fluentd collects events from various data sources and writes them
+      to files, RDBMS, NoSQL, IaaS, SaaS, Hadoop and so on.
+    digest: 7cad5c00bc1b11dd242ddef093f25e294faaaca0fc0c64445f205c1719ae665d
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/fluentd/img/fluentd-stack-220x234.png
+    keywords:
+    - fluentd
+    - logging
+    - logs
+    - data
+    - collector
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: fluentd
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/fluentd
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/fluentd-5.9.11/fluentd-5.9.11.tgz
+    version: 5.9.11
+  - annotations:
+      category: Analytics
+      images: |
+        - name: fluentd
           image: docker.io/bitnami/fluentd:1.16.2-debian-11-r81
       licenses: Apache-2.0
     apiVersion: v2
@@ -28127,6 +28245,42 @@ entries:
       category: Analytics
       images: |
         - name: grafana
+          image: docker.io/bitnami/grafana:10.2.2-debian-11-r1
+        - name: os-shell
+          image: docker.io/bitnami/os-shell:11-debian-11-r91
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 10.2.2
+    created: "2023-11-26T01:41:06.386355664Z"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Grafana is an open source metric analytics and visualization suite
+      for visualizing time series data that supports various types of data sources.
+    digest: 02d698442ccd163b015cc9f475b9c125019efe6fea2692eaf8ba91e58a7776e6
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/grafana/img/grafana-stack-220x234.png
+    keywords:
+    - analytics
+    - monitoring
+    - metrics
+    - logs
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: grafana
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/grafana
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/grafana-9.6.3/grafana-9.6.3.tgz
+    version: 9.6.3
+  - annotations:
+      category: Analytics
+      images: |
+        - name: grafana
           image: docker.io/bitnami/grafana:10.2.0-debian-11-r3
         - name: os-shell
           image: docker.io/bitnami/os-shell:11-debian-11-r91
@@ -30489,6 +30643,70 @@ entries:
     - https://github.com/itboon/bitnami-charts/releases/download/grafana-loki-0.0.1/grafana-loki-0.0.1.tgz
     version: 0.0.1
   grafana-mimir:
+  - annotations:
+      category: Infrastructure
+      images: |
+        - name: grafana-mimir
+          image: docker.io/bitnami/grafana-mimir:2.10.4-debian-11-r1
+        - name: memcached
+          image: docker.io/bitnami/memcached:1.6.22-debian-11-r1
+        - name: nginx
+          image: docker.io/bitnami/nginx:1.25.3-debian-11-r1
+        - name: os-shell
+          image: docker.io/bitnami/os-shell:11-debian-11-r91
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 2.10.4
+    created: "2023-11-26T01:41:06.525835443Z"
+    dependencies:
+    - condition: minio.enabled
+      name: minio
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 12.x.x
+    - alias: memcachedmetadata
+      condition: memcachedmetadata.enabled
+      name: memcached
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 6.x.x
+    - alias: memcachedindex
+      condition: memcachedindex.enabled
+      name: memcached
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 6.x.x
+    - alias: memcachedfrontend
+      condition: memcachedfrontend.enabled
+      name: memcached
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 6.x.x
+    - alias: memcachedchunks
+      condition: memcachedchunks.enabled
+      name: memcached
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 6.x.x
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Grafana Mimir is an open source, horizontally scalable, highly available,
+      multi-tenant, long-term storage for Prometheus.
+    digest: e084de9cdc536875125f2754a401ab9098d4764875c026b6fa8a41530304d30f
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/grafana-mimir/img/grafana-mimir-stack-220x234.png
+    keywords:
+    - grafana
+    - tracing
+    - metrics
+    - infrastructure
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: grafana-mimir
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/grafana-mimir
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/grafana-mimir-0.7.6/grafana-mimir-0.7.6.tgz
+    version: 0.7.6
   - annotations:
       category: Infrastructure
       images: |
@@ -106819,4 +107037,4 @@ entries:
     urls:
     - https://github.com/itboon/bitnami-charts/releases/download/zookeeper-0.0.1/zookeeper-0.0.1.tgz
     version: 0.0.1
-generated: "2023-11-25T01:34:14.41106319Z"
+generated: "2023-11-26T01:41:06.531162352Z"

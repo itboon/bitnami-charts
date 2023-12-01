@@ -3219,6 +3219,48 @@ entries:
       category: CMS
       images: |
         - name: appsmith
+          image: docker.io/bitnami/appsmith:1.9.49-debian-11-r0
+        - name: os-shell
+          image: docker.io/bitnami/os-shell:11-debian-11-r91
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 1.9.49
+    created: "2023-12-01T01:45:14.157100992Z"
+    dependencies:
+    - condition: redis.enabled
+      name: redis
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 18.x.x
+    - condition: mongodb.enabled
+      name: mongodb
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 14.x.x
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Appsmith is an open source platform for building and maintaining
+      internal tools, such as custom dashboards, admin panels or CRUD apps.
+    digest: 8ec35930bef0d84b070019f80bd13d0bc21589d05f362741c961b1cd6023399b
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/appsmith/img/appsmith-stack-220x234.png
+    keywords:
+    - development
+    - dashboards
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: appsmith
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/appsmith
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/appsmith-2.1.8/appsmith-2.1.8.tgz
+    version: 2.1.8
+  - annotations:
+      category: CMS
+      images: |
+        - name: appsmith
           image: docker.io/bitnami/appsmith:1.9.48-debian-11-r0
         - name: os-shell
           image: docker.io/bitnami/os-shell:11-debian-11-r91
@@ -11757,6 +11799,49 @@ entries:
     - https://github.com/itboon/bitnami-charts/releases/download/common-0.0.1/common-0.0.1.tgz
     version: 0.0.1
   concourse:
+  - annotations:
+      category: Infrastructure
+      images: |
+        - name: concourse
+          image: docker.io/bitnami/concourse:7.11.0-debian-11-r4
+        - name: os-shell
+          image: docker.io/bitnami/os-shell:11-debian-11-r91
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 7.11.0
+    created: "2023-12-01T01:45:14.381233978Z"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 13.X.X
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Concourse is an automation system written in Go. It is most commonly
+      used for CI/CD, and is built to scale to any kind of automation pipeline, from
+      simple to complex.
+    digest: 4355c59b8b014977a09f874b2e6b9df3f63b2809ecb7a39634dd76429bcd1c11
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/concourse/img/concourse-stack-220x234.png
+    keywords:
+    - concourse
+    - ci
+    - cd
+    - http
+    - web
+    - application
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: concourse
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/concourse
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/concourse-3.0.12/concourse-3.0.12.tgz
+    version: 3.0.12
   - annotations:
       category: Infrastructure
       images: |
@@ -47490,6 +47575,57 @@ entries:
         - name: blackbox-exporter
           image: docker.io/bitnami/blackbox-exporter:0.24.0-debian-11-r140
         - name: prometheus-operator
+          image: docker.io/bitnami/prometheus-operator:0.70.0-debian-11-r0
+        - name: prometheus
+          image: docker.io/bitnami/prometheus:2.48.0-debian-11-r0
+        - name: thanos
+          image: docker.io/bitnami/thanos:0.32.5-debian-11-r1
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 0.70.0
+    created: "2023-12-01T01:45:14.615841391Z"
+    dependencies:
+    - condition: exporters.enabled,exporters.node-exporter.enabled
+      name: node-exporter
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 3.x.x
+    - condition: exporters.enabled,exporters.kube-state-metrics.enabled
+      name: kube-state-metrics
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 3.x.x
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Prometheus Operator provides easy monitoring definitions for Kubernetes
+      services and deployment and management of Prometheus instances.
+    digest: bea9692576ba6f14c3e2370a824e6113730c7463bd991e9da6f5f3ef698a5ffa
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/prometheus-operator/img/prometheus-operator-stack-220x234.png
+    keywords:
+    - prometheus
+    - alertmanager
+    - operator
+    - monitoring
+    kubeVersion: '>= 1.16.0-0'
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: kube-prometheus
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/kube-prometheus
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/kube-prometheus-8.22.6/kube-prometheus-8.22.6.tgz
+    version: 8.22.6
+  - annotations:
+      category: Analytics
+      images: |
+        - name: alertmanager
+          image: docker.io/bitnami/alertmanager:0.26.0-debian-11-r44
+        - name: blackbox-exporter
+          image: docker.io/bitnami/blackbox-exporter:0.24.0-debian-11-r140
+        - name: prometheus-operator
           image: docker.io/bitnami/prometheus-operator:0.69.1-debian-11-r0
         - name: prometheus
           image: docker.io/bitnami/prometheus:2.48.0-debian-11-r0
@@ -50647,6 +50783,43 @@ entries:
     - https://github.com/itboon/bitnami-charts/releases/download/kubeapps-0.0.1/kubeapps-0.0.1.tgz
     version: 0.0.1
   kubernetes-event-exporter:
+  - annotations:
+      category: Infrastructure
+      images: |
+        - name: kubernetes-event-exporter
+          image: docker.io/bitnami/kubernetes-event-exporter:1.6.0-debian-11-r1
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 1.6.1
+    created: "2023-12-01T01:45:14.819199207Z"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Kubernetes Event Exporter makes it easy to export Kubernetes events
+      to other tools, thereby enabling better event observability, custom alerts and
+      aggregation.
+    digest: c99955b1e75374ef318ff82037b9d648ace2f008e3c5f5acb49fe48b6cbe2e7d
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/kubernetes-event-exporter/img/kubernetes-event-exporter-stack-220x234.png
+    keywords:
+    - alerting
+    - event exporting
+    - events
+    - kubernetes events
+    - monitoring
+    - observability
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: kubernetes-event-exporter
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/kubernetes-event-exporter
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/kubernetes-event-exporter-2.10.0/kubernetes-event-exporter-2.10.0.tgz
+    version: 2.10.0
   - annotations:
       category: Infrastructure
       images: |
@@ -75192,6 +75365,42 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 2.11.0
+    created: "2023-12-01T01:45:15.03888253Z"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: OpenSearch is a scalable open-source solution for search, analytics,
+      and observability. Features full-text queries, natural language processing,
+      custom dictionaries, amongst others.
+    digest: 4c011e3b7ec8d2d90fdc5f9b43d2dc4b389be7b26422e08bf76764137511800f
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/opensearch/img/opensearch-stack-220x234.png
+    keywords:
+    - opensearch
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: opensearch
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/opensearch
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/opensearch-0.5.0/opensearch-0.5.0.tgz
+    version: 0.5.0
+  - annotations:
+      category: Analytics
+      images: |
+        - name: opensearch-dashboards
+          image: docker.io/bitnami/opensearch-dashboards:2.11.0-debian-11-r1
+        - name: opensearch
+          image: docker.io/bitnami/opensearch:2.11.0-debian-11-r1
+        - name: os-shell
+          image: docker.io/bitnami/os-shell:11-debian-11-r91
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 2.11.0
     created: "2023-11-22T01:43:15.164596363Z"
     dependencies:
     - name: common
@@ -79775,6 +79984,47 @@ entries:
         - name: postgres-exporter
           image: docker.io/bitnami/postgres-exporter:0.15.0-debian-11-r2
         - name: postgresql
+          image: docker.io/bitnami/postgresql:16.1.0-debian-11-r15
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 16.1.0
+    created: "2023-12-01T01:45:15.249464618Z"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: PostgreSQL (Postgres) is an open source object-relational database
+      known for reliability and data integrity. ACID-compliant, it supports foreign
+      keys, joins, views, triggers and stored procedures.
+    digest: 5289f1b3b790414cb1fa676cef346269718c2abb89260eadcae6d57b3852470a
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/postgresql/img/postgresql-stack-220x234.png
+    keywords:
+    - postgresql
+    - postgres
+    - database
+    - sql
+    - replication
+    - cluster
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: postgresql
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/postgresql
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/postgresql-13.2.23/postgresql-13.2.23.tgz
+    version: 13.2.23
+  - annotations:
+      category: Database
+      images: |
+        - name: os-shell
+          image: docker.io/bitnami/os-shell:11-debian-11-r91
+        - name: postgres-exporter
+          image: docker.io/bitnami/postgres-exporter:0.15.0-debian-11-r2
+        - name: postgresql
           image: docker.io/bitnami/postgresql:16.1.0-debian-11-r13
       licenses: Apache-2.0
     apiVersion: v2
@@ -81795,6 +82045,52 @@ entries:
     - https://github.com/itboon/bitnami-charts/releases/download/postgresql-0.0.1/postgresql-0.0.1.tgz
     version: 0.0.1
   postgresql-ha:
+  - annotations:
+      category: Database
+      images: |
+        - name: os-shell
+          image: docker.io/bitnami/os-shell:11-debian-11-r91
+        - name: pgpool
+          image: docker.io/bitnami/pgpool:4.4.5-debian-11-r0
+        - name: postgres-exporter
+          image: docker.io/bitnami/postgres-exporter:0.15.0-debian-11-r2
+        - name: postgresql-repmgr
+          image: docker.io/bitnami/postgresql-repmgr:16.1.0-debian-11-r10
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 16.1.0
+    created: "2023-12-01T01:45:15.462714487Z"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: This PostgreSQL cluster solution includes the PostgreSQL replication
+      manager, an open-source tool for managing replication and failover on PostgreSQL
+      clusters.
+    digest: ab80720b73f7575d8de6f752cab12dfbd12a0facece841de845c19a78e740b89
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/postgresql/img/postgresql-stack-220x234.png
+    keywords:
+    - postgresql
+    - repmgr
+    - pgpool
+    - postgres
+    - database
+    - sql
+    - replication
+    - cluster
+    - high availability
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: postgresql-ha
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/postgresql-ha
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/postgresql-ha-12.3.1/postgresql-ha-12.3.1.tgz
+    version: 12.3.1
   - annotations:
       category: Database
       images: |
@@ -84997,6 +85293,45 @@ entries:
     - https://github.com/itboon/bitnami-charts/releases/download/prometheus-0.0.1/prometheus-0.0.1.tgz
     version: 0.0.1
   pytorch:
+  - annotations:
+      category: MachineLearning
+      images: |
+        - name: git
+          image: docker.io/bitnami/git:2.43.0-debian-11-r0
+        - name: os-shell
+          image: docker.io/bitnami/os-shell:11-debian-11-r91
+        - name: pytorch
+          image: docker.io/bitnami/pytorch:2.1.1-debian-11-r2
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 2.1.1
+    created: "2023-12-01T01:45:15.675062636Z"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: PyTorch is a deep learning platform that accelerates the transition
+      from research prototyping to production deployment. Bitnami image includes Torchvision
+      for specific computer vision support.
+    digest: a67097094048047005150ea5fb6f808e29e58cfd8f9287ff93807f4c47f8aa92
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/pytorch/img/pytorch-stack-220x234.png
+    keywords:
+    - pytorch
+    - python
+    - machine
+    - learning
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: pytorch
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/pytorch
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/pytorch-3.4.6/pytorch-3.4.6.tgz
+    version: 3.4.6
   - annotations:
       category: MachineLearning
       images: |
@@ -91602,6 +91937,46 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 7.5.2
+    created: "2023-12-01T01:45:15.891038432Z"
+    dependencies:
+    - condition: kafka.enabled
+      name: kafka
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 26.x.x
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Confluent Schema Registry provides a RESTful interface by adding
+      a serving layer for your metadata on top of Kafka. It expands Kafka enabling
+      support for Apache Avro, JSON, and Protobuf schemas.
+    digest: 020675d7d21d8b7867cae238d00435f85ae4a9f81ce4f88f6a24906bed6875f3
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/schema-registry/img/schema-registry-stack-220x234.png
+    keywords:
+    - schema-registry
+    - confluent
+    - kafka
+    - zookeeper
+    - streaming
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: schema-registry
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/schema-registry
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/schema-registry-16.2.4/schema-registry-16.2.4.tgz
+    version: 16.2.4
+  - annotations:
+      category: Infrastructure
+      images: |
+        - name: schema-registry
+          image: docker.io/bitnami/schema-registry:7.5.2-debian-11-r0
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 7.5.2
     created: "2023-11-22T01:43:17.014990182Z"
     dependencies:
     - condition: kafka.enabled
@@ -92685,6 +93060,41 @@ entries:
     - https://github.com/itboon/bitnami-charts/releases/download/schema-registry-0.0.1/schema-registry-0.0.1.tgz
     version: 0.0.1
   sealed-secrets:
+  - annotations:
+      category: DeveloperTools
+      images: |
+        - name: sealed-secrets
+          image: docker.io/bitnami/sealed-secrets:0.24.4-debian-11-r0
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 0.24.4
+    created: "2023-12-01T01:45:16.090475464Z"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Sealed Secrets are "one-way" encrypted K8s Secrets that can be created
+      by anyone, but can only be decrypted by the controller running in the target
+      cluster recovering the original object.
+    digest: 436ab5d60880ed6c383d9ff2897a6563982b8a1d0b749bbbc6fbbb7ce5fc49d3
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/sealed-secrets/img/sealed-secrets-stack-220x234.png
+    keywords:
+    - secrets
+    - sealed-secrets
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: sealed-secrets
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/sealed-secrets
+    - https://github.com/bitnami-labs/sealed-secrets
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/sealed-secrets-1.6.0/sealed-secrets-1.6.0.tgz
+    version: 1.6.0
   - annotations:
       category: DeveloperTools
       images: |
@@ -108046,4 +108456,4 @@ entries:
     urls:
     - https://github.com/itboon/bitnami-charts/releases/download/zookeeper-0.0.1/zookeeper-0.0.1.tgz
     version: 0.0.1
-generated: "2023-11-30T01:37:58.675617032Z"
+generated: "2023-12-01T01:45:16.094575257Z"

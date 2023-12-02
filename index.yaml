@@ -75359,6 +75359,42 @@ entries:
         - name: opensearch-dashboards
           image: docker.io/bitnami/opensearch-dashboards:2.11.0-debian-11-r1
         - name: opensearch
+          image: docker.io/bitnami/opensearch:2.11.1-debian-11-r0
+        - name: os-shell
+          image: docker.io/bitnami/os-shell:11-debian-11-r91
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 2.11.1
+    created: "2023-12-02T01:33:50.239233637Z"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: OpenSearch is a scalable open-source solution for search, analytics,
+      and observability. Features full-text queries, natural language processing,
+      custom dictionaries, amongst others.
+    digest: 7fcb2d74a4bf9903a207b63d7f8995d9bec58366b279427357a3858aa13cc5ae
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/opensearch/img/opensearch-stack-220x234.png
+    keywords:
+    - opensearch
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: opensearch
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/opensearch
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/opensearch-0.5.1/opensearch-0.5.1.tgz
+    version: 0.5.1
+  - annotations:
+      category: Analytics
+      images: |
+        - name: opensearch-dashboards
+          image: docker.io/bitnami/opensearch-dashboards:2.11.0-debian-11-r1
+        - name: opensearch
           image: docker.io/bitnami/opensearch:2.11.0-debian-11-r1
         - name: os-shell
           image: docker.io/bitnami/os-shell:11-debian-11-r91
@@ -86064,6 +86100,42 @@ entries:
     - https://github.com/itboon/bitnami-charts/releases/download/pytorch-0.0.1/pytorch-0.0.1.tgz
     version: 0.0.1
   rabbitmq:
+  - annotations:
+      category: Infrastructure
+      images: |
+        - name: os-shell
+          image: docker.io/bitnami/os-shell:11-debian-11-r91
+        - name: rabbitmq
+          image: docker.io/bitnami/rabbitmq:3.12.10-debian-11-r1
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 3.12.10
+    created: "2023-12-02T01:33:50.354393526Z"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: RabbitMQ is an open source general-purpose message broker that is
+      designed for consistent, highly-available messaging scenarios (both synchronous
+      and asynchronous).
+    digest: 6adc9a70f5820c6d24ac0dd65cfbd55d298f0627c58da762b9ffd5221a908383
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/rabbitmq/img/rabbitmq-stack-220x234.png
+    keywords:
+    - rabbitmq
+    - message queue
+    - AMQP
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: rabbitmq
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/rabbitmq
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/rabbitmq-12.5.5/rabbitmq-12.5.5.tgz
+    version: 12.5.5
   - annotations:
       category: Infrastructure
       images: |
@@ -108456,4 +108528,4 @@ entries:
     urls:
     - https://github.com/itboon/bitnami-charts/releases/download/zookeeper-0.0.1/zookeeper-0.0.1.tgz
     version: 0.0.1
-generated: "2023-12-01T01:45:16.094575257Z"
+generated: "2023-12-02T01:33:50.35796958Z"

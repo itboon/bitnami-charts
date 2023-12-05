@@ -55276,6 +55276,61 @@ entries:
       category: CMS
       images: |
         - name: mastodon
+          image: docker.io/bitnami/mastodon:4.2.2-debian-11-r0
+        - name: os-shell
+          image: docker.io/bitnami/os-shell:11-debian-11-r91
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 4.2.2
+    created: "2023-12-05T01:39:37.845679247Z"
+    dependencies:
+    - condition: redis.enabled
+      name: redis
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 18.x.x
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 13.x.x
+    - condition: elasticsearch.enabled
+      name: elasticsearch
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 19.x.x
+    - condition: minio.enabled
+      name: minio
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 12.x.x
+    - condition: apache.enabled
+      name: apache
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 9.x.x
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Mastodon is self-hosted social network server based on ActivityPub.
+      Written in Ruby, features real-time updates, multimedia attachments and no vendor
+      lock-in.
+    digest: e2854ea47302a7dfe5f84677882bcb88f46aa88e5a862108c22f964811c4312a
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/mastodon/img/mastodon-stack-220x234.png
+    keywords:
+    - development
+    - dashboards
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: mastodon
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/mastodon
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/mastodon-3.2.6/mastodon-3.2.6.tgz
+    version: 3.2.6
+  - annotations:
+      category: CMS
+      images: |
+        - name: mastodon
           image: docker.io/bitnami/mastodon:4.2.1-debian-11-r5
         - name: os-shell
           image: docker.io/bitnami/os-shell:11-debian-11-r91
@@ -64561,6 +64616,51 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 7.0.4
+    created: "2023-12-05T01:39:38.007897773Z"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: MongoDB(R) is a relational open source NoSQL database. Easy to use,
+      it stores data in JSON-like documents. Automated scalability and high-performance.
+      Ideal for developing cloud native applications.
+    digest: f2ffa1297761a920d3847f49b7639cdf6dd618bce9b503ca70c8a9f02c2465bf
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/mongodb/img/mongodb-stack-220x234.png
+    keywords:
+    - mongodb
+    - database
+    - nosql
+    - cluster
+    - replicaset
+    - replication
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: mongodb
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/mongodb
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/mongodb-14.4.0/mongodb-14.4.0.tgz
+    version: 14.4.0
+  - annotations:
+      category: Database
+      images: |
+        - name: kubectl
+          image: docker.io/bitnami/kubectl:1.28.4-debian-11-r0
+        - name: mongodb-exporter
+          image: docker.io/bitnami/mongodb-exporter:0.40.0-debian-11-r0
+        - name: mongodb
+          image: docker.io/bitnami/mongodb:7.0.4-debian-11-r0
+        - name: nginx
+          image: docker.io/bitnami/nginx:1.25.3-debian-11-r1
+        - name: os-shell
+          image: docker.io/bitnami/os-shell:11-debian-11-r91
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 7.0.4
     created: "2023-11-28T01:39:10.523272899Z"
     dependencies:
     - name: common
@@ -70130,6 +70230,43 @@ entries:
     - https://github.com/itboon/bitnami-charts/releases/download/mysql-0.0.1/mysql-0.0.1.tgz
     version: 0.0.1
   nats:
+  - annotations:
+      category: Infrastructure
+      images: |
+        - name: nats-exporter
+          image: docker.io/bitnami/nats-exporter:0.13.0-debian-11-r1
+        - name: nats
+          image: docker.io/bitnami/nats:2.10.6-debian-11-r0
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 2.10.6
+    created: "2023-12-05T01:39:38.14410402Z"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: NATS is an open source, lightweight and high-performance messaging
+      system. It is ideal for distributed systems and supports modern cloud architectures
+      and pub-sub, request-reply and queuing models.
+    digest: 4f6a1f8d0da5c21ede86ef87a33c30f88dc46e7429b1b6e6ae811515b1ac57ee
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/nats/img/nats-stack-220x234.png
+    keywords:
+    - nats
+    - messaging
+    - addressing
+    - discovery
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: nats
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/nats
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/nats-7.10.5/nats-7.10.5.tgz
+    version: 7.10.5
   - annotations:
       category: Infrastructure
       images: |
@@ -82091,6 +82228,52 @@ entries:
         - name: postgres-exporter
           image: docker.io/bitnami/postgres-exporter:0.15.0-debian-11-r2
         - name: postgresql-repmgr
+          image: docker.io/bitnami/postgresql-repmgr:16.1.0-debian-11-r11
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 16.1.0
+    created: "2023-12-05T01:39:38.473643129Z"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: This PostgreSQL cluster solution includes the PostgreSQL replication
+      manager, an open-source tool for managing replication and failover on PostgreSQL
+      clusters.
+    digest: 8336b61c64f2e437307afe3787768c0816141437b85d2381c33bad3dcc24c18a
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/postgresql/img/postgresql-stack-220x234.png
+    keywords:
+    - postgresql
+    - repmgr
+    - pgpool
+    - postgres
+    - database
+    - sql
+    - replication
+    - cluster
+    - high availability
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: postgresql-ha
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/postgresql-ha
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/postgresql-ha-12.3.2/postgresql-ha-12.3.2.tgz
+    version: 12.3.2
+  - annotations:
+      category: Database
+      images: |
+        - name: os-shell
+          image: docker.io/bitnami/os-shell:11-debian-11-r91
+        - name: pgpool
+          image: docker.io/bitnami/pgpool:4.4.5-debian-11-r0
+        - name: postgres-exporter
+          image: docker.io/bitnami/postgres-exporter:0.15.0-debian-11-r2
+        - name: postgresql-repmgr
           image: docker.io/bitnami/postgresql-repmgr:16.1.0-debian-11-r10
       licenses: Apache-2.0
     apiVersion: v2
@@ -93140,6 +93323,41 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 0.24.4
+    created: "2023-12-05T01:39:38.625004127Z"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Sealed Secrets are "one-way" encrypted K8s Secrets that can be created
+      by anyone, but can only be decrypted by the controller running in the target
+      cluster recovering the original object.
+    digest: df5767d71bcc0c11beae1447a7b520992d7f6ca24898228c9cdf21a5586cde42
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/sealed-secrets/img/sealed-secrets-stack-220x234.png
+    keywords:
+    - secrets
+    - sealed-secrets
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: sealed-secrets
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/sealed-secrets
+    - https://github.com/bitnami-labs/sealed-secrets
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/sealed-secrets-1.6.1/sealed-secrets-1.6.1.tgz
+    version: 1.6.1
+  - annotations:
+      category: DeveloperTools
+      images: |
+        - name: sealed-secrets
+          image: docker.io/bitnami/sealed-secrets:0.24.4-debian-11-r0
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 0.24.4
     created: "2023-12-01T01:45:16.090475464Z"
     dependencies:
     - name: common
@@ -101816,6 +102034,47 @@ entries:
         - name: os-shell
           image: docker.io/bitnami/os-shell:11-debian-11-r91
         - name: tomcat
+          image: docker.io/bitnami/tomcat:10.1.16-debian-11-r5
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 10.1.16
+    created: "2023-12-05T01:39:38.767589947Z"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Apache Tomcat is an open-source web server designed to host and run
+      Java-based web applications. It is a lightweight server with a good performance
+      for applications running in production environments.
+    digest: 46e6e236be4baaf8ddbee268c316886b4fcb36ef510e3a6cf83cde6a3b1d12f3
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/tomcat/img/tomcat-stack-220x234.png
+    keywords:
+    - tomcat
+    - java
+    - http
+    - web
+    - application server
+    - jsp
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: tomcat
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/tomcat
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/tomcat-10.11.8/tomcat-10.11.8.tgz
+    version: 10.11.8
+  - annotations:
+      category: ApplicationServer
+      images: |
+        - name: jmx-exporter
+          image: docker.io/bitnami/jmx-exporter:0.20.0-debian-11-r1
+        - name: os-shell
+          image: docker.io/bitnami/os-shell:11-debian-11-r91
+        - name: tomcat
           image: docker.io/bitnami/tomcat:10.1.16-debian-11-r2
       licenses: Apache-2.0
     apiVersion: v2
@@ -105215,6 +105474,56 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 6.4.1
+    created: "2023-12-05T01:39:38.926100665Z"
+    dependencies:
+    - condition: memcached.enabled
+      name: memcached
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 6.x.x
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 14.x.x
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: WordPress is the world's most popular blogging and content management
+      platform. Powerful yet simple, everyone from students to global corporations
+      use it to build beautiful, functional websites.
+    digest: ac5739f923c119dcd2192b860d7809845e177f6ca2e74e026f0c5b12c228067b
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/wordpress/img/wordpress-stack-220x234.png
+    keywords:
+    - application
+    - blog
+    - cms
+    - http
+    - php
+    - web
+    - wordpress
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: wordpress
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/wordpress
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/wordpress-18.1.21/wordpress-18.1.21.tgz
+    version: 18.1.21
+  - annotations:
+      category: CMS
+      images: |
+        - name: apache-exporter
+          image: docker.io/bitnami/apache-exporter:1.0.3-debian-11-r1
+        - name: os-shell
+          image: docker.io/bitnami/os-shell:11-debian-11-r91
+        - name: wordpress
+          image: docker.io/bitnami/wordpress:6.4.1-debian-11-r11
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 6.4.1
     created: "2023-11-30T01:37:58.671580371Z"
     dependencies:
     - condition: memcached.enabled
@@ -108528,4 +108837,4 @@ entries:
     urls:
     - https://github.com/itboon/bitnami-charts/releases/download/zookeeper-0.0.1/zookeeper-0.0.1.tgz
     version: 0.0.1
-generated: "2023-12-02T01:33:50.35796958Z"
+generated: "2023-12-05T01:39:38.929940266Z"

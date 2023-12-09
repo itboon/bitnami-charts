@@ -9854,6 +9854,47 @@ entries:
       category: Database
       images: |
         - name: clickhouse
+          image: docker.io/bitnami/clickhouse:23.11.1-debian-11-r0
+        - name: os-shell
+          image: docker.io/bitnami/os-shell:11-debian-11-r92
+        - name: zookeeper
+          image: docker.io/bitnami/zookeeper:3.8.3-debian-11-r3
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 23.11.1
+    created: "2023-12-09T01:36:12.263304542Z"
+    dependencies:
+    - condition: zookeeper.enabled
+      name: zookeeper
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 12.x.x
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: ClickHouse is an open-source column-oriented OLAP database management
+      system. Use it to boost your database performance while providing linear scalability
+      and hardware efficiency.
+    digest: 17bcbdc8b65beaa0dad113f3c343ba371191dd963d14dcd39c8b1114dc173112
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/clickhouse/img/clickhouse-stack-220x234.png
+    keywords:
+    - database
+    - sharding
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: clickhouse
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/clickhouse
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/clickhouse-4.1.10/clickhouse-4.1.10.tgz
+    version: 4.1.10
+  - annotations:
+      category: Database
+      images: |
+        - name: clickhouse
           image: docker.io/bitnami/clickhouse:23.10.5-debian-11-r1
         - name: os-shell
           image: docker.io/bitnami/os-shell:11-debian-11-r92
@@ -17842,6 +17883,52 @@ entries:
       category: CMS
       images: |
         - name: apache-exporter
+          image: docker.io/bitnami/apache-exporter:1.0.3-debian-11-r2
+        - name: drupal
+          image: docker.io/bitnami/drupal:10.1.7-debian-11-r0
+        - name: os-shell
+          image: docker.io/bitnami/os-shell:11-debian-11-r92
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 10.1.7
+    created: "2023-12-09T01:36:12.46492207Z"
+    dependencies:
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 14.x.x
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Drupal is one of the most versatile open source content management
+      systems in the world. It is pre-configured with the Ctools and Views modules,
+      Drush and Let's Encrypt auto-configuration support.
+    digest: 62aaedd4dc79ca8fd8f51d2065c491704386914e386764a0359a3670b88b5ec7
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/drupal/img/drupal-stack-220x234.png
+    keywords:
+    - drupal
+    - cms
+    - blog
+    - http
+    - web
+    - application
+    - php
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: drupal
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/drupal
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/drupal-16.1.6/drupal-16.1.6.tgz
+    version: 16.1.6
+  - annotations:
+      category: CMS
+      images: |
+        - name: apache-exporter
           image: docker.io/bitnami/apache-exporter:1.0.3-debian-11-r1
         - name: drupal
           image: docker.io/bitnami/drupal:10.1.6-debian-11-r2
@@ -19606,6 +19693,46 @@ entries:
     - https://github.com/itboon/bitnami-charts/releases/download/ejbca-0.0.1/ejbca-0.0.1.tgz
     version: 0.0.1
   elasticsearch:
+  - annotations:
+      category: Analytics
+      images: |
+        - name: elasticsearch-exporter
+          image: docker.io/bitnami/elasticsearch-exporter:1.6.0-debian-11-r97
+        - name: elasticsearch
+          image: docker.io/bitnami/elasticsearch:8.11.2-debian-11-r0
+        - name: os-shell
+          image: docker.io/bitnami/os-shell:11-debian-11-r92
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 8.11.2
+    created: "2023-12-09T01:36:12.684958085Z"
+    dependencies:
+    - condition: global.kibanaEnabled
+      name: kibana
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 10.x.x
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Elasticsearch is a distributed search and analytics engine. It is
+      used for web search, log monitoring, and real-time analytics. Ideal for Big
+      Data applications.
+    digest: 8ebd3039a4ee3ebc608df82621930ac3b9640998899d13d4d1c0f5807ce11bfd
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/elasticsearch/img/elasticsearch-stack-220x234.png
+    keywords:
+    - elasticsearch
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: elasticsearch
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/elasticsearch
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/elasticsearch-19.13.13/elasticsearch-19.13.13.tgz
+    version: 19.13.13
   - annotations:
       category: Analytics
       images: |
@@ -96722,6 +96849,46 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 9.4.0
+    created: "2023-12-09T01:36:12.895771976Z"
+    dependencies:
+    - condition: zookeeper.enabled
+      name: zookeeper
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 12.x.x
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Apache Solr is an extremely powerful, open source enterprise search
+      platform built on Apache Lucene. It is highly reliable and flexible, scalable,
+      and designed to add value very quickly after launch.
+    digest: ba1260f34cb7f65d46b5b2cdcb4c9cd4be5b152bb8658e34d2c575f0d6334f11
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/solr/img/solr-stack-220x234.png
+    keywords:
+    - solr
+    - zookeeper
+    - apache
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: solr
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/solr
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/solr-8.3.3/solr-8.3.3.tgz
+    version: 8.3.3
+  - annotations:
+      category: Infrastructure
+      images: |
+        - name: os-shell
+          image: docker.io/bitnami/os-shell:11-debian-11-r91
+        - name: solr
+          image: docker.io/bitnami/solr:9.4.0-debian-11-r1
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 9.4.0
     created: "2023-11-22T01:43:17.279987022Z"
     dependencies:
     - condition: zookeeper.enabled
@@ -111744,4 +111911,4 @@ entries:
     urls:
     - https://github.com/itboon/bitnami-charts/releases/download/zookeeper-0.0.1/zookeeper-0.0.1.tgz
     version: 0.0.1
-generated: "2023-12-08T01:39:57.679107115Z"
+generated: "2023-12-09T01:36:12.899549348Z"

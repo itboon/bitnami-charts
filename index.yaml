@@ -8863,6 +8863,46 @@ entries:
       category: CertificateAuthority
       images: |
         - name: acmesolver
+          image: docker.io/bitnami/acmesolver:1.13.3-debian-11-r0
+        - name: cainjector
+          image: docker.io/bitnami/cainjector:1.13.3-debian-11-r0
+        - name: cert-manager-webhook
+          image: docker.io/bitnami/cert-manager-webhook:1.13.3-debian-11-r0
+        - name: cert-manager
+          image: docker.io/bitnami/cert-manager:1.13.3-debian-11-r0
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 1.13.3
+    created: "2023-12-10T01:42:35.807539074Z"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: cert-manager is a Kubernetes add-on to automate the management and
+      issuance of TLS certificates from various issuing sources.
+    digest: 237705c762898b8988b313a848b3381f36d7eff8c29f71e10d74926d065a9c4f
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/cert-manager/img/cert-manager-stack-220x234.png
+    keywords:
+    - go
+    - security
+    - tls
+    - certificate
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: cert-manager
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/cert-manager
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/cert-manager-0.13.5/cert-manager-0.13.5.tgz
+    version: 0.13.5
+  - annotations:
+      category: CertificateAuthority
+      images: |
+        - name: acmesolver
           image: docker.io/bitnami/acmesolver:1.13.2-debian-11-r2
         - name: cainjector
           image: docker.io/bitnami/cainjector:1.13.2-debian-11-r2
@@ -35798,6 +35838,40 @@ entries:
       category: Infrastructure
       images: |
         - name: haproxy
+          image: docker.io/bitnami/haproxy:2.9.0-debian-11-r3
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 2.9.0
+    created: "2023-12-10T01:42:35.94789504Z"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: HAProxy is a TCP proxy and a HTTP reverse proxy. It supports SSL
+      termination and offloading, TCP and HTTP normalization, traffic regulation,
+      caching and protection against DDoS attacks.
+    digest: 01094f3d9916f11067973ed4e213341592034e2ef743bf40dfb883fc36ab93a7
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/haproxy/img/haproxy-stack-220x234.png
+    keywords:
+    - haproxy
+    - proxy
+    - infrastructure
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: haproxy
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/haproxy
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/haproxy-0.10.9/haproxy-0.10.9.tgz
+    version: 0.10.9
+  - annotations:
+      category: Infrastructure
+      images: |
+        - name: haproxy
           image: docker.io/bitnami/haproxy:2.9.0-debian-11-r1
       licenses: Apache-2.0
     apiVersion: v2
@@ -43136,6 +43210,54 @@ entries:
     - https://github.com/itboon/bitnami-charts/releases/download/jupyterhub-0.0.1/jupyterhub-0.0.1.tgz
     version: 0.0.1
   kafka:
+  - annotations:
+      category: Infrastructure
+      images: |
+        - name: jmx-exporter
+          image: docker.io/bitnami/jmx-exporter:0.20.0-debian-11-r1
+        - name: kafka-exporter
+          image: docker.io/bitnami/kafka-exporter:1.7.0-debian-11-r134
+        - name: kafka
+          image: docker.io/bitnami/kafka:3.6.1-debian-11-r0
+        - name: kubectl
+          image: docker.io/bitnami/kubectl:1.28.4-debian-11-r2
+        - name: os-shell
+          image: docker.io/bitnami/os-shell:11-debian-11-r92
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 3.6.1
+    created: "2023-12-10T01:42:36.089496551Z"
+    dependencies:
+    - condition: zookeeper.enabled
+      name: zookeeper
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 12.x.x
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Apache Kafka is a distributed streaming platform designed to build
+      real-time pipelines and can be used as a message broker or as a replacement
+      for a log aggregation solution for big data applications.
+    digest: 93fccf5323c6befd774de1374ac0b9ff4ebcae03ed9d55951a616d4715f79ff3
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/kafka/img/kafka-stack-220x234.png
+    keywords:
+    - kafka
+    - zookeeper
+    - streaming
+    - producer
+    - consumer
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: kafka
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/kafka
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/kafka-26.4.4/kafka-26.4.4.tgz
+    version: 26.4.4
   - annotations:
       category: Infrastructure
       images: |
@@ -53401,6 +53523,42 @@ entries:
     - https://github.com/itboon/bitnami-charts/releases/download/kubernetes-event-exporter-0.0.1/kubernetes-event-exporter-0.0.1.tgz
     version: 0.0.1
   logstash:
+  - annotations:
+      category: LogManagement
+      images: |
+        - name: logstash
+          image: docker.io/bitnami/logstash:8.11.2-debian-11-r0
+        - name: os-shell
+          image: docker.io/bitnami/os-shell:11-debian-11-r92
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 8.11.2
+    created: "2023-12-10T01:42:36.227315859Z"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Logstash is an open source data processing engine. It ingests data
+      from multiple sources, processes it, and sends the output to final destination
+      in real-time. It is a core component of the ELK stack.
+    digest: c073c79a57f50c5a7c707cdf66ee5438b367a9e057ae68bde2cf0d5accb94e6a
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/logstash/img/logstash-stack-220x234.png
+    keywords:
+    - logstash
+    - logging
+    - elk
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: logstash
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/logstash
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/logstash-5.6.8/logstash-5.6.8.tgz
+    version: 5.6.8
   - annotations:
       category: LogManagement
       images: |
@@ -111911,4 +112069,4 @@ entries:
     urls:
     - https://github.com/itboon/bitnami-charts/releases/download/zookeeper-0.0.1/zookeeper-0.0.1.tgz
     version: 0.0.1
-generated: "2023-12-09T01:36:12.899549348Z"
+generated: "2023-12-10T01:42:36.231471558Z"

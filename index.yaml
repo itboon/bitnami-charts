@@ -60064,6 +60064,61 @@ entries:
       category: CMS
       images: |
         - name: mastodon
+          image: docker.io/bitnami/mastodon:4.2.3-debian-11-r4
+        - name: os-shell
+          image: docker.io/bitnami/os-shell:11-debian-11-r93
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 4.2.3
+    created: "2023-12-30T01:33:45.252445791Z"
+    dependencies:
+    - condition: redis.enabled
+      name: redis
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 18.x.x
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 13.x.x
+    - condition: elasticsearch.enabled
+      name: elasticsearch
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 19.x.x
+    - condition: minio.enabled
+      name: minio
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 12.x.x
+    - condition: apache.enabled
+      name: apache
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 10.x.x
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Mastodon is self-hosted social network server based on ActivityPub.
+      Written in Ruby, features real-time updates, multimedia attachments and no vendor
+      lock-in.
+    digest: 64b4246e7de8557cea1454796c61dcb4e8459320a1b88101fd1d547aa54efae4
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/mastodon/img/mastodon-stack-220x234.png
+    keywords:
+    - development
+    - dashboards
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: mastodon
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/mastodon
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/mastodon-4.0.1/mastodon-4.0.1.tgz
+    version: 4.0.1
+  - annotations:
+      category: CMS
+      images: |
+        - name: mastodon
           image: docker.io/bitnami/mastodon:4.2.3-debian-11-r2
         - name: os-shell
           image: docker.io/bitnami/os-shell:11-debian-11-r93
@@ -70543,6 +70598,51 @@ entries:
     - https://github.com/itboon/bitnami-charts/releases/download/mlflow-0.1.2/mlflow-0.1.2.tgz
     version: 0.1.2
   mongodb:
+  - annotations:
+      category: Database
+      images: |
+        - name: kubectl
+          image: docker.io/bitnami/kubectl:1.29.0-debian-11-r1
+        - name: mongodb-exporter
+          image: docker.io/bitnami/mongodb-exporter:0.40.0-debian-11-r2
+        - name: mongodb
+          image: docker.io/bitnami/mongodb:7.0.4-debian-11-r4
+        - name: nginx
+          image: docker.io/bitnami/nginx:1.25.3-debian-11-r2
+        - name: os-shell
+          image: docker.io/bitnami/os-shell:11-debian-11-r93
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 7.0.4
+    created: "2023-12-30T01:33:45.472359301Z"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: MongoDB(R) is a relational open source NoSQL database. Easy to use,
+      it stores data in JSON-like documents. Automated scalability and high-performance.
+      Ideal for developing cloud native applications.
+    digest: 3be826168100697e36a3beb9095f3ff3cbafecbb8709a0d96942a0550ef5e38c
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/mongodb/img/mongodb-stack-220x234.png
+    keywords:
+    - mongodb
+    - database
+    - nosql
+    - cluster
+    - replicaset
+    - replication
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: mongodb
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/mongodb
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/mongodb-14.4.9/mongodb-14.4.9.tgz
+    version: 14.4.9
   - annotations:
       category: Database
       images: |
@@ -118842,4 +118942,4 @@ entries:
     urls:
     - https://github.com/itboon/bitnami-charts/releases/download/zookeeper-0.0.1/zookeeper-0.0.1.tgz
     version: 0.0.1
-generated: "2023-12-29T01:27:17.099325175Z"
+generated: "2023-12-30T01:33:45.476182555Z"

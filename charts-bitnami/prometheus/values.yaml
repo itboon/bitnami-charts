@@ -482,7 +482,7 @@ alertmanager:
     annotations: {}
     ## @param alertmanager.serviceAccount.automountServiceAccountToken Automount service account token for the server service account
     ##
-    automountServiceAccountToken: true
+    automountServiceAccountToken: false
 
   ## Alertmanager service parameters
   ##
@@ -594,7 +594,7 @@ server:
   image:
     registry: docker.io
     repository: bitnami/prometheus
-    tag: 2.48.1-debian-11-r1
+    tag: 2.49.1-debian-11-r0
     digest: ""
     ## Specify a imagePullPolicy
     ## Defaults to 'Always' if image tag is 'latest', else set to 'IfNotPresent'

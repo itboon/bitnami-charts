@@ -3,7 +3,7 @@ name: Sync Charts
 on:
   workflow_dispatch: # on button click
   schedule:
-    - cron: '30 0 * * *'
+    - cron: '30 0 1 * *'
 
   # push:
   #   branches:

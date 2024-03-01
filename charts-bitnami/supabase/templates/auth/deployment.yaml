@@ -147,6 +147,8 @@ spec:
             {{- end }}
           {{- if .Values.auth.resources }}
           resources: {{- toYaml .Values.auth.resources | nindent 12 }}
+          {{- else if ne .Values.auth.resourcesPreset "none" }}
+          resources: {{- include "common.resources.preset" (dict "type" .Values.auth.resourcesPreset) | nindent 12 }}
           {{- end }}
           ports:
             - name: http
@@ -180,6 +182,10 @@ spec:
           {{- if .Values.auth.lifecycleHooks }}
           lifecycle: {{- include "common.tplvalues.render" (dict "value" .Values.auth.lifecycleHooks "context" $) | nindent 12 }}
           {{- end }}
+          volumeMounts:
+            - name: empty-dir
+              mountPath: /tmp
+              subPath: tmp-dir
           {{- if .Values.auth.extraVolumeMounts }}
           {{- include "common.tplvalues.render" (dict "value" .Values.auth.extraVolumeMounts "context" $) | nindent 12 }}
           {{- end }}
@@ -187,6 +193,8 @@ spec:
         {{- include "common.tplvalues.render" ( dict "value" .Values.auth.sidecars "context" $) | nindent 8 }}
         {{- end }}
       volumes:
+        - name: empty-dir
+          emptyDir: {}
         {{- if .Values.auth.extraVolumes }}
         {{- include "common.tplvalues.render" (dict "value" .Values.auth.extraVolumes "context" $) | nindent 8 }}
         {{- end }}

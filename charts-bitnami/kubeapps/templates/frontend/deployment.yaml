@@ -133,8 +133,19 @@ spec:
           {{- end }}
           {{- if .Values.frontend.resources }}
           resources: {{- toYaml .Values.frontend.resources | nindent 12 }}
+          {{- else if ne .Values.frontend.resourcesPreset "none" }}
+          resources: {{- include "common.resources.preset" (dict "type" .Values.frontend.resourcesPreset) | nindent 12 }}
           {{- end }}
           volumeMounts:
+            - name: empty-dir
+              mountPath: /tmp
+              subPath: tmp-dir
+            - name: empty-dir
+              mountPath: /opt/bitnami/nginx/tmp
+              subPath: app-tmp-dir
+            - name: empty-dir
+              mountPath: /opt/bitnami/nginx/logs
+              subPath: app-logs-dir
             - name: vhost
               mountPath: /opt/bitnami/nginx/conf/server_blocks
             {{- if .Values.frontend.extraVolumeMounts }}
@@ -220,10 +231,16 @@ spec:
               containerPort: {{ .Values.authProxy.containerPorts.proxy }}
           {{- if .Values.authProxy.resources }}
           resources: {{- toYaml .Values.authProxy.resources | nindent 12 }}
+          {{- else if ne .Values.authProxy.resourcesPreset "none" }}
+          resources: {{- include "common.resources.preset" (dict "type" .Values.authProxy.resourcesPreset) | nindent 12 }}
           {{- end }}
-          {{- if .Values.authProxy.extraVolumeMounts }}
-          volumeMounts: {{- include "common.tplvalues.render" (dict "value" .Values.authProxy.extraVolumeMounts "context" $) | nindent 12 }}
-          {{- end }}
+          volumeMounts:
+            - name: empty-dir
+              mountPath: /tmp
+              subPath: tmp-dir
+            {{- if .Values.authProxy.extraVolumeMounts }}
+            {{- include "common.tplvalues.render" (dict "value" .Values.authProxy.extraVolumeMounts "context" $) | nindent 12 }}
+            {{- end }}
         {{- end }}
         {{- if and (gt (len .Values.clusters) 1) (not .Values.authProxy.enabled) }}
           {{ fail "clusters can be configured only when using an auth proxy for cluster oidc authentication." }}
@@ -284,8 +301,13 @@ spec:
               containerPort: {{ .Values.pinnipedProxy.containerPorts.pinnipedProxy }}
           {{- if .Values.pinnipedProxy.resources }}
           resources: {{- toYaml .Values.pinnipedProxy.resources | nindent 12 }}
+          {{- else if ne .Values.pinnipedProxy.resourcesPreset "none" }}
+          resources: {{- include "common.resources.preset" (dict "type" .Values.pinnipedProxy.resourcesPreset) | nindent 12 }}
           {{- end }}
           volumeMounts:
+            - name: empty-dir
+              mountPath: /tmp
+              subPath: tmp-dir
             {{- if .Values.pinnipedProxy.tls.existingSecret }}
             - name: pinniped-tls-secret
               mountPath: "/etc/pinniped-tls"
@@ -299,6 +321,8 @@ spec:
         {{- include "common.tplvalues.render" (dict "value" .Values.frontend.sidecars "context" $) | nindent 8 }}
         {{- end }}
       volumes:
+        - name: empty-dir
+          emptyDir: {}
         - name: vhost
           configMap:
             name: {{ template "kubeapps.frontend-config.fullname" . }}

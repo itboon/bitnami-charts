@@ -190,6 +190,8 @@ spec:
             {{- end }}
           {{- if .Values.resources }}
           resources: {{ include "common.tplvalues.render" (dict "value" .Values.resources "context" $) | nindent 12 }}
+          {{- else if ne .Values.resourcesPreset "none" }}
+          resources: {{- include "common.resources.preset" (dict "type" .Values.resourcesPreset) | nindent 12 }}
           {{- end }}
           {{- if not .Values.diagnosticMode.enabled }}
           {{- if .Values.customStartupProbe }}
@@ -236,6 +238,9 @@ spec:
           {{- end }}
           {{- end }}
           volumeMounts:
+            - name: empty-dir
+              mountPath: /tmp
+              subPath: tmp-dir
           {{- if .Values.configuration.google.enabled }}
             - name: google-secret
               mountPath: /bitnami/oauth2-proxy/conf/google
@@ -262,6 +267,8 @@ spec:
         {{- include "common.tplvalues.render" ( dict "value" .Values.sidecars "context" $) | nindent 8 }}
         {{- end }}
       volumes:
+        - name: empty-dir
+          emptyDir: {}
         {{- if .Values.configuration.google.enabled }}
         - name: google-secret
           secret:

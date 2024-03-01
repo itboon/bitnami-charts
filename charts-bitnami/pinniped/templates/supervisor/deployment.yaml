@@ -107,6 +107,8 @@ spec:
             {{- end }}
           {{- if .Values.supervisor.resources }}
           resources: {{- toYaml .Values.supervisor.resources | nindent 12 }}
+          {{- else if ne .Values.supervisor.resourcesPreset "none" }}
+          resources: {{- include "common.resources.preset" (dict "type" .Values.supervisor.resourcesPreset) | nindent 12 }}
           {{- end }}
           ports:
             - name: https
@@ -142,7 +144,7 @@ spec:
           lifecycle: {{- include "common.tplvalues.render" (dict "value" .Values.supervisor.lifecycleHooks "context" $) | nindent 12 }}
           {{- end }}
           volumeMounts:
-            - name: tmp
+            - name: empty-dir
               mountPath: /tmp
             - name: config-volume
               mountPath: /bitnami/pinniped/conf
@@ -157,10 +159,8 @@ spec:
         {{- include "common.tplvalues.render" ( dict "value" .Values.supervisor.sidecars "context" $) | nindent 8 }}
         {{- end }}
       volumes:
-        - name: tmp
-          emptyDir:
-            medium: Memory
-            sizeLimit: 100Mi
+        - name: empty-dir
+          emptyDir: {}
         - name: config-volume
           configMap:
             name: {{ template "pinniped.supervisor.configmapName" . }}

@@ -9,7 +9,7 @@ apiVersion: {{ include "common.capabilities.statefulset.apiVersion" . }}
 kind: StatefulSet
 metadata:
   name: {{ template "concourse.worker.fullname" . }}
-  namespace: {{ .Release.Namespace | quote }}
+  namespace: {{ include "common.names.namespace" . | quote }}
   labels: {{- include "common.labels.standard" ( dict "customLabels" .Values.commonLabels "context" $ ) | nindent 4 }}
     app.kubernetes.io/component: {{ template "concourse.worker.fullname" . }}
   {{- if .Values.commonAnnotations }}
@@ -86,6 +86,8 @@ spec:
           {{- end }}
           {{- if .Values.volumePermissions.resources }}
           resources: {{- toYaml .Values.volumePermissions.resources | nindent 12 }}
+          {{- else if ne .Values.volumePermissions.resourcesPreset "none" }}
+          resources: {{- include "common.resources.preset" (dict "type" .Values.volumePermissions.resourcesPreset) | nindent 12 }}
           {{- end }}
           volumeMounts:
             - name: concourse-work-dir
@@ -204,6 +206,8 @@ spec:
             {{- end }}
           {{- if .Values.worker.resources }}
           resources: {{- toYaml .Values.worker.resources | nindent 12 }}
+          {{- else if ne .Values.worker.resourcesPreset "none" }}
+          resources: {{- include "common.resources.preset" (dict "type" .Values.worker.resourcesPreset) | nindent 12 }}
           {{- end }}
           ports:
             - name: http

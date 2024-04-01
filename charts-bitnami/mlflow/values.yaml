@@ -19,6 +19,15 @@ global:
   ##
   imagePullSecrets: []
   storageClass: ""
+  ## Compatibility adaptations for Kubernetes platforms
+  ##
+  compatibility:
+    ## Compatibility adaptations for Openshift
+    ##
+    openshift:
+      ## @param global.compatibility.openshift.adaptSecurityContext Adapt the securityContext sections of the deployment to make them compatible with Openshift restricted-v2 SCC: remove runAsUser, runAsGroup and fsGroup and let the platform use their allowed default IDs. Possible values: auto (apply if the detected running cluster is Openshift), force (perform the adaptation always), disabled (do not perform adaptation)
+      ##
+      adaptSecurityContext: disabled
 ## @section Common parameters
 ##
 
@@ -640,8 +649,8 @@ tracking:
     ##
     enabled: true
     ## @param tracking.networkPolicy.allowExternal The Policy model to apply
-    ## When set to false, only pods with the correct client label will have network access to the ports Keycloak is
-    ## listening on. When true, Keycloak will accept connections from any source (with the correct destination port).
+    ## When set to false, only pods with the correct client label will have network access to the ports MLFlow is
+    ## listening on. When true, MLFlow will accept connections from any source (with the correct destination port).
     ##
     allowExternal: true
     ## @param tracking.networkPolicy.allowExternalEgress Allow the pod to access any range of port and all destinations.
@@ -1078,8 +1087,8 @@ run:
     ##
     enabled: true
     ## @param run.networkPolicy.allowExternal The Policy model to apply
-    ## When set to false, only pods with the correct client label will have network access to the ports Keycloak is
-    ## listening on. When true, Keycloak will accept connections from any source (with the correct destination port).
+    ## When set to false, only pods with the correct client label will have network access to the ports MLFlow is
+    ## listening on. When true, MLFlow will accept connections from any source (with the correct destination port).
     ##
     allowExternal: true
     ## @param run.networkPolicy.allowExternalEgress Allow the pod to access any range of port and all destinations.

@@ -1,5 +1,5 @@
 {{- /*
-Copyright VMware, Inc.
+Copyright Broadcom, Inc. All Rights Reserved.
 SPDX-License-Identifier: APACHE-2.0
 */}}
 
@@ -244,6 +244,9 @@ spec:
               {{- if .Values.cloudflare.proxied }}
             - --cloudflare-proxied
               {{- end }}
+              {{- if .Values.cloudflare.dnsRecordsPerPage }}
+            - --cloudflare-dns-records-per-page={{ .Values.cloudflare.dnsRecordsPerPage }}
+              {{- end }}
             {{- end }}
             {{- if eq .Values.provider "google" }}
             # Google Arguments
@@ -280,6 +283,13 @@ spec:
               {{- end }}
               {{- if .Values.infoblox.maxResults }}
             - --infoblox-max-results={{ .Values.infoblox.maxResults }}
+              {{- end }}
+            {{- end }}
+            {{- if and (eq .Values.provider "oci") .Values.oci.useInstancePrincipal }}
+            # OCI Arguments
+            - --oci-auth-instance-principal
+              {{- if .Values.oci.compartmentOCID }}
+            - --oci-compartment-ocid={{ .Values.oci.compartmentOCID }}
               {{- end }}
             {{- end }}
             {{- if eq .Values.provider "ns1" }}
@@ -782,7 +792,7 @@ spec:
             - name: google-service-account
               mountPath: /etc/secrets/service-account/
             {{- end }}
-            {{- if eq .Values.provider "oci" }}
+            {{- if and (eq .Values.provider "oci") (not .Values.oci.useInstancePrincipal) }}
             - name: oci-config-file
               mountPath: /etc/kubernetes/
             {{- end }}
@@ -851,7 +861,7 @@ spec:
             type: File
           {{- end }}
         {{- end }}
-        {{- if (eq .Values.provider "oci")}}
+        {{- if and (eq .Values.provider "oci") (not .Values.oci.useInstancePrincipal) }}
         - name: oci-config-file
           secret:
             secretName: {{ template "external-dns.secretName" . }}

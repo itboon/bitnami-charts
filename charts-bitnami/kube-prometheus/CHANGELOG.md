@@ -1,8 +1,33 @@
 # Changelog
 
-## 9.5.4 (2024-06-26)
+## 9.5.10 (2024-07-25)
 
-* [bitnami/kube-prometheus] Release 9.5.4 ([#27551](https://github.com/bitnami/charts/pull/27551))
+* [bitnami/kube-prometheus] Release 9.5.10 ([#28461](https://github.com/bitnami/charts/pull/28461))
+
+## <small>9.5.9 (2024-07-24)</small>
+
+* [bitnami/kube-prometheus] Release 9.5.9 (#28362) ([1446078](https://github.com/bitnami/charts/commit/14460789c02e423610a6abf0b853d9a65bedf219)), closes [#28362](https://github.com/bitnami/charts/issues/28362)
+
+## <small>9.5.8 (2024-07-16)</small>
+
+* [bitnami/kube-prometheus] Global StorageClass as default value (#28043) ([6c1f29e](https://github.com/bitnami/charts/commit/6c1f29e17b1b7d777e1631846359c6c646b917da)), closes [#28043](https://github.com/bitnami/charts/issues/28043)
+
+## <small>9.5.7 (2024-07-04)</small>
+
+* [bitnami/kube-prometheus] Release 9.5.7 (#27781) ([b507458](https://github.com/bitnami/charts/commit/b5074584ed43b0ac54ec9883a12da274ee64b6e0)), closes [#27781](https://github.com/bitnami/charts/issues/27781)
+
+## <small>9.5.6 (2024-07-03)</small>
+
+* [bitnami/kube-prometheus] Release 9.5.6 (#27674) ([892e9aa](https://github.com/bitnami/charts/commit/892e9aa2bfdae50d4f1347ed6a03bab567401d9d)), closes [#27674](https://github.com/bitnami/charts/issues/27674)
+
+## <small>9.5.5 (2024-07-02)</small>
+
+* [bitnami/kube-prometheus] Release 9.5.5 (#27632) ([ac35b81](https://github.com/bitnami/charts/commit/ac35b8180a70248bace0e69c05ba9a53b8d0b397)), closes [#27632](https://github.com/bitnami/charts/issues/27632)
+
+## <small>9.5.4 (2024-06-26)</small>
+
+* [bitnami/*] Update README changing TAC wording (#27530) ([52dfed6](https://github.com/bitnami/charts/commit/52dfed6bac44d791efabfaf06f15daddc4fefb0c)), closes [#27530](https://github.com/bitnami/charts/issues/27530)
+* [bitnami/kube-prometheus] Release 9.5.4 (#27551) ([73bdc54](https://github.com/bitnami/charts/commit/73bdc544c5046bc75dfb855a21939219ca929852)), closes [#27551](https://github.com/bitnami/charts/issues/27551)
 
 ## <small>9.5.3 (2024-06-24)</small>
 

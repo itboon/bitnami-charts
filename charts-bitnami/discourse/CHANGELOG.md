@@ -1,8 +1,45 @@
 # Changelog
 
-## 13.2.6 (2024-06-18)
+## 13.2.15 (2024-07-30)
 
-* [bitnami/discourse] Release 13.2.6 ([#27337](https://github.com/bitnami/charts/pull/27337))
+* [bitnami/discourse] Release 13.2.15 ([#28578](https://github.com/bitnami/charts/pull/28578))
+
+## <small>13.2.14 (2024-07-25)</small>
+
+* [bitnami/discourse] Release 13.2.14 (#28448) ([a1c04d9](https://github.com/bitnami/charts/commit/a1c04d937c775cbd265b5b7174217f013af208a5)), closes [#28448](https://github.com/bitnami/charts/issues/28448)
+
+## <small>13.2.13 (2024-07-24)</small>
+
+* [bitnami/discourse] Release 13.2.13 (#28291) ([b094b74](https://github.com/bitnami/charts/commit/b094b74156c4915dd01b6aee5c68e8bac39acd80)), closes [#28291](https://github.com/bitnami/charts/issues/28291)
+
+## <small>13.2.12 (2024-07-18)</small>
+
+* [bitnami/discourse] fix: :bug: Remove incorrect CHMOD capability (#27982) ([4decca8](https://github.com/bitnami/charts/commit/4decca8eb92c6f98dce549f9d01d8ef6a191c75d)), closes [#27982](https://github.com/bitnami/charts/issues/27982)
+
+## <small>13.2.11 (2024-07-16)</small>
+
+* [bitnami/discourse] Global StorageClass as default value (#28010) ([84bce06](https://github.com/bitnami/charts/commit/84bce06012772a0a5c93072e4dd5a64878e54eec)), closes [#28010](https://github.com/bitnami/charts/issues/28010)
+
+## <small>13.2.10 (2024-07-15)</small>
+
+* [bitnami/discourse] Release 13.2.10 (#27984) ([d5f6db6](https://github.com/bitnami/charts/commit/d5f6db6dd719f2e2333a26d7651a18bda6e412aa)), closes [#27984](https://github.com/bitnami/charts/issues/27984)
+
+## <small>13.2.9 (2024-07-08)</small>
+
+* [bitnami/discourse] Fix pgrep on livenessProbe typo (#27824) ([5c4b604](https://github.com/bitnami/charts/commit/5c4b6040abe28a689f210bcd18572ad0e4a690ba)), closes [#27824](https://github.com/bitnami/charts/issues/27824)
+
+## <small>13.2.8 (2024-07-03)</small>
+
+* [bitnami/discourse] Release 13.2.8 (#27749) ([bc83af9](https://github.com/bitnami/charts/commit/bc83af9654e2901e463ff39f7baff6e231cb6853)), closes [#27749](https://github.com/bitnami/charts/issues/27749)
+
+## <small>13.2.7 (2024-07-03)</small>
+
+* [bitnami/*] Update README changing TAC wording (#27530) ([52dfed6](https://github.com/bitnami/charts/commit/52dfed6bac44d791efabfaf06f15daddc4fefb0c)), closes [#27530](https://github.com/bitnami/charts/issues/27530)
+* [bitnami/discourse] Release 13.2.7 (#27684) ([8dc1d42](https://github.com/bitnami/charts/commit/8dc1d42ccec3fb8528a731b99bbf32b2ef3dfa36)), closes [#27684](https://github.com/bitnami/charts/issues/27684)
+
+## <small>13.2.6 (2024-06-18)</small>
+
+* [bitnami/discourse] Release 13.2.6 (#27337) ([11c378d](https://github.com/bitnami/charts/commit/11c378d1340c94175443c7a57d4413aae3fed97b)), closes [#27337](https://github.com/bitnami/charts/issues/27337)
 
 ## <small>13.2.5 (2024-06-17)</small>
 

@@ -1,8 +1,53 @@
 # Changelog
 
-## 21.1.15 (2024-06-24)
+## 21.1.26 (2024-07-31)
 
-* [bitnami/ghost] Release 21.1.15 ([#27504](https://github.com/bitnami/charts/pull/27504))
+* [bitnami/ghost] Release 21.1.26 ([#28602](https://github.com/bitnami/charts/pull/28602))
+
+## <small>21.1.25 (2024-07-26)</small>
+
+* [bitnami/ghost] Release 21.1.25 (#28541) ([3587672](https://github.com/bitnami/charts/commit/3587672cfa89d84f2baad16e8bd29823d352a683)), closes [#28541](https://github.com/bitnami/charts/issues/28541)
+
+## <small>21.1.24 (2024-07-25)</small>
+
+* [bitnami/ghost] Release 21.1.24 (#28443) ([f4123c7](https://github.com/bitnami/charts/commit/f4123c76de8eb61df13412c5624f5851dd9caa23)), closes [#28443](https://github.com/bitnami/charts/issues/28443)
+
+## <small>21.1.23 (2024-07-24)</small>
+
+* [bitnami/ghost] Release 21.1.23 (#28318) ([b64546c](https://github.com/bitnami/charts/commit/b64546cdf5218e25fd8fdcbba6e81385d95f7065)), closes [#28318](https://github.com/bitnami/charts/issues/28318)
+
+## <small>21.1.22 (2024-07-24)</small>
+
+* [bitnami/ghost] Release 21.1.22 (#28246) ([268a20d](https://github.com/bitnami/charts/commit/268a20dc6bd10f957b6919facdd5b05c95bdd982)), closes [#28246](https://github.com/bitnami/charts/issues/28246)
+
+## <small>21.1.21 (2024-07-23)</small>
+
+* [bitnami/ghost] Release 21.1.21 (#28211) ([3fbae08](https://github.com/bitnami/charts/commit/3fbae08962c5bacd88db8e0a8e6f70fa3988995b)), closes [#28211](https://github.com/bitnami/charts/issues/28211)
+
+## <small>21.1.20 (2024-07-18)</small>
+
+* [bitnami/ghost] Global StorageClass as default value (#28022) ([a11ac35](https://github.com/bitnami/charts/commit/a11ac35203c61e4b0ace12e34e95f77065b6eb98)), closes [#28022](https://github.com/bitnami/charts/issues/28022)
+
+## <small>21.1.19 (2024-07-12)</small>
+
+* [bitnami/ghost] Release 21.1.19 (#27948) ([33064e6](https://github.com/bitnami/charts/commit/33064e6fae51fdc0333909ecf97471fa8dd25f6b)), closes [#27948](https://github.com/bitnami/charts/issues/27948)
+
+## <small>21.1.18 (2024-07-05)</small>
+
+* [bitnami/ghost] Release 21.1.18 (#27827) ([f933ad6](https://github.com/bitnami/charts/commit/f933ad678acf376635e751bd9464471e1fcc7527)), closes [#27827](https://github.com/bitnami/charts/issues/27827)
+
+## <small>21.1.17 (2024-07-05)</small>
+
+* [bitnami/ghost] Release 21.1.17 (#27814) ([b878615](https://github.com/bitnami/charts/commit/b878615f9516e284131529772e720ef72dafd32b)), closes [#27814](https://github.com/bitnami/charts/issues/27814)
+
+## <small>21.1.16 (2024-07-03)</small>
+
+* [bitnami/*] Update README changing TAC wording (#27530) ([52dfed6](https://github.com/bitnami/charts/commit/52dfed6bac44d791efabfaf06f15daddc4fefb0c)), closes [#27530](https://github.com/bitnami/charts/issues/27530)
+* [bitnami/ghost] Release 21.1.16 (#27589) ([0e677c4](https://github.com/bitnami/charts/commit/0e677c4218a009eb305b0126fad1eb8d0a75229c)), closes [#27589](https://github.com/bitnami/charts/issues/27589)
+
+## <small>21.1.15 (2024-06-24)</small>
+
+* [bitnami/ghost] Release 21.1.15 (#27504) ([208aa14](https://github.com/bitnami/charts/commit/208aa14faf0d21018310414615c20e078080501f)), closes [#27504](https://github.com/bitnami/charts/issues/27504)
 
 ## <small>21.1.14 (2024-06-22)</small>
 

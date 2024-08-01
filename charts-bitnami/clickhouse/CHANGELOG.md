@@ -1,8 +1,37 @@
 # Changelog
 
-## 6.2.8 (2024-06-18)
+## 6.2.15 (2024-07-30)
 
-* [bitnami/clickhouse] Release 6.2.8 ([#27331](https://github.com/bitnami/charts/pull/27331))
+* [bitnami/clickhouse] Release 6.2.15 ([#28596](https://github.com/bitnami/charts/pull/28596))
+
+## <small>6.2.14 (2024-07-25)</small>
+
+* [bitnami/clickhouse] Release 6.2.14 (#28402) ([eb8c256](https://github.com/bitnami/charts/commit/eb8c256165237d8e069cb73e45491cebee3e3b16)), closes [#28402](https://github.com/bitnami/charts/issues/28402)
+
+## <small>6.2.13 (2024-07-24)</small>
+
+* [bitnami/clickhouse] Release 6.2.13 (#28277) ([2e30cd7](https://github.com/bitnami/charts/commit/2e30cd709f148042c5bb1c86c9108bd475ea2fc3)), closes [#28277](https://github.com/bitnami/charts/issues/28277)
+
+## <small>6.2.12 (2024-07-23)</small>
+
+* [bitnami/clickhouse] Release 6.2.12 (#28230) ([ff88566](https://github.com/bitnami/charts/commit/ff88566000c32b861258a8b532f8528f0350926a)), closes [#28230](https://github.com/bitnami/charts/issues/28230)
+
+## <small>6.2.11 (2024-07-16)</small>
+
+* [bitnami/clickhouse] Global StorageClass as default value (#28005) ([b531767](https://github.com/bitnami/charts/commit/b53176779d248a6bd20521146f668db62fd78e8f)), closes [#28005](https://github.com/bitnami/charts/issues/28005)
+
+## <small>6.2.10 (2024-07-05)</small>
+
+* [bitnami/clickhouse] Release 6.2.10 (#27820) ([8f5d69f](https://github.com/bitnami/charts/commit/8f5d69f2d1a832de64742cc49ee8f59a7fe85301)), closes [#27820](https://github.com/bitnami/charts/issues/27820)
+
+## <small>6.2.9 (2024-07-01)</small>
+
+* [bitnami/*] Update README changing TAC wording (#27530) ([52dfed6](https://github.com/bitnami/charts/commit/52dfed6bac44d791efabfaf06f15daddc4fefb0c)), closes [#27530](https://github.com/bitnami/charts/issues/27530)
+* [bitnami/clickhouse] Release 6.2.9 (#27612) ([7ed47b9](https://github.com/bitnami/charts/commit/7ed47b9732f1992588202ad182f8261f972a80c4)), closes [#27612](https://github.com/bitnami/charts/issues/27612)
+
+## <small>6.2.8 (2024-06-18)</small>
+
+* [bitnami/clickhouse] Release 6.2.8 (#27331) ([7739cc3](https://github.com/bitnami/charts/commit/7739cc3bd84d860fe28ecc0980e76bb3bbb8416c)), closes [#27331](https://github.com/bitnami/charts/issues/27331)
 
 ## <small>6.2.7 (2024-06-17)</small>
 

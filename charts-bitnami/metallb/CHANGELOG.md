@@ -1,8 +1,25 @@
 # Changelog
 
-## 6.3.5 (2024-06-18)
+## 6.3.9 (2024-07-24)
 
-* [bitnami/metallb] Release 6.3.5 ([#27377](https://github.com/bitnami/charts/pull/27377))
+* [bitnami/metallb] Remove duplicate keys ([#28203](https://github.com/bitnami/charts/pull/28203))
+
+## <small>6.3.8 (2024-07-16)</small>
+
+* [bitnami/metallb] Global StorageClass as default value (#28056) ([d0ab955](https://github.com/bitnami/charts/commit/d0ab95565e69472a14c13408893b8207fe5ec578)), closes [#28056](https://github.com/bitnami/charts/issues/28056)
+
+## <small>6.3.7 (2024-07-04)</small>
+
+* [bitnami/metallb] Release 6.3.7 (#27796) ([bfd90e5](https://github.com/bitnami/charts/commit/bfd90e589210411ecf58128c2c92dc178ff3299b)), closes [#27796](https://github.com/bitnami/charts/issues/27796)
+
+## <small>6.3.6 (2024-07-03)</small>
+
+* [bitnami/*] Update README changing TAC wording (#27530) ([52dfed6](https://github.com/bitnami/charts/commit/52dfed6bac44d791efabfaf06f15daddc4fefb0c)), closes [#27530](https://github.com/bitnami/charts/issues/27530)
+* [bitnami/metallb] Release 6.3.6 (#27664) ([fe3e1bd](https://github.com/bitnami/charts/commit/fe3e1bda08186e65efe914093b4bbe2080df065a)), closes [#27664](https://github.com/bitnami/charts/issues/27664)
+
+## <small>6.3.5 (2024-06-18)</small>
+
+* [bitnami/metallb] Release 6.3.5 (#27377) ([05ad8f5](https://github.com/bitnami/charts/commit/05ad8f5856607e0079c0e4212dc5c164a4b5634a)), closes [#27377](https://github.com/bitnami/charts/issues/27377)
 
 ## <small>6.3.4 (2024-06-17)</small>
 

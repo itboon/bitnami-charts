@@ -1,8 +1,33 @@
 # Changelog
 
-## 0.3.12 (2024-06-21)
+## 0.3.18 (2024-07-25)
 
-* [bitnami/janusgraph] Fix fullname resolution for cassandra subchart ([#27151](https://github.com/bitnami/charts/pull/27151))
+* [bitnami/janusgraph] Release 0.3.18 ([#28441](https://github.com/bitnami/charts/pull/28441))
+
+## <small>0.3.17 (2024-07-24)</small>
+
+* [bitnami/janusgraph] Release 0.3.17 (#28297) ([3714673](https://github.com/bitnami/charts/commit/371467338b1b7a8e0248e9259d7eb81d2873e6c6)), closes [#28297](https://github.com/bitnami/charts/issues/28297)
+
+## <small>0.3.16 (2024-07-24)</small>
+
+* [bitnami/janusgraph] Release 0.3.16 (#28256) ([911c81e](https://github.com/bitnami/charts/commit/911c81e8749f3c24078fb849cf8ce670464f150f)), closes [#28256](https://github.com/bitnami/charts/issues/28256)
+
+## <small>0.3.15 (2024-07-18)</small>
+
+* [bitnami/janusgraph] Global StorageClass as default value (#28033) ([227a2ce](https://github.com/bitnami/charts/commit/227a2ce1da9ccb452635061bd57ca57e737e203d)), closes [#28033](https://github.com/bitnami/charts/issues/28033)
+
+## <small>0.3.14 (2024-07-05)</small>
+
+* [bitnami/janusgraph] Release 0.3.14 (#27812) ([aa66dd1](https://github.com/bitnami/charts/commit/aa66dd1abf1e766bb54cac5d151e816accedc197)), closes [#27812](https://github.com/bitnami/charts/issues/27812)
+
+## <small>0.3.13 (2024-07-03)</small>
+
+* [bitnami/*] Update README changing TAC wording (#27530) ([52dfed6](https://github.com/bitnami/charts/commit/52dfed6bac44d791efabfaf06f15daddc4fefb0c)), closes [#27530](https://github.com/bitnami/charts/issues/27530)
+* [bitnami/janusgraph] Release 0.3.13 (#27697) ([b06ce3d](https://github.com/bitnami/charts/commit/b06ce3d9cba0f89a4eeae4852cb4e710349fc72a)), closes [#27697](https://github.com/bitnami/charts/issues/27697)
+
+## <small>0.3.12 (2024-06-21)</small>
+
+* [bitnami/janusgraph] Fix fullname resolution for cassandra subchart (#27151) ([6773447](https://github.com/bitnami/charts/commit/677344797f3ff1a1342c8237182db17f6c09b675)), closes [#27151](https://github.com/bitnami/charts/issues/27151)
 
 ## <small>0.3.11 (2024-06-18)</small>
 

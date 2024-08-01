@@ -1,8 +1,29 @@
 # Changelog
 
-## 6.2.6 (2024-06-18)
+## 6.2.11 (2024-07-30)
 
-* [bitnami/mastodon] Release 6.2.6 ([#27374](https://github.com/bitnami/charts/pull/27374))
+* [bitnami/mastodon] Release 6.2.10 ([#28479](https://github.com/bitnami/charts/pull/28479))
+
+## <small>6.2.10 (2024-07-29)</small>
+
+* [bitnami/mastodon] Improve init-job stability (#28553) ([befdf07](https://github.com/bitnami/charts/commit/befdf07bececdf47b43c0b5e0abf9981457e6f3d)), closes [#28553](https://github.com/bitnami/charts/issues/28553)
+
+## <small>6.2.9 (2024-07-22)</small>
+
+* [bitnami/mastodon] Global StorageClass as default value (#28052) ([f3ba3c5](https://github.com/bitnami/charts/commit/f3ba3c5c7a1015f0c60a1d13de63bb2bbc43d786)), closes [#28052](https://github.com/bitnami/charts/issues/28052)
+
+## <small>6.2.8 (2024-07-04)</small>
+
+* [bitnami/mastodon] Release 6.2.8 (#27784) ([6d194a4](https://github.com/bitnami/charts/commit/6d194a4b0befdf6e0ae786db6431cb759253367e)), closes [#27784](https://github.com/bitnami/charts/issues/27784)
+
+## <small>6.2.7 (2024-07-03)</small>
+
+* [bitnami/*] Update README changing TAC wording (#27530) ([52dfed6](https://github.com/bitnami/charts/commit/52dfed6bac44d791efabfaf06f15daddc4fefb0c)), closes [#27530](https://github.com/bitnami/charts/issues/27530)
+* [bitnami/mastodon] Release 6.2.7 (#27703) ([2853b4f](https://github.com/bitnami/charts/commit/2853b4f5aa2764d169bf172fa7995ce0b2151d5c)), closes [#27703](https://github.com/bitnami/charts/issues/27703)
+
+## <small>6.2.6 (2024-06-18)</small>
+
+* [bitnami/mastodon] Release 6.2.6 (#27374) ([cdaa431](https://github.com/bitnami/charts/commit/cdaa43156c0d28183ee734604fb081013b0bd6e9)), closes [#27374](https://github.com/bitnami/charts/issues/27374)
 
 ## <small>6.2.5 (2024-06-17)</small>
 

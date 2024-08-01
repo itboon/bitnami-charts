@@ -1,8 +1,45 @@
 # Changelog
 
-## 21.2.6 (2024-06-24)
+## 21.3.6 (2024-07-25)
 
-* [bitnami/elasticsearch] Fix ingress backend declaration name ([#27149](https://github.com/bitnami/charts/pull/27149))
+* [bitnami/elasticsearch] Release 21.3.6 ([#28412](https://github.com/bitnami/charts/pull/28412))
+
+## <small>21.3.5 (2024-07-24)</small>
+
+* [bitnami/elasticsearch] Release 21.3.5 (#28288) ([f899c65](https://github.com/bitnami/charts/commit/f899c65084282e2e18a7dff3e4b52cf98163a9b0)), closes [#28288](https://github.com/bitnami/charts/issues/28288)
+
+## <small>21.3.4 (2024-07-23)</small>
+
+* [bitnami/elasticsearch] Release 21.3.4 (#28238) ([8c06742](https://github.com/bitnami/charts/commit/8c06742db35862ae3531880d57e758ab233afffc)), closes [#28238](https://github.com/bitnami/charts/issues/28238)
+
+## <small>21.3.3 (2024-07-23)</small>
+
+* [bitnami/elasticsearch] fix: Unable to run the image using the root user (#27491) ([5482b11](https://github.com/bitnami/charts/commit/5482b114975e9d120786515f2473cc339806b71a)), closes [#27491](https://github.com/bitnami/charts/issues/27491)
+
+## <small>21.3.2 (2024-07-18)</small>
+
+* [bitnami/elasticsearch] Global StorageClass as default value (#28015) ([5b0fd56](https://github.com/bitnami/charts/commit/5b0fd56ff9b697a0a4cba205df9c869fb2075fa9)), closes [#28015](https://github.com/bitnami/charts/issues/28015)
+
+## <small>21.3.1 (2024-07-11)</small>
+
+* [bitnami/elasticsearch] Release 21.3.1 (#27906) ([7a5c222](https://github.com/bitnami/charts/commit/7a5c222482334e274e8e21995a0e292407ba996e)), closes [#27906](https://github.com/bitnami/charts/issues/27906)
+
+## 21.3.0 (2024-07-11)
+
+* [bitnami/elasticsearch] add persistentVolumeClaimRetentionPolicy to statefulset for master and data  ([2c4b4f2](https://github.com/bitnami/charts/commit/2c4b4f22acb66a3bd6712935d713a2f0d84eee27)), closes [#27866](https://github.com/bitnami/charts/issues/27866)
+
+## <small>21.2.8 (2024-07-04)</small>
+
+* [bitnami/elasticsearch] Release 21.2.8 (#27801) ([65e86d5](https://github.com/bitnami/charts/commit/65e86d56be5f92775828354000a2195ad0431086)), closes [#27801](https://github.com/bitnami/charts/issues/27801)
+
+## <small>21.2.7 (2024-07-03)</small>
+
+* [bitnami/*] Update README changing TAC wording (#27530) ([52dfed6](https://github.com/bitnami/charts/commit/52dfed6bac44d791efabfaf06f15daddc4fefb0c)), closes [#27530](https://github.com/bitnami/charts/issues/27530)
+* [bitnami/elasticsearch] Release 21.2.7 (#27688) ([95ad961](https://github.com/bitnami/charts/commit/95ad9610c1e1e633336e021123e81b86e9180aa9)), closes [#27688](https://github.com/bitnami/charts/issues/27688)
+
+## <small>21.2.6 (2024-06-24)</small>
+
+* [bitnami/elasticsearch] Fix ingress backend declaration name (#27149) ([a95a230](https://github.com/bitnami/charts/commit/a95a230e52a6c11803a7397c04209c55f0ff0417)), closes [#27149](https://github.com/bitnami/charts/issues/27149)
 
 ## <small>21.2.5 (2024-06-18)</small>
 

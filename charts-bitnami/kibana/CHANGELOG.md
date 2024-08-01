@@ -1,8 +1,41 @@
 # Changelog
 
-## 11.2.8 (2024-06-18)
+## 11.2.16 (2024-07-29)
 
-* [bitnami/kibana] Release 11.2.8 ([#27364](https://github.com/bitnami/charts/pull/27364))
+* add publicBaseUrl param ([#28543](https://github.com/bitnami/charts/pull/28543))
+
+## <small>11.2.15 (2024-07-25)</small>
+
+* [bitnami/kibana] Release 11.2.15 (#28471) ([bf1bafa](https://github.com/bitnami/charts/commit/bf1bafaf00358d46360f229ff3a362eb6a642eff)), closes [#28471](https://github.com/bitnami/charts/issues/28471)
+
+## <small>11.2.14 (2024-07-24)</small>
+
+* [bitnami/kibana] Release 11.2.14 (#28323) ([5c32ef7](https://github.com/bitnami/charts/commit/5c32ef74cf12707719ea3adbd9b40149b33d412e)), closes [#28323](https://github.com/bitnami/charts/issues/28323)
+
+## <small>11.2.13 (2024-07-24)</small>
+
+* [bitnami/kibana] Release 11.2.13 (#28271) ([bc2b42d](https://github.com/bitnami/charts/commit/bc2b42df6a5fe4e74fcfcfb3ea52b2be80fb1d9b)), closes [#28271](https://github.com/bitnami/charts/issues/28271)
+
+## <small>11.2.12 (2024-07-16)</small>
+
+* [bitnami/kibana] Global StorageClass as default value (#28041) ([a63f765](https://github.com/bitnami/charts/commit/a63f7654c431062b78558cb096c7cd65054f241c)), closes [#28041](https://github.com/bitnami/charts/issues/28041)
+
+## <small>11.2.11 (2024-07-11)</small>
+
+* [bitnami/kibana] Release 11.2.11 (#27909) ([bbbe46f](https://github.com/bitnami/charts/commit/bbbe46f4fd1877ab80c092544f02b8ebddd1224d)), closes [#27909](https://github.com/bitnami/charts/issues/27909)
+
+## <small>11.2.10 (2024-07-04)</small>
+
+* [bitnami/kibana] Release 11.2.10 (#27790) ([175b63e](https://github.com/bitnami/charts/commit/175b63e6452d0358885e811c4a2542ffdc4ade52)), closes [#27790](https://github.com/bitnami/charts/issues/27790)
+
+## <small>11.2.9 (2024-07-03)</small>
+
+* [bitnami/*] Update README changing TAC wording (#27530) ([52dfed6](https://github.com/bitnami/charts/commit/52dfed6bac44d791efabfaf06f15daddc4fefb0c)), closes [#27530](https://github.com/bitnami/charts/issues/27530)
+* [bitnami/kibana] Release 11.2.9 (#27701) ([7338901](https://github.com/bitnami/charts/commit/73389017b5993990144519d70130fd6e35ad55b9)), closes [#27701](https://github.com/bitnami/charts/issues/27701)
+
+## <small>11.2.8 (2024-06-18)</small>
+
+* [bitnami/kibana] Release 11.2.8 (#27364) ([d8e27c5](https://github.com/bitnami/charts/commit/d8e27c5c151f1a219890211f7ba7a00e3bcee503)), closes [#27364](https://github.com/bitnami/charts/issues/27364)
 
 ## <small>11.2.7 (2024-06-17)</small>
 

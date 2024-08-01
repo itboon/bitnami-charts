@@ -1,8 +1,29 @@
 # Changelog
 
-## 1.1.5 (2024-06-18)
+## 1.1.10 (2024-07-25)
 
-* [bitnami/whereabouts] Release 1.1.5 ([#27427](https://github.com/bitnami/charts/pull/27427))
+* [bitnami/whereabouts] Release 1.1.10 ([#28491](https://github.com/bitnami/charts/pull/28491))
+
+## <small>1.1.9 (2024-07-24)</small>
+
+* [bitnami/whereabouts] Release 1.1.9 (#28388) ([71aee70](https://github.com/bitnami/charts/commit/71aee70982ed69a7b5e76878edee31d126fd72bc)), closes [#28388](https://github.com/bitnami/charts/issues/28388)
+
+## <small>1.1.8 (2024-07-16)</small>
+
+* [bitnami/whereabouts] Global StorageClass as default value (#28108) ([46cc9c6](https://github.com/bitnami/charts/commit/46cc9c6fb1c10a0bd62b243108dfa74499115995)), closes [#28108](https://github.com/bitnami/charts/issues/28108)
+
+## <small>1.1.7 (2024-07-04)</small>
+
+* [bitnami/whereabouts] Release 1.1.7 (#27800) ([d628953](https://github.com/bitnami/charts/commit/d628953296525abcb1d3a6ae17069790e245b179)), closes [#27800](https://github.com/bitnami/charts/issues/27800)
+
+## <small>1.1.6 (2024-07-03)</small>
+
+* [bitnami/*] Update README changing TAC wording (#27530) ([52dfed6](https://github.com/bitnami/charts/commit/52dfed6bac44d791efabfaf06f15daddc4fefb0c)), closes [#27530](https://github.com/bitnami/charts/issues/27530)
+* [bitnami/whereabouts] Release 1.1.6 (#27681) ([ce18453](https://github.com/bitnami/charts/commit/ce18453e5addee6295b54d58d0611f645c9a4f74)), closes [#27681](https://github.com/bitnami/charts/issues/27681)
+
+## <small>1.1.5 (2024-06-18)</small>
+
+* [bitnami/whereabouts] Release 1.1.5 (#27427) ([9a35c1e](https://github.com/bitnami/charts/commit/9a35c1ecf572587042a06175ac790316ab47bba6)), closes [#27427](https://github.com/bitnami/charts/issues/27427)
 
 ## <small>1.1.4 (2024-06-17)</small>
 

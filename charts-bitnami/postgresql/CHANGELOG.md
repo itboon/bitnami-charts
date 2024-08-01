@@ -1,8 +1,45 @@
 # Changelog
 
-## 15.5.11 (2024-06-26)
+## 15.5.20 (2024-07-25)
 
-* [bitnami/postgresql] Release 15.5.11 ([#27548](https://github.com/bitnami/charts/pull/27548))
+* [bitnami/postgresql] Release 15.5.20 ([#28489](https://github.com/bitnami/charts/pull/28489))
+
+## <small>15.5.19 (2024-07-24)</small>
+
+* [bitnami/postgresql] Release 15.5.19 (#28352) ([59696e9](https://github.com/bitnami/charts/commit/59696e992ceec9b12255560d346e59f2f62b543e)), closes [#28352](https://github.com/bitnami/charts/issues/28352)
+
+## <small>15.5.18 (2024-07-23)</small>
+
+* [bitnami/postgresql] Release 15.5.18 (#28221) ([8976498](https://github.com/bitnami/charts/commit/8976498507646c6a690381a38d690aa32b25a2f7)), closes [#28221](https://github.com/bitnami/charts/issues/28221)
+
+## <small>15.5.17 (2024-07-16)</small>
+
+* [bitnami/postgresql] Global StorageClass as default value (#28082) ([6267bb7](https://github.com/bitnami/charts/commit/6267bb792f70eb0b67800132f5fbd488087e347b)), closes [#28082](https://github.com/bitnami/charts/issues/28082)
+
+## <small>15.5.16 (2024-07-11)</small>
+
+* [bitnami/postgresql] Move comments inside conditionals (#27627) ([7d3b0f0](https://github.com/bitnami/charts/commit/7d3b0f0f13b79e75ee38ce1f5b59911c0cedb187)), closes [#27627](https://github.com/bitnami/charts/issues/27627)
+
+## <small>15.5.15 (2024-07-09)</small>
+
+* Postgres exporter URI fix (#27734) ([d8d0dfe](https://github.com/bitnami/charts/commit/d8d0dfe79932c19f1b9b66bc5ac1addf0643da21)), closes [#27734](https://github.com/bitnami/charts/issues/27734)
+
+## <small>15.5.14 (2024-07-05)</small>
+
+* [bitnami/postgresql] Release 15.5.14 (#27819) ([a4baae5](https://github.com/bitnami/charts/commit/a4baae5538d74b732fca029ad6ee5783279c4d54)), closes [#27819](https://github.com/bitnami/charts/issues/27819)
+
+## <small>15.5.13 (2024-07-03)</small>
+
+* [bitnami/postgresql] Release 15.5.13 (#27733) ([e51f4a8](https://github.com/bitnami/charts/commit/e51f4a8818f15e6c0b636294d50d223140cc43d5)), closes [#27733](https://github.com/bitnami/charts/issues/27733)
+
+## <small>15.5.12 (2024-07-02)</small>
+
+* postgres exporter monitor all databases (#27586) ([4feb56d](https://github.com/bitnami/charts/commit/4feb56d610de6e958fd0d7052958b88bcb21e1ab)), closes [#27586](https://github.com/bitnami/charts/issues/27586)
+
+## <small>15.5.11 (2024-06-26)</small>
+
+* [bitnami/*] Update README changing TAC wording (#27530) ([52dfed6](https://github.com/bitnami/charts/commit/52dfed6bac44d791efabfaf06f15daddc4fefb0c)), closes [#27530](https://github.com/bitnami/charts/issues/27530)
+* [bitnami/postgresql] Release 15.5.11 (#27548) ([0fe73e3](https://github.com/bitnami/charts/commit/0fe73e31c5dad97c86b9db11af28388d0324aea8)), closes [#27548](https://github.com/bitnami/charts/issues/27548)
 
 ## <small>15.5.10 (2024-06-25)</small>
 

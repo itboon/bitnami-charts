@@ -1,8 +1,29 @@
 # Changelog
 
-## 4.4.8 (2024-06-18)
+## 4.4.13 (2024-07-30)
 
-* [bitnami/grafana-operator] Release 4.4.8 ([#27350](https://github.com/bitnami/charts/pull/27350))
+* [bitnami/grafana-operator] Release 4.4.13 ([#28587](https://github.com/bitnami/charts/pull/28587))
+
+## <small>4.4.12 (2024-07-25)</small>
+
+* [bitnami/grafana-operator] Release 4.4.12 (#28436) ([80964ad](https://github.com/bitnami/charts/commit/80964adf492e70f9a6fbf5f6107f0ebdd3682bd4)), closes [#28436](https://github.com/bitnami/charts/issues/28436)
+
+## <small>4.4.11 (2024-07-24)</small>
+
+* [bitnami/grafana-operator] Release 4.4.11 (#28283) ([4033e63](https://github.com/bitnami/charts/commit/4033e63e3d40be119fddf17bf108cf929c45f7b5)), closes [#28283](https://github.com/bitnami/charts/issues/28283)
+
+## <small>4.4.10 (2024-07-04)</small>
+
+* [bitnami/grafana-operator] Release 4.4.10 (#27783) ([3ccea51](https://github.com/bitnami/charts/commit/3ccea51d41bdd0c6d2f3b0e13c7ff67e4777aaf6)), closes [#27783](https://github.com/bitnami/charts/issues/27783)
+
+## <small>4.4.9 (2024-07-03)</small>
+
+* [bitnami/*] Update README changing TAC wording (#27530) ([52dfed6](https://github.com/bitnami/charts/commit/52dfed6bac44d791efabfaf06f15daddc4fefb0c)), closes [#27530](https://github.com/bitnami/charts/issues/27530)
+* [bitnami/grafana-operator] Release 4.4.9 (#27653) ([f2cc438](https://github.com/bitnami/charts/commit/f2cc438f574a730819a358ce3a8f57d389534fdd)), closes [#27653](https://github.com/bitnami/charts/issues/27653)
+
+## <small>4.4.8 (2024-06-18)</small>
+
+* [bitnami/grafana-operator] Release 4.4.8 (#27350) ([0618498](https://github.com/bitnami/charts/commit/0618498158648c5f66c604a881a9b622c51f6bd9)), closes [#27350](https://github.com/bitnami/charts/issues/27350)
 
 ## <small>4.4.7 (2024-06-17)</small>
 

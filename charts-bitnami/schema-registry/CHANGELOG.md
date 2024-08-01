@@ -1,8 +1,29 @@
 # Changelog
 
+## 19.2.5 (2024-07-25)
+
+* [bitnami/schema-registry] Release 19.2.5 ([#28488](https://github.com/bitnami/charts/pull/28488))
+
+## <small>19.2.4 (2024-07-24)</small>
+
+* [bitnami/schema-registry] Release 19.2.4 (#28371) ([8586f2a](https://github.com/bitnami/charts/commit/8586f2ac394d32d147aa50a074296ddb3e5f5770)), closes [#28371](https://github.com/bitnami/charts/issues/28371)
+
+## <small>19.2.3 (2024-07-17)</small>
+
+* [bitnami/schema-registry] Release 19.2.3 (#28148) ([ef37a2d](https://github.com/bitnami/charts/commit/ef37a2d3e7bc6d5ed84d9d49a1ef231b728c6c13)), closes [#28148](https://github.com/bitnami/charts/issues/28148)
+
+## <small>19.2.2 (2024-07-16)</small>
+
+* [bitnami/schema-registry] Global StorageClass as default value (#28092) ([1b0c2c6](https://github.com/bitnami/charts/commit/1b0c2c6cbdbf602d74965110225359f5cf2eb446)), closes [#28092](https://github.com/bitnami/charts/issues/28092)
+
+## <small>19.2.1 (2024-07-03)</small>
+
+* [bitnami/schema-registry] Release 19.2.1 (#27716) ([793f73b](https://github.com/bitnami/charts/commit/793f73b2410013bacc67069306a5d792b6360b8c)), closes [#27716](https://github.com/bitnami/charts/issues/27716)
+
 ## 19.2.0 (2024-06-28)
 
-* [bitnami/schema-registry] Add labels to service ([#27528](https://github.com/bitnami/charts/pull/27528))
+* [bitnami/*] Update README changing TAC wording (#27530) ([52dfed6](https://github.com/bitnami/charts/commit/52dfed6bac44d791efabfaf06f15daddc4fefb0c)), closes [#27530](https://github.com/bitnami/charts/issues/27530)
+* [bitnami/schema-registry] Add labels to service (#27528) ([638dc9e](https://github.com/bitnami/charts/commit/638dc9e45a55ada309f759368de3677b54da69ed)), closes [#27528](https://github.com/bitnami/charts/issues/27528)
 
 ## <small>19.1.7 (2024-06-21)</small>
 

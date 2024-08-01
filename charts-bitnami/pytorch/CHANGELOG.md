@@ -1,8 +1,33 @@
 # Changelog
 
-## 4.2.7 (2024-06-18)
+## 4.2.13 (2024-07-25)
 
-* [bitnami/pytorch] Release 4.2.7 ([#27407](https://github.com/bitnami/charts/pull/27407))
+* [bitnami/pytorch] Release 4.2.13 ([#28510](https://github.com/bitnami/charts/pull/28510))
+
+## <small>4.2.12 (2024-07-25)</small>
+
+* [bitnami/pytorch] Release 4.2.12 (#28394) ([fab3548](https://github.com/bitnami/charts/commit/fab35480e16f6e4110685e5f33630e7072f9def0)), closes [#28394](https://github.com/bitnami/charts/issues/28394)
+
+## <small>4.2.11 (2024-07-24)</small>
+
+* [bitnami/pytorch] Release 4.2.11 (#28364) ([0a51218](https://github.com/bitnami/charts/commit/0a512183a38fa5e7b5889f0e60b33ad76bae149c)), closes [#28364](https://github.com/bitnami/charts/issues/28364)
+
+## <small>4.2.10 (2024-07-16)</small>
+
+* [bitnami/pytorch] Global StorageClass as default value (#28086) ([313aba5](https://github.com/bitnami/charts/commit/313aba59c958232a5062c86c2423b07047336d5c)), closes [#28086](https://github.com/bitnami/charts/issues/28086)
+
+## <small>4.2.9 (2024-07-03)</small>
+
+* [bitnami/pytorch] Release 4.2.9 (#27741) ([0ed50b3](https://github.com/bitnami/charts/commit/0ed50b36fb22d77f8f6c1ce7715d479ff3d1191e)), closes [#27741](https://github.com/bitnami/charts/issues/27741)
+
+## <small>4.2.8 (2024-07-03)</small>
+
+* [bitnami/*] Update README changing TAC wording (#27530) ([52dfed6](https://github.com/bitnami/charts/commit/52dfed6bac44d791efabfaf06f15daddc4fefb0c)), closes [#27530](https://github.com/bitnami/charts/issues/27530)
+* [bitnami/pytorch] Release 4.2.8 (#27708) ([f5fafe0](https://github.com/bitnami/charts/commit/f5fafe0482dc2dac6c5af083a159963cf2b937f7)), closes [#27708](https://github.com/bitnami/charts/issues/27708)
+
+## <small>4.2.7 (2024-06-18)</small>
+
+* [bitnami/pytorch] Release 4.2.7 (#27407) ([f3eb17e](https://github.com/bitnami/charts/commit/f3eb17ecdbfdfbd17723f80c3066f08bbba33bb7)), closes [#27407](https://github.com/bitnami/charts/issues/27407)
 
 ## <small>4.2.6 (2024-06-17)</small>
 

@@ -1,8 +1,33 @@
 # Changelog
 
-## 4.6.3 (2024-06-20)
+## 4.6.9 (2024-07-25)
 
-* [bitnami/grafana-loki] Disable Promtail secret creation if existing secret is provided ([#27465](https://github.com/bitnami/charts/pull/27465))
+* [bitnami/grafana-loki] Release 4.6.9 ([#28410](https://github.com/bitnami/charts/pull/28410))
+
+## <small>4.6.8 (2024-07-24)</small>
+
+* [bitnami/grafana-loki] Release 4.6.8 (#28281) ([d1775b8](https://github.com/bitnami/charts/commit/d1775b8bf72d0a4a12d5dd5a5d9b1182d15361e7)), closes [#28281](https://github.com/bitnami/charts/issues/28281)
+
+## <small>4.6.7 (2024-07-24)</small>
+
+* [bitnami/grafana-loki] Release 4.6.7 (#28251) ([9e1b52b](https://github.com/bitnami/charts/commit/9e1b52b4d128a94179435664617b7cbe581937dc)), closes [#28251](https://github.com/bitnami/charts/issues/28251)
+
+## <small>4.6.6 (2024-07-18)</small>
+
+* [bitnami/grafana-loki] Global StorageClass as default value (#28025) ([c2143a4](https://github.com/bitnami/charts/commit/c2143a49ff62dbe2c69411128f5391856894f803)), closes [#28025](https://github.com/bitnami/charts/issues/28025)
+
+## <small>4.6.5 (2024-07-04)</small>
+
+* [bitnami/grafana-loki] Release 4.6.5 (#27762) ([9feb5b9](https://github.com/bitnami/charts/commit/9feb5b9f173cb473571c2257a7841d10da201406)), closes [#27762](https://github.com/bitnami/charts/issues/27762)
+
+## <small>4.6.4 (2024-07-03)</small>
+
+* [bitnami/*] Update README changing TAC wording (#27530) ([52dfed6](https://github.com/bitnami/charts/commit/52dfed6bac44d791efabfaf06f15daddc4fefb0c)), closes [#27530](https://github.com/bitnami/charts/issues/27530)
+* [bitnami/grafana-loki] Release 4.6.4 (#27650) ([f8225e4](https://github.com/bitnami/charts/commit/f8225e4587c108c607ed19202a7e5fb7a843ba7b)), closes [#27650](https://github.com/bitnami/charts/issues/27650)
+
+## <small>4.6.3 (2024-06-24)</small>
+
+* [bitnami/grafana-loki] Disable Promtail secret creation if existing secret is provided (#27465) ([ca03a4e](https://github.com/bitnami/charts/commit/ca03a4e4616c48c5d7d7161ab703bc4f30400566)), closes [#27465](https://github.com/bitnami/charts/issues/27465)
 
 ## <small>4.6.2 (2024-06-18)</small>
 

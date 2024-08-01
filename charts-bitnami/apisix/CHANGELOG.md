@@ -1,8 +1,45 @@
 # Changelog
 
+## 3.3.9 (2024-07-25)
+
+* [bitnami/apisix] Release 3.3.9 ([#28396](https://github.com/bitnami/charts/pull/28396))
+
+## <small>3.3.8 (2024-07-24)</small>
+
+* [bitnami/apisix] Release 3.3.8 (#28267) ([1cfe3bc](https://github.com/bitnami/charts/commit/1cfe3bcd8be4dbff16ef68fd40037befe97bc656)), closes [#28267](https://github.com/bitnami/charts/issues/28267)
+
+## <small>3.3.7 (2024-07-23)</small>
+
+* [bitnami/apisix] Release 3.3.7 (#28227) ([fd667ad](https://github.com/bitnami/charts/commit/fd667ad8d2e343247b389e5f5f128a634c41d68e)), closes [#28227](https://github.com/bitnami/charts/issues/28227)
+
+## <small>3.3.6 (2024-07-16)</small>
+
+* [bitnami/apisix] Global StorageClass as default value (#27997) ([d280b1e](https://github.com/bitnami/charts/commit/d280b1e357dfb1db422ebd955260ada65071f3cb)), closes [#27997](https://github.com/bitnami/charts/issues/27997)
+
+## <small>3.3.5 (2024-07-16)</small>
+
+* [bitnami/apisix] Correct type at loadBalancerSourceRanges (#27985) ([fa74d4b](https://github.com/bitnami/charts/commit/fa74d4b7af146ec18c7f17776432016428422b68)), closes [#27985](https://github.com/bitnami/charts/issues/27985)
+
+## <small>3.3.4 (2024-07-16)</small>
+
+* [bitnami/apisix] wait container: support self-generated certificates at etcd (#27947) ([e816b4a](https://github.com/bitnami/charts/commit/e816b4a249e0212ea6378bd31657661c5ac234a3)), closes [#27947](https://github.com/bitnami/charts/issues/27947)
+
+## <small>3.3.3 (2024-07-10)</small>
+
+* [bitnami/apisix] Correct service port name in control plane ingress (#27839) ([769db5e](https://github.com/bitnami/charts/commit/769db5e671e228bf2c74cc7c1b7d7b9079ff1e2a)), closes [#27839](https://github.com/bitnami/charts/issues/27839)
+
+## <small>3.3.2 (2024-07-08)</small>
+
+* [bitnami/apisix] Updated jsonschema to allow string values for fields passed to tpl (#27441) ([d3967c3](https://github.com/bitnami/charts/commit/d3967c3c5308e70f54028e67328552523d2358b4)), closes [#27441](https://github.com/bitnami/charts/issues/27441)
+
+## <small>3.3.1 (2024-07-03)</small>
+
+* [bitnami/apisix] Release 3.3.1 (#27686) ([79fa0ac](https://github.com/bitnami/charts/commit/79fa0acb8beae9fa77fa0cb9081ea2e5fe0b0535)), closes [#27686](https://github.com/bitnami/charts/issues/27686)
+
 ## 3.3.0 (2024-06-28)
 
-* [bitnami/apisix] Add IngressClass for Ingress Controller ([#27568](https://github.com/bitnami/charts/pull/27568))
+* [bitnami/*] Update README changing TAC wording (#27530) ([52dfed6](https://github.com/bitnami/charts/commit/52dfed6bac44d791efabfaf06f15daddc4fefb0c)), closes [#27530](https://github.com/bitnami/charts/issues/27530)
+* [bitnami/apisix] Add IngressClass for Ingress Controller (#27568) ([40b3153](https://github.com/bitnami/charts/commit/40b3153cf66e9c2dd9454c92c6d8f43b12ed5d42)), closes [#27568](https://github.com/bitnami/charts/issues/27568)
 
 ## <small>3.2.5 (2024-06-20)</small>
 

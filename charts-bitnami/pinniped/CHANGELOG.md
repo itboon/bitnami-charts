@@ -1,8 +1,29 @@
 # Changelog
 
-## 2.2.7 (2024-06-19)
+## 2.2.12 (2024-07-25)
 
-* [bitnami/pinniped] Release 2.2.7 ([#27454](https://github.com/bitnami/charts/pull/27454))
+* [bitnami/pinniped] Release 2.2.12 ([#28467](https://github.com/bitnami/charts/pull/28467))
+
+## <small>2.2.11 (2024-07-24)</small>
+
+* [bitnami/pinniped] Release 2.2.11 (#28350) ([9a50783](https://github.com/bitnami/charts/commit/9a50783a3d1a12ce80b94f6d30ecdc127cf80b92)), closes [#28350](https://github.com/bitnami/charts/issues/28350)
+
+## <small>2.2.10 (2024-07-16)</small>
+
+* [bitnami/pinniped] Global StorageClass as default value (#28081) ([887f3c3](https://github.com/bitnami/charts/commit/887f3c3091ee17b846fe3a9734d88ba0d7604c0e)), closes [#28081](https://github.com/bitnami/charts/issues/28081)
+
+## <small>2.2.9 (2024-07-04)</small>
+
+* [bitnami/pinniped] Release 2.2.9 (#27775) ([657bff4](https://github.com/bitnami/charts/commit/657bff4c8d68c2b2e512b7527ed50d190ce73a6a)), closes [#27775](https://github.com/bitnami/charts/issues/27775)
+
+## <small>2.2.8 (2024-07-03)</small>
+
+* [bitnami/*] Update README changing TAC wording (#27530) ([52dfed6](https://github.com/bitnami/charts/commit/52dfed6bac44d791efabfaf06f15daddc4fefb0c)), closes [#27530](https://github.com/bitnami/charts/issues/27530)
+* [bitnami/pinniped] Release 2.2.8 (#27672) ([2139468](https://github.com/bitnami/charts/commit/2139468c7bee1525af628c721580499216eda5ef)), closes [#27672](https://github.com/bitnami/charts/issues/27672)
+
+## <small>2.2.7 (2024-06-19)</small>
+
+* [bitnami/pinniped] Release 2.2.7 (#27454) ([6b298c9](https://github.com/bitnami/charts/commit/6b298c9c0b5092bfa13713a7b473406157c268d1)), closes [#27454](https://github.com/bitnami/charts/issues/27454)
 
 ## <small>2.2.6 (2024-06-18)</small>
 

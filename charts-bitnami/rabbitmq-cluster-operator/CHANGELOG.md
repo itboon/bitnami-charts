@@ -1,8 +1,24 @@
 # Changelog
 
-## 4.3.16 (2024-07-25)
+## 4.3.20 (2024-08-27)
 
-* [bitnami/rabbitmq-cluster-operator] Release 4.3.16 ([#28468](https://github.com/bitnami/charts/pull/28468))
+* [bitnami/rabbitmq-cluster-operator] Release 4.3.20 ([#29061](https://github.com/bitnami/charts/pull/29061))
+
+## <small>4.3.19 (2024-08-23)</small>
+
+* [bitnami/rabbitmq-cluster-operator] Add AdmissionWebhookConfig toggle (#28801) ([8513e0e](https://github.com/bitnami/charts/commit/8513e0e35eb37fb18a747090c979a17e3625e672)), closes [#28801](https://github.com/bitnami/charts/issues/28801)
+
+## <small>4.3.18 (2024-08-08)</small>
+
+* [bitnami/rabbitmq-cluster-operator] Fix msg topology operator podmonitor (#28705) ([e128550](https://github.com/bitnami/charts/commit/e1285503ad6e54097d2b1f0bf7e9a8b199ed4ea9)), closes [#28705](https://github.com/bitnami/charts/issues/28705)
+
+## <small>4.3.17 (2024-08-07)</small>
+
+* [bitnami/rabbitmq-cluster-operator] Release 4.3.17 (#28759) ([89fe1c1](https://github.com/bitnami/charts/commit/89fe1c1263f71339a04b1992276d2c24d9c38d32)), closes [#28759](https://github.com/bitnami/charts/issues/28759)
+
+## <small>4.3.16 (2024-07-25)</small>
+
+* [bitnami/rabbitmq-cluster-operator] Release 4.3.16 (#28468) ([a326d97](https://github.com/bitnami/charts/commit/a326d97d5b16895e56c2ca42c934f4eedf451103)), closes [#28468](https://github.com/bitnami/charts/issues/28468)
 
 ## <small>4.3.15 (2024-07-24)</small>
 

@@ -1,8 +1,32 @@
 # Changelog
 
-## 15.6.16 (2024-07-25)
+## 15.6.22 (2024-08-27)
 
-* [bitnami/mongodb] Release 15.6.16 ([#28453](https://github.com/bitnami/charts/pull/28453))
+* [bitnami/mongodb] add securityContext via helper to initContainter dns-check ([#29038](https://github.com/bitnami/charts/pull/29038))
+
+## <small>15.6.21 (2024-08-26)</small>
+
+* [bitnami/mongodb] Release 15.6.21 (#29035) ([21acb97](https://github.com/bitnami/charts/commit/21acb974bf8edca0550bccb71a1df126a277d59b)), closes [#29035](https://github.com/bitnami/charts/issues/29035)
+
+## <small>15.6.20 (2024-08-20)</small>
+
+* [bitnami/mongodb] Fix logic to add custom annotations to external-access service (#28883) ([785e59b](https://github.com/bitnami/charts/commit/785e59bccf87c5ecae2b472901e7f6e7fbf2c196)), closes [#28883](https://github.com/bitnami/charts/issues/28883)
+
+## <small>15.6.19 (2024-08-14)</small>
+
+* [bitnami/mongodb] Release 15.6.19 (#28889) ([8b3cb57](https://github.com/bitnami/charts/commit/8b3cb57c221f0f035e020cecc70b44e26cfd8040)), closes [#28889](https://github.com/bitnami/charts/issues/28889)
+
+## <small>15.6.18 (2024-08-07)</small>
+
+* [bitnami/mongodb] fix(NOTES.txt): Missing messages (#28685) ([7e31f12](https://github.com/bitnami/charts/commit/7e31f12208a7ae11060d3eaa68c09f74cbc4a6a4)), closes [#28685](https://github.com/bitnami/charts/issues/28685)
+
+## <small>15.6.17 (2024-08-06)</small>
+
+* [bitnami/mongodb] Release 15.6.17 (#28697) ([b6d6a24](https://github.com/bitnami/charts/commit/b6d6a2449195d87387cce9aec88cc6215763c569)), closes [#28697](https://github.com/bitnami/charts/issues/28697)
+
+## <small>15.6.16 (2024-07-25)</small>
+
+* [bitnami/mongodb] Release 15.6.16 (#28453) ([86d3ac8](https://github.com/bitnami/charts/commit/86d3ac8763d831263d8436ce890cd54ef62a9a17)), closes [#28453](https://github.com/bitnami/charts/issues/28453)
 
 ## <small>15.6.15 (2024-07-24)</small>
 

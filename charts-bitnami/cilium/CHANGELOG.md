@@ -1,8 +1,32 @@
 # Changelog
 
-## 1.0.14 (2024-07-25)
+## 1.0.20 (2024-08-29)
 
-* [bitnami/cilium] Release 1.0.14 ([#28517](https://github.com/bitnami/charts/pull/28517))
+* [bitnami/cilium] test: :white_check_mark: Add a wait before goss test ([#29108](https://github.com/bitnami/charts/pull/29108))
+
+## <small>1.0.19 (2024-08-29)</small>
+
+* [bitnami/cilium] test: :white_check_mark: Improve resiliency of goss test (#29104) ([2bb5384](https://github.com/bitnami/charts/commit/2bb5384294ed233bf040d87e1004fd885ce4a8e6)), closes [#29104](https://github.com/bitnami/charts/issues/29104)
+
+## <small>1.0.18 (2024-08-28)</small>
+
+* [bitnami/cilium] fix: :bug: Use namespace to avoid collisions in hubble UI RBAC objects (#29086) ([bda56fa](https://github.com/bitnami/charts/commit/bda56faff0bf3bfbb142955fea632e902446ef33)), closes [#29086](https://github.com/bitnami/charts/issues/29086)
+
+## <small>1.0.17 (2024-08-14)</small>
+
+* [bitnami/cilium] Release 1.0.17 (#28873) ([4c97202](https://github.com/bitnami/charts/commit/4c972028d79f46ec57eecab72c24c0b8c4f8b99b)), closes [#28873](https://github.com/bitnami/charts/issues/28873)
+
+## <small>1.0.16 (2024-08-07)</small>
+
+* [bitnami/cilium] Release 1.0.16 (#28708) ([6f90880](https://github.com/bitnami/charts/commit/6f9088035d1c54f94c610f9704f5b5e505791310)), closes [#28708](https://github.com/bitnami/charts/issues/28708)
+
+## <small>1.0.15 (2024-08-05)</small>
+
+* [bitnami/cilium] Release 1.0.15 (#28667) ([b547c0f](https://github.com/bitnami/charts/commit/b547c0fcebc93e09291e24ebb067b4db2718977f)), closes [#28667](https://github.com/bitnami/charts/issues/28667)
+
+## <small>1.0.14 (2024-07-25)</small>
+
+* [bitnami/cilium] Release 1.0.14 (#28517) ([450fa38](https://github.com/bitnami/charts/commit/450fa381d9c3fb758decca419ee6886353d2f89e)), closes [#28517](https://github.com/bitnami/charts/issues/28517)
 
 ## <small>1.0.13 (2024-07-25)</small>
 

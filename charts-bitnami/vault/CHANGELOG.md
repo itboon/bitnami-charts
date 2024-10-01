@@ -1,8 +1,20 @@
 # Changelog
 
-## 1.4.20 (2024-08-31)
+## 1.4.23 (2024-09-26)
 
-* [bitnami/vault] Release 1.4.20 ([#29140](https://github.com/bitnami/charts/pull/29140))
+* [bitnami/vault] Release 1.4.23 ([#29608](https://github.com/bitnami/charts/pull/29608))
+
+## <small>1.4.22 (2024-09-11)</small>
+
+* [bitnami/vault] fix: add apiVersion and kind to volumeClaimTemplates (#29353) ([e870d71](https://github.com/bitnami/charts/commit/e870d71f3b5f8bb0c5ed174cdaca739af4aaa83b)), closes [#29353](https://github.com/bitnami/charts/issues/29353)
+
+## <small>1.4.21 (2024-09-06)</small>
+
+* [bitnami/vault] Release 1.4.21 (#29269) ([bb12732](https://github.com/bitnami/charts/commit/bb1273268ea62c2cd2604fc96744f0afef421b78)), closes [#29269](https://github.com/bitnami/charts/issues/29269)
+
+## <small>1.4.20 (2024-08-31)</small>
+
+* [bitnami/vault] Release 1.4.20 (#29140) ([7134ec1](https://github.com/bitnami/charts/commit/7134ec1db9fa5b1e9dcf04a131c09f17f1f21f1c)), closes [#29140](https://github.com/bitnami/charts/issues/29140)
 
 ## <small>1.4.19 (2024-08-29)</small>
 

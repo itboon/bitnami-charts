@@ -1,8 +1,48 @@
 # Changelog
 
-## 15.5.27 (2024-08-30)
+## 15.5.37 (2024-09-30)
 
-* [bitnami/postgresql] Release 15.5.27 ([#29122](https://github.com/bitnami/charts/pull/29122))
+* [bitnami/postgresql] Release 15.5.37 ([#29660](https://github.com/bitnami/charts/pull/29660))
+
+## <small>15.5.36 (2024-09-26)</small>
+
+* [bitnami/postgresql] Release 15.5.36 (#29640) ([074e377](https://github.com/bitnami/charts/commit/074e377c582055f6b7039c63d7d37db5f97b770d)), closes [#29640](https://github.com/bitnami/charts/issues/29640)
+
+## <small>15.5.35 (2024-09-26)</small>
+
+* [bitnami/postgresql] Release 15.5.35 (#29610) ([1f3717a](https://github.com/bitnami/charts/commit/1f3717afe128dea9ff69598952245930b1e7ced6)), closes [#29610](https://github.com/bitnami/charts/issues/29610)
+
+## <small>15.5.34 (2024-09-23)</small>
+
+* [bitnami/postgresql] Release 15.5.34 (#29580) ([1450838](https://github.com/bitnami/charts/commit/1450838c829ccf48edb386b459244bf59f9080fa)), closes [#29580](https://github.com/bitnami/charts/issues/29580)
+
+## <small>15.5.33 (2024-09-23)</small>
+
+* [bitnami/postgresql] Release 15.5.33 (#29579) ([e081955](https://github.com/bitnami/charts/commit/e0819554cf864099182049333aa47f7fd3ba341b)), closes [#29579](https://github.com/bitnami/charts/issues/29579)
+
+## <small>15.5.32 (2024-09-17)</small>
+
+* [bitnami/postgresql] test: :white_check_mark: Improve reliability of ginkgo tests (#29472) ([c43177e](https://github.com/bitnami/charts/commit/c43177e1b362f27319a215c7394bcb612bed4924)), closes [#29472](https://github.com/bitnami/charts/issues/29472)
+
+## <small>15.5.31 (2024-09-13)</small>
+
+* [bitnami/postgresql] Release 15.5.31 (#29404) ([baf9a0f](https://github.com/bitnami/charts/commit/baf9a0facb2d1a659bf53d13c4088929bbf86400)), closes [#29404](https://github.com/bitnami/charts/issues/29404)
+
+## <small>15.5.30 (2024-09-13)</small>
+
+* [bitnami/postgresql] collect metrics as postgres user (#29201) ([7240870](https://github.com/bitnami/charts/commit/72408702b553e51a2848ce061bf917934737c42e)), closes [#29201](https://github.com/bitnami/charts/issues/29201)
+
+## <small>15.5.29 (2024-09-10)</small>
+
+* [bitnami/postgresql] Release 15.5.29 (#29330) ([3c161f7](https://github.com/bitnami/charts/commit/3c161f7033eff31b2f3d98879bcac07c7070c0d6)), closes [#29330](https://github.com/bitnami/charts/issues/29330)
+
+## <small>15.5.28 (2024-09-05)</small>
+
+* [bitnami/postgresql] Release 15.5.28 (#29206) ([2b42eb7](https://github.com/bitnami/charts/commit/2b42eb7ab7d9d5376ec44b36ca92fb22c52085af)), closes [#29206](https://github.com/bitnami/charts/issues/29206)
+
+## <small>15.5.27 (2024-08-30)</small>
+
+* [bitnami/postgresql] Release 15.5.27 (#29122) ([08dfd32](https://github.com/bitnami/charts/commit/08dfd32dc50004050b6aca1d6c3418062b65402f)), closes [#29122](https://github.com/bitnami/charts/issues/29122)
 
 ## <small>15.5.26 (2024-08-27)</small>
 

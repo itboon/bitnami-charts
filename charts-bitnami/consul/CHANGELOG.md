@@ -1,8 +1,16 @@
 # Changelog
 
-## 11.3.13 (2024-08-27)
+## 11.3.15 (2024-09-17)
 
-* [bitnami/consul] Release 11.3.13 ([#29070](https://github.com/bitnami/charts/pull/29070))
+* [bitnami/consul] test: :white_check_mark: Improve reliability of ginkgo tests ([#29464](https://github.com/bitnami/charts/pull/29464))
+
+## <small>11.3.14 (2024-09-05)</small>
+
+* [bitnami/consul] Release 11.3.14 (#29228) ([ceb5750](https://github.com/bitnami/charts/commit/ceb5750e92b1324bd7f33f80d7013678ef8db5a3)), closes [#29228](https://github.com/bitnami/charts/issues/29228)
+
+## <small>11.3.13 (2024-08-27)</small>
+
+* [bitnami/consul] Release 11.3.13 (#29070) ([e3c4130](https://github.com/bitnami/charts/commit/e3c4130589625dcd7b9ad5ef2f0c0c4648acec97)), closes [#29070](https://github.com/bitnami/charts/issues/29070)
 
 ## <small>11.3.12 (2024-08-07)</small>
 

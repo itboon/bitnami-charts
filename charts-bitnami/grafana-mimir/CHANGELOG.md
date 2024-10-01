@@ -1,8 +1,24 @@
 # Changelog
 
-## 1.2.13 (2024-08-27)
+## 1.2.17 (2024-09-17)
 
-* [bitnami/grafana-mimir] Release 1.2.13 ([#29050](https://github.com/bitnami/charts/pull/29050))
+* [bitnami/grafana-mimir] Release 1.2.17 ([#29483](https://github.com/bitnami/charts/pull/29483))
+
+## <small>1.2.16 (2024-09-16)</small>
+
+* [bitnami/grafana-mimir] chore: :construction_worker: :wrench: Use serial verification ([089d15f](https://github.com/bitnami/charts/commit/089d15f59f6345ab24ee2f17cf6f740a5c8ca808))
+
+## <small>1.2.15 (2024-09-09)</small>
+
+*  [bitnami/grafana-mimir] removing quotes from gw secrets #29214 (#29267) ([3fe94e9](https://github.com/bitnami/charts/commit/3fe94e977c51d8d3ed08a9e9eb7f80092a66a3ed)), closes [#29214](https://github.com/bitnami/charts/issues/29214) [#29267](https://github.com/bitnami/charts/issues/29267)
+
+## <small>1.2.14 (2024-09-05)</small>
+
+* [bitnami/grafana-mimir] Release 1.2.14 (#29236) ([bb0dc36](https://github.com/bitnami/charts/commit/bb0dc36af90dde2443429e8eecf09419b1006e2d)), closes [#29236](https://github.com/bitnami/charts/issues/29236)
+
+## <small>1.2.13 (2024-08-27)</small>
+
+* [bitnami/grafana-mimir] Release 1.2.13 (#29050) ([d14c588](https://github.com/bitnami/charts/commit/d14c5885d15c70cc86b150af3c475c482777fb71)), closes [#29050](https://github.com/bitnami/charts/issues/29050)
 
 ## <small>1.2.12 (2024-08-23)</small>
 

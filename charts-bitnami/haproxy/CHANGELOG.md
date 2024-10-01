@@ -1,8 +1,28 @@
 # Changelog
 
-## 2.1.1 (2024-08-07)
+## 2.1.6 (2024-09-26)
 
-* [bitnami/haproxy] Release 2.1.1 ([#28718](https://github.com/bitnami/charts/pull/28718))
+* [bitnami/haproxy] Release 2.1.6 ([#29631](https://github.com/bitnami/charts/pull/29631))
+
+## <small>2.1.5 (2024-09-19)</small>
+
+* [bitnami/haproxy] Release 2.1.5 (#29539) ([a990bec](https://github.com/bitnami/charts/commit/a990beca56b1a50ae4a442b12d0f5b47e3b37149)), closes [#29539](https://github.com/bitnami/charts/issues/29539)
+
+## <small>2.1.4 (2024-09-06)</small>
+
+* [bitnami/haproxy] add missing template for tls-secrets (#29151) ([432a93b](https://github.com/bitnami/charts/commit/432a93b59bca161620e8980a3ba7f882f26258fa)), closes [#29151](https://github.com/bitnami/charts/issues/29151)
+
+## <small>2.1.3 (2024-09-06)</small>
+
+* [bitnami/haproxy] Release 2.1.3 (#29241) ([3b73987](https://github.com/bitnami/charts/commit/3b7398704566b4e129dfb292800afc37322a29d3)), closes [#29241](https://github.com/bitnami/charts/issues/29241)
+
+## <small>2.1.2 (2024-09-03)</small>
+
+* [bitnami/haproxy] Release 2.1.2 (#29181) ([0c795af](https://github.com/bitnami/charts/commit/0c795af7d4b1f5ae825d137aeb9baf4e256e01ab)), closes [#29181](https://github.com/bitnami/charts/issues/29181)
+
+## <small>2.1.1 (2024-08-07)</small>
+
+* [bitnami/haproxy] Release 2.1.1 (#28718) ([553679e](https://github.com/bitnami/charts/commit/553679e0fe8d7eb833bce7a029ab1d0cb0ad75f8)), closes [#28718](https://github.com/bitnami/charts/issues/28718)
 
 ## 2.1.0 (2024-08-01)
 

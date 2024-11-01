@@ -1,8 +1,29 @@
 # Changelog
 
-## 14.2.0 (2024-09-24)
+## 15.0.4 (2024-10-21)
 
-* [bitnami/discourse] Move plugins installation to init-container ([#29568](https://github.com/bitnami/charts/pull/29568))
+* [bitnami/discourse] include discourse.extraEnvVars in the "install-plugins" init-container ([#30026](https://github.com/bitnami/charts/pull/30026))
+
+## <small>15.0.3 (2024-10-21)</small>
+
+* [bitnami/discourse] Avoid looping on subdirectories on plugins instalation (#30022) ([4bb0481](https://github.com/bitnami/charts/commit/4bb0481e66a9a52557d938d24561cc392ddc3482)), closes [#30022](https://github.com/bitnami/charts/issues/30022)
+* Update documentation links to techdocs.broadcom.com (#29931) ([f0d9ad7](https://github.com/bitnami/charts/commit/f0d9ad78f39f633d275fc576d32eae78ded4d0b8)), closes [#29931](https://github.com/bitnami/charts/issues/29931)
+
+## <small>15.0.2 (2024-10-14)</small>
+
+* [bitnami/discourse]: (bugfix) fix mount path on install-plugins init-container (#29874) ([8a8e47b](https://github.com/bitnami/charts/commit/8a8e47bf9be1dcaeb082a2afb06768488eaa4ecd)), closes [#29874](https://github.com/bitnami/charts/issues/29874)
+
+## <small>15.0.1 (2024-10-08)</small>
+
+* [bitnami/discourse] Release 15.0.1 (#29827) ([0fffd76](https://github.com/bitnami/charts/commit/0fffd7689f20e475cfc7e460a4ff6b3b8c451103)), closes [#29827](https://github.com/bitnami/charts/issues/29827)
+
+## 15.0.0 (2024-10-03)
+
+* [bitnami/discourse] feat!: :arrow_up: :boom: Bump PostgreSQL to 17.x (#29731) ([f9c4cd6](https://github.com/bitnami/charts/commit/f9c4cd65e4d5638b55da1c8a2c08d42c084032d2)), closes [#29731](https://github.com/bitnami/charts/issues/29731)
+
+## 14.2.0 (2024-09-26)
+
+* [bitnami/discourse] Move plugins installation to init-container (#29568) ([024b741](https://github.com/bitnami/charts/commit/024b741934c5d7df88e88b193b9a33dc8ac04237)), closes [#29568](https://github.com/bitnami/charts/issues/29568)
 
 ## <small>14.1.6 (2024-09-19)</small>
 

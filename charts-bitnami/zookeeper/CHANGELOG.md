@@ -1,8 +1,20 @@
 # Changelog
 
-## 13.4.14 (2024-09-23)
+## 13.5.1 (2024-10-26)
 
-* [bitnami/zookeeper] Drop unused `getValueFromSecret` local helper ([#29440](https://github.com/bitnami/charts/pull/29440))
+* [bitnami/zookeeper] Release 13.5.1 ([#30094](https://github.com/bitnami/charts/pull/30094))
+
+## 13.5.0 (2024-10-10)
+
+* [bitnami/zookeeper] Rename metrics port and expose scheme, and tlsConfig for Istio compatibility (#2 ([0bcfc6d](https://github.com/bitnami/charts/commit/0bcfc6d635eb09f0cc2f7d8187254b5a4ffe95be)), closes [#29683](https://github.com/bitnami/charts/issues/29683)
+
+## <small>13.4.15 (2024-10-09)</small>
+
+* [bitnami/zookeeper] Release 13.4.15 (#29850) ([f3af6eb](https://github.com/bitnami/charts/commit/f3af6ebad051648b856f45e54e6c86858265b766)), closes [#29850](https://github.com/bitnami/charts/issues/29850)
+
+## <small>13.4.14 (2024-09-23)</small>
+
+* [bitnami/zookeeper] Drop unused `getValueFromSecret` local helper (#29440) ([630e4cb](https://github.com/bitnami/charts/commit/630e4cb5e4af4fda0bc633cd9ffe3930a93f13b3)), closes [#29440](https://github.com/bitnami/charts/issues/29440)
 
 ## <small>13.4.13 (2024-09-17)</small>
 

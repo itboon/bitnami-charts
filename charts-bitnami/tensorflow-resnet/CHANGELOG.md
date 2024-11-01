@@ -1,8 +1,16 @@
 # Changelog
 
-## 4.2.11 (2024-08-26)
+## 4.2.13 (2024-10-31)
 
-* [bitnami/tensorflow-resnet] Release 4.2.11 ([#29029](https://github.com/bitnami/charts/pull/29029))
+* [bitnami/tensorflow-resnet] Release 4.2.13 ([#30154](https://github.com/bitnami/charts/pull/30154))
+
+## <small>4.2.12 (2024-10-05)</small>
+
+* [bitnami/tensorflow-resnet] Release 4.2.12 (#29786) ([3900b54](https://github.com/bitnami/charts/commit/3900b5400c9725095772d0d56fc55459bdc74ebc)), closes [#29786](https://github.com/bitnami/charts/issues/29786)
+
+## <small>4.2.11 (2024-08-26)</small>
+
+* [bitnami/tensorflow-resnet] Release 4.2.11 (#29029) ([a00c55f](https://github.com/bitnami/charts/commit/a00c55f50f074844398f71c696c21dcfee393c52)), closes [#29029](https://github.com/bitnami/charts/issues/29029)
 
 ## <small>4.2.10 (2024-08-26)</small>
 

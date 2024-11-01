@@ -1,8 +1,42 @@
 # Changelog
 
-## 15.6.26 (2024-09-23)
+## 16.2.1 (2024-10-29)
 
-* [bitnami/mongodb] Fixed arbiter anti affinity rules to prevent it from running on the same node of a primary/secondary replica ([#29565](https://github.com/bitnami/charts/pull/29565))
+* [bitnami/mongodb] Fix render values of resources on log dir init container ([#30115](https://github.com/bitnami/charts/pull/30115))
+
+## 16.2.0 (2024-10-28)
+
+* [bitnami/mongodb] fix: initial primary host variable for arbiter and hidden replicas (#29584) ([a1df969](https://github.com/bitnami/charts/commit/a1df96944f48ea2cde075396d235a07a6d7aa165)), closes [#29584](https://github.com/bitnami/charts/issues/29584)
+
+## <small>16.1.1 (2024-10-25)</small>
+
+* [bitnami/mongodb] Release 16.1.1 (#30084) ([24f6cde](https://github.com/bitnami/charts/commit/24f6cde58746cdc617a672d63add5bfd8b7e6b6d)), closes [#30084](https://github.com/bitnami/charts/issues/30084)
+
+## 16.1.0 (2024-10-23)
+
+* [bitnami/mongodb] Add resources for backup cronjob (#30021) ([4836089](https://github.com/bitnami/charts/commit/48360898aedcdb853fb8f967ed64bfdc72399ba8)), closes [#30021](https://github.com/bitnami/charts/issues/30021)
+* Update documentation links to techdocs.broadcom.com (#29931) ([f0d9ad7](https://github.com/bitnami/charts/commit/f0d9ad78f39f633d275fc576d32eae78ded4d0b8)), closes [#29931](https://github.com/bitnami/charts/issues/29931)
+
+## <small>16.0.3 (2024-10-10)</small>
+
+* [bitnami/mongodb] Fixed awk script to extract  in order to be more st… (#29824) ([86745de](https://github.com/bitnami/charts/commit/86745de16a329beadf4277bc602a12224a93e84a)), closes [#29824](https://github.com/bitnami/charts/issues/29824)
+
+## <small>16.0.2 (2024-10-09)</small>
+
+* [bitnami/mongodb] Release 16.0.2 (#29855) ([7fec11a](https://github.com/bitnami/charts/commit/7fec11aa57b1c66cea587219b86081fde3ac0b97)), closes [#29855](https://github.com/bitnami/charts/issues/29855)
+
+## <small>16.0.1 (2024-10-08)</small>
+
+* [bitnami/mongodb] Release 16.0.1 (#29830) ([6360c47](https://github.com/bitnami/charts/commit/6360c478136e8c0d58b7bb50e7f507308afc25f6)), closes [#29830](https://github.com/bitnami/charts/issues/29830)
+* [bitnami/mongodb] Update README (#29812) ([6f8a1bf](https://github.com/bitnami/charts/commit/6f8a1bf241a0032a3e44a2ea47f9574f6786d436)), closes [#29812](https://github.com/bitnami/charts/issues/29812)
+
+## 16.0.0 (2024-10-07)
+
+* [bitnami/mongodb] Release 16.0.0 (#29801) ([5973e5c](https://github.com/bitnami/charts/commit/5973e5c8e6aa766997000d6a49b9be7936298c30)), closes [#29801](https://github.com/bitnami/charts/issues/29801)
+
+## <small>15.6.26 (2024-09-23)</small>
+
+* [bitnami/mongodb] Fixed arbiter anti affinity rules to prevent it from running on the same node of a ([ded7e1f](https://github.com/bitnami/charts/commit/ded7e1f62ddcaba8fdeaf29a485aaf199295ccfc)), closes [#29565](https://github.com/bitnami/charts/issues/29565)
 
 ## <small>15.6.25 (2024-09-19)</small>
 

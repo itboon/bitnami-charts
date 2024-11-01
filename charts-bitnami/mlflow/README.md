@@ -130,7 +130,7 @@ The command deploys mlflow on the Kubernetes cluster in the default configuratio
 | `tracking.containerSecurityContext.runAsGroup`               | Set containers' Security Context runAsGroup                                                                                                                                                                                         | `1001`           |
 | `tracking.containerSecurityContext.privileged`               | Set containers' Security Context privileged                                                                                                                                                                                         | `false`          |
 | `tracking.containerSecurityContext.runAsNonRoot`             | Set containers' Security Context runAsNonRoot                                                                                                                                                                                       | `true`           |
-| `tracking.containerSecurityContext.readOnlyRootFilesystem`   | Set containers' Security Context runAsNonRoot                                                                                                                                                                                       | `true`           |
+| `tracking.containerSecurityContext.readOnlyRootFilesystem`   | Set containers' Security Context readOnlyRootFilesystem                                                                                                                                                                             | `true`           |
 | `tracking.containerSecurityContext.allowPrivilegeEscalation` | Set container's privilege escalation                                                                                                                                                                                                | `false`          |
 | `tracking.containerSecurityContext.capabilities.drop`        | Set container's Security Context runAsNonRoot                                                                                                                                                                                       | `["ALL"]`        |
 | `tracking.containerSecurityContext.seccompProfile.type`      | Set container's Security Context seccomp profile                                                                                                                                                                                    | `RuntimeDefault` |
@@ -496,6 +496,10 @@ run.source.git.revision=master
 Find more information about how to deal with common errors related to Bitnami's Helm charts in [this troubleshooting guide](https://docs.bitnami.com/general/how-to/troubleshoot-helm-chart-issues).
 
 ## Upgrading
+
+### To 2.0.0
+
+This major updates the PostgreSQL subchart to its newest major, 16.0.0, which uses PostgreSQL 17.x.  Follow the [official instructions](https://www.postgresql.org/docs/17/upgrading.html) to upgrade to 17.x.
 
 ### To 1.0.0
 

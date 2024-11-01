@@ -1,8 +1,26 @@
 # Changelog
 
-## 4.2.12 (2024-08-30)
+## 5.0.3 (2024-10-31)
 
-* [bitnami/concourse] Release 4.2.12 ([#29133](https://github.com/bitnami/charts/pull/29133))
+* [bitnami/concourse] Release 5.0.3 ([#30144](https://github.com/bitnami/charts/pull/30144))
+
+## <small>5.0.2 (2024-10-29)</small>
+
+* [bitnami/*] Remove wrong comment about imagePullPolicy (#30107) ([a51f9e4](https://github.com/bitnami/charts/commit/a51f9e4bb0fbf77199512d35de7ac8abe055d026)), closes [#30107](https://github.com/bitnami/charts/issues/30107)
+* [bitnami/concourse] Release 5.0.2 (#30130) ([4fb2295](https://github.com/bitnami/charts/commit/4fb2295fc9638907b1b58498c9776b74b7f722d3)), closes [#30130](https://github.com/bitnami/charts/issues/30130)
+* Update documentation links to techdocs.broadcom.com (#29931) ([f0d9ad7](https://github.com/bitnami/charts/commit/f0d9ad78f39f633d275fc576d32eae78ded4d0b8)), closes [#29931](https://github.com/bitnami/charts/issues/29931)
+
+## <small>5.0.1 (2024-10-09)</small>
+
+* [bitnami/concourse] Release 5.0.1 (#29848) ([82bba13](https://github.com/bitnami/charts/commit/82bba13bec3bf461f54e2ceda875c1c796244685)), closes [#29848](https://github.com/bitnami/charts/issues/29848)
+
+## 5.0.0 (2024-10-03)
+
+* [bitnami/concourse] feat!: :arrow_up: :boom: Bump PostgreSQL to 17.x (#29730) ([3d11c36](https://github.com/bitnami/charts/commit/3d11c365c9bd8b197a58d306a8c52dfb5fbb5d2d)), closes [#29730](https://github.com/bitnami/charts/issues/29730)
+
+## <small>4.2.12 (2024-08-30)</small>
+
+* [bitnami/concourse] Release 4.2.12 (#29133) ([2482a2a](https://github.com/bitnami/charts/commit/2482a2ae001a54721f167d57979ee88ea9fed749)), closes [#29133](https://github.com/bitnami/charts/issues/29133)
 
 ## <small>4.2.11 (2024-07-25)</small>
 

@@ -1,8 +1,45 @@
 # Changelog
 
-## 15.5.37 (2024-09-30)
+## 16.1.0 (2024-10-29)
 
-* [bitnami/postgresql] Release 15.5.37 ([#29660](https://github.com/bitnami/charts/pull/29660))
+* [bitnami/postgresql] Added support for `namespaceOverride` ([#30113](https://github.com/bitnami/charts/pull/30113))
+
+## <small>16.0.6 (2024-10-24)</small>
+
+* [bitnami/postgresql] Release 16.0.6 (#30069) ([e431b4a](https://github.com/bitnami/charts/commit/e431b4a915cb29593faedff990bba9516dc25ef6)), closes [#30069](https://github.com/bitnami/charts/issues/30069)
+
+## <small>16.0.5 (2024-10-22)</small>
+
+* [bitnami/postgresql] Release 16.0.5 (#30046) ([a825e37](https://github.com/bitnami/charts/commit/a825e37775f041dc3404f727ff33661364dbc8a3)), closes [#30046](https://github.com/bitnami/charts/issues/30046)
+
+## <small>16.0.4 (2024-10-21)</small>
+
+* [bitnami/postgresql] Release 16.0.4 (#30013) ([8435f88](https://github.com/bitnami/charts/commit/8435f88ae01cc20203022eb97904ee3abeb96467)), closes [#30013](https://github.com/bitnami/charts/issues/30013)
+
+## <small>16.0.3 (2024-10-16)</small>
+
+* [bitnami/postgresql] Release 16.0.3 (#29942) ([7b3f2bb](https://github.com/bitnami/charts/commit/7b3f2bb7a65a78cba10fe8dfe87fd47b55dd8ec0)), closes [#29942](https://github.com/bitnami/charts/issues/29942)
+
+## <small>16.0.2 (2024-10-16)</small>
+
+* [bitnami/postgresql] Release 16.0.2 (#29938) ([766c157](https://github.com/bitnami/charts/commit/766c1577e867aea17e1e9b21cc25f9e27b299273)), closes [#29938](https://github.com/bitnami/charts/issues/29938)
+* Update documentation links to techdocs.broadcom.com (#29931) ([f0d9ad7](https://github.com/bitnami/charts/commit/f0d9ad78f39f633d275fc576d32eae78ded4d0b8)), closes [#29931](https://github.com/bitnami/charts/issues/29931)
+
+## <small>16.0.1 (2024-10-04)</small>
+
+* [bitnami/postgresql] Release 16.0.1 (#29776) ([9d7fcdc](https://github.com/bitnami/charts/commit/9d7fcdc44c4f0939fb0006fb04d4161080cb558a)), closes [#29776](https://github.com/bitnami/charts/issues/29776)
+
+## 16.0.0 (2024-10-02)
+
+* [bitnami/postgresql] Release 16.0.0 (#29723) ([aeedc0e](https://github.com/bitnami/charts/commit/aeedc0e67b1593191aa0c3cb2239864d0b3c9a58)), closes [#29723](https://github.com/bitnami/charts/issues/29723)
+
+## <small>15.5.38 (2024-10-01)</small>
+
+* [bitnami/postgresql] Release 15.5.38 (#29681) ([105fcbb](https://github.com/bitnami/charts/commit/105fcbb5c090c6f0b10858cdcc33dfc255c0c7e4)), closes [#29681](https://github.com/bitnami/charts/issues/29681)
+
+## <small>15.5.37 (2024-09-30)</small>
+
+* [bitnami/postgresql] Release 15.5.37 (#29660) ([45cada1](https://github.com/bitnami/charts/commit/45cada10883f6ac5ad4ecaadf3c0d6aa1d9912bb)), closes [#29660](https://github.com/bitnami/charts/issues/29660)
 
 ## <small>15.5.36 (2024-09-26)</small>
 

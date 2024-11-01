@@ -1,8 +1,29 @@
 # Changelog
 
-## 8.3.8 (2024-09-30)
+## 9.0.3 (2024-10-26)
 
-* [bitnami/mongodb-sharded] Fix uncapacity to disable persistence ([#29599](https://github.com/bitnami/charts/pull/29599))
+* [bitnami/mongodb-sharded] Release 9.0.3 ([#30088](https://github.com/bitnami/charts/pull/30088))
+
+## <small>9.0.2 (2024-10-09)</small>
+
+* [bitnami/mongodb-sharded] Release 9.0.2 (#29854) ([1eff071](https://github.com/bitnami/charts/commit/1eff071db3ea82d88961566d4120a9b51bb3887d)), closes [#29854](https://github.com/bitnami/charts/issues/29854)
+
+## <small>9.0.1 (2024-10-08)</small>
+
+* [bitnami/mongodb-sharded] Release 9.0.1 (#29829) ([98bbc94](https://github.com/bitnami/charts/commit/98bbc94cbf695b84dacd75bcf6110fefd00244a6)), closes [#29829](https://github.com/bitnami/charts/issues/29829)
+* [bitnami/mongodb] Update README (#29812) ([6f8a1bf](https://github.com/bitnami/charts/commit/6f8a1bf241a0032a3e44a2ea47f9574f6786d436)), closes [#29812](https://github.com/bitnami/charts/issues/29812)
+
+## 9.0.0 (2024-10-07)
+
+* [bitnami/mongodb-sharded] Release 9.0.0 (#29802) ([0f15049](https://github.com/bitnami/charts/commit/0f15049eae01dd4fb989546e1627a96dd0008359)), closes [#29802](https://github.com/bitnami/charts/issues/29802)
+
+## <small>8.3.9 (2024-10-05)</small>
+
+* [bitnami/mongodb-sharded] Release 8.3.9 (#29785) ([e23d06a](https://github.com/bitnami/charts/commit/e23d06a7a7e4b30f4eadcb8bc35ea47ae621342e)), closes [#29785](https://github.com/bitnami/charts/issues/29785)
+
+## <small>8.3.8 (2024-09-30)</small>
+
+* [bitnami/mongodb-sharded] Fix uncapacity to disable persistence (#29599) ([9666bc1](https://github.com/bitnami/charts/commit/9666bc1ffe5959f3ddee62d124f79ad1aee71769)), closes [#29599](https://github.com/bitnami/charts/issues/29599)
 
 ## <small>8.3.7 (2024-09-11)</small>
 

@@ -1,8 +1,24 @@
 # Changelog
 
-## 1.0.1 (2024-09-19)
+## 2.0.1 (2024-10-28)
 
-* [bitnami/valkey] Release 1.0.1 ([#29532](https://github.com/bitnami/charts/pull/29532))
+* [bitnami/valkey] Fix sentinel.service.createprimary config to sentinel.service.createPrimary to work ([#30091](https://github.com/bitnami/charts/pull/30091))
+
+## 2.0.0 (2024-10-23)
+
+* [bitnami/valkey] Update all the references from to master/slave to primary/replica (#30024) ([75cc62d](https://github.com/bitnami/charts/commit/75cc62d9caf28c6f522042cd0f94cb9aca877837)), closes [#30024](https://github.com/bitnami/charts/issues/30024)
+
+## <small>1.0.3 (2024-10-22)</small>
+
+* [bitnami/valkey] Release 1.0.3 (#30048) ([f843e7e](https://github.com/bitnami/charts/commit/f843e7ecb5b89b32e2245071bf1c910552dcb7a5)), closes [#30048](https://github.com/bitnami/charts/issues/30048)
+
+## <small>1.0.2 (2024-10-03)</small>
+
+* [bitnami/valkey] Release 1.0.2 (#29770) ([68a889f](https://github.com/bitnami/charts/commit/68a889fcb6dc21a275cfbad539c9fc1097912167)), closes [#29770](https://github.com/bitnami/charts/issues/29770)
+
+## <small>1.0.1 (2024-09-19)</small>
+
+* [bitnami/valkey] Release 1.0.1 (#29532) ([77709d5](https://github.com/bitnami/charts/commit/77709d5c1d7b621ce46e3ed92e0ec9ab2b560448)), closes [#29532](https://github.com/bitnami/charts/issues/29532)
 
 ## 1.0.0 (2024-09-17)
 

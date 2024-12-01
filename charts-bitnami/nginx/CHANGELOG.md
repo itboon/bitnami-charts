@@ -1,8 +1,18 @@
 # Changelog
 
-## 18.2.4 (2024-10-21)
+## 18.2.6 (2024-11-26)
 
-* [bitnami/nginx] Release 18.2.4 ([#30017](https://github.com/bitnami/charts/pull/30017))
+* [bitnami/nginx] Release 18.2.6 ([#30632](https://github.com/bitnami/charts/pull/30632))
+
+## <small>18.2.5 (2024-11-08)</small>
+
+* [bitnami/*] Remove wrong comment about imagePullPolicy (#30107) ([a51f9e4](https://github.com/bitnami/charts/commit/a51f9e4bb0fbf77199512d35de7ac8abe055d026)), closes [#30107](https://github.com/bitnami/charts/issues/30107)
+* [bitnami/nginx] Unify seLinuxOptions default value (#30337) ([964c10c](https://github.com/bitnami/charts/commit/964c10c6e9716d9b71aae091437c561805200230)), closes [#30337](https://github.com/bitnami/charts/issues/30337)
+
+## <small>18.2.4 (2024-10-21)</small>
+
+* [bitnami/nginx] Release 18.2.4 (#30017) ([c14b4ab](https://github.com/bitnami/charts/commit/c14b4ab38bf552b35713943432e4f96284ab8bdb)), closes [#30017](https://github.com/bitnami/charts/issues/30017)
+* Update documentation links to techdocs.broadcom.com (#29931) ([f0d9ad7](https://github.com/bitnami/charts/commit/f0d9ad78f39f633d275fc576d32eae78ded4d0b8)), closes [#29931](https://github.com/bitnami/charts/issues/29931)
 
 ## <small>18.2.3 (2024-10-14)</small>
 

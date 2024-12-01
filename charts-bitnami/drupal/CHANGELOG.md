@@ -1,8 +1,28 @@
 # Changelog
 
-## 20.0.13 (2024-10-31)
+## 21.0.4 (2024-11-24)
 
-* [bitnami/drupal] Release 20.0.13 ([#30165](https://github.com/bitnami/charts/pull/30165))
+* [bitnami/drupal] Release 21.0.4 ([#30610](https://github.com/bitnami/charts/pull/30610))
+
+## <small>21.0.3 (2024-11-22)</small>
+
+* [bitnami/drupal] Release 21.0.3 (#30596) ([e8fbaa1](https://github.com/bitnami/charts/commit/e8fbaa187334d9896e46f4766727be1da8bc8d02)), closes [#30596](https://github.com/bitnami/charts/issues/30596)
+
+## <small>21.0.2 (2024-11-20)</small>
+
+* [bitnami/drupal] Release 21.0.2 (#30553) ([d6dd241](https://github.com/bitnami/charts/commit/d6dd241721bf0d0d63622c254103fec53199bb79)), closes [#30553](https://github.com/bitnami/charts/issues/30553)
+
+## <small>21.0.1 (2024-11-12)</small>
+
+* [bitnami/drupal] Release 21.0.1 (#30418) ([52480cd](https://github.com/bitnami/charts/commit/52480cd42286e4c5f451413e6e2944587aab950b)), closes [#30418](https://github.com/bitnami/charts/issues/30418)
+
+## 21.0.0 (2024-11-12)
+
+* [bitnami/drupal] chore!: :arrow_up: :boom: Bump MariaDB subchart to 20 (#30352) ([3152c34](https://github.com/bitnami/charts/commit/3152c34edbe451b20ad0e75f45e394adee9e245e)), closes [#30352](https://github.com/bitnami/charts/issues/30352)
+
+## <small>20.0.13 (2024-10-31)</small>
+
+* [bitnami/drupal] Release 20.0.13 (#30165) ([356941d](https://github.com/bitnami/charts/commit/356941ddb5c6ebbd08867aae2b07dfa21ff0e394)), closes [#30165](https://github.com/bitnami/charts/issues/30165)
 
 ## <small>20.0.12 (2024-10-31)</small>
 

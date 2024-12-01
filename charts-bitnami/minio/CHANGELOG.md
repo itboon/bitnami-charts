@@ -1,8 +1,25 @@
 # Changelog
 
-## 14.8.1 (2024-10-31)
+## 14.8.5 (2024-11-08)
 
-* [bitnami/minio] Release 14.8.1 ([#30140](https://github.com/bitnami/charts/pull/30140))
+* [bitnami/minio] Release 14.8.5 ([#30312](https://github.com/bitnami/charts/pull/30312))
+
+## <small>14.8.4 (2024-11-07)</small>
+
+* [bitnami/minio] Release 14.8.4 (#30283) ([742f598](https://github.com/bitnami/charts/commit/742f59854429521c72aac9ca2cff98c574f22c99)), closes [#30283](https://github.com/bitnami/charts/issues/30283)
+
+## <small>14.8.3 (2024-11-06)</small>
+
+* [bitnami/minio] Fix invalid sts template in distributed mode (#30187) ([736b6f2](https://github.com/bitnami/charts/commit/736b6f26ea6bc2920891c066a48d63558fa56ea0)), closes [#30187](https://github.com/bitnami/charts/issues/30187)
+
+## <small>14.8.2 (2024-11-04)</small>
+
+* [bitnami/minio] fix secret creation check (#30135) ([5a9163e](https://github.com/bitnami/charts/commit/5a9163eef82540b6a5136f7c475dac2acffae21c)), closes [#30135](https://github.com/bitnami/charts/issues/30135)
+
+## <small>14.8.1 (2024-10-31)</small>
+
+* [bitnami/*] Remove wrong comment about imagePullPolicy (#30107) ([a51f9e4](https://github.com/bitnami/charts/commit/a51f9e4bb0fbf77199512d35de7ac8abe055d026)), closes [#30107](https://github.com/bitnami/charts/issues/30107)
+* [bitnami/minio] Release 14.8.1 (#30140) ([baef6e7](https://github.com/bitnami/charts/commit/baef6e77282c85b2689cc72415669b7db6666e63)), closes [#30140](https://github.com/bitnami/charts/issues/30140)
 
 ## 14.8.0 (2024-10-18)
 

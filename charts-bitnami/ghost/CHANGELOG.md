@@ -1,8 +1,57 @@
 # Changelog
 
-## 21.1.46 (2024-10-31)
+## 22.0.7 (2024-11-29)
 
-* [bitnami/ghost] Release 21.1.46 ([#30150](https://github.com/bitnami/charts/pull/30150))
+* [bitnami/ghost] Release 22.0.7 ([#30692](https://github.com/bitnami/charts/pull/30692))
+
+## <small>22.0.6 (2024-11-28)</small>
+
+* [bitnami/ghost] Release 22.0.6 (#30677) ([a617341](https://github.com/bitnami/charts/commit/a617341694fb124802f6a50a14a0b1a210d3bef8)), closes [#30677](https://github.com/bitnami/charts/issues/30677)
+
+## <small>22.0.5 (2024-11-27)</small>
+
+* [bitnami/ghost] Release 22.0.5 (#30638) ([349ecd5](https://github.com/bitnami/charts/commit/349ecd54c69d0d9f63ab2fa573ce0b885ca6747d)), closes [#30638](https://github.com/bitnami/charts/issues/30638)
+
+## <small>22.0.4 (2024-11-21)</small>
+
+* [bitnami/ghost] Release 22.0.4 (#30563) ([c7c1cb6](https://github.com/bitnami/charts/commit/c7c1cb6ea9c917d27e52a4bad99ddde1805fbb20)), closes [#30563](https://github.com/bitnami/charts/issues/30563)
+
+## <small>22.0.3 (2024-11-18)</small>
+
+* [bitnami/ghost] Release 22.0.3 (#30509) ([9ac3e72](https://github.com/bitnami/charts/commit/9ac3e72e3f1c8052d377ff6923fc0f2ad6b7eaec)), closes [#30509](https://github.com/bitnami/charts/issues/30509)
+
+## <small>22.0.2 (2024-11-15)</small>
+
+* [bitnami/ghost] Release 22.0.2 (#30483) ([3d0d166](https://github.com/bitnami/charts/commit/3d0d1667608dfb9fc1a2c6818a79c1e517a0b465)), closes [#30483](https://github.com/bitnami/charts/issues/30483)
+
+## <small>22.0.1 (2024-11-15)</small>
+
+* [bitnami/ghost] Release 22.0.1 (#30479) ([0fb4798](https://github.com/bitnami/charts/commit/0fb479869d59e522598f2135e5a7bcab994613f8)), closes [#30479](https://github.com/bitnami/charts/issues/30479)
+
+## 22.0.0 (2024-11-12)
+
+* [bitnami/ghost] chore!: :arrow_up: :boom: Bump MySQL subchart to 12 (#30429) ([8296f63](https://github.com/bitnami/charts/commit/8296f63fa9733a07b782afb6ab559b73e3a0f554)), closes [#30429](https://github.com/bitnami/charts/issues/30429)
+
+## <small>21.1.50 (2024-11-08)</small>
+
+* [bitnami/ghost] Unify seLinuxOptions default value (#30346) ([140b936](https://github.com/bitnami/charts/commit/140b936b9730d3d4c6a43e982a99f9b3075ade56)), closes [#30346](https://github.com/bitnami/charts/issues/30346)
+
+## <small>21.1.49 (2024-11-08)</small>
+
+* [bitnami/ghost] Release 21.1.49 (#30313) ([a4f246e](https://github.com/bitnami/charts/commit/a4f246ec4cacd109e9eab79ba0c2cc4c491ea69e)), closes [#30313](https://github.com/bitnami/charts/issues/30313)
+
+## <small>21.1.48 (2024-11-07)</small>
+
+* [bitnami/ghost] Release 21.1.48 (#30307) ([5a628ec](https://github.com/bitnami/charts/commit/5a628ec907ceb3b46d2838782928ad5cce74acbb)), closes [#30307](https://github.com/bitnami/charts/issues/30307)
+
+## <small>21.1.47 (2024-11-01)</small>
+
+* [bitnami/ghost] Release 21.1.47 (#30172) ([a1c85ed](https://github.com/bitnami/charts/commit/a1c85ed5f964d597cdf70b7aaa989dbbf8438276)), closes [#30172](https://github.com/bitnami/charts/issues/30172)
+
+## <small>21.1.46 (2024-10-31)</small>
+
+* [bitnami/*] Remove wrong comment about imagePullPolicy (#30107) ([a51f9e4](https://github.com/bitnami/charts/commit/a51f9e4bb0fbf77199512d35de7ac8abe055d026)), closes [#30107](https://github.com/bitnami/charts/issues/30107)
+* [bitnami/ghost] Release 21.1.46 (#30150) ([65f390b](https://github.com/bitnami/charts/commit/65f390b79a1e3489c04438c736ac6c9c5d319cbc)), closes [#30150](https://github.com/bitnami/charts/issues/30150)
 
 ## <small>21.1.45 (2024-10-28)</small>
 

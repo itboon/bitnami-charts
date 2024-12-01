@@ -1,8 +1,18 @@
 # Changelog
 
-## 15.8.0 (2024-10-15)
+## 15.8.2 (2024-11-26)
 
-* [bitnami/thanos] Add compactor dataDir setting ([#29856](https://github.com/bitnami/charts/pull/29856))
+* [bitnami/thanos] Release 15.8.2 ([#30626](https://github.com/bitnami/charts/pull/30626))
+
+## <small>15.8.1 (2024-11-07)</small>
+
+* [bitnami/*] Remove wrong comment about imagePullPolicy (#30107) ([a51f9e4](https://github.com/bitnami/charts/commit/a51f9e4bb0fbf77199512d35de7ac8abe055d026)), closes [#30107](https://github.com/bitnami/charts/issues/30107)
+* [bitnami/thanos] Release 15.8.1 (#30293) ([cd0e549](https://github.com/bitnami/charts/commit/cd0e5491be20d9fbc78f2732c81e5af6e73806d8)), closes [#30293](https://github.com/bitnami/charts/issues/30293)
+
+## 15.8.0 (2024-10-24)
+
+* [bitnami/thanos] Add compactor dataDir setting (#29856) ([e8c23ba](https://github.com/bitnami/charts/commit/e8c23ba5762e188c23986a41c6910bda330c21bb)), closes [#29856](https://github.com/bitnami/charts/issues/29856)
+* Update documentation links to techdocs.broadcom.com (#29931) ([f0d9ad7](https://github.com/bitnami/charts/commit/f0d9ad78f39f633d275fc576d32eae78ded4d0b8)), closes [#29931](https://github.com/bitnami/charts/issues/29931)
 
 ## <small>15.7.29 (2024-10-14)</small>
 

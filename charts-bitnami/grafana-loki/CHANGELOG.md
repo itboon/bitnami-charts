@@ -1,8 +1,17 @@
 # Changelog
 
-## 4.6.21 (2024-10-28)
+## 4.6.23 (2024-11-20)
 
-* [bitnami/grafana-loki] Fix conditional on ruler PDB creation ([#30112](https://github.com/bitnami/charts/pull/30112))
+* [bitnami/grafana-loki] Release 4.6.23 ([#30543](https://github.com/bitnami/charts/pull/30543))
+
+## <small>4.6.22 (2024-11-07)</small>
+
+* [bitnami/grafana-loki] Release 4.6.22 (#30267) ([1445d2d](https://github.com/bitnami/charts/commit/1445d2dfb356b74ff8344e33f4c1525db9dcb0bb)), closes [#30267](https://github.com/bitnami/charts/issues/30267)
+
+## <small>4.6.21 (2024-10-29)</small>
+
+* [bitnami/*] Remove wrong comment about imagePullPolicy (#30107) ([a51f9e4](https://github.com/bitnami/charts/commit/a51f9e4bb0fbf77199512d35de7ac8abe055d026)), closes [#30107](https://github.com/bitnami/charts/issues/30107)
+* [bitnami/grafana-loki] Fix conditional on ruler PDB creation (#30112) ([c10c73b](https://github.com/bitnami/charts/commit/c10c73b3185e95507c2ef41fa4d45fcdd899b91c)), closes [#30112](https://github.com/bitnami/charts/issues/30112)
 
 ## <small>4.6.20 (2024-10-17)</small>
 

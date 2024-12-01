@@ -1,8 +1,33 @@
 # Changelog
 
-## 24.0.3 (2024-10-31)
+## 24.2.2 (2024-11-22)
 
-* [bitnami/keycloak] Release 24.0.3 ([#30147](https://github.com/bitnami/charts/pull/30147))
+* [bitnami/keycloak] Release 24.2.2 ([#30576](https://github.com/bitnami/charts/pull/30576))
+
+## <small>24.2.1 (2024-11-19)</small>
+
+* [bitnami/keycloak] Release 24.2.1 (#30522) ([6702319](https://github.com/bitnami/charts/commit/670231902a194d5585ab06283e45592353b07142)), closes [#30522](https://github.com/bitnami/charts/issues/30522)
+
+## 24.2.0 (2024-11-12)
+
+* [bitnami/keycloak] Fix metrics ports and servicemonitor (#30303) ([c289b97](https://github.com/bitnami/charts/commit/c289b97caddc8e511e00d46937b508204f41de9a)), closes [#30303](https://github.com/bitnami/charts/issues/30303)
+
+## 24.1.0 (2024-11-06)
+
+* [bitnami/keycloak] switches keycloak-metrics service to point to new port (#30095) ([8ca86ae](https://github.com/bitnami/charts/commit/8ca86ae9ecb2b375735787001188e5c7757d181b)), closes [#30095](https://github.com/bitnami/charts/issues/30095)
+
+## <small>24.0.5 (2024-11-04)</small>
+
+* [bitnami/keycloak] Added providers to the list of writable dirs (#29998) ([9de041c](https://github.com/bitnami/charts/commit/9de041c92e2788a108631052aa5401a9469e3592)), closes [#29998](https://github.com/bitnami/charts/issues/29998)
+
+## <small>24.0.4 (2024-11-01)</small>
+
+* [bitnami/keycloak] Release 24.0.4 (#30169) ([701a2b9](https://github.com/bitnami/charts/commit/701a2b96d7eff0b3d0c8a77c1ac14f24e0d3ccda)), closes [#30169](https://github.com/bitnami/charts/issues/30169)
+
+## <small>24.0.3 (2024-10-31)</small>
+
+* [bitnami/*] Remove wrong comment about imagePullPolicy (#30107) ([a51f9e4](https://github.com/bitnami/charts/commit/a51f9e4bb0fbf77199512d35de7ac8abe055d026)), closes [#30107](https://github.com/bitnami/charts/issues/30107)
+* [bitnami/keycloak] Release 24.0.3 (#30147) ([1cec61e](https://github.com/bitnami/charts/commit/1cec61e327d14d3be91ca06357bc68ddcafeceb7)), closes [#30147](https://github.com/bitnami/charts/issues/30147)
 
 ## <small>24.0.2 (2024-10-24)</small>
 

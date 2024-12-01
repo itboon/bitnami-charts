@@ -1,8 +1,33 @@
 # Changelog
 
-## 16.1.0 (2024-10-29)
+## 16.2.3 (2024-11-27)
 
-* [bitnami/postgresql] Added support for `namespaceOverride` ([#30113](https://github.com/bitnami/charts/pull/30113))
+* [bitnami/postgresql] Release 16.2.3 ([#30645](https://github.com/bitnami/charts/pull/30645))
+
+## <small>16.2.2 (2024-11-21)</small>
+
+* [bitnami/postgresql] Release 16.2.2 (#30570) ([7b3a6d5](https://github.com/bitnami/charts/commit/7b3a6d5808e79d68a7c9edb6bca54aff262a6264)), closes [#30570](https://github.com/bitnami/charts/issues/30570)
+
+## <small>16.2.1 (2024-11-14)</small>
+
+* [bitnami/postgresql] Release 16.2.1 (#30463) ([2360527](https://github.com/bitnami/charts/commit/236052763a4d81ca42d1068203ce5d6ee3f61b20)), closes [#30463](https://github.com/bitnami/charts/issues/30463)
+
+## 16.2.0 (2024-11-14)
+
+* [bitnami/postgresql] feat: :sparkles: Add password update job (#30444) ([ea896db](https://github.com/bitnami/charts/commit/ea896dbfbfaf7d386ca40c4072a61aa958cb7fb1)), closes [#30444](https://github.com/bitnami/charts/issues/30444)
+
+## <small>16.1.2 (2024-11-06)</small>
+
+* [bitnami/postgresql] Release 16.1.2 (#30250) ([423c554](https://github.com/bitnami/charts/commit/423c55454743745dc486e426089141fa814fd401)), closes [#30250](https://github.com/bitnami/charts/issues/30250)
+
+## <small>16.1.1 (2024-11-04)</small>
+
+* [bitnami/postgresql] metrics.collectors applies to read replicas (#30133) ([696f113](https://github.com/bitnami/charts/commit/696f113b68a7f541de7f073cf3efec5b25ccf10b)), closes [#30133](https://github.com/bitnami/charts/issues/30133)
+
+## 16.1.0 (2024-10-30)
+
+* [bitnami/*] Remove wrong comment about imagePullPolicy (#30107) ([a51f9e4](https://github.com/bitnami/charts/commit/a51f9e4bb0fbf77199512d35de7ac8abe055d026)), closes [#30107](https://github.com/bitnami/charts/issues/30107)
+* [bitnami/postgresql] Added support for `namespaceOverride` (#30113) ([4253372](https://github.com/bitnami/charts/commit/4253372e0b770e941c4894cdd7a904d3fdabeb19)), closes [#30113](https://github.com/bitnami/charts/issues/30113)
 
 ## <small>16.0.6 (2024-10-24)</small>
 

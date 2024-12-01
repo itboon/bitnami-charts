@@ -1,8 +1,18 @@
 # Changelog
 
-## 21.0.2 (2024-09-25)
+## 22.0.0 (2024-11-12)
 
-* [bitnami/schema-registry] Release 21.0.2 ([#29596](https://github.com/bitnami/charts/pull/29596))
+* [bitnami/schema-registry] Update kafka subchart to 31.0.0 ([#30425](https://github.com/bitnami/charts/pull/30425))
+
+## <small>21.0.3 (2024-11-04)</small>
+
+* [bitnami/*] Remove wrong comment about imagePullPolicy (#30107) ([a51f9e4](https://github.com/bitnami/charts/commit/a51f9e4bb0fbf77199512d35de7ac8abe055d026)), closes [#30107](https://github.com/bitnami/charts/issues/30107)
+* [bitnami/schema-registry] Release 21.0.3 (#30190) ([e0c7e61](https://github.com/bitnami/charts/commit/e0c7e6100c124751454fb670e200220972c662e4)), closes [#30190](https://github.com/bitnami/charts/issues/30190)
+* Update documentation links to techdocs.broadcom.com (#29931) ([f0d9ad7](https://github.com/bitnami/charts/commit/f0d9ad78f39f633d275fc576d32eae78ded4d0b8)), closes [#29931](https://github.com/bitnami/charts/issues/29931)
+
+## <small>21.0.2 (2024-09-25)</small>
+
+* [bitnami/schema-registry] Release 21.0.2 (#29596) ([a63864e](https://github.com/bitnami/charts/commit/a63864e215d7a6a01af762d12d93b7753daa448e)), closes [#29596](https://github.com/bitnami/charts/issues/29596)
 
 ## <small>21.0.1 (2024-09-12)</small>
 

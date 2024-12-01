@@ -210,18 +210,18 @@ For annotations, please see [this document](https://github.com/kubernetes/ingres
 
 ### Common parameters
 
-| Name                     | Description                                                                                          | Value           |
-| ------------------------ | ---------------------------------------------------------------------------------------------------- | --------------- |
-| `nameOverride`           | String to partially override airflow.fullname template with a string (will prepend the release name) | `""`            |
-| `fullnameOverride`       | String to fully override airflow.fullname template with a string                                     | `""`            |
-| `namespaceOverride`      | String to fully override common.names.namespace                                                      | `""`            |
-| `commonLabels`           | Labels to add to all deployed objects                                                                | `{}`            |
-| `commonAnnotations`      | Annotations to add to all deployed objects                                                           | `{}`            |
-| `clusterDomain`          | Kubernetes cluster domain name                                                                       | `cluster.local` |
-| `extraDeploy`            | Array of extra objects to deploy with the release                                                    | `[]`            |
-| `diagnosticMode.enabled` | Enable diagnostic mode (all probes will be disabled and the command will be overridden)              | `false`         |
-| `diagnosticMode.command` | Command to override all containers in the deployment                                                 | `["sleep"]`     |
-| `diagnosticMode.args`    | Args to override all containers in the deployment                                                    | `["infinity"]`  |
+| Name                     | Description                                                                                               | Value           |
+| ------------------------ | --------------------------------------------------------------------------------------------------------- | --------------- |
+| `nameOverride`           | String to partially override common.names.fullname template with a string (will prepend the release name) | `""`            |
+| `fullnameOverride`       | String to fully override common.names.fullname template with a string                                     | `""`            |
+| `namespaceOverride`      | String to fully override common.names.namespace                                                           | `""`            |
+| `commonLabels`           | Labels to add to all deployed objects                                                                     | `{}`            |
+| `commonAnnotations`      | Annotations to add to all deployed objects                                                                | `{}`            |
+| `clusterDomain`          | Kubernetes cluster domain name                                                                            | `cluster.local` |
+| `extraDeploy`            | Array of extra objects to deploy with the release                                                         | `[]`            |
+| `diagnosticMode.enabled` | Enable diagnostic mode (all probes will be disabled and the command will be overridden)                   | `false`         |
+| `diagnosticMode.command` | Command to override all containers in the deployment                                                      | `["sleep"]`     |
+| `diagnosticMode.args`    | Args to override all containers in the deployment                                                         | `["infinity"]`  |
 
 ### Schema Registry parameters
 
@@ -428,6 +428,10 @@ helm install my-release -f values.yaml oci://REGISTRY_NAME/REPOSITORY_NAME/schem
 Find more information about how to deal with common errors related to Bitnami's Helm charts in [this troubleshooting guide](https://docs.bitnami.com/general/how-to/troubleshoot-helm-chart-issues).
 
 ## Upgrading
+
+### To 22.0.0
+
+This major updates the Kafka subchart to its newest major, 31.0.0. For more information on this subchart's major, please refer to [Kafka upgrade notes](https://github.com/bitnami/charts/tree/main/bitnami/kafka#to-3100).
 
 ### To 21.0.0
 

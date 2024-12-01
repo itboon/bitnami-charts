@@ -1,8 +1,40 @@
 # Changelog
 
-## 5.0.3 (2024-10-31)
+## 5.0.11 (2024-11-21)
 
-* [bitnami/concourse] Release 5.0.3 ([#30144](https://github.com/bitnami/charts/pull/30144))
+* [bitnami/concourse] Release 5.0.11 ([#30569](https://github.com/bitnami/charts/pull/30569))
+
+## <small>5.0.10 (2024-11-18)</small>
+
+* [bitnami/concourse] Release 5.0.10 (#30507) ([23c55b6](https://github.com/bitnami/charts/commit/23c55b6d4f2e3b588e5b6b87dcdf45c0f9f5e54a)), closes [#30507](https://github.com/bitnami/charts/issues/30507)
+
+## <small>5.0.9 (2024-11-16)</small>
+
+* [bitnami/concourse] Release 5.0.9 (#30484) ([4f797cd](https://github.com/bitnami/charts/commit/4f797cdfbd250a7343de2c245365789fac515885)), closes [#30484](https://github.com/bitnami/charts/issues/30484)
+
+## <small>5.0.8 (2024-11-14)</small>
+
+* [bitnami/concourse] Release 5.0.8 (#30468) ([1bacd1a](https://github.com/bitnami/charts/commit/1bacd1a01f6b799e0dd908ebe86f3fcbcb5084a6)), closes [#30468](https://github.com/bitnami/charts/issues/30468)
+
+## <small>5.0.7 (2024-11-08)</small>
+
+* [bitnami/concourse] Unify seLinuxOptions default value (#30348) ([47c0557](https://github.com/bitnami/charts/commit/47c055711a53cc7287cda6c17de6cb38de56da4f)), closes [#30348](https://github.com/bitnami/charts/issues/30348)
+
+## <small>5.0.6 (2024-11-08)</small>
+
+* [bitnami/concourse] Release 5.0.6 (#30311) ([f324d80](https://github.com/bitnami/charts/commit/f324d806010b0abc2154d1dca23b1bf76f4a523a)), closes [#30311](https://github.com/bitnami/charts/issues/30311)
+
+## <small>5.0.5 (2024-11-07)</small>
+
+* [bitnami/concourse] Release 5.0.5 (#30258) ([cd032b9](https://github.com/bitnami/charts/commit/cd032b9252556a477e3ff5d55d0b0460156bb593)), closes [#30258](https://github.com/bitnami/charts/issues/30258)
+
+## <small>5.0.4 (2024-11-02)</small>
+
+* [bitnami/concourse] Release 5.0.4 (#30175) ([69e0319](https://github.com/bitnami/charts/commit/69e03191ca3ead2a3915bbaf022fc9ea81ca1df6)), closes [#30175](https://github.com/bitnami/charts/issues/30175)
+
+## <small>5.0.3 (2024-10-31)</small>
+
+* [bitnami/concourse] Release 5.0.3 (#30144) ([446f4b5](https://github.com/bitnami/charts/commit/446f4b570014f85d7a3904a2ce2a1cdff2ef2936)), closes [#30144](https://github.com/bitnami/charts/issues/30144)
 
 ## <small>5.0.2 (2024-10-29)</small>
 

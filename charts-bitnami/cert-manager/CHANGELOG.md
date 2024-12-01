@@ -1,8 +1,18 @@
 # Changelog
 
-## 1.3.21 (2024-10-09)
+## 1.3.23 (2024-11-20)
 
-* [bitnami/cert-manager] Release 1.3.21 ([#29846](https://github.com/bitnami/charts/pull/29846))
+* [bitnami/cert-manager] Release 1.3.23 ([#30552](https://github.com/bitnami/charts/pull/30552))
+
+## <small>1.3.22 (2024-11-07)</small>
+
+* [bitnami/*] Remove wrong comment about imagePullPolicy (#30107) ([a51f9e4](https://github.com/bitnami/charts/commit/a51f9e4bb0fbf77199512d35de7ac8abe055d026)), closes [#30107](https://github.com/bitnami/charts/issues/30107)
+* [bitnami/cert-manager] Release 1.3.22 (#30255) ([8964c61](https://github.com/bitnami/charts/commit/8964c611d3b11e684ac2f3f478fcea601f4b7321)), closes [#30255](https://github.com/bitnami/charts/issues/30255)
+* Update documentation links to techdocs.broadcom.com (#29931) ([f0d9ad7](https://github.com/bitnami/charts/commit/f0d9ad78f39f633d275fc576d32eae78ded4d0b8)), closes [#29931](https://github.com/bitnami/charts/issues/29931)
+
+## <small>1.3.21 (2024-10-09)</small>
+
+* [bitnami/cert-manager] Release 1.3.21 (#29846) ([8bf3be7](https://github.com/bitnami/charts/commit/8bf3be7d9d892616f60e203f65c8a640141e0287)), closes [#29846](https://github.com/bitnami/charts/issues/29846)
 
 ## <small>1.3.20 (2024-10-03)</small>
 

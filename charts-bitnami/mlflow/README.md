@@ -45,6 +45,32 @@ The command deploys mlflow on the Kubernetes cluster in the default configuratio
 
 > **Tip**: List all releases using `helm list`
 
+## Configuration and installation details
+
+### Resource requests and limits
+
+Bitnami charts allow setting resource requests and limits for all containers inside the chart deployment. These are inside the `resources` value (check parameter table). Setting requests is essential for production workloads and these should be adapted to your specific use case.
+
+To make this process easier, the chart contains the `resourcesPreset` values, which automatically sets the `resources` section according to different presets. Check these presets in [the bitnami/common chart](https://github.com/bitnami/charts/blob/main/bitnami/common/templates/_resources.tpl#L15). However, in production workloads using `resourcePreset` is discouraged as it may not fully adapt to your specific needs. Find more information on container resource management in the [official Kubernetes documentation](https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/).
+
+### Prometheus metrics
+
+This chart can be integrated with Prometheus by setting `tracking.metrics.enabled` to `true`. This will expose MLFlow native Prometheus endpoint in the service. It will have the necessary annotations to be automatically scraped by Prometheus.
+
+#### Prometheus requirements
+
+It is necessary to have a working installation of Prometheus or Prometheus Operator for the integration to work. Install the [Bitnami Prometheus helm chart](https://github.com/bitnami/charts/tree/main/bitnami/prometheus) or the [Bitnami Kube Prometheus helm chart](https://github.com/bitnami/charts/tree/main/bitnami/kube-prometheus) to easily have a working Prometheus in your cluster.
+
+#### Integration with Prometheus Operator
+
+The chart can deploy `ServiceMonitor` objects for integration with Prometheus Operator installations. To do so, set the value `tracking.metrics.serviceMonitor.enabled=true`. Ensure that the Prometheus Operator `CustomResourceDefinitions` are installed in the cluster or it will fail with the following error:
+
+```text
+no matches for kind "ServiceMonitor" in version "monitoring.coreos.com/v1"
+```
+
+Install the [Bitnami Kube Prometheus helm chart](https://github.com/bitnami/charts/tree/main/bitnami/kube-prometheus) for having the necessary CRDs and the Prometheus Operator.
+
 ## Parameters
 
 ### Global parameters
@@ -95,6 +121,7 @@ The command deploys mlflow on the Kubernetes cluster in the default configuratio
 | ------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------- |
 | `tracking.enabled`                                           | Enable Tracking server                                                                                                                                                                                                              | `true`           |
 | `tracking.replicaCount`                                      | Number of mlflow replicas to deploy                                                                                                                                                                                                 | `1`              |
+| `tracking.host`                                              | mlflow tracking listening host. Set to "[::]" to use ipv6.                                                                                                                                                                          | `0.0.0.0`        |
 | `tracking.containerPorts.http`                               | mlflow HTTP container port                                                                                                                                                                                                          | `5000`           |
 | `tracking.livenessProbe.enabled`                             | Enable livenessProbe on mlflow containers                                                                                                                                                                                           | `true`           |
 | `tracking.livenessProbe.initialDelaySeconds`                 | Initial delay seconds for livenessProbe                                                                                                                                                                                             | `5`              |
@@ -470,6 +497,24 @@ The command deploys mlflow on the Kubernetes cluster in the default configuratio
 | `externalGCS.existingSecret`         | Name of an existing secret key containing the application credentials file (required when useCredentialsInSecret is true) | `""`    |
 | `externalGCS.existingSecretKey`      | Key in the existing secret containing the application credentials (required when useCredentialsInSecret is true)          | `""`    |
 | `externalGCS.serveArtifacts`         | Whether artifact serving is enabled                                                                                       | `true`  |
+
+### External Azure Blob Storage parameters
+
+| Name                                            | Description                                                                                                                   | Value    |
+| ----------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- | -------- |
+| `externalAzureBlob.storageAccount`              | Azure Blob Storage account name. Activate azure artifact storage if set,                                                      | `""`     |
+| `externalAzureBlob.accessKey`                   | Azure Blob Storage access key. Optional if connectionString is set                                                            | `""`     |
+| `externalAzureBlob.connectionString`            | Azure Blob Storage connection string. Optional if accessKey is set.                                                           | `""`     |
+| `externalAzureBlob.containerName`               | Azure Blob Storage container name                                                                                             | `mlflow` |
+| `externalAzureBlob.clientId`                    | Azure Blob Storage client ID                                                                                                  | `""`     |
+| `externalAzureBlob.tenantId`                    | Azure Blob Storage tenant ID                                                                                                  | `""`     |
+| `externalAzureBlob.clientSecret`                | Azure Blob Storage client secret                                                                                              | `""`     |
+| `externalAzureBlob.useCredentialsInSecret`      | Whether to read the Azure Blob Storage credentials from a secret                                                              | `false`  |
+| `externalAzureBlob.existingSecret`              | Name of an existing secret key containing the Azure Blob Storage credentials (required when useCredentialsInSecret is true)   | `""`     |
+| `externalAzureBlob.existingAccessKeyKey`        | Key in the existing secret containing the Azure Blob Storage access key (required when useCredentialsInSecret is true)        | `""`     |
+| `externalAzureBlob.existingConnectionStringKey` | Key in the existing secret containing the Azure Blob Storage connection string (required when useCredentialsInSecret is true) | `""`     |
+| `externalAzureBlob.clientSecretKey`             | Key in the existing secret containing the Azure Blob Storage client secret (required when useCredentialsInSecret is true)     | `""`     |
+| `externalAzureBlob.serveArtifacts`              | Whether artifact serving is enabled                                                                                           | `true`   |
 
 The MLflow chart supports three different ways to load your files in the `run` deployment. In order of priority, they are:
 

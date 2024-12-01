@@ -1,8 +1,21 @@
 # Changelog
 
-## 2.0.5 (2024-10-31)
+## 2.2.1 (2024-11-18)
 
-* [bitnami/mlflow] Release 2.0.5 ([#30157](https://github.com/bitnami/charts/pull/30157))
+* [bitnami/mlflow] Release 2.2.1 ([#30503](https://github.com/bitnami/charts/pull/30503))
+
+## 2.2.0 (2024-11-15)
+
+* [bitnami/mlflow] Adding missing Azure Storage configuration in the Helm Chart (#29626) ([6aa1ccb](https://github.com/bitnami/charts/commit/6aa1ccbdccc5f566f92e310b69133c2e697037a1)), closes [#29626](https://github.com/bitnami/charts/issues/29626) [#1](https://github.com/bitnami/charts/issues/1)
+
+## 2.1.0 (2024-11-04)
+
+* [bitnami/mlflow] Make mlflow host part of values (#29862) ([148ff74](https://github.com/bitnami/charts/commit/148ff74ddb1e0aa6c268f37a4a8f98d08fe821fb)), closes [#29862](https://github.com/bitnami/charts/issues/29862)
+
+## <small>2.0.5 (2024-10-31)</small>
+
+* [bitnami/*] Remove wrong comment about imagePullPolicy (#30107) ([a51f9e4](https://github.com/bitnami/charts/commit/a51f9e4bb0fbf77199512d35de7ac8abe055d026)), closes [#30107](https://github.com/bitnami/charts/issues/30107)
+* [bitnami/mlflow] Release 2.0.5 (#30157) ([6610a2d](https://github.com/bitnami/charts/commit/6610a2d1f4cf26b83ae86ce5b7171360c2f80007)), closes [#30157](https://github.com/bitnami/charts/issues/30157)
 
 ## <small>2.0.4 (2024-10-26)</small>
 

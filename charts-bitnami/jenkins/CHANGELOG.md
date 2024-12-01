@@ -1,8 +1,18 @@
 # Changelog
 
-## 13.4.26 (2024-10-17)
+## 13.4.28 (2024-11-28)
 
-* [bitnami/jenkins] Release 13.4.26 ([#29973](https://github.com/bitnami/charts/pull/29973))
+* [bitnami/jenkins] Release 13.4.28 ([#30664](https://github.com/bitnami/charts/pull/30664))
+
+## <small>13.4.27 (2024-11-04)</small>
+
+* [bitnami/*] Remove wrong comment about imagePullPolicy (#30107) ([a51f9e4](https://github.com/bitnami/charts/commit/a51f9e4bb0fbf77199512d35de7ac8abe055d026)), closes [#30107](https://github.com/bitnami/charts/issues/30107)
+* [bitnami/jenkins] Release 13.4.27 (#30143) ([d461ca0](https://github.com/bitnami/charts/commit/d461ca069a425d5bf77ac9e0ddce9054ce287aa9)), closes [#30143](https://github.com/bitnami/charts/issues/30143)
+
+## <small>13.4.26 (2024-10-17)</small>
+
+* [bitnami/jenkins] Release 13.4.26 (#29973) ([ec9c4d2](https://github.com/bitnami/charts/commit/ec9c4d2eeea93832f4687028c89184424c95da78)), closes [#29973](https://github.com/bitnami/charts/issues/29973)
+* Update documentation links to techdocs.broadcom.com (#29931) ([f0d9ad7](https://github.com/bitnami/charts/commit/f0d9ad78f39f633d275fc576d32eae78ded4d0b8)), closes [#29931](https://github.com/bitnami/charts/issues/29931)
 
 ## <small>13.4.25 (2024-10-10)</small>
 

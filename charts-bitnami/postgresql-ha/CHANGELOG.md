@@ -1,8 +1,42 @@
 # Changelog
 
-## 14.3.5 (2024-10-24)
+## 15.0.2 (2024-11-28)
 
-* [bitnami/postgresql-ha] Cloning huge data from primary node fails due to livenessProbe ([#29948](https://github.com/bitnami/charts/pull/29948))
+* [bitnami/postgresql-ha] Release 15.0.2 ([#30676](https://github.com/bitnami/charts/pull/30676))
+
+## <small>15.0.1 (2024-11-27)</small>
+
+* [bitnami/postgresql-ha] Release 15.0.1 (#30644) ([ebb2f96](https://github.com/bitnami/charts/commit/ebb2f960e7220e80e4f3fcaf98cf7bc332d81c8a)), closes [#30644](https://github.com/bitnami/charts/issues/30644)
+
+## 15.0.0 (2024-11-25)
+
+* [bitnami/postgresql-ha] Release 15.0.0 (#30618) ([2d17a50](https://github.com/bitnami/charts/commit/2d17a504663ae7b5088c1122865176828cec739a)), closes [#30618](https://github.com/bitnami/charts/issues/30618)
+
+## <small>14.3.10 (2024-11-21)</small>
+
+* [bitnami/*] docs: fix copy-paste typos with wrong references to Airflow (#30541) ([0a225d4](https://github.com/bitnami/charts/commit/0a225d44c1969429573b4e2630068eff129b6a96)), closes [#30541](https://github.com/bitnami/charts/issues/30541)
+* [bitnami/postgresql-ha] Release 14.3.10 (#30568) ([5aeafc7](https://github.com/bitnami/charts/commit/5aeafc7e9aaf2b23831c84b823be1f11d49e97eb)), closes [#30568](https://github.com/bitnami/charts/issues/30568)
+
+## <small>14.3.9 (2024-11-14)</small>
+
+* [bitnami/postgresql-ha] Release 14.3.9 (#30462) ([7c5d44b](https://github.com/bitnami/charts/commit/7c5d44b7743c76af54caf6c098690e554ed04dc0)), closes [#30462](https://github.com/bitnami/charts/issues/30462)
+
+## <small>14.3.8 (2024-11-13)</small>
+
+* [bitnami/postgresql-ha] Release 14.3.8 (#30249) ([0ad36f4](https://github.com/bitnami/charts/commit/0ad36f4011a2eff9835f5af50b88933b36bb2c99)), closes [#30249](https://github.com/bitnami/charts/issues/30249)
+
+## <small>14.3.7 (2024-11-08)</small>
+
+* [bitnami/postgresql-ha] Unify seLinuxOptions default value (#30335) ([93d456d](https://github.com/bitnami/charts/commit/93d456d3100b0dee72f3b78c2ecfaf3c4a44e8e9)), closes [#30335](https://github.com/bitnami/charts/issues/30335)
+
+## <small>14.3.6 (2024-11-05)</small>
+
+* [bitnami/postgresql-ha] Fix pgpool deployment init container security context (#29857) ([90f4502](https://github.com/bitnami/charts/commit/90f4502f53cecbd2622612b1271af7d8b3e57e07)), closes [#29857](https://github.com/bitnami/charts/issues/29857)
+
+## <small>14.3.5 (2024-10-29)</small>
+
+* [bitnami/*] Remove wrong comment about imagePullPolicy (#30107) ([a51f9e4](https://github.com/bitnami/charts/commit/a51f9e4bb0fbf77199512d35de7ac8abe055d026)), closes [#30107](https://github.com/bitnami/charts/issues/30107)
+* [bitnami/postgresql-ha] Cloning huge data from primary node fails due to livenessProbe (#29948) ([16bd148](https://github.com/bitnami/charts/commit/16bd1481b05a3a48f4637ea946faf75d3d5686bb)), closes [#29948](https://github.com/bitnami/charts/issues/29948)
 
 ## <small>14.3.4 (2024-10-23)</small>
 

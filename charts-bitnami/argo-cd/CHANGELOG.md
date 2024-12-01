@@ -1,8 +1,29 @@
 # Changelog
 
-## 7.0.20 (2024-10-18)
+## 7.0.25 (2024-11-20)
 
-* [bitnami/argo-cd] Release 7.0.20 ([#29997](https://github.com/bitnami/charts/pull/29997))
+* [bitnami/argo-cd] Release 7.0.25 ([#30549](https://github.com/bitnami/charts/pull/30549))
+
+## <small>7.0.24 (2024-11-15)</small>
+
+* [bitnami/argo-cd] Release 7.0.24 (#30471) ([7e640aa](https://github.com/bitnami/charts/commit/7e640aa47963982bd3432301a72ea8ee48573b97)), closes [#30471](https://github.com/bitnami/charts/issues/30471)
+
+## <small>7.0.23 (2024-11-14)</small>
+
+* [bitnami/argo-cd] Fix repo-server PDB label selector (#30391) ([d2b71c2](https://github.com/bitnami/charts/commit/d2b71c2cc92ea4c46c27c40781106b948d2194a6)), closes [#30391](https://github.com/bitnami/charts/issues/30391)
+
+## <small>7.0.22 (2024-11-07)</small>
+
+* [bitnami/argo-cd] Release 7.0.22 (#30253) ([981c935](https://github.com/bitnami/charts/commit/981c9350763c152831eaa8dc310b3abd585fd705)), closes [#30253](https://github.com/bitnami/charts/issues/30253)
+
+## <small>7.0.21 (2024-11-04)</small>
+
+* [bitnami/*] Remove wrong comment about imagePullPolicy (#30107) ([a51f9e4](https://github.com/bitnami/charts/commit/a51f9e4bb0fbf77199512d35de7ac8abe055d026)), closes [#30107](https://github.com/bitnami/charts/issues/30107)
+* [bitnami/argo-cd] Release 7.0.21 (#30196) ([f6e62be](https://github.com/bitnami/charts/commit/f6e62be0823be6af54b6cad537adf03a91630e0d)), closes [#30196](https://github.com/bitnami/charts/issues/30196)
+
+## <small>7.0.20 (2024-10-18)</small>
+
+* [bitnami/argo-cd] Release 7.0.20 (#29997) ([668f286](https://github.com/bitnami/charts/commit/668f286b78912244294a66ca4d081a07e79634a8)), closes [#29997](https://github.com/bitnami/charts/issues/29997)
 
 ## <small>7.0.19 (2024-10-17)</small>
 

@@ -28,6 +28,9 @@ metadata:
   {{- end }}
 spec:
   schedule: {{ quote .Values.backup.cronjob.schedule }}
+  {{- if .Values.backup.cronjob.timezone }}
+  timeZone: {{ .Values.backup.cronjob.timezone | quote }}
+  {{- end }}
   concurrencyPolicy: {{ .Values.backup.cronjob.concurrencyPolicy }}
   failedJobsHistoryLimit: {{ .Values.backup.cronjob.failedJobsHistoryLimit }}
   successfulJobsHistoryLimit: {{ .Values.backup.cronjob.successfulJobsHistoryLimit }}
@@ -178,7 +181,7 @@ spec:
             - name: common-scripts
               configMap:
                 name: {{ printf "%s-common-scripts" (include "mongodb.fullname" .) }}
-                defaultMode: 0550
+                defaultMode: 0o550
             {{- if .Values.tls.enabled }}
             - name: certs
               emptyDir: {}
@@ -189,10 +192,10 @@ spec:
                 items:
                 - key: mongodb-ca-cert
                   path: mongodb-ca-cert
-                  mode: 0600
+                  mode: 0o600
                 - key: mongodb-ca-key
                   path: mongodb-ca-key
-                  mode: 0600
+                  mode: 0o600
             {{- else }}
             - name: mongodb-certs-0
               secret:

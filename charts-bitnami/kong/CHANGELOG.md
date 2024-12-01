@@ -1,8 +1,38 @@
 # Changelog
 
-## 14.0.3 (2024-10-28)
+## 15.0.0 (2024-11-22)
 
-* [bitnami/kong] Release 14.0.3 ([#30102](https://github.com/bitnami/charts/pull/30102))
+* [bitnami/kong] Use postgresql 17 for Kong ([#30584](https://github.com/bitnami/charts/pull/30584))
+
+## <small>14.0.9 (2024-11-22)</small>
+
+* [bitnami/kong] Release 14.0.9 (#30574) ([1966baa](https://github.com/bitnami/charts/commit/1966baacadf3f66d9e52319e22d7269ba72b742a)), closes [#30574](https://github.com/bitnami/charts/issues/30574)
+
+## <small>14.0.8 (2024-11-21)</small>
+
+* [bitnami/kong] Release 14.0.8 (#30560) ([250a2ee](https://github.com/bitnami/charts/commit/250a2ee7562c5ecbbd1e1ff1562cb9728cf88aa3)), closes [#30560](https://github.com/bitnami/charts/issues/30560)
+
+## <small>14.0.7 (2024-11-21)</small>
+
+* [bitnami/kong] Release 14.0.7 (#30558) ([2f93e0e](https://github.com/bitnami/charts/commit/2f93e0e7a4cf274137bbe8fcb87716326b638dff)), closes [#30558](https://github.com/bitnami/charts/issues/30558)
+
+## <small>14.0.6 (2024-11-19)</small>
+
+* [bitnami/kong] Release 14.0.6 (#30511) ([2cbf54a](https://github.com/bitnami/charts/commit/2cbf54a295ebd343bb41b074641d7b640ff58807)), closes [#30511](https://github.com/bitnami/charts/issues/30511)
+
+## <small>14.0.5 (2024-11-09)</small>
+
+* [bitnami/kong] Release 14.0.5 (#30381) ([097a935](https://github.com/bitnami/charts/commit/097a9359c2b21f2de2e919d8ddd5b68733244af5)), closes [#30381](https://github.com/bitnami/charts/issues/30381)
+
+## <small>14.0.4 (2024-11-07)</small>
+
+* [bitnami/*] Remove wrong comment about imagePullPolicy (#30107) ([a51f9e4](https://github.com/bitnami/charts/commit/a51f9e4bb0fbf77199512d35de7ac8abe055d026)), closes [#30107](https://github.com/bitnami/charts/issues/30107)
+* [bitnami/kong] Release 14.0.4 (#30276) ([5d37187](https://github.com/bitnami/charts/commit/5d37187597f35f33ea254f333e740d8a2963a440)), closes [#30276](https://github.com/bitnami/charts/issues/30276)
+
+## <small>14.0.3 (2024-10-28)</small>
+
+* [bitnami/kong] Release 14.0.3 (#30102) ([4f414b2](https://github.com/bitnami/charts/commit/4f414b270d913db9477efb273786d543b96fb408)), closes [#30102](https://github.com/bitnami/charts/issues/30102)
+* Update documentation links to techdocs.broadcom.com (#29931) ([f0d9ad7](https://github.com/bitnami/charts/commit/f0d9ad78f39f633d275fc576d32eae78ded4d0b8)), closes [#29931](https://github.com/bitnami/charts/issues/29931)
 
 ## <small>14.0.2 (2024-10-16)</small>
 

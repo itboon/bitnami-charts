@@ -1,8 +1,16 @@
 # Changelog
 
+## 2.29.1 (2025-01-10)
+
+* [bitnami/common] Removing seLinuxOptions from omission ([#31279](https://github.com/bitnami/charts/pull/31279))
+
+## 2.29.0 (2025-01-03)
+
+* [bitnami/common] Add "common.capabilities.job.apiVersion" template (#31164) ([2ca979a](https://github.com/bitnami/charts/commit/2ca979a6add279384d60e6b35199eaf13553cefa)), closes [#31164](https://github.com/bitnami/charts/issues/31164)
+
 ## 2.28.0 (2024-12-10)
 
-* [bitnami/common] New helper to detect non-standard images ([#30851](https://github.com/bitnami/charts/pull/30851))
+* [bitnami/common] New helper to detect non-standard images (#30851) ([ae33d01](https://github.com/bitnami/charts/commit/ae33d01968e8a353a569785f9867827153c797dc)), closes [#30851](https://github.com/bitnami/charts/issues/30851)
 
 ## <small>2.27.2 (2024-11-27)</small>
 

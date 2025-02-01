@@ -644,9 +644,9 @@ As an alternative, you can use of the preset configurations for pod affinity, po
 | `keycloakConfigCli.backoffLimit`                                      | Number of retries before considering a Job as failed                                                                                                                                                                                                  | `1`                                   |
 | `keycloakConfigCli.podLabels`                                         | Pod extra labels                                                                                                                                                                                                                                      | `{}`                                  |
 | `keycloakConfigCli.podAnnotations`                                    | Annotations for job pod                                                                                                                                                                                                                               | `{}`                                  |
-| `keycloakConfigCli.extraEnvVars`                                      | Additional environment variables to set                                                                                                                                                                                                               | `[]`                                  |
 | `keycloakConfigCli.nodeSelector`                                      | Node labels for pod assignment                                                                                                                                                                                                                        | `{}`                                  |
 | `keycloakConfigCli.podTolerations`                                    | Tolerations for job pod assignment                                                                                                                                                                                                                    | `[]`                                  |
+| `keycloakConfigCli.extraEnvVars`                                      | Additional environment variables to set                                                                                                                                                                                                               | `[]`                                  |
 | `keycloakConfigCli.extraEnvVarsCM`                                    | ConfigMap with extra environment variables                                                                                                                                                                                                            | `""`                                  |
 | `keycloakConfigCli.extraEnvVarsSecret`                                | Secret with extra environment variables                                                                                                                                                                                                               | `""`                                  |
 | `keycloakConfigCli.extraVolumes`                                      | Extra volumes to add to the job                                                                                                                                                                                                                       | `[]`                                  |
@@ -685,11 +685,12 @@ As an alternative, you can use of the preset configurations for pod affinity, po
 
 ### Keycloak Cache parameters
 
-| Name              | Description                                                                | Value        |
-| ----------------- | -------------------------------------------------------------------------- | ------------ |
-| `cache.enabled`   | Switch to enable or disable the keycloak distributed cache for kubernetes. | `true`       |
-| `cache.stackName` | Set infinispan cache stack to use                                          | `kubernetes` |
-| `cache.stackFile` | Set infinispan cache stack filename to use                                 | `""`         |
+| Name                                     | Description                                                                         | Value        |
+| ---------------------------------------- | ----------------------------------------------------------------------------------- | ------------ |
+| `cache.enabled`                          | Switch to enable or disable the keycloak distributed cache for kubernetes.          | `true`       |
+| `cache.stackName`                        | Set infinispan cache stack to use                                                   | `kubernetes` |
+| `cache.stackFile`                        | Set infinispan cache stack filename to use                                          | `""`         |
+| `cache.useHeadlessServiceWithAppVersion` | Set to true to create the headless service used for ispn containing the app version | `false`      |
 
 ### Keycloak Logging parameters
 
@@ -853,7 +854,7 @@ kubectl delete pod keycloak-postgresql-0
 
 ## License
 
-Copyright &copy; 2024 Broadcom. The term "Broadcom" refers to Broadcom Inc. and/or its subsidiaries.
+Copyright &copy; 2025 Broadcom. The term "Broadcom" refers to Broadcom Inc. and/or its subsidiaries.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.

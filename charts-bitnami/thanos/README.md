@@ -1153,6 +1153,7 @@ You can enable this initContainer by setting `volumePermissions.enabled` to `tru
 | `ruler.alertmanagersConfig`                               | Alert managers configuration                                                                                                                                                                                                  | `""`                     |
 | `ruler.evalInterval`                                      | The default evaluation interval to use                                                                                                                                                                                        | `1m`                     |
 | `ruler.clusterName`                                       | Used to set the 'ruler_cluster' label                                                                                                                                                                                         | `""`                     |
+| `ruler.ruleFile`                                          | Change the location Thanos checks for rule files                                                                                                                                                                              | `/conf/rules/*.yml`      |
 | `ruler.config`                                            | Ruler configuration                                                                                                                                                                                                           | `""`                     |
 | `ruler.dataPath`                                          | Path to the data directory                                                                                                                                                                                                    | `""`                     |
 | `ruler.existingConfigmap`                                 | Name of existing ConfigMap with Ruler configuration                                                                                                                                                                           | `""`                     |
@@ -1897,7 +1898,7 @@ ingress.secrets[0].key -> querier.ingress.secrets[0].key
 
 ## License
 
-Copyright &copy; 2024 Broadcom. The term "Broadcom" refers to Broadcom Inc. and/or its subsidiaries.
+Copyright &copy; 2025 Broadcom. The term "Broadcom" refers to Broadcom Inc. and/or its subsidiaries.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.

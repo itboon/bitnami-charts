@@ -1,8 +1,21 @@
 # Changelog
 
-## 8.7.5 (2025-02-19)
+## 8.7.8 (2025-03-26)
 
-* [bitnami/external-dns] Release 8.7.5 ([#31994](https://github.com/bitnami/charts/pull/31994))
+* [bitnami/external-dns] Release 8.7.8 ([#32475](https://github.com/bitnami/charts/pull/32475))
+
+## <small>8.7.7 (2025-03-10)</small>
+
+* [bitnami/external-dns] Fix TXT AES key being read from incorrect secret (#32360) ([fb7b925](https://github.com/bitnami/charts/commit/fb7b9259095f8c0f5b76872f416b22a5403d5949)), closes [#32360](https://github.com/bitnami/charts/issues/32360)
+
+## <small>8.7.6 (2025-03-05)</small>
+
+* [bitnami/external-dns] Release 8.7.6 (#32287) ([ebfa0ef](https://github.com/bitnami/charts/commit/ebfa0ef1854fa21e9ed8b5294fa7ac821a0c80b7)), closes [#32287](https://github.com/bitnami/charts/issues/32287)
+
+## <small>8.7.5 (2025-02-19)</small>
+
+* [bitnami/*] Use CDN url for the Bitnami Application Icons (#31881) ([d9bb11a](https://github.com/bitnami/charts/commit/d9bb11a9076b9bfdcc70ea022c25ef50e9713657)), closes [#31881](https://github.com/bitnami/charts/issues/31881)
+* [bitnami/external-dns] Release 8.7.5 (#31994) ([e3b3a39](https://github.com/bitnami/charts/commit/e3b3a39ab1eef6f71c5ca0317c9ab4ab51103915)), closes [#31994](https://github.com/bitnami/charts/issues/31994)
 
 ## <small>8.7.4 (2025-02-04)</small>
 

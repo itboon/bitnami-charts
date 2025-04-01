@@ -1,8 +1,16 @@
 # Changelog
 
-## 12.3.0 (2025-02-21)
+## 12.3.2 (2025-03-22)
 
-* [bitnami/mysql] Set `usePasswordFiles=true` by default ([#32113](https://github.com/bitnami/charts/pull/32113))
+* [bitnami/mysql] Release 12.3.2 ([#32558](https://github.com/bitnami/charts/pull/32558))
+
+## <small>12.3.1 (2025-03-06)</small>
+
+* [bitnami/mysql] Fix network policy extraEgress bug (#32328) ([bceae22](https://github.com/bitnami/charts/commit/bceae22f78d550f8b33589e2579843ac2fad3629)), closes [#32328](https://github.com/bitnami/charts/issues/32328)
+
+## 12.3.0 (2025-02-24)
+
+* [bitnami/mysql] Set `usePasswordFiles=true` by default (#32113) ([b5b921b](https://github.com/bitnami/charts/commit/b5b921b063f21ec5e3c023869bd8bb01ffaf92a2)), closes [#32113](https://github.com/bitnami/charts/issues/32113)
 
 ## <small>12.2.4 (2025-02-19)</small>
 

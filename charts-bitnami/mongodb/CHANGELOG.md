@@ -1,8 +1,37 @@
 # Changelog
 
-## 16.4.5 (2025-02-21)
+## 16.4.11 (2025-03-28)
 
-* [bitnami/mongodb] Release 16.4.5 ([#32135](https://github.com/bitnami/charts/pull/32135))
+* [bitnami/mongodb] backup cronjob time zone variable should be camel case ([#32663](https://github.com/bitnami/charts/pull/32663))
+
+## <small>16.4.10 (2025-03-25)</small>
+
+* [bitnami/mongodb] fix broken conditional (#32591) ([f98e77e](https://github.com/bitnami/charts/commit/f98e77e989c35d7fa67e3b118bf69e64121d7454)), closes [#32591](https://github.com/bitnami/charts/issues/32591)
+* Update README.md (#32588) ([3c9e14a](https://github.com/bitnami/charts/commit/3c9e14ac3fa81ac439f64a20c284244eadb9481d)), closes [#32588](https://github.com/bitnami/charts/issues/32588)
+
+## <small>16.4.9 (2025-03-24)</small>
+
+* [bitnami/mongodb] #27482 - fix replicaset config handling (#32381) ([5f50d43](https://github.com/bitnami/charts/commit/5f50d43900bd5305b9d83ceddd17354081109641)), closes [#32381](https://github.com/bitnami/charts/issues/32381)
+
+## <small>16.4.8 (2025-03-21)</small>
+
+* [bitnami/*] Add tanzuCategory annotation (#32409) ([a8fba5c](https://github.com/bitnami/charts/commit/a8fba5cb01f6f4464ca7f69c50b0fbe97d837a95)), closes [#32409](https://github.com/bitnami/charts/issues/32409)
+* [bitnami/mongodb] Release 16.4.8 (#32551) ([07d0b66](https://github.com/bitnami/charts/commit/07d0b664ed13ac2388db93f4369597948f16ee25)), closes [#32551](https://github.com/bitnami/charts/issues/32551)
+
+## <small>16.4.7 (2025-03-12)</small>
+
+* [bitnami/mongodb] Update dns-check init container condition (#32394) ([430e759](https://github.com/bitnami/charts/commit/430e7599e01ab720e67cc6f0fb5098704434ef28)), closes [#32394](https://github.com/bitnami/charts/issues/32394)
+
+## <small>16.4.6 (2025-03-10)</small>
+
+* [bitnami/mongodb] Use actual hostname instead of localhost for mongodb_exporter URI string (#32192) ([cbfec4f](https://github.com/bitnami/charts/commit/cbfec4f962119b505b5c81b6d61448506b7a6216)), closes [#32192](https://github.com/bitnami/charts/issues/32192)
+
+## <small>16.4.5 (2025-02-21)</small>
+
+* [bitnami/*] Fix typo in named template name (#31858) ([b739b69](https://github.com/bitnami/charts/commit/b739b69532e637bd33b4a44eeb422c3e749eac77)), closes [#31858](https://github.com/bitnami/charts/issues/31858)
+* [bitnami/*] Use CDN url for the Bitnami Application Icons (#31881) ([d9bb11a](https://github.com/bitnami/charts/commit/d9bb11a9076b9bfdcc70ea022c25ef50e9713657)), closes [#31881](https://github.com/bitnami/charts/issues/31881)
+* [bitnami/mongodb] Enable publishNotReadyAddresses for ClusterIP services (#31145) ([0e8c150](https://github.com/bitnami/charts/commit/0e8c150374229c71161e96afe8a6c801060871e2)), closes [#31145](https://github.com/bitnami/charts/issues/31145)
+* [bitnami/mongodb] Release 16.4.5 (#32135) ([3312b24](https://github.com/bitnami/charts/commit/3312b24b28c273ee9ffed1e37d22ca1f55ebac15)), closes [#32135](https://github.com/bitnami/charts/issues/32135)
 
 ## <small>16.4.3 (2025-02-03)</small>
 

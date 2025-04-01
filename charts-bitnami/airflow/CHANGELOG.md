@@ -1,8 +1,25 @@
 # Changelog
 
+## 22.7.2 (2025-03-25)
+
+* bitnami/airflow  Fix indentation error when providing setupDBJob.resources in values ([#32599](https://github.com/bitnami/charts/pull/32599))
+
+## <small>22.7.1 (2025-03-22)</small>
+
+* [bitnami/*] Add tanzuCategory annotation (#32409) ([a8fba5c](https://github.com/bitnami/charts/commit/a8fba5cb01f6f4464ca7f69c50b0fbe97d837a95)), closes [#32409](https://github.com/bitnami/charts/issues/32409)
+* [bitnami/airflow] Release 22.7.1 (#32559) ([4d21c97](https://github.com/bitnami/charts/commit/4d21c9734d3348ee1fcd38d80958af501dbe51c5)), closes [#32559](https://github.com/bitnami/charts/issues/32559)
+
+## 22.7.0 (2025-03-04)
+
+* [bitnami/airflow] feat: add support to extend webserver configuration (#32254) ([c9ff19f](https://github.com/bitnami/charts/commit/c9ff19f64f060ea57a385e8214ba7f3c5f79485d)), closes [#32254](https://github.com/bitnami/charts/issues/32254)
+
+## <small>22.6.1 (2025-03-03)</small>
+
+* [bitnami/airflow] feat: timeouts for probes (#32235) ([67cbd50](https://github.com/bitnami/charts/commit/67cbd50c2251ab320a15e226e6862fdeadc5677d)), closes [#32235](https://github.com/bitnami/charts/issues/32235)
+
 ## 22.6.0 (2025-02-27)
 
-* [bitnami/airflow] Add support for `usePasswordFiles` ([#32076](https://github.com/bitnami/charts/pull/32076))
+* [bitnami/airflow] Add support for `usePasswordFiles` (#32076) ([186a302](https://github.com/bitnami/charts/commit/186a302e024765179c80bae1594d80ae2361f5b9)), closes [#32076](https://github.com/bitnami/charts/issues/32076)
 
 ## 22.5.0 (2025-02-20)
 

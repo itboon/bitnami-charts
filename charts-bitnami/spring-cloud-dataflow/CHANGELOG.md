@@ -1,8 +1,22 @@
 # Changelog
 
-## 34.2.0 (2025-02-21)
+## 35.0.0 (2025-03-26)
 
-* [bitnami/spring-cloud-dataflow] Set `usePasswordFiles=true` by default ([#32120](https://github.com/bitnami/charts/pull/32120))
+* [bitnami/spring-cloud-dataflow] feat: bump major due to major bump on Kafka dep ([#32619](https://github.com/bitnami/charts/pull/32619))
+
+## <small>34.2.2 (2025-03-19)</small>
+
+* [bitnami/*] Add tanzuCategory annotation (#32409) ([a8fba5c](https://github.com/bitnami/charts/commit/a8fba5cb01f6f4464ca7f69c50b0fbe97d837a95)), closes [#32409](https://github.com/bitnami/charts/issues/32409)
+* [bitnami/spring-cloud-dataflow] fix incorrect application of externalDatabase.skipper.password value ([c4f8ddf](https://github.com/bitnami/charts/commit/c4f8ddfa8f1f34f34d6e91e1283d0df883f80a5f)), closes [#32251](https://github.com/bitnami/charts/issues/32251)
+
+## <small>34.2.1 (2025-03-02)</small>
+
+* [bitnami/spring-cloud-dataflow] Release 34.2.1 (#32230) ([4b9681d](https://github.com/bitnami/charts/commit/4b9681d82f879514596211815f7cb9f5e12d2667)), closes [#32230](https://github.com/bitnami/charts/issues/32230)
+
+## 34.2.0 (2025-02-26)
+
+* [bitnami/*] Use CDN url for the Bitnami Application Icons (#31881) ([d9bb11a](https://github.com/bitnami/charts/commit/d9bb11a9076b9bfdcc70ea022c25ef50e9713657)), closes [#31881](https://github.com/bitnami/charts/issues/31881)
+* [bitnami/spring-cloud-dataflow] Use subchart default value for `usePasswordFiles` (#32120) ([b9d42d0](https://github.com/bitnami/charts/commit/b9d42d04ad7b8ba4a8bbd66e3e4570853a9acf64)), closes [#32120](https://github.com/bitnami/charts/issues/32120)
 
 ## <small>34.1.2 (2025-02-03)</small>
 

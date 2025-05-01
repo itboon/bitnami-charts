@@ -1,8 +1,17 @@
 # Changelog
 
-## 2.4.12 (2025-03-19)
+## 2.4.14 (2025-04-22)
 
-* [bitnami/pinniped] Release 2.4.12 ([#32523](https://github.com/bitnami/charts/pull/32523))
+* [bitnami/pinniped] Release 2.4.14 ([#33118](https://github.com/bitnami/charts/pull/33118))
+
+## <small>2.4.13 (2025-04-02)</small>
+
+* [bitnami/pinniped] Release 2.4.13 (#32758) ([d9da8e8](https://github.com/bitnami/charts/commit/d9da8e850244ddc5e02e1c68f067e54f43705f3a)), closes [#32758](https://github.com/bitnami/charts/issues/32758)
+
+## <small>2.4.12 (2025-03-19)</small>
+
+* [bitnami/*] Add tanzuCategory annotation (#32409) ([a8fba5c](https://github.com/bitnami/charts/commit/a8fba5cb01f6f4464ca7f69c50b0fbe97d837a95)), closes [#32409](https://github.com/bitnami/charts/issues/32409)
+* [bitnami/pinniped] Release 2.4.12 (#32523) ([de64aa3](https://github.com/bitnami/charts/commit/de64aa321ea9641e92728a305b5dcb0ceaa08d2d)), closes [#32523](https://github.com/bitnami/charts/issues/32523)
 
 ## <small>2.4.11 (2025-03-12)</small>
 

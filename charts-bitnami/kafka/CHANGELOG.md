@@ -1,8 +1,25 @@
 # Changelog
 
-## 32.1.2 (2025-03-27)
+## 32.2.2 (2025-04-28)
 
-* [bitnami/kakfa] bugfix: relax conditions under SASL secret must be mounted as volume ([#32631](https://github.com/bitnami/charts/pull/32631))
+* [bitnami/kafka] Release 32.2.2 ([#33220](https://github.com/bitnami/charts/pull/33220))
+
+## <small>32.2.1 (2025-04-24)</small>
+
+* [bitnami/kafka] Release 32.2.1 (#33159) ([c03b265](https://github.com/bitnami/charts/commit/c03b265fd1dc007f70789f8de1f78adc497273d9)), closes [#33159](https://github.com/bitnami/charts/issues/33159)
+
+## 32.2.0 (2025-04-15)
+
+* [bitnami/kafka] add topologyKey value (#32792) ([4ba4ac8](https://github.com/bitnami/charts/commit/4ba4ac8fad117ebcd60f87eab03f038d313158ae)), closes [#32792](https://github.com/bitnami/charts/issues/32792)
+* bitnami/kafka Adjust parameters in example of section "Deploying extra resources" in README  (#32445 ([cac0f81](https://github.com/bitnami/charts/commit/cac0f8110af628b25c84cbe916191fa3f8ce21ea)), closes [#32445](https://github.com/bitnami/charts/issues/32445)
+
+## <small>32.1.3 (2025-04-01)</small>
+
+* [bitnami/kafka] bugfix: recompute secret checksum on Kafka kraft secret changes (#32692) ([773b6c5](https://github.com/bitnami/charts/commit/773b6c541ec64473e68a74996717eb266de41faa)), closes [#32692](https://github.com/bitnami/charts/issues/32692)
+
+## <small>32.1.2 (2025-03-27)</small>
+
+* [bitnami/kakfa] bugfix: relax conditions under SASL secret must be mounted as volume (#32631) ([d336c50](https://github.com/bitnami/charts/commit/d336c507835a021108b9ce9aa0f5e377662e363f)), closes [#32631](https://github.com/bitnami/charts/issues/32631)
 
 ## <small>32.1.1 (2025-03-26)</small>
 

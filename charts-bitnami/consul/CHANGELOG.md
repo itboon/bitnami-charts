@@ -1,8 +1,25 @@
 # Changelog
 
-## 11.4.10 (2025-03-12)
+## 11.4.14 (2025-04-29)
 
-* [bitnami/consul] Release 11.4.10 ([#32423](https://github.com/bitnami/charts/pull/32423))
+* [bitnami/consul] Fix mismatched serfLAN and serfWAN ports in consul-headless-service ([#33114](https://github.com/bitnami/charts/pull/33114))
+
+## <small>11.4.13 (2025-04-28)</small>
+
+* [bitnami/consul] Release 11.4.13 (#33201) ([d1dbafc](https://github.com/bitnami/charts/commit/d1dbafc7ad5581e5d9f2b6a4387980272f996115)), closes [#33201](https://github.com/bitnami/charts/issues/33201)
+
+## <small>11.4.12 (2025-04-28)</small>
+
+* [bitnami/consul] Release 11.4.12 (#33200) ([0507ec6](https://github.com/bitnami/charts/commit/0507ec6480cbc335c2576f86f1478f871d5b571a)), closes [#33200](https://github.com/bitnami/charts/issues/33200)
+
+## <small>11.4.11 (2025-04-01)</small>
+
+* [bitnami/consul] Release 11.4.11 (#32726) ([754755d](https://github.com/bitnami/charts/commit/754755d846dc4e1d00f848a0f6db4fe7852781d3)), closes [#32726](https://github.com/bitnami/charts/issues/32726)
+
+## <small>11.4.10 (2025-03-12)</small>
+
+* [bitnami/*] Add tanzuCategory annotation (#32409) ([a8fba5c](https://github.com/bitnami/charts/commit/a8fba5cb01f6f4464ca7f69c50b0fbe97d837a95)), closes [#32409](https://github.com/bitnami/charts/issues/32409)
+* [bitnami/consul] Release 11.4.10 (#32423) ([774ed2e](https://github.com/bitnami/charts/commit/774ed2e5b0d61eb21a1aa2102c6904947b5d96d3)), closes [#32423](https://github.com/bitnami/charts/issues/32423)
 
 ## <small>11.4.9 (2025-03-04)</small>
 

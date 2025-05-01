@@ -1,8 +1,24 @@
 # Changelog
 
-## 2.4.7 (2025-03-22)
+## 3.0.3 (2025-04-28)
 
-* [bitnami/valkey] Release 2.4.7 ([#32563](https://github.com/bitnami/charts/pull/32563))
+* [bitnami/valkey] Release 3.0.3 ([#33219](https://github.com/bitnami/charts/pull/33219))
+
+## <small>3.0.2 (2025-04-23)</small>
+
+* [bitnami/valkey] Release 3.0.2 (#33150) ([7a5f15c](https://github.com/bitnami/charts/commit/7a5f15cc8aa8e8c608593f0465c7fd7b28d40644)), closes [#33150](https://github.com/bitnami/charts/issues/33150)
+
+## <small>3.0.1 (2025-04-09)</small>
+
+* [bitnami/valkey] Release 3.0.1 (#32942) ([8c1ed1f](https://github.com/bitnami/charts/commit/8c1ed1f1a11d94ce018b7f980331a87b8e41455e)), closes [#32942](https://github.com/bitnami/charts/issues/32942)
+
+## 3.0.0 (2025-04-09)
+
+* [bitnami/valkey] Release 3.0.0 (#32933) ([8f9b1d1](https://github.com/bitnami/charts/commit/8f9b1d1f793b830f462cbca18050d8e33bdaf3c0)), closes [#32933](https://github.com/bitnami/charts/issues/32933)
+
+## <small>2.4.7 (2025-03-22)</small>
+
+* [bitnami/valkey] Release 2.4.7 (#32563) ([7808e9d](https://github.com/bitnami/charts/commit/7808e9d5a234c8f41aea2302fea83013d84fdc39)), closes [#32563](https://github.com/bitnami/charts/issues/32563)
 
 ## <small>2.4.6 (2025-03-12)</small>
 

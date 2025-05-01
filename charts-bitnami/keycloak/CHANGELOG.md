@@ -1,8 +1,65 @@
 # Changelog
 
-## 24.4.13 (2025-03-13)
+## 24.6.3 (2025-04-30)
 
-* [bitnami/keycloak] Release 24.4.13 ([#32446](https://github.com/bitnami/charts/pull/32446))
+* [bitnami/keycloak] Release 24.6.3 ([#33258](https://github.com/bitnami/charts/pull/33258))
+
+## <small>24.6.2 (2025-04-29)</small>
+
+* [bitnami/keycloak] Allow tpl of external database + external user (#33194) ([87cf760](https://github.com/bitnami/charts/commit/87cf7606054714f8ce435329285f3d0932fec595)), closes [#33194](https://github.com/bitnami/charts/issues/33194)
+
+## <small>24.6.1 (2025-04-23)</small>
+
+* [bitnami/keycloak] Release 24.6.1 (#33140) ([1be4740](https://github.com/bitnami/charts/commit/1be4740fad6e55faf8fee98e0e7ea04a15a93c77)), closes [#33140](https://github.com/bitnami/charts/issues/33140)
+
+## 24.6.0 (2025-04-23)
+
+* [bitnami/keycloak] Making keycloak config cli Availability Check configurable (#33130) ([0d4a0eb](https://github.com/bitnami/charts/commit/0d4a0ebad0f54693bfb92211b88500c638c53316)), closes [#33130](https://github.com/bitnami/charts/issues/33130)
+
+## <small>24.5.8 (2025-04-23)</small>
+
+* [bitnami/keycloak] Fix Keycloak external DB secret keys (#33117) ([afdd69c](https://github.com/bitnami/charts/commit/afdd69c8b509c8667cbb24b53ace764d7c77ff8d)), closes [#33117](https://github.com/bitnami/charts/issues/33117)
+
+## <small>24.5.7 (2025-04-22)</small>
+
+* [bitnami/keycloak] Dynamic tpl rendering of the external database port (#33040) ([43e308c](https://github.com/bitnami/charts/commit/43e308c340e6bc97bcda538be220c0866889dfe6)), closes [#33040](https://github.com/bitnami/charts/issues/33040)
+
+## <small>24.5.6 (2025-04-21)</small>
+
+* [bitnami/keycloak] Release 24.5.5 (#32980) ([20bfbca](https://github.com/bitnami/charts/commit/20bfbcad6062d5b369ede5ff56c157edccffeb4b)), closes [#32980](https://github.com/bitnami/charts/issues/32980)
+
+## <small>24.5.5 (2025-04-21)</small>
+
+* [bitnami/keycloak] Added themes to the list of writable dirs (#32993) ([7fb4af5](https://github.com/bitnami/charts/commit/7fb4af548b0cfe95748d654bb61ecb1f84fc3540)), closes [#32993](https://github.com/bitnami/charts/issues/32993)
+
+## <small>24.5.4 (2025-04-15)</small>
+
+* [bitnami/keycloak] bugfix: add prefix on projected db secret keys (#33004) ([5909cc7](https://github.com/bitnami/charts/commit/5909cc71c60b24b405bcc23562030de7953c38db)), closes [#33004](https://github.com/bitnami/charts/issues/33004)
+
+## <small>24.5.3 (2025-04-11)</small>
+
+* [bitnami/keycloak] Release 24.5.3 (#32970) ([5f9e017](https://github.com/bitnami/charts/commit/5f9e0175fa8e09211ccb591d36abcbe9abfd71a3)), closes [#32970](https://github.com/bitnami/charts/issues/32970)
+
+## <small>24.5.2 (2025-04-11)</small>
+
+* [bitnami/keycloak] Release 24.5.2 (#32968) ([2c775ce](https://github.com/bitnami/charts/commit/2c775ce92ee74c9222f060369bfaeed849f95efb)), closes [#32968](https://github.com/bitnami/charts/issues/32968)
+
+## <small>24.5.1 (2025-04-07)</small>
+
+* [bitnami/keycloak] Change .Release.Name to (include "common.names.fullname) ([c3573fd](https://github.com/bitnami/charts/commit/c3573fdc21301f06007546ad4faadab598f6305d))
+
+## 24.5.0 (2025-04-04)
+
+* [bitnami/keycloak] Set `usePasswordFiles=true` by default (#32594) ([6206296](https://github.com/bitnami/charts/commit/620629645b6354dc79fd49c5e33e794ab569d024)), closes [#32594](https://github.com/bitnami/charts/issues/32594)
+
+## <small>24.4.14 (2025-04-01)</small>
+
+* [bitnami/keycloak] Release 24.4.14 (#32707) ([4b6ae25](https://github.com/bitnami/charts/commit/4b6ae257d1f2710f3c13d858e4a39d219b75df2b)), closes [#32707](https://github.com/bitnami/charts/issues/32707)
+
+## <small>24.4.13 (2025-03-13)</small>
+
+* [bitnami/*] Add tanzuCategory annotation (#32409) ([a8fba5c](https://github.com/bitnami/charts/commit/a8fba5cb01f6f4464ca7f69c50b0fbe97d837a95)), closes [#32409](https://github.com/bitnami/charts/issues/32409)
+* [bitnami/keycloak] Release 24.4.13 (#32446) ([af8d013](https://github.com/bitnami/charts/commit/af8d01385b9fba2b809351b06bfa75d4a32ab178)), closes [#32446](https://github.com/bitnami/charts/issues/32446)
 
 ## <small>24.4.12 (2025-03-11)</small>
 

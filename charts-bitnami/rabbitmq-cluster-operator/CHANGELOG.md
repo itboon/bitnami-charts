@@ -1,8 +1,17 @@
 # Changelog
 
-## 4.4.6 (2025-03-05)
+## 4.4.8 (2025-04-28)
 
-* [bitnami/rabbitmq-cluster-operator] Release 4.4.6 ([#32315](https://github.com/bitnami/charts/pull/32315))
+* [bitnami/rabbitmq-cluster-operator] Release 4.4.8 ([#33216](https://github.com/bitnami/charts/pull/33216))
+
+## <small>4.4.7 (2025-04-02)</small>
+
+* [bitnami/*] Add tanzuCategory annotation (#32409) ([a8fba5c](https://github.com/bitnami/charts/commit/a8fba5cb01f6f4464ca7f69c50b0fbe97d837a95)), closes [#32409](https://github.com/bitnami/charts/issues/32409)
+* [bitnami/rabbitmq-cluster-operator] Release 4.4.7 (#32761) ([b848724](https://github.com/bitnami/charts/commit/b848724711fdc36dc2df939140e1c650b02deafa)), closes [#32761](https://github.com/bitnami/charts/issues/32761)
+
+## <small>4.4.6 (2025-03-05)</small>
+
+* [bitnami/rabbitmq-cluster-operator] Release 4.4.6 (#32315) ([557c15a](https://github.com/bitnami/charts/commit/557c15afb9ee31f586ab5013519169eb5b22311e)), closes [#32315](https://github.com/bitnami/charts/issues/32315)
 
 ## <small>4.4.5 (2025-02-14)</small>
 

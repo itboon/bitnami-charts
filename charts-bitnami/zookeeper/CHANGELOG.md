@@ -1,8 +1,17 @@
 # Changelog
 
-## 13.7.5 (2025-03-29)
+## 13.8.1 (2025-04-28)
 
-* [bitnami/zookeeper] Release 13.7.5 ([#32680](https://github.com/bitnami/charts/pull/32680))
+* [bitnami/zookeeper] Release 13.8.1 ([#33224](https://github.com/bitnami/charts/pull/33224))
+
+## 13.8.0 (2025-04-07)
+
+* [bitnami/zookeeper] Set `usePasswordFiles=true` by default (#32780) ([f8d5d0c](https://github.com/bitnami/charts/commit/f8d5d0c2ff7b843f9364e0a956081fff2820fed1)), closes [#32780](https://github.com/bitnami/charts/issues/32780)
+
+## <small>13.7.5 (2025-03-29)</small>
+
+* [bitnami/*] Add tanzuCategory annotation (#32409) ([a8fba5c](https://github.com/bitnami/charts/commit/a8fba5cb01f6f4464ca7f69c50b0fbe97d837a95)), closes [#32409](https://github.com/bitnami/charts/issues/32409)
+* [bitnami/zookeeper] Release 13.7.5 (#32680) ([9605372](https://github.com/bitnami/charts/commit/9605372e658eea7cadd026f16ae487571a1397e2)), closes [#32680](https://github.com/bitnami/charts/issues/32680)
 
 ## <small>13.7.4 (2025-02-27)</small>
 

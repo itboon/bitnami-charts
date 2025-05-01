@@ -1,8 +1,17 @@
 # Changelog
 
-## 1.4.9 (2025-03-10)
+## 2.0.0 (2025-04-29)
 
-* [bitnami/prometheus] Fix RBAC for Prometheus endpointslices role ([#31924](https://github.com/bitnami/charts/pull/31924))
+* [bitnami/prometheus] Release 2.0.0 ([#33240](https://github.com/bitnami/charts/pull/33240))
+
+## <small>1.4.10 (2025-04-02)</small>
+
+* [bitnami/*] Add tanzuCategory annotation (#32409) ([a8fba5c](https://github.com/bitnami/charts/commit/a8fba5cb01f6f4464ca7f69c50b0fbe97d837a95)), closes [#32409](https://github.com/bitnami/charts/issues/32409)
+* [bitnami/prometheus] Release 1.4.10 (#32760) ([7e61b38](https://github.com/bitnami/charts/commit/7e61b38f61e3fa35e6b86b7319e9c1c4c7bba88e)), closes [#32760](https://github.com/bitnami/charts/issues/32760)
+
+## <small>1.4.9 (2025-03-10)</small>
+
+* [bitnami/prometheus] Fix RBAC for Prometheus endpointslices role (#31924) ([79b584d](https://github.com/bitnami/charts/commit/79b584d0f2447fafce69fb2643e54732156d91cb)), closes [#31924](https://github.com/bitnami/charts/issues/31924)
 
 ## <small>1.4.8 (2025-03-05)</small>
 

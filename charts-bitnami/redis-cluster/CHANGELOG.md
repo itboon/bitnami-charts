@@ -1,8 +1,28 @@
 # Changelog
 
-## 11.4.6 (2025-03-22)
+## 11.5.4 (2025-04-29)
 
-* [bitnami/redis-cluster] Release 11.4.6 ([#32560](https://github.com/bitnami/charts/pull/32560))
+* [bitnami/redis-cluster] Switch shell from /bin/sh to /bin/bash to improve process handling ([#33250](https://github.com/bitnami/charts/pull/33250))
+
+## <small>11.5.3 (2025-04-24)</small>
+
+* [bitnami/redis-cluster] Release 11.5.3 (#33156) ([44c8d3c](https://github.com/bitnami/charts/commit/44c8d3c58a252e4a292fbf5f22febe1f8897c648)), closes [#33156](https://github.com/bitnami/charts/issues/33156)
+
+## <small>11.5.2 (2025-04-21)</small>
+
+* [bitnami/redis-cluster] Release 11.5.2 (#33088) ([b00414f](https://github.com/bitnami/charts/commit/b00414fb0fc5398962714d59688409aa147d078f)), closes [#33088](https://github.com/bitnami/charts/issues/33088)
+
+## <small>11.5.1 (2025-04-14)</small>
+
+*  [bitnami/redis-cluster] fix: Do not generate secret checksum when is not existing (#32967) ([9982c19](https://github.com/bitnami/charts/commit/9982c197fc3b4837b20382972eade19af6f6f66b)), closes [#32967](https://github.com/bitnami/charts/issues/32967)
+
+## 11.5.0 (2025-04-07)
+
+* [bitnami/redis-cluster] Set `usePasswordFiles=true` by default (#32118) ([2e2ac61](https://github.com/bitnami/charts/commit/2e2ac61c4cb2945873e61bd21cf6ecac15c3f08b)), closes [#32118](https://github.com/bitnami/charts/issues/32118)
+
+## <small>11.4.6 (2025-03-22)</small>
+
+* [bitnami/redis-cluster] Release 11.4.6 (#32560) ([e433131](https://github.com/bitnami/charts/commit/e43313143d767e4cd8fa744a5b868ff3341ead47)), closes [#32560](https://github.com/bitnami/charts/issues/32560)
 
 ## <small>11.4.5 (2025-03-13)</small>
 

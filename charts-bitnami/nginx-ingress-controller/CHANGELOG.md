@@ -1,8 +1,25 @@
 # Changelog
 
-## 11.6.12 (2025-03-25)
+## 11.6.16 (2025-04-30)
 
-* [bitnami/nginx-ingress-controller] Release 11.6.12 ([#32589](https://github.com/bitnami/charts/pull/32589))
+* [bitnami/nginx-ingress-controller] Release 11.6.16 ([#33269](https://github.com/bitnami/charts/pull/33269))
+
+## <small>11.6.15 (2025-04-28)</small>
+
+* [bitnami/nginx-ingress-controller] Release 11.6.15 (#33215) ([a8171c0](https://github.com/bitnami/charts/commit/a8171c023f0fac4f00d130e83cf67aaf97df90f0)), closes [#33215](https://github.com/bitnami/charts/issues/33215)
+
+## <small>11.6.14 (2025-04-22)</small>
+
+* [bitnami/nginx-ingress-controller] Release 11.6.14 (#33119) ([1c57e53](https://github.com/bitnami/charts/commit/1c57e53cae21e239a71b4180e89b5ce4024cae60)), closes [#33119](https://github.com/bitnami/charts/issues/33119)
+
+## <small>11.6.13 (2025-04-02)</small>
+
+* [bitnami/nginx-ingress-controller] Release 11.6.13 (#32755) ([4864faa](https://github.com/bitnami/charts/commit/4864faa15a31dee202b41552e80fa061f659273f)), closes [#32755](https://github.com/bitnami/charts/issues/32755)
+
+## <small>11.6.12 (2025-03-25)</small>
+
+* [bitnami/*] Add tanzuCategory annotation (#32409) ([a8fba5c](https://github.com/bitnami/charts/commit/a8fba5cb01f6f4464ca7f69c50b0fbe97d837a95)), closes [#32409](https://github.com/bitnami/charts/issues/32409)
+* [bitnami/nginx-ingress-controller] Release 11.6.12 (#32589) ([af06d0b](https://github.com/bitnami/charts/commit/af06d0b9da2bf9585753a417727a7b67e9467c63)), closes [#32589](https://github.com/bitnami/charts/issues/32589)
 
 ## <small>11.6.11 (2025-03-05)</small>
 

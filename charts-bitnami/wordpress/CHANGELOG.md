@@ -1,8 +1,29 @@
 # Changelog
 
-## 24.1.18 (2025-03-06)
+## 24.2.4 (2025-04-30)
 
-* [bitnami/wordpress] fix network policy when metrics enabled ([#32338](https://github.com/bitnami/charts/pull/32338))
+* [bitnami/wordpress] Release 24.2.4 ([#33275](https://github.com/bitnami/charts/pull/33275))
+
+## <small>24.2.3 (2025-04-23)</small>
+
+* [bitnami/wordpress] Release 24.2.3 (#33041) ([c0c23ae](https://github.com/bitnami/charts/commit/c0c23ae555f97fc416e7563c85aa76cae5a328f9)), closes [#33041](https://github.com/bitnami/charts/issues/33041)
+
+## <small>24.2.2 (2025-04-09)</small>
+
+* [bitnami/wordpress] Release 24.2.2 (#32921) ([fd3b5b0](https://github.com/bitnami/charts/commit/fd3b5b045fd0a9fd3c4fbbb012d9f460a011ac6b)), closes [#32921](https://github.com/bitnami/charts/issues/32921)
+
+## <small>24.2.1 (2025-04-05)</small>
+
+* [bitnami/wordpress] Release 24.2.1 (#32824) ([1f14bb1](https://github.com/bitnami/charts/commit/1f14bb10870b4cd30fe1d6d2e7d9e8c32eaf9a8f)), closes [#32824](https://github.com/bitnami/charts/issues/32824)
+
+## 24.2.0 (2025-04-04)
+
+* [bitnami/*] Add tanzuCategory annotation (#32409) ([a8fba5c](https://github.com/bitnami/charts/commit/a8fba5cb01f6f4464ca7f69c50b0fbe97d837a95)), closes [#32409](https://github.com/bitnami/charts/issues/32409)
+* [bitnami/wordpress] Set `usePasswordFiles=true` by default (#32770) ([d31ec15](https://github.com/bitnami/charts/commit/d31ec15591a7ed93fdb9087a87a87ec436084ac4)), closes [#32770](https://github.com/bitnami/charts/issues/32770)
+
+## <small>24.1.18 (2025-03-07)</small>
+
+* [bitnami/wordpress] fix network policy when metrics enabled (#32338) ([ddcee74](https://github.com/bitnami/charts/commit/ddcee74411ab886e7ff1831e248392cf6dfed668)), closes [#32338](https://github.com/bitnami/charts/issues/32338)
 
 ## <small>24.1.17 (2025-03-06)</small>
 

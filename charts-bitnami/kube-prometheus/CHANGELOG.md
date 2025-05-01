@@ -1,8 +1,25 @@
 # Changelog
 
-## 11.1.3 (2025-03-17)
+## 11.1.7 (2025-04-30)
 
-* [bitnami/kube-prometheus] Release 11.1.3 ([#32406](https://github.com/bitnami/charts/pull/32406))
+* [bitnami/kube-prometheus] Release 11.1.7 ([#33238](https://github.com/bitnami/charts/pull/33238))
+
+## <small>11.1.6 (2025-04-23)</small>
+
+* [bitnami/kube-prometheus] Release 11.1.6 (#33135) ([1682a33](https://github.com/bitnami/charts/commit/1682a335cb190b990e91c54cd675ecd6df77094c)), closes [#33135](https://github.com/bitnami/charts/issues/33135)
+
+## <small>11.1.5 (2025-04-23)</small>
+
+* [bitnami/kube-prometheus] Release 11.1.5 (#33059) ([13b7f1f](https://github.com/bitnami/charts/commit/13b7f1f862e614c221959bbf7bee336cc0f29341)), closes [#33059](https://github.com/bitnami/charts/issues/33059)
+
+## <small>11.1.4 (2025-04-02)</small>
+
+* [bitnami/kube-prometheus] Release 11.1.4 (#32759) ([01d53df](https://github.com/bitnami/charts/commit/01d53df89f942d7b2a31104b41a989a05554f7c5)), closes [#32759](https://github.com/bitnami/charts/issues/32759)
+
+## <small>11.1.3 (2025-03-17)</small>
+
+* [bitnami/*] Add tanzuCategory annotation (#32409) ([a8fba5c](https://github.com/bitnami/charts/commit/a8fba5cb01f6f4464ca7f69c50b0fbe97d837a95)), closes [#32409](https://github.com/bitnami/charts/issues/32409)
+* [bitnami/kube-prometheus] Release 11.1.3 (#32406) ([bab0ee2](https://github.com/bitnami/charts/commit/bab0ee20e13d00d7d9a2c153da82abf7ac77bc15)), closes [#32406](https://github.com/bitnami/charts/issues/32406)
 
 ## <small>11.1.2 (2025-03-07)</small>
 

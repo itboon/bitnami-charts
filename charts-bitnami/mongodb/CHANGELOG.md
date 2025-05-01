@@ -1,8 +1,32 @@
 # Changelog
 
-## 16.4.11 (2025-03-28)
+## 16.5.4 (2025-04-30)
 
-* [bitnami/mongodb] backup cronjob time zone variable should be camel case ([#32663](https://github.com/bitnami/charts/pull/32663))
+* [bitnami/mongodb] Remove extra volumeClaimTemplates fields ([#33236](https://github.com/bitnami/charts/pull/33236))
+
+## <small>16.5.3 (2025-04-28)</small>
+
+* [bitnami/mongodb] Release 16.5.3 (#33211) ([8ec0951](https://github.com/bitnami/charts/commit/8ec095186aa934f76bd311a7d734a5eb77f98b58)), closes [#33211](https://github.com/bitnami/charts/issues/33211)
+
+## <small>16.5.2 (2025-04-25)</small>
+
+* [bitnami/mongodb] Fix authentication in mongodump job (#33143) ([3b50d1b](https://github.com/bitnami/charts/commit/3b50d1b1199d31408b26a7b2c71320087a2fd77f)), closes [#33143](https://github.com/bitnami/charts/issues/33143) [#33121](https://github.com/bitnami/charts/issues/33121) [#33140](https://github.com/bitnami/charts/issues/33140)
+
+## <small>16.5.1 (2025-04-14)</small>
+
+* [bitnami/mongodb] Release 16.5.1 (#32996) ([ab86a7f](https://github.com/bitnami/charts/commit/ab86a7fe41187495cbdb2c3bbbb6c179160cca2b)), closes [#32996](https://github.com/bitnami/charts/issues/32996)
+
+## 16.5.0 (2025-04-07)
+
+* [bitnami/mongodb] Set `usePasswordFiles=true` by default (#32800) ([f51db33](https://github.com/bitnami/charts/commit/f51db33f27df9c1242539be2c3a5dedb8a73249c)), closes [#32800](https://github.com/bitnami/charts/issues/32800)
+
+## <small>16.4.12 (2025-04-02)</small>
+
+* [bitnami/mongodb] Release 16.4.12 (#32752) ([a28adbd](https://github.com/bitnami/charts/commit/a28adbd7b634755e6320c2321e37f97be9578cca)), closes [#32752](https://github.com/bitnami/charts/issues/32752)
+
+## <small>16.4.11 (2025-03-28)</small>
+
+* [bitnami/mongodb] backup cronjob time zone variable should be camel case (#32663) ([e5b94bc](https://github.com/bitnami/charts/commit/e5b94bc5c00c2c96d3e8f0fcedf02ad2c020f2a6)), closes [#32663](https://github.com/bitnami/charts/issues/32663)
 
 ## <small>16.4.10 (2025-03-25)</small>
 

@@ -1,8 +1,21 @@
 # Changelog
 
-## 1.1.2 (2025-03-24)
+## 2.0.1 (2025-04-28)
 
-* [bitnami/superset] Release 1.1.2 ([#32587](https://github.com/bitnami/charts/pull/32587))
+* [bitnami/superset] Release 2.0.1 ([#33222](https://github.com/bitnami/charts/pull/33222))
+
+## 2.0.0 (2025-04-04)
+
+* [bitnami/superset] Set `usePasswordFiles=true` by default (#32778) ([89677d4](https://github.com/bitnami/charts/commit/89677d409181b014153179e4aa709cb9ffe79035)), closes [#32778](https://github.com/bitnami/charts/issues/32778)
+
+## <small>1.1.3 (2025-04-02)</small>
+
+* [bitnami/superset] Release 1.1.3 (#32777) ([d856953](https://github.com/bitnami/charts/commit/d856953250bfdba841d438923045fdc67808d47c)), closes [#32777](https://github.com/bitnami/charts/issues/32777)
+
+## <small>1.1.2 (2025-03-25)</small>
+
+* [bitnami/*] Add tanzuCategory annotation (#32409) ([a8fba5c](https://github.com/bitnami/charts/commit/a8fba5cb01f6f4464ca7f69c50b0fbe97d837a95)), closes [#32409](https://github.com/bitnami/charts/issues/32409)
+* [bitnami/superset] Release 1.1.2 (#32587) ([fae378c](https://github.com/bitnami/charts/commit/fae378ccb0efdb7a8d7fe7abad3fbb1bc39b04f0)), closes [#32587](https://github.com/bitnami/charts/issues/32587)
 
 ## <small>1.1.1 (2025-02-26)</small>
 

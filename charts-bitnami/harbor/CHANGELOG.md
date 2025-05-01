@@ -1,8 +1,25 @@
 # Changelog
 
+## 25.0.0 (2025-04-29)
+
+* [bitnami/harbor] Major 25.0.0: Upgrade PostgreSQL to 17.x.x ([#33242](https://github.com/bitnami/charts/pull/33242))
+
+## <small>24.6.1 (2025-04-28)</small>
+
+* [bitnami/harbor] Release 24.6.1 (#33209) ([57c27d4](https://github.com/bitnami/charts/commit/57c27d473c55998289d776a9834fd0adf9effb3c)), closes [#33209](https://github.com/bitnami/charts/issues/33209)
+
+## 24.6.0 (2025-04-15)
+
+* [bitnami/harbor] feat(redis tls): Support connecting to SSL/TLS Redis endpoints (#32999) ([2d34ef6](https://github.com/bitnami/charts/commit/2d34ef69713503a8af7263d1dc1884d815b5dafd)), closes [#32999](https://github.com/bitnami/charts/issues/32999)
+
+## <small>24.5.1 (2025-04-11)</small>
+
+* [bitnami/harbor] Release 24.5.1 (#32973) ([a229712](https://github.com/bitnami/charts/commit/a2297124b5e7956c5f564be37d58e1a3c5e84373)), closes [#32973](https://github.com/bitnami/charts/issues/32973)
+
 ## 24.5.0 (2025-03-27)
 
-* [bitnami/harbor] feat: :sparkles: Add migration job ([#32640](https://github.com/bitnami/charts/pull/32640))
+* [bitnami/harbor] feat: :sparkles: Add migration job (#32640) ([3d2b832](https://github.com/bitnami/charts/commit/3d2b832d5b7253f6c73d0f75f9cd7e75cbba7d03)), closes [#32640](https://github.com/bitnami/charts/issues/32640)
+* [bitnami/harbor] Update README.md ([f2425d8](https://github.com/bitnami/charts/commit/f2425d822a6996c36860169268b220a3935092ec))
 
 ## <small>24.4.1 (2025-03-22)</small>
 

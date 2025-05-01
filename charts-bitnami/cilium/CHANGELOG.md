@@ -1,8 +1,25 @@
 # Changelog
 
-## 2.1.3 (2025-03-14)
+## 2.1.7 (2025-04-25)
 
-* [bitnami/cilium] Release 2.1.3 ([#32463](https://github.com/bitnami/charts/pull/32463))
+* [bitnami/cilium] Release 2.1.7 ([#33184](https://github.com/bitnami/charts/pull/33184))
+
+## <small>2.1.6 (2025-04-25)</small>
+
+* [bitnami/cilium] Release 2.1.6 (#33179) ([6ca5222](https://github.com/bitnami/charts/commit/6ca52227ed9fceff4685f5c28a909dedaa0fd3e6)), closes [#33179](https://github.com/bitnami/charts/issues/33179)
+
+## <small>2.1.5 (2025-04-14)</small>
+
+* [bitnami/cilium] Release 2.1.5 (#32998) ([40b6117](https://github.com/bitnami/charts/commit/40b6117c7bbcbcbe78aad39a184c17471928ba18)), closes [#32998](https://github.com/bitnami/charts/issues/32998)
+
+## <small>2.1.4 (2025-04-04)</small>
+
+* [bitnami/cilium] Release 2.1.4 (#32722) ([226ee09](https://github.com/bitnami/charts/commit/226ee094e658e49d389be228efaf4055c280123f)), closes [#32722](https://github.com/bitnami/charts/issues/32722)
+
+## <small>2.1.3 (2025-03-14)</small>
+
+* [bitnami/*] Add tanzuCategory annotation (#32409) ([a8fba5c](https://github.com/bitnami/charts/commit/a8fba5cb01f6f4464ca7f69c50b0fbe97d837a95)), closes [#32409](https://github.com/bitnami/charts/issues/32409)
+* [bitnami/cilium] Release 2.1.3 (#32463) ([88d08c0](https://github.com/bitnami/charts/commit/88d08c0ac887ef0c89d37c421aa76dc501237a5f)), closes [#32463](https://github.com/bitnami/charts/issues/32463)
 
 ## <small>2.1.2 (2025-03-04)</small>
 

@@ -1,8 +1,30 @@
 # Changelog
 
+## 37.0.5 (2025-05-29)
+
+* Deprecate Spring Cloud ([#33958](https://github.com/bitnami/charts/pull/33958))
+
+## <small>37.0.4 (2025-05-20)</small>
+
+* [bitnami/spring-cloud-dataflow] :zap: :arrow_up: Update dependency references (#33793) ([67deb62](https://github.com/bitnami/charts/commit/67deb626e62f6da42035c75ce329a09dd915e1b0)), closes [#33793](https://github.com/bitnami/charts/issues/33793)
+
+## <small>37.0.3 (2025-05-15)</small>
+
+* [bitnami/spring-cloud-dataflow] :zap: :arrow_up: Update dependency references (#33734) ([d4b9512](https://github.com/bitnami/charts/commit/d4b9512348c2887052eb17b77d125deb6ed26355)), closes [#33734](https://github.com/bitnami/charts/issues/33734)
+
+## <small>37.0.2 (2025-05-13)</small>
+
+* [bitnami/kubeapps] Deprecation followup (#33579) ([77e312c](https://github.com/bitnami/charts/commit/77e312c1772d4d7c4dc5d3ac0e80f4e452e3a062)), closes [#33579](https://github.com/bitnami/charts/issues/33579)
+* [bitnami/mysql] Update MySQL docs (#33613) ([b0ca2e2](https://github.com/bitnami/charts/commit/b0ca2e239a09b9e9eca7fe2f67b0f85b3f5d696c)), closes [#33613](https://github.com/bitnami/charts/issues/33613)
+* [bitnami/spring-cloud-dataflow] :zap: :arrow_up: Update dependency references (#33647) ([861fb2e](https://github.com/bitnami/charts/commit/861fb2e132dfdb0d1ff0131f9e70d609f74663de)), closes [#33647](https://github.com/bitnami/charts/issues/33647)
+
+## <small>37.0.1 (2025-05-06)</small>
+
+* [bitnami/spring-cloud-dataflow] chore: :recycle: :arrow_up: Update common and remove k8s < 1.23 refe ([3dc1f8e](https://github.com/bitnami/charts/commit/3dc1f8e114ce5a787d21308d0072683712c264e5)), closes [#33438](https://github.com/bitnami/charts/issues/33438)
+
 ## 37.0.0 (2025-04-29)
 
-* [bitnami/spring-cloud-dataflow] Major 37.0.0: Upgrade MariaDB to 11.4.x ([#33243](https://github.com/bitnami/charts/pull/33243))
+* [bitnami/spring-cloud-dataflow] Major 37.0.0: Upgrade MariaDB to 11.4.x (#33243) ([f3400ee](https://github.com/bitnami/charts/commit/f3400eecb2f39db9aec724fdd61cb279b4c9e6d3)), closes [#33243](https://github.com/bitnami/charts/issues/33243)
 
 ## <small>36.0.1 (2025-04-28)</small>
 

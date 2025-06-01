@@ -1,8 +1,45 @@
 # Changelog
 
-## 19.5.11 (2025-04-28)
+## 21.0.2 (2025-05-30)
 
-* [bitnami/contour] Release 19.5.11 ([#33207](https://github.com/bitnami/charts/pull/33207))
+* [bitnami/contour] :zap: :arrow_up: Update dependency references ([#33996](https://github.com/bitnami/charts/pull/33996))
+
+## <small>21.0.1 (2025-05-29)</small>
+
+* [bitnami/contour] :zap: :arrow_up: Update dependency references (#33965) ([7d2860a](https://github.com/bitnami/charts/commit/7d2860ac75579992ae4fd977ed49c53e4920f24a)), closes [#33965](https://github.com/bitnami/charts/issues/33965)
+
+## 21.0.0 (2025-05-27)
+
+* [bitnami/contour] :zap: :arrow_up: Update dependency references (#33898) ([affc8ee](https://github.com/bitnami/charts/commit/affc8eeaf9039e697e5e642d536e8e8d4ab95916)), closes [#33898](https://github.com/bitnami/charts/issues/33898)
+
+## <small>20.0.3 (2025-05-16)</small>
+
+* [bitnami/contour] :zap: :arrow_up: Update dependency references (#33739) ([3887b07](https://github.com/bitnami/charts/commit/3887b07d15d33042258f0b9cbd41b783b4f274e4)), closes [#33739](https://github.com/bitnami/charts/issues/33739)
+
+## <small>20.0.2 (2025-05-15)</small>
+
+* [bitnami/contour] :zap: :arrow_up: Update dependency references (#33736) ([389434a](https://github.com/bitnami/charts/commit/389434a80b6a894e6498945152b58a1d53665b6c)), closes [#33736](https://github.com/bitnami/charts/issues/33736)
+
+## <small>20.0.1 (2025-05-09)</small>
+
+* [bitnami/contour] :zap: :arrow_up: Update dependency references (#33585) ([c9f8262](https://github.com/bitnami/charts/commit/c9f826269ec2ef6c8b94305568bbc1988f7a6929)), closes [#33585](https://github.com/bitnami/charts/issues/33585)
+
+## 20.0.0 (2025-05-09)
+
+* [bitnami/contour] :zap: :arrow_up: Update dependency references (#33581) ([e02ab69](https://github.com/bitnami/charts/commit/e02ab69cba3b503042ad305889855bd66fe332c3)), closes [#33581](https://github.com/bitnami/charts/issues/33581)
+* [bitnami/kubeapps] Deprecation followup (#33579) ([77e312c](https://github.com/bitnami/charts/commit/77e312c1772d4d7c4dc5d3ac0e80f4e452e3a062)), closes [#33579](https://github.com/bitnami/charts/issues/33579)
+
+## <small>19.5.13 (2025-05-07)</small>
+
+* [bitnami/contour] Release 19.5.13 (#33545) ([a1d1a97](https://github.com/bitnami/charts/commit/a1d1a97564cc8018774a84d35a7c0699e1a8dbe3)), closes [#33545](https://github.com/bitnami/charts/issues/33545)
+
+## <small>19.5.12 (2025-05-06)</small>
+
+* [bitnami/contour] chore: :recycle: :arrow_up: Update common and remove k8s < 1.23 references (#33350 ([cd58f6a](https://github.com/bitnami/charts/commit/cd58f6afa50404b6de290620e2286871626cb3a3)), closes [#33350](https://github.com/bitnami/charts/issues/33350)
+
+## <small>19.5.11 (2025-04-28)</small>
+
+* [bitnami/contour] Release 19.5.11 (#33207) ([fba4edd](https://github.com/bitnami/charts/commit/fba4edd4b68eee5305e0919743b805da35bdc9f7)), closes [#33207](https://github.com/bitnami/charts/issues/33207)
 
 ## <small>19.5.10 (2025-04-01)</small>
 

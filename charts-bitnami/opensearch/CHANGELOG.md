@@ -1,8 +1,37 @@
 # Changelog
 
-## 1.9.1 (2025-04-09)
+## 2.0.3 (2025-05-20)
 
-* [bitnami/opensearch] Release 1.9.1 ([#32916](https://github.com/bitnami/charts/pull/32916))
+* [bitnami/opensearch] :zap: :arrow_up: Update dependency references ([#33795](https://github.com/bitnami/charts/pull/33795))
+
+## <small>2.0.2 (2025-05-16)</small>
+
+* [bitnami/opensearch] opensearch: Increase resourcesPreset for master, coordinating and ingest nodes  ([03e46b4](https://github.com/bitnami/charts/commit/03e46b416858320b04f3c5236cbfd39f48a71040)), closes [#33742](https://github.com/bitnami/charts/issues/33742)
+
+## <small>2.0.1 (2025-05-16)</small>
+
+* [bitnami/opensearch] :zap: :arrow_up: Update dependency references (#33718) ([3055a4f](https://github.com/bitnami/charts/commit/3055a4fb35be793d25f2b5ed4e9d2d882631604e)), closes [#33718](https://github.com/bitnami/charts/issues/33718)
+
+## 2.0.0 (2025-05-14)
+
+* [bitnami/kubeapps] Deprecation followup (#33579) ([77e312c](https://github.com/bitnami/charts/commit/77e312c1772d4d7c4dc5d3ac0e80f4e452e3a062)), closes [#33579](https://github.com/bitnami/charts/issues/33579)
+* [bitnami/opensearch] :zap: :arrow_up: Update dependency references (#33589) ([b63c8ad](https://github.com/bitnami/charts/commit/b63c8ad0e34a11e00caa250725386c5e117a87cc)), closes [#33589](https://github.com/bitnami/charts/issues/33589)
+
+## <small>1.9.4 (2025-05-08)</small>
+
+* [bitnami/opensearch] :zap: :arrow_up: Update dependency references (#33569) ([c359209](https://github.com/bitnami/charts/commit/c3592095ccbe32f6d9a6dc981e6f8bbb03f53f5b)), closes [#33569](https://github.com/bitnami/charts/issues/33569)
+
+## <small>1.9.3 (2025-05-07)</small>
+
+* [bitnami/opensearch] chore: :recycle: :arrow_up: Update common and remove k8s < 1.23 references (#33 ([2cb9aaf](https://github.com/bitnami/charts/commit/2cb9aafb37c4aaf25f34e4bdaf09997c4a4a1899)), closes [#33418](https://github.com/bitnami/charts/issues/33418)
+
+## <small>1.9.2 (2025-05-06)</small>
+
+* [bitnami/opensearch] Release 1.9.2 (#33452) ([e9e4ae7](https://github.com/bitnami/charts/commit/e9e4ae793f095b2ab359a5dce6c2e1567711e71f)), closes [#33452](https://github.com/bitnami/charts/issues/33452)
+
+## <small>1.9.1 (2025-04-09)</small>
+
+* [bitnami/opensearch] Release 1.9.1 (#32916) ([a25c6c7](https://github.com/bitnami/charts/commit/a25c6c738c83407d2c29d61cd9bd48d97f29fb74)), closes [#32916](https://github.com/bitnami/charts/issues/32916)
 
 ## 1.9.0 (2025-04-04)
 

@@ -1,8 +1,25 @@
 # Changelog
 
-## 2.0.3 (2025-04-28)
+## 2.0.7 (2025-05-30)
 
-* [bitnami/grafana-mimir] Release 2.0.3 ([#33210](https://github.com/bitnami/charts/pull/33210))
+* [bitnami/grafana-mimir] :zap: :arrow_up: Update dependency references ([#33997](https://github.com/bitnami/charts/pull/33997))
+
+## <small>2.0.6 (2025-05-29)</small>
+
+* [bitnami/grafana-mimir] :zap: :arrow_up: Update dependency references (#33964) ([156851c](https://github.com/bitnami/charts/commit/156851ca47d393009874ddc2d4e75f5ab69092f3)), closes [#33964](https://github.com/bitnami/charts/issues/33964)
+* [bitnami/kubeapps] Deprecation followup (#33579) ([77e312c](https://github.com/bitnami/charts/commit/77e312c1772d4d7c4dc5d3ac0e80f4e452e3a062)), closes [#33579](https://github.com/bitnami/charts/issues/33579)
+
+## <small>2.0.5 (2025-05-07)</small>
+
+* [bitnami/grafana-mimir] Release 2.0.5 (#33514) ([200a738](https://github.com/bitnami/charts/commit/200a7389e257d1a3868071128884a10c53e48cfb)), closes [#33514](https://github.com/bitnami/charts/issues/33514)
+
+## <small>2.0.4 (2025-05-06)</small>
+
+* [bitnami/grafana-mimir] chore: :recycle: :arrow_up: Update common and remove k8s < 1.23 references ( ([0790fef](https://github.com/bitnami/charts/commit/0790fef042b5b787723602e74ca213b7a2b51155)), closes [#33369](https://github.com/bitnami/charts/issues/33369)
+
+## <small>2.0.3 (2025-04-28)</small>
+
+* [bitnami/grafana-mimir] Release 2.0.3 (#33210) ([9b60c4b](https://github.com/bitnami/charts/commit/9b60c4b1690678d834c671139c90cdd69d891d31)), closes [#33210](https://github.com/bitnami/charts/issues/33210)
 
 ## <small>2.0.2 (2025-04-22)</small>
 

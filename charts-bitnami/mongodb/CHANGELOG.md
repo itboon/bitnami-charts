@@ -1,8 +1,47 @@
 # Changelog
 
-## 16.5.4 (2025-04-30)
+## 16.5.13 (2025-05-30)
 
-* [bitnami/mongodb] Remove extra volumeClaimTemplates fields ([#33236](https://github.com/bitnami/charts/pull/33236))
+* [bitnami/mongodb] :zap: :arrow_up: Update dependency references ([#34007](https://github.com/bitnami/charts/pull/34007))
+
+## <small>16.5.12 (2025-05-29)</small>
+
+* [bitnami/mongodb] :zap: :arrow_up: Update dependency references (#33969) ([7d6fc66](https://github.com/bitnami/charts/commit/7d6fc669cd8ff35876db19ba007cb82d40918f7d)), closes [#33969](https://github.com/bitnami/charts/issues/33969)
+
+## <small>16.5.11 (2025-05-21)</small>
+
+* [bitnami/mongodb] :zap: :arrow_up: Update dependency references (#33819) ([64029c0](https://github.com/bitnami/charts/commit/64029c0851d0edc2e2672dd14faa33346ff6bfdc)), closes [#33819](https://github.com/bitnami/charts/issues/33819)
+
+## <small>16.5.10 (2025-05-21)</small>
+
+* [bitnami/mongodb] Add ability to configure SA for backup (#33112) ([8768d39](https://github.com/bitnami/charts/commit/8768d39c26a27c450d85989f8ee6c4c6b51b7626)), closes [#33112](https://github.com/bitnami/charts/issues/33112)
+
+## <small>16.5.9 (2025-05-20)</small>
+
+* [bitnami/mongodb] :zap: :arrow_up: Update dependency references (#33788) ([4fdeeab](https://github.com/bitnami/charts/commit/4fdeeabffdc2d05a3a5343b88ba6ae078cb8b601)), closes [#33788](https://github.com/bitnami/charts/issues/33788)
+
+## <small>16.5.8 (2025-05-16)</small>
+
+* [bitnami/*] Add CNAB link for charts on Azure MP (#33695) ([6312371](https://github.com/bitnami/charts/commit/63123718de94dbedd798d380807b57031e98ed4f)), closes [#33695](https://github.com/bitnami/charts/issues/33695)
+* [bitnami/*] Update CNAB tip (#33741) ([2bc74f3](https://github.com/bitnami/charts/commit/2bc74f3f539481ceaa12833c114047583912b748)), closes [#33741](https://github.com/bitnami/charts/issues/33741)
+* [bitnami/mongodb] :zap: :arrow_up: Update dependency references (#33731) ([c2e3866](https://github.com/bitnami/charts/commit/c2e38660de6d95d6f752d0dda14ed17fde173448)), closes [#33731](https://github.com/bitnami/charts/issues/33731)
+
+## <small>16.5.7 (2025-05-13)</small>
+
+* [bitnami/kubeapps] Deprecation followup (#33579) ([77e312c](https://github.com/bitnami/charts/commit/77e312c1772d4d7c4dc5d3ac0e80f4e452e3a062)), closes [#33579](https://github.com/bitnami/charts/issues/33579)
+* [bitnami/mongodb] :zap: :arrow_up: Update dependency references (#33636) ([1bb5123](https://github.com/bitnami/charts/commit/1bb512381fad37e2b27f686f50bc5aa57243d38d)), closes [#33636](https://github.com/bitnami/charts/issues/33636)
+
+## <small>16.5.6 (2025-05-06)</small>
+
+* [bitnami/mongodb] chore: :recycle: :arrow_up: Update common and remove k8s < 1.23 references (#33405 ([59d21e7](https://github.com/bitnami/charts/commit/59d21e7d2e6fe9785f6960ceb690c72c64e75190)), closes [#33405](https://github.com/bitnami/charts/issues/33405)
+
+## <small>16.5.5 (2025-05-01)</small>
+
+* [bitnami/mongodb] Release 16.5.5 (#33286) ([c084df3](https://github.com/bitnami/charts/commit/c084df377f1cb009a149dd58fa9eb691aa3d635c)), closes [#33286](https://github.com/bitnami/charts/issues/33286)
+
+## <small>16.5.4 (2025-04-30)</small>
+
+* [bitnami/mongodb] Remove extra volumeClaimTemplates fields (#33236) ([3576e85](https://github.com/bitnami/charts/commit/3576e85131e5ee110040f9fa900249a57e35d79d)), closes [#33236](https://github.com/bitnami/charts/issues/33236)
 
 ## <small>16.5.3 (2025-04-28)</small>
 

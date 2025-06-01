@@ -1,8 +1,46 @@
 # Changelog
 
-## 2.4.9 (2025-04-01)
+## 2.4.18 (2025-05-29)
 
-* [bitnami/flux] Release 2.4.9 ([#32729](https://github.com/bitnami/charts/pull/32729))
+* [bitnami/flux] :zap: :arrow_up: Update dependency references ([#33948](https://github.com/bitnami/charts/pull/33948))
+
+## <small>2.4.17 (2025-05-28)</small>
+
+* [bitnami/flux] :zap: :arrow_up: Update dependency references (#33942) ([d09dfac](https://github.com/bitnami/charts/commit/d09dfac6fddf6c2b70b3977f673983f9a6489ad2)), closes [#33942](https://github.com/bitnami/charts/issues/33942)
+
+## <small>2.4.16 (2025-05-27)</small>
+
+* [bitnami/flux] :zap: :arrow_up: Update dependency references (#33911) ([30d9d20](https://github.com/bitnami/charts/commit/30d9d201387be171336b825c524de987d95dab94)), closes [#33911](https://github.com/bitnami/charts/issues/33911)
+
+## <small>2.4.15 (2025-05-27)</small>
+
+* [bitnami/flux] :zap: :arrow_up: Update dependency references (#33909) ([4de3432](https://github.com/bitnami/charts/commit/4de3432337ab872f171de85951b439a1ec854a59)), closes [#33909](https://github.com/bitnami/charts/issues/33909)
+
+## <small>2.4.14 (2025-05-27)</small>
+
+* [bitnami/flux] :zap: :arrow_up: Update dependency references (#33908) ([44325de](https://github.com/bitnami/charts/commit/44325deb7580b6c44b97bb5fd3da4bc7daba7b23)), closes [#33908](https://github.com/bitnami/charts/issues/33908)
+
+## <small>2.4.13 (2025-05-13)</small>
+
+* [bitnami/flux] :zap: :arrow_up: Update dependency references (#33683) ([072b13e](https://github.com/bitnami/charts/commit/072b13efddd2a3f790a34dcf97ebedf776156045)), closes [#33683](https://github.com/bitnami/charts/issues/33683)
+* [bitnami/kubeapps] Deprecation followup (#33579) ([77e312c](https://github.com/bitnami/charts/commit/77e312c1772d4d7c4dc5d3ac0e80f4e452e3a062)), closes [#33579](https://github.com/bitnami/charts/issues/33579)
+
+## <small>2.4.12 (2025-05-07)</small>
+
+* [bitnami/flux] Release 2.4.12 (#33473) ([c1db9da](https://github.com/bitnami/charts/commit/c1db9da7567881f995727d6dc8402ea9d647f56a)), closes [#33473](https://github.com/bitnami/charts/issues/33473)
+
+## <small>2.4.11 (2025-05-06)</small>
+
+* [bitnami/flux] chore: :recycle: :arrow_up: Update common and remove k8s < 1.23 references (#33363) ([1834a52](https://github.com/bitnami/charts/commit/1834a52444d2b297a643b68ccdb9b59288fe110e)), closes [#33363](https://github.com/bitnami/charts/issues/33363)
+
+## <small>2.4.10 (2025-05-01)</small>
+
+* [bitnami/flux] Release 2.4.10 (#33290) ([a3e199c](https://github.com/bitnami/charts/commit/a3e199cd22b6fd081c7bc1b79ed38a8e6d89d7e9)), closes [#33290](https://github.com/bitnami/charts/issues/33290)
+
+## <small>2.4.9 (2025-04-01)</small>
+
+* [bitnami/*] Add tanzuCategory annotation (#32409) ([a8fba5c](https://github.com/bitnami/charts/commit/a8fba5cb01f6f4464ca7f69c50b0fbe97d837a95)), closes [#32409](https://github.com/bitnami/charts/issues/32409)
+* [bitnami/flux] Release 2.4.9 (#32729) ([08e35a8](https://github.com/bitnami/charts/commit/08e35a800d2d34719aa5368c7a43668d48252357)), closes [#32729](https://github.com/bitnami/charts/issues/32729)
 
 ## <small>2.4.8 (2025-03-05)</small>
 

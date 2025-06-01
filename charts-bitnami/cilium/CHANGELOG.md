@@ -1,8 +1,33 @@
 # Changelog
 
-## 2.1.7 (2025-04-25)
+## 3.0.0 (2025-05-27)
 
-* [bitnami/cilium] Release 2.1.7 ([#33184](https://github.com/bitnami/charts/pull/33184))
+* [bitnami/cilium] Update ETCD subchart ([#33879](https://github.com/bitnami/charts/pull/33879))
+
+## <small>2.1.12 (2025-05-27)</small>
+
+* [bitnami/cilium] :zap: :arrow_up: Update dependency references (#33895) ([f11c343](https://github.com/bitnami/charts/commit/f11c3430724347a8ff177f6ed917d5d97815a685)), closes [#33895](https://github.com/bitnami/charts/issues/33895)
+
+## <small>2.1.11 (2025-05-19)</small>
+
+* [bitnami/cilium] :zap: :arrow_up: Update dependency references (#33719) ([b374c97](https://github.com/bitnami/charts/commit/b374c976d4243f56f1cae687df38bd9208904424)), closes [#33719](https://github.com/bitnami/charts/issues/33719)
+
+## <small>2.1.10 (2025-05-13)</small>
+
+* [bitnami/cilium] :zap: :arrow_up: Update dependency references (#33655) ([bebf87b](https://github.com/bitnami/charts/commit/bebf87b2d4e0c6352807f70775ac0d919754b6ae)), closes [#33655](https://github.com/bitnami/charts/issues/33655)
+* [bitnami/kubeapps] Deprecation followup (#33579) ([77e312c](https://github.com/bitnami/charts/commit/77e312c1772d4d7c4dc5d3ac0e80f4e452e3a062)), closes [#33579](https://github.com/bitnami/charts/issues/33579)
+
+## <small>2.1.9 (2025-05-06)</small>
+
+* [bitnami/cilium] Release 2.1.9 (#33469) ([38c6023](https://github.com/bitnami/charts/commit/38c6023a92a11ae98f16badcccd3838da69bc9fd)), closes [#33469](https://github.com/bitnami/charts/issues/33469)
+
+## <small>2.1.8 (2025-05-06)</small>
+
+* [bitnami/cilium] chore: :recycle: :arrow_up: Update common and remove k8s < 1.23 references (#33344) ([99c4868](https://github.com/bitnami/charts/commit/99c4868670d065b2f42e98abd4d596056b347e3d)), closes [#33344](https://github.com/bitnami/charts/issues/33344)
+
+## <small>2.1.7 (2025-04-25)</small>
+
+* [bitnami/cilium] Release 2.1.7 (#33184) ([9c2f6dd](https://github.com/bitnami/charts/commit/9c2f6dd6fa278be47e52003cc645fb9878b86fe0)), closes [#33184](https://github.com/bitnami/charts/issues/33184)
 
 ## <small>2.1.6 (2025-04-25)</small>
 

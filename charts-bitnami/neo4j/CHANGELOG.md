@@ -1,8 +1,29 @@
 # Changelog
 
+## 0.4.5 (2025-05-29)
+
+* [bitnami/neo4j] :zap: :arrow_up: Update dependency references ([#33924](https://github.com/bitnami/charts/pull/33924))
+
+## <small>0.4.4 (2025-05-27)</small>
+
+* [bitnami/kubeapps] Deprecation followup (#33579) ([77e312c](https://github.com/bitnami/charts/commit/77e312c1772d4d7c4dc5d3ac0e80f4e452e3a062)), closes [#33579](https://github.com/bitnami/charts/issues/33579)
+* [bitnami/neo4j] :zap: :arrow_up: Update dependency references (#33922) ([b741265](https://github.com/bitnami/charts/commit/b741265a44b0901a830038e145937f1814110076)), closes [#33922](https://github.com/bitnami/charts/issues/33922)
+
+## <small>0.4.3 (2025-05-06)</small>
+
+* [bitnami/neo4j] Release 0.4.3 (#33466) ([f62b9ca](https://github.com/bitnami/charts/commit/f62b9ca46c6fc47922474520d95e74673e088aeb)), closes [#33466](https://github.com/bitnami/charts/issues/33466)
+
+## <small>0.4.2 (2025-05-06)</small>
+
+* [bitnami/neo4j] chore: :recycle: :arrow_up: Update common and remove k8s < 1.23 references (#33411) ([f20b267](https://github.com/bitnami/charts/commit/f20b26755c4baf3014bf9ff4054e9c00ee20b467)), closes [#33411](https://github.com/bitnami/charts/issues/33411)
+
+## <small>0.4.1 (2025-05-02)</small>
+
+* [bitnami/neo4j] Release 0.4.1 (#33307) ([e1f95c2](https://github.com/bitnami/charts/commit/e1f95c2e61edb3ab20146965a5c579f1d56a10eb)), closes [#33307](https://github.com/bitnami/charts/issues/33307)
+
 ## 0.4.0 (2025-04-04)
 
-* [bitnami/neo4j] Set `usePasswordFiles=true` by default ([#32706](https://github.com/bitnami/charts/pull/32706))
+* [bitnami/neo4j] Set `usePasswordFiles=true` by default (#32706) ([5366ece](https://github.com/bitnami/charts/commit/5366ece669637c9d9dc1835e9f5eeae94af3d66a)), closes [#32706](https://github.com/bitnami/charts/issues/32706)
 
 ## <small>0.3.5 (2025-04-02)</small>
 

@@ -1,8 +1,35 @@
 # Changelog
 
+## 9.2.6 (2025-05-30)
+
+* [bitnami/clickhouse] :zap: :arrow_up: Update dependency references ([#34001](https://github.com/bitnami/charts/pull/34001))
+
+## <small>9.2.5 (2025-05-29)</small>
+
+* [bitnami/clickhouse] :zap: :arrow_up: Update dependency references (#33966) ([f3e6b4c](https://github.com/bitnami/charts/commit/f3e6b4cc45edfe01fd7a1c5935e011117ee41529)), closes [#33966](https://github.com/bitnami/charts/issues/33966)
+
+## <small>9.2.4 (2025-05-22)</small>
+
+* [bitnami/clickhouse] :zap: :arrow_up: Update dependency references (#33846) ([fa15d6e](https://github.com/bitnami/charts/commit/fa15d6e4bf757bb94859ad72672424da6bf0edd7)), closes [#33846](https://github.com/bitnami/charts/issues/33846)
+
+## <small>9.2.3 (2025-05-20)</small>
+
+* [bitnami/*] Add CNAB link for charts on Azure MP (#33695) ([6312371](https://github.com/bitnami/charts/commit/63123718de94dbedd798d380807b57031e98ed4f)), closes [#33695](https://github.com/bitnami/charts/issues/33695)
+* [bitnami/*] Update CNAB tip (#33741) ([2bc74f3](https://github.com/bitnami/charts/commit/2bc74f3f539481ceaa12833c114047583912b748)), closes [#33741](https://github.com/bitnami/charts/issues/33741)
+* [bitnami/clickhouse] :zap: :arrow_up: Update dependency references (#33601) ([788718d](https://github.com/bitnami/charts/commit/788718d0999fa2ebb8953eb604e3df5226f7c84c)), closes [#33601](https://github.com/bitnami/charts/issues/33601)
+* [bitnami/kubeapps] Deprecation followup (#33579) ([77e312c](https://github.com/bitnami/charts/commit/77e312c1772d4d7c4dc5d3ac0e80f4e452e3a062)), closes [#33579](https://github.com/bitnami/charts/issues/33579)
+
+## <small>9.2.2 (2025-05-07)</small>
+
+* [bitnami/clickhouse] chore: :recycle: :arrow_up: Update common and remove k8s < 1.23 references (#33 ([6924c7c](https://github.com/bitnami/charts/commit/6924c7cec199259b74f06c3d9eba4cba80cfbede)), closes [#33345](https://github.com/bitnami/charts/issues/33345)
+
+## <small>9.2.1 (2025-05-05)</small>
+
+* [bitnami/clickhouse] Release 9.2.1 (#33281) ([fda5a85](https://github.com/bitnami/charts/commit/fda5a85abeb936230adcfa45f2461a21d516e762)), closes [#33281](https://github.com/bitnami/charts/issues/33281)
+
 ## 9.2.0 (2025-04-24)
 
-* [bitnami/clickhouse] feat: add TLS support for communications with Keeper ([#33158](https://github.com/bitnami/charts/pull/33158))
+* [bitnami/clickhouse] feat: add TLS support for communications with Keeper (#33158) ([9cb93de](https://github.com/bitnami/charts/commit/9cb93de6a93117b06cc3644ef277cc496081ddb9)), closes [#33158](https://github.com/bitnami/charts/issues/33158)
 
 ## <small>9.1.3 (2025-04-23)</small>
 

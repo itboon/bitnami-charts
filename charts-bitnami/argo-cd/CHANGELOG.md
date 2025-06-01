@@ -1,8 +1,87 @@
 # Changelog
 
-## 7.3.6 (2025-04-22)
+## 9.0.15 (2025-05-30)
 
-* [bitnami/argo-cd] Release 7.3.6 ([#33128](https://github.com/bitnami/charts/pull/33128))
+* [bitnami/argo-cd] :zap: :arrow_up: Update dependency references ([#34003](https://github.com/bitnami/charts/pull/34003))
+
+## <small>9.0.14 (2025-05-29)</small>
+
+* [bitnami/argo-cd] :zap: :arrow_up: Update dependency references (#33980) ([604b71b](https://github.com/bitnami/charts/commit/604b71bad0db06d5393c959649f0485febe61b8c)), closes [#33980](https://github.com/bitnami/charts/issues/33980)
+
+## <small>9.0.13 (2025-05-29)</small>
+
+* [bitnami/argo-cd] :zap: :arrow_up: Update dependency references (#33961) ([4cbfb93](https://github.com/bitnami/charts/commit/4cbfb93c445071af5e01ed89a7302c57649d7082)), closes [#33961](https://github.com/bitnami/charts/issues/33961)
+
+## <small>9.0.12 (2025-05-28)</small>
+
+* [bitnami/argo-cd] :zap: :arrow_up: Update dependency references (#33941) ([4dd248e](https://github.com/bitnami/charts/commit/4dd248ea43da92b65a2d8eaacb0863c913c8d216)), closes [#33941](https://github.com/bitnami/charts/issues/33941)
+
+## <small>9.0.11 (2025-05-27)</small>
+
+* [bitnami/argo-cd] :zap: :arrow_up: Update dependency references (#33913) ([ea83baa](https://github.com/bitnami/charts/commit/ea83baa53cf47ad605791dd96b28a5beb2c2f50a)), closes [#33913](https://github.com/bitnami/charts/issues/33913)
+
+## <small>9.0.10 (2025-05-22)</small>
+
+* [bitnami/argo-cd] :zap: :arrow_up: Update dependency references (#33835) ([0ffafa3](https://github.com/bitnami/charts/commit/0ffafa362c5aae46e7ff9f91a28f5e2e89cf6029)), closes [#33835](https://github.com/bitnami/charts/issues/33835)
+
+## <small>9.0.9 (2025-05-21)</small>
+
+* [bitnami/argo-cd] :zap: :arrow_up: Update dependency references (#33822) ([16598ac](https://github.com/bitnami/charts/commit/16598acabe1ad0194d7775c5212e21b451fc7a6e)), closes [#33822](https://github.com/bitnami/charts/issues/33822)
+
+## <small>9.0.8 (2025-05-19)</small>
+
+* [bitnami/argo-cd] :zap: :arrow_up: Update dependency references (#33783) ([9f3119f](https://github.com/bitnami/charts/commit/9f3119fb789ab032492fb40b63f0bd3c3b761a72)), closes [#33783](https://github.com/bitnami/charts/issues/33783)
+
+## <small>9.0.7 (2025-05-19)</small>
+
+* [bitnami/argo-cd] :zap: :arrow_up: Update dependency references (#33780) ([4f26bc1](https://github.com/bitnami/charts/commit/4f26bc10d6a8d87f7df58f56b5a43bc30eed9fe0)), closes [#33780](https://github.com/bitnami/charts/issues/33780)
+
+## <small>9.0.6 (2025-05-16)</small>
+
+* [bitnami/*] Update CNAB tip (#33741) ([2bc74f3](https://github.com/bitnami/charts/commit/2bc74f3f539481ceaa12833c114047583912b748)), closes [#33741](https://github.com/bitnami/charts/issues/33741)
+* [bitnami/argo-cd] :zap: :arrow_up: Update dependency references (#33745) ([91cdd71](https://github.com/bitnami/charts/commit/91cdd7109c5d6af658b434494fdc650a12e097d3)), closes [#33745](https://github.com/bitnami/charts/issues/33745)
+
+## <small>9.0.5 (2025-05-15)</small>
+
+* [bitnami/argo-cd] :zap: :arrow_up: Update dependency references (#33721) ([e9c7d52](https://github.com/bitnami/charts/commit/e9c7d52b630d75698ee5278aa704efc97be64ecf)), closes [#33721](https://github.com/bitnami/charts/issues/33721)
+
+## <small>9.0.4 (2025-05-14)</small>
+
+* [bitnami/*] Add CNAB link for charts on Azure MP (#33695) ([6312371](https://github.com/bitnami/charts/commit/63123718de94dbedd798d380807b57031e98ed4f)), closes [#33695](https://github.com/bitnami/charts/issues/33695)
+* [bitnami/argo-cd] :zap: :arrow_up: Update dependency references (#33700) ([90355e1](https://github.com/bitnami/charts/commit/90355e188f6e26183edfcbd6d6076e3a3b52dcb5)), closes [#33700](https://github.com/bitnami/charts/issues/33700)
+
+## <small>9.0.3 (2025-05-13)</small>
+
+* [bitnami/argo-cd] :zap: :arrow_up: Update dependency references (#33675) ([3a0ecb4](https://github.com/bitnami/charts/commit/3a0ecb462a567a195f599b4199c6086a513ff877)), closes [#33675](https://github.com/bitnami/charts/issues/33675)
+
+## <small>9.0.2 (2025-05-13)</small>
+
+* [bitnami/argo-cd] :zap: :arrow_up: Update dependency references (#33665) ([4d1d7c3](https://github.com/bitnami/charts/commit/4d1d7c379fd42c0a196925816cd7b2f0a1770898)), closes [#33665](https://github.com/bitnami/charts/issues/33665)
+
+## <small>9.0.1 (2025-05-13)</small>
+
+* [bitnami/argo-cd] :zap: :arrow_up: Update dependency references (#33662) ([7338c3c](https://github.com/bitnami/charts/commit/7338c3c3e735052654bdf2aa34aa031869db8755)), closes [#33662](https://github.com/bitnami/charts/issues/33662)
+* [bitnami/kubeapps] Deprecation followup (#33579) ([77e312c](https://github.com/bitnami/charts/commit/77e312c1772d4d7c4dc5d3ac0e80f4e452e3a062)), closes [#33579](https://github.com/bitnami/charts/issues/33579)
+
+## 9.0.0 (2025-05-08)
+
+* [bitnami/argo-cd] :zap: :arrow_up: Update dependency references (#33561) ([dc9d93c](https://github.com/bitnami/charts/commit/dc9d93c0a6f8fa77f3aa7475428904f2ace3b365)), closes [#33561](https://github.com/bitnami/charts/issues/33561)
+
+## 8.0.0 (2025-05-07)
+
+* [bitnami/argo-cd] feat!: :arrow_up: :boom: Bump Redis(R) to 8.0 (#33500) ([8a930f5](https://github.com/bitnami/charts/commit/8a930f5bf8e24160c337799d4d2da411db479de8)), closes [#33500](https://github.com/bitnami/charts/issues/33500)
+
+## <small>7.3.8 (2025-05-07)</small>
+
+* [bitnami/argo-cd] Release 7.3.8 (#33506) ([a6ea6f0](https://github.com/bitnami/charts/commit/a6ea6f0975c92a1430895f5d813ad92dbc20f7f9)), closes [#33506](https://github.com/bitnami/charts/issues/33506)
+
+## <small>7.3.7 (2025-05-06)</small>
+
+* [bitnami/argo-cd] chore: :recycle: :arrow_up: Update common and remove k8s < 1.23 references (#33337 ([81eeb64](https://github.com/bitnami/charts/commit/81eeb64efc5548ed46b369612b23abe401644670)), closes [#33337](https://github.com/bitnami/charts/issues/33337)
+
+## <small>7.3.6 (2025-04-22)</small>
+
+* [bitnami/argo-cd] Release 7.3.6 (#33128) ([5468fc3](https://github.com/bitnami/charts/commit/5468fc3144ea9ccc2733c21b030cf5c0c11474ef)), closes [#33128](https://github.com/bitnami/charts/issues/33128)
 
 ## <small>7.3.5 (2025-04-09)</small>
 

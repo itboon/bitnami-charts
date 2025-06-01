@@ -1,8 +1,20 @@
 # Changelog
 
-## 8.8.0 (2025-04-23)
+## 8.8.3 (2025-05-26)
 
-* [bitnami/external-dns] Add support for --txt-new-format-only ([#32880](https://github.com/bitnami/charts/pull/32880))
+* [bitnami/external-dns] :zap: :arrow_up: Update dependency references ([#33694](https://github.com/bitnami/charts/pull/33694))
+
+## <small>8.8.2 (2025-05-07)</small>
+
+* [bitnami/external-dns] Release 8.8.2 (#33530) ([79dbc65](https://github.com/bitnami/charts/commit/79dbc6591763e8a23861d7b4318dda1268bf2e01)), closes [#33530](https://github.com/bitnami/charts/issues/33530)
+
+## <small>8.8.1 (2025-05-06)</small>
+
+* [bitnami/external-dns] chore: :recycle: :arrow_up: Update common and remove k8s < 1.23 references (# ([b0dddf7](https://github.com/bitnami/charts/commit/b0dddf70aff2149e1bb67cf11c22f0a4fee2d0ee)), closes [#33359](https://github.com/bitnami/charts/issues/33359)
+
+## 8.8.0 (2025-04-24)
+
+* [bitnami/external-dns] Add support for --txt-new-format-only (#32880) ([ecd3223](https://github.com/bitnami/charts/commit/ecd32234d6e5cf7f1c097f2742a42406d63ce033)), closes [#32880](https://github.com/bitnami/charts/issues/32880)
 
 ## <small>8.7.12 (2025-04-22)</small>
 

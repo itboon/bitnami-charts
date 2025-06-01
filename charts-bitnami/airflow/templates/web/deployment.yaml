@@ -44,8 +44,8 @@ spec:
       affinity: {{- include "common.tplvalues.render" (dict "value" .Values.web.affinity "context" $) | nindent 8 }}
       {{- else }}
       affinity:
-        podAffinity: {{- include "common.affinities.pods" (dict "type" .Values.web.podAffinityPreset "component" "web" "customLabels" $podLabels "context" $) | nindent 10 }}
-        podAntiAffinity: {{- include "common.affinities.pods" (dict "type" .Values.web.podAntiAffinityPreset "component" "web" "customLabels" $podLabels "context" $) | nindent 10 }}
+        podAffinity: {{- include "common.affinities.pods" (dict "type" .Values.web.podAffinityPreset "component" "web" "customLabels" $podLabels "topologyKey" .Values.web.topologyKey "context" $) | nindent 10 }}
+        podAntiAffinity: {{- include "common.affinities.pods" (dict "type" .Values.web.podAntiAffinityPreset "component" "web" "customLabels" $podLabels "topologyKey" .Values.web.topologyKey "context" $) | nindent 10 }}
         nodeAffinity: {{- include "common.affinities.nodes" (dict "type" .Values.web.nodeAffinityPreset.type "key" .Values.web.nodeAffinityPreset.key "values" .Values.web.nodeAffinityPreset.values) | nindent 10 }}
       {{- end }}
       {{- if .Values.web.nodeSelector }}
@@ -181,6 +181,16 @@ spec:
           livenessProbe: {{- include "common.tplvalues.render" (dict "value" .Values.web.customLivenessProbe "context" $) | nindent 12 }}
           {{- else if .Values.web.livenessProbe.enabled }}
           livenessProbe: {{- include "common.tplvalues.render" (dict "value" (omit .Values.web.livenessProbe "enabled") "context" $) | nindent 12 }}
+            exec:
+              command:
+                - pgrep
+                - -f
+                - airflow
+          {{- end }}
+          {{- if .Values.web.customReadinessProbe }}
+          readinessProbe: {{- include "common.tplvalues.render" (dict "value" .Values.web.customReadinessProbe "context" $) | nindent 12 }}
+          {{- else if .Values.web.readinessProbe.enabled }}
+          readinessProbe: {{- include "common.tplvalues.render" (dict "value" (omit .Values.web.readinessProbe "enabled") "context" $) | nindent 12 }}
             {{- if contains "127.0.0.1" (include "airflow.baseUrl" .) }}
             httpGet:
               {{- if (include "airflow.isImageMajorVersion3" .) }}
@@ -194,16 +204,6 @@ spec:
             tcpSocket:
               port: http
             {{- end }}
-          {{- end }}
-          {{- if .Values.web.customReadinessProbe }}
-          readinessProbe: {{- include "common.tplvalues.render" (dict "value" .Values.web.customReadinessProbe "context" $) | nindent 12 }}
-          {{- else if .Values.web.readinessProbe.enabled }}
-          readinessProbe: {{- include "common.tplvalues.render" (dict "value" (omit .Values.web.readinessProbe "enabled") "context" $) | nindent 12 }}
-            exec:
-              command:
-                - pgrep
-                - -f
-                - airflow
           {{- end }}
           {{- end }}
           {{- if .Values.web.lifecycleHooks }}

@@ -20,8 +20,6 @@ Looking to use Apache APISIX in production? Try [VMware Tanzu Application Catalo
 
 This chart bootstraps a [Apache APISIX](https://github.com/bitnami/containers/tree/main/bitnami/apisix) deployment on a [Kubernetes](https://kubernetes.io) cluster using the [Helm](https://helm.sh) package manager.
 
-Bitnami charts can be used with [Kubeapps](https://kubeapps.dev/) for deployment and management of Helm Charts in clusters.
-
 ## Prerequisites
 
 - Kubernetes 1.23+
@@ -284,7 +282,6 @@ As an alternative, use one of the preset configurations for pod affinity, pod an
 | `global.imageRegistry`                                | Global Docker image registry                                                                                                                                                                                                                                                                                                                                        | `""`    |
 | `global.imagePullSecrets`                             | Global Docker registry secret names as an array                                                                                                                                                                                                                                                                                                                     | `[]`    |
 | `global.defaultStorageClass`                          | Global default StorageClass for Persistent Volume(s)                                                                                                                                                                                                                                                                                                                | `""`    |
-| `global.storageClass`                                 | DEPRECATED: use global.defaultStorageClass instead                                                                                                                                                                                                                                                                                                                  | `""`    |
 | `global.security.allowInsecureImages`                 | Allows skipping image verification                                                                                                                                                                                                                                                                                                                                  | `false` |
 | `global.compatibility.openshift.adaptSecurityContext` | Adapt the securityContext sections of the deployment to make them compatible with Openshift restricted-v2 SCC: remove runAsUser, runAsGroup and fsGroup and let the platform use their allowed default IDs. Possible values: auto (apply if the detected running cluster is Openshift), force (perform the adaptation always), disabled (do not perform adaptation) | `auto`  |
 
@@ -320,6 +317,7 @@ As an alternative, use one of the preset configurations for pod affinity, pod an
 | `dataPlane.useDaemonSet`                                      | Deploy as DaemonSet                                                                                                                                                                                                                   | `false`          |
 | `dataPlane.replicaCount`                                      | Number of APISIX replicas to deploy                                                                                                                                                                                                   | `1`              |
 | `dataPlane.hostNetwork`                                       | Use hostNetwork                                                                                                                                                                                                                       | `false`          |
+| `dataPlane.dnsPolicy`                                         | DNS policy for APISIX pods                                                                                                                                                                                                            | `ClusterFirst`   |
 | `dataPlane.containerPorts.http`                               | APISIX HTTP container port                                                                                                                                                                                                            | `9080`           |
 | `dataPlane.containerPorts.https`                              | APISIX HTTPS container port                                                                                                                                                                                                           | `9443`           |
 | `dataPlane.containerPorts.control`                            | APISIX control container port                                                                                                                                                                                                         | `9090`           |
@@ -501,6 +499,7 @@ As an alternative, use one of the preset configurations for pod affinity, pod an
 | `controlPlane.enabled`                                           | Enable APISIX                                                                                                                                                                                                                               | `true`           |
 | `controlPlane.replicaCount`                                      | Number of APISIX replicas to deploy                                                                                                                                                                                                         | `1`              |
 | `controlPlane.hostNetwork`                                       | Use hostNetwork                                                                                                                                                                                                                             | `false`          |
+| `controlPlane.dnsPolicy`                                         | DNS policy for APISIX Admin pods                                                                                                                                                                                                            | `ClusterFirst`   |
 | `controlPlane.useDaemonSet`                                      | Deploy as DaemonSet                                                                                                                                                                                                                         | `false`          |
 | `controlPlane.containerPorts.adminAPI`                           | APISIX Admin API port                                                                                                                                                                                                                       | `9180`           |
 | `controlPlane.containerPorts.configServer`                       | APISIX config port                                                                                                                                                                                                                          | `9280`           |
@@ -1098,6 +1097,10 @@ helm install my-release -f values.yaml my-repo/apisix
 Find more information about how to deal with common errors related to Bitnami's Helm charts in [this troubleshooting guide](https://docs.bitnami.com/general/how-to/troubleshoot-helm-chart-issues).
 
 ## Upgrading
+
+### To 5.0.0
+
+This major updates the `etcd` subchart to it newest major, 12.0.0. For more information on this subchart's major, please refer to [etcd upgrade notes](https://github.com/bitnami/charts/tree/main/bitnami/etcd#to-1200).
 
 ### To 4.0.0
 

@@ -1,8 +1,53 @@
 # Changelog
 
-## 0.1.8 (2025-04-22)
+## 0.1.19 (2025-05-30)
 
-* [bitnami/cloudnative-pg] fix use Values failed in range method ([#33101](https://github.com/bitnami/charts/pull/33101))
+* [bitnami/cloudnative-pg] :zap: :arrow_up: Update dependency references ([#33998](https://github.com/bitnami/charts/pull/33998))
+
+## <small>0.1.18 (2025-05-30)</small>
+
+* [bitnami/cloudnative-pg] :zap: :arrow_up: Update dependency references (#33993) ([9be20c2](https://github.com/bitnami/charts/commit/9be20c284f9234977cf9f021bb552b7aaa14b580)), closes [#33993](https://github.com/bitnami/charts/issues/33993)
+
+## <small>0.1.17 (2025-05-27)</small>
+
+* [bitnami/cloudnative-pg] :zap: :arrow_up: Update dependency references (#33920) ([49595ae](https://github.com/bitnami/charts/commit/49595ae3103944a8a0eb96331847fdee9fe7d1a9)), closes [#33920](https://github.com/bitnami/charts/issues/33920)
+
+## <small>0.1.16 (2025-05-27)</small>
+
+* [bitnami/cloudnative-pg] :zap: :arrow_up: Update dependency references (#33917) ([6a62c75](https://github.com/bitnami/charts/commit/6a62c758b1e5a3e4a745c7a99023af71217657b9)), closes [#33917](https://github.com/bitnami/charts/issues/33917)
+
+## <small>0.1.15 (2025-05-27)</small>
+
+* [bitnami/cloudnative-pg] :zap: :arrow_up: Update dependency references (#33901) ([ae4f453](https://github.com/bitnami/charts/commit/ae4f453f2deb273fc8c9bee273427e2b90478617)), closes [#33901](https://github.com/bitnami/charts/issues/33901)
+
+## <small>0.1.14 (2025-05-23)</small>
+
+* [bitnami/cloudnative-pg] :zap: :arrow_up: Update dependency references (#33863) ([91fc6bf](https://github.com/bitnami/charts/commit/91fc6bf12f792631a5743bbf68ab6c5581fafd3f)), closes [#33863](https://github.com/bitnami/charts/issues/33863)
+
+## <small>0.1.13 (2025-05-23)</small>
+
+* [bitnami/cloudnative-pg] :zap: :arrow_up: Update dependency references (#33862) ([dc5d1fd](https://github.com/bitnami/charts/commit/dc5d1fdec34d4c412d7a8763d591e3342297ff27)), closes [#33862](https://github.com/bitnami/charts/issues/33862)
+
+## <small>0.1.12 (2025-05-13)</small>
+
+* [bitnami/cloudnative-pg] :zap: :arrow_up: Update dependency references (#33630) ([69f7c35](https://github.com/bitnami/charts/commit/69f7c35b71e880bd8068ef549a4e9ab775c298b3)), closes [#33630](https://github.com/bitnami/charts/issues/33630)
+* [bitnami/kubeapps] Deprecation followup (#33579) ([77e312c](https://github.com/bitnami/charts/commit/77e312c1772d4d7c4dc5d3ac0e80f4e452e3a062)), closes [#33579](https://github.com/bitnami/charts/issues/33579)
+
+## <small>0.1.11 (2025-05-07)</small>
+
+* [bitnami/cloudnative-pg] Release 0.1.11 (#33509) ([268cf66](https://github.com/bitnami/charts/commit/268cf663c07e40f91b72ef133171b93dea1ef0e8)), closes [#33509](https://github.com/bitnami/charts/issues/33509)
+
+## <small>0.1.10 (2025-05-06)</small>
+
+* [bitnami/cloudnative-pg] chore: :recycle: :arrow_up: Update common and remove k8s < 1.23 references  ([3894afd](https://github.com/bitnami/charts/commit/3894afd8826371419a99fc899b62d4dd13f30f3e)), closes [#33347](https://github.com/bitnami/charts/issues/33347)
+
+## <small>0.1.9 (2025-05-01)</small>
+
+* [bitnami/cloudnative-pg] Release 0.1.9 (#33288) ([3f91ddd](https://github.com/bitnami/charts/commit/3f91ddd256a23a12350fe8a8eea7a91dc026bc2a)), closes [#33288](https://github.com/bitnami/charts/issues/33288)
+
+## <small>0.1.8 (2025-04-30)</small>
+
+* [bitnami/cloudnative-pg] fix use Values failed in range method (#33101) ([d10b4af](https://github.com/bitnami/charts/commit/d10b4af2bd4fafbe00bf0e3f3ed0f115e2876cc0)), closes [#33101](https://github.com/bitnami/charts/issues/33101)
 
 ## <small>0.1.7 (2025-04-01)</small>
 

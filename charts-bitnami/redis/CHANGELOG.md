@@ -1,8 +1,80 @@
 # Changelog
 
-## 20.13.4 (2025-04-29)
+## 21.1.11 (2025-05-30)
 
-* [bitnami/redis] Switch shell from /bin/sh to /bin/bash to improve process handling ([#33181](https://github.com/bitnami/charts/pull/33181))
+* [bitnami/redis] :zap: :arrow_up: Update dependency references ([#34013](https://github.com/bitnami/charts/pull/34013))
+
+## <small>21.1.10 (2025-05-29)</small>
+
+* [bitnami/redis] :zap: :arrow_up: Update dependency references (#33970) ([4b2bfc5](https://github.com/bitnami/charts/commit/4b2bfc5a63e86f8f7b18e7831ceb6af67d0578f7)), closes [#33970](https://github.com/bitnami/charts/issues/33970)
+
+## <small>21.1.9 (2025-05-29)</small>
+
+* [bitnami/redis] Fix newlines in sentinel.conf (#33704) ([1bcd9af](https://github.com/bitnami/charts/commit/1bcd9af1ae3c2597a94273b5fa1c21ad2d66df4f)), closes [#33704](https://github.com/bitnami/charts/issues/33704)
+
+## <small>21.1.8 (2025-05-27)</small>
+
+* [bitnami/redis] :zap: :arrow_up: Update dependency references (#33914) ([ee96950](https://github.com/bitnami/charts/commit/ee969504a78c20e8bb6cd9ca5876d6c97f583c4f)), closes [#33914](https://github.com/bitnami/charts/issues/33914)
+
+## <small>21.1.7 (2025-05-26)</small>
+
+* [bitnami/redis] bugfix: issue on ACL when no existing users secret is passed (#33876) ([193fd9f](https://github.com/bitnami/charts/commit/193fd9fba5a8234fcdd7a5001e28fac00214ec74)), closes [#33876](https://github.com/bitnami/charts/issues/33876)
+
+## <small>21.1.6 (2025-05-22)</small>
+
+* [bitnami/redis] :zap: :arrow_up: Update dependency references (#33825) ([9b34897](https://github.com/bitnami/charts/commit/9b34897bab192ea829865d4a8ddfde9beab48199)), closes [#33825](https://github.com/bitnami/charts/issues/33825)
+
+## <small>21.1.5 (2025-05-20)</small>
+
+* [bitnami/redis] :zap: :arrow_up: Update dependency references (#33790) ([2f87f3a](https://github.com/bitnami/charts/commit/2f87f3a604a31ee82cc5adbada56e351a87ace05)), closes [#33790](https://github.com/bitnami/charts/issues/33790)
+
+## <small>21.1.4 (2025-05-20)</small>
+
+* [bitnami/redis] :zap: :arrow_up: Update dependency references (#33767) ([79cda7f](https://github.com/bitnami/charts/commit/79cda7f9eab704b4122b52d409d7eb36a991915c)), closes [#33767](https://github.com/bitnami/charts/issues/33767)
+
+## <small>21.1.3 (2025-05-16)</small>
+
+* [bitnami/*] Update CNAB tip (#33741) ([2bc74f3](https://github.com/bitnami/charts/commit/2bc74f3f539481ceaa12833c114047583912b748)), closes [#33741](https://github.com/bitnami/charts/issues/33741)
+* [bitnami/redis] :zap: :arrow_up: Update dependency references (#33749) ([efd3a00](https://github.com/bitnami/charts/commit/efd3a002cafbd0177e7493cd050a65e152f813fe)), closes [#33749](https://github.com/bitnami/charts/issues/33749)
+
+## <small>21.1.2 (2025-05-15)</small>
+
+* [bitnami/redis] :zap: :arrow_up: Update dependency references (#33732) ([51b8b03](https://github.com/bitnami/charts/commit/51b8b0362db5fc14d7e61cc0342a9695b7d00459)), closes [#33732](https://github.com/bitnami/charts/issues/33732)
+
+## <small>21.1.1 (2025-05-15)</small>
+
+* [bitnami/*] Add CNAB link for charts on Azure MP (#33695) ([6312371](https://github.com/bitnami/charts/commit/63123718de94dbedd798d380807b57031e98ed4f)), closes [#33695](https://github.com/bitnami/charts/issues/33695)
+* [bitnami/redis] :zap: :arrow_up: Update dependency references (#33713) ([7e47d9c](https://github.com/bitnami/charts/commit/7e47d9c7df6521d59791d2326a5d369cd46fbed1)), closes [#33713](https://github.com/bitnami/charts/issues/33713)
+
+## 21.1.0 (2025-05-14)
+
+* [bitnami/redis] Allow grabbing sentinel acl configuration from userSecret (#33546) ([17c2fa3](https://github.com/bitnami/charts/commit/17c2fa34d840be53bd1bc59efb1eb15f279c772f)), closes [#33546](https://github.com/bitnami/charts/issues/33546)
+
+## <small>21.0.4 (2025-05-13)</small>
+
+* [bitnami/redis] :zap: :arrow_up: Update dependency references (#33666) ([36dbe42](https://github.com/bitnami/charts/commit/36dbe424f82e0f8b28601ec0bd13610702a8599e)), closes [#33666](https://github.com/bitnami/charts/issues/33666)
+
+## <small>21.0.3 (2025-05-13)</small>
+
+* [bitnami/kubeapps] Deprecation followup (#33579) ([77e312c](https://github.com/bitnami/charts/commit/77e312c1772d4d7c4dc5d3ac0e80f4e452e3a062)), closes [#33579](https://github.com/bitnami/charts/issues/33579)
+* [bitnami/redis] :zap: :arrow_up: Update dependency references (#33645) ([9481812](https://github.com/bitnami/charts/commit/9481812ac05be1954ff374170a9a32d5fa94c771)), closes [#33645](https://github.com/bitnami/charts/issues/33645)
+
+## <small>21.0.2 (2025-05-07)</small>
+
+* [bitnami/redis] chore: :recycle: :arrow_up: Update common and remove k8s < 1.23 references (#33428) ([98dff1d](https://github.com/bitnami/charts/commit/98dff1d7e991004d0374b386ea0917edac05316c)), closes [#33428](https://github.com/bitnami/charts/issues/33428)
+
+## <small>21.0.1 (2025-05-07)</small>
+
+* [bitnami/redis] fix pod-monitor podTargetLabels conditional  (#33459) ([2b78fb6](https://github.com/bitnami/charts/commit/2b78fb6590887a81bfbaefe90e32b177fb108142)), closes [#33459](https://github.com/bitnami/charts/issues/33459)
+
+## 21.0.0 (2025-05-06)
+
+* [bitnami/redis] Release 21.0.0 (#33455) ([41b5013](https://github.com/bitnami/charts/commit/41b5013934cca7b8ab2c301bdc680fa770a1684d)), closes [#33455](https://github.com/bitnami/charts/issues/33455)
+
+## <small>20.13.4 (2025-04-30)</small>
+
+* [bitnami/redis] Release 20.13.3 (#33217) ([f2b8c65](https://github.com/bitnami/charts/commit/f2b8c6511d38015371555fefb53aaca189c8c2de)), closes [#33217](https://github.com/bitnami/charts/issues/33217)
+* [bitnami/redis] Switch shell from /bin/sh to /bin/bash to improve process handling (#33181) ([cfe2165](https://github.com/bitnami/charts/commit/cfe21650167fb27f415edc6268b67c4ec91217f0)), closes [#33181](https://github.com/bitnami/charts/issues/33181)
 
 ## <small>20.13.2 (2025-04-24)</small>
 

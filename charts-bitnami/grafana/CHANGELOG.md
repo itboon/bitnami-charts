@@ -1,8 +1,33 @@
 # Changelog
 
-## 11.6.5 (2025-04-23)
+## 12.0.3 (2025-05-16)
 
-* [bitnami/grafana] Release 11.6.5 ([#33146](https://github.com/bitnami/charts/pull/33146))
+* [bitnami/grafana] Deterministic admin password secret + saving password for future uses if .Values.admin.password is not set ([#33672](https://github.com/bitnami/charts/pull/33672))
+
+## <small>12.0.2 (2025-05-15)</small>
+
+* [bitnami/grafana] fix metrics namespace include (#33714) ([5a23570](https://github.com/bitnami/charts/commit/5a23570b164643efc1c55ae8aed6bc586a9738be)), closes [#33714](https://github.com/bitnami/charts/issues/33714)
+
+## <small>12.0.1 (2025-05-15)</small>
+
+* [bitnami/grafana] Grafana uniq dashboard volumes (#33689) ([e7e3012](https://github.com/bitnami/charts/commit/e7e3012f25807031502221ec6d83d00d1100d597)), closes [#33689](https://github.com/bitnami/charts/issues/33689)
+
+## 12.0.0 (2025-05-12)
+
+* [bitnami/grafana] :zap: :arrow_up: Update dependency references (#33604) ([4229d77](https://github.com/bitnami/charts/commit/4229d7766abffbc8cf3f299016d1dc4d0be8796c)), closes [#33604](https://github.com/bitnami/charts/issues/33604)
+* [bitnami/kubeapps] Deprecation followup (#33579) ([77e312c](https://github.com/bitnami/charts/commit/77e312c1772d4d7c4dc5d3ac0e80f4e452e3a062)), closes [#33579](https://github.com/bitnami/charts/issues/33579)
+
+## <small>11.6.7 (2025-05-07)</small>
+
+* [bitnami/grafana] Release 11.6.7 (#33480) ([e6f2524](https://github.com/bitnami/charts/commit/e6f25246b6bc970e8b7496fd5f09739f15d18b3f)), closes [#33480](https://github.com/bitnami/charts/issues/33480)
+
+## <small>11.6.6 (2025-05-06)</small>
+
+* [bitnami/grafana] chore: :recycle: :arrow_up: Update common and remove k8s < 1.23 references (#33367 ([241a6af](https://github.com/bitnami/charts/commit/241a6af687e15581bd0b69c6eb8c9af012a962a9)), closes [#33367](https://github.com/bitnami/charts/issues/33367)
+
+## <small>11.6.5 (2025-04-23)</small>
+
+* [bitnami/grafana] Release 11.6.5 (#33146) ([bf5ff07](https://github.com/bitnami/charts/commit/bf5ff07b490c29681ca87f3ddcfd97a1c4e6171c)), closes [#33146](https://github.com/bitnami/charts/issues/33146)
 
 ## <small>11.6.4 (2025-04-22)</small>
 

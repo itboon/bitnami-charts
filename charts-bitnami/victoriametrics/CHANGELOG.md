@@ -1,8 +1,29 @@
 # Changelog
 
-## 0.1.7 (2025-04-28)
+## 0.1.12 (2025-05-26)
 
-* [bitnami/victoriametrics] Release 0.1.7 ([#33227](https://github.com/bitnami/charts/pull/33227))
+* [bitnami/victoriametrics] :zap: :arrow_up: Update dependency references ([#33892](https://github.com/bitnami/charts/pull/33892))
+
+## <small>0.1.11 (2025-05-15)</small>
+
+* [bitnami/victoriametrics] :zap: :arrow_up: Update dependency references (#33728) ([3081b8f](https://github.com/bitnami/charts/commit/3081b8f0e7e13e5ba5e5f894c29023f2f14e272b)), closes [#33728](https://github.com/bitnami/charts/issues/33728)
+
+## <small>0.1.10 (2025-05-13)</small>
+
+* [bitnami/kubeapps] Deprecation followup (#33579) ([77e312c](https://github.com/bitnami/charts/commit/77e312c1772d4d7c4dc5d3ac0e80f4e452e3a062)), closes [#33579](https://github.com/bitnami/charts/issues/33579)
+* [bitnami/victoriametrics] :zap: :arrow_up: Update dependency references (#33678) ([54c2578](https://github.com/bitnami/charts/commit/54c25788c4bc6f78321cc010a3d2315e9248cb78)), closes [#33678](https://github.com/bitnami/charts/issues/33678)
+
+## <small>0.1.9 (2025-05-07)</small>
+
+* [bitnami/victoriametrics] Release 0.1.9 (#33527) ([cff5725](https://github.com/bitnami/charts/commit/cff5725baa84be2b6143aa3fd52b320379232c5c)), closes [#33527](https://github.com/bitnami/charts/issues/33527)
+
+## <small>0.1.8 (2025-05-07)</small>
+
+* [bitnami/victoriametrics] chore: :recycle: :arrow_up: Update common and remove k8s < 1.23 references ([9c4b391](https://github.com/bitnami/charts/commit/9c4b391a094af71dbfec77be180600db7504378c)), closes [#33446](https://github.com/bitnami/charts/issues/33446)
+
+## <small>0.1.7 (2025-04-28)</small>
+
+* [bitnami/victoriametrics] Release 0.1.7 (#33227) ([6b82b9e](https://github.com/bitnami/charts/commit/6b82b9ea3a395d422942b1670cd97ec2050294bd)), closes [#33227](https://github.com/bitnami/charts/issues/33227)
 
 ## <small>0.1.6 (2025-04-09)</small>
 

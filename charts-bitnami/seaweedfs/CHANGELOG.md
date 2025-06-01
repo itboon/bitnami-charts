@@ -1,8 +1,58 @@
 # Changelog
 
-## 4.8.3 (2025-04-02)
+## 4.8.15 (2025-05-30)
 
-* [bitnami/seaweedfs] Release 4.8.3 ([#32763](https://github.com/bitnami/charts/pull/32763))
+* [bitnami/seaweedfs] :zap: :arrow_up: Update dependency references ([#34011](https://github.com/bitnami/charts/pull/34011))
+
+## <small>4.8.14 (2025-05-30)</small>
+
+* [bitnami/seaweedfs] :zap: :arrow_up: Update dependency references (#33995) ([19da2ba](https://github.com/bitnami/charts/commit/19da2ba7bf0f7f1b090436ff48bef41e995d8f5a)), closes [#33995](https://github.com/bitnami/charts/issues/33995)
+
+## <small>4.8.13 (2025-05-27)</small>
+
+* [bitnami/seaweedfs] :zap: :arrow_up: Update dependency references (#33921) ([904c46c](https://github.com/bitnami/charts/commit/904c46cb15f95aefce56e3466e96c01fe834de1f)), closes [#33921](https://github.com/bitnami/charts/issues/33921)
+
+## <small>4.8.12 (2025-05-27)</small>
+
+* [bitnami/seaweedfs] :zap: :arrow_up: Update dependency references (#33918) ([f29f11f](https://github.com/bitnami/charts/commit/f29f11ff58053e6bebc953c8758534da306980d2)), closes [#33918](https://github.com/bitnami/charts/issues/33918)
+
+## <small>4.8.11 (2025-05-27)</small>
+
+* [bitnami/seaweedfs] :zap: :arrow_up: Update dependency references (#33897) ([375ee44](https://github.com/bitnami/charts/commit/375ee44a7787e8dde6573924fb87994a83e64d2f)), closes [#33897](https://github.com/bitnami/charts/issues/33897)
+
+## <small>4.8.10 (2025-05-27)</small>
+
+* [bitnami/seaweedfs] :zap: :arrow_up: Update dependency references (#33857) ([a20b48f](https://github.com/bitnami/charts/commit/a20b48fdae18fbd4855410bafaeef6e02c687b5d)), closes [#33857](https://github.com/bitnami/charts/issues/33857)
+
+## <small>4.8.9 (2025-05-22)</small>
+
+* [bitnami/seaweedfs] :zap: :arrow_up: Update dependency references (#33810) ([5808be1](https://github.com/bitnami/charts/commit/5808be132def9fba52c2e0db4f568c4498119cfc)), closes [#33810](https://github.com/bitnami/charts/issues/33810)
+
+## <small>4.8.8 (2025-05-15)</small>
+
+* [bitnami/kubeapps] Deprecation followup (#33579) ([77e312c](https://github.com/bitnami/charts/commit/77e312c1772d4d7c4dc5d3ac0e80f4e452e3a062)), closes [#33579](https://github.com/bitnami/charts/issues/33579)
+* [bitnami/seaweedfs] :zap: :arrow_up: Update dependency references (#33646) ([cadc9b9](https://github.com/bitnami/charts/commit/cadc9b9fe8e3168aa177dd7ae50ea1244f1d0877)), closes [#33646](https://github.com/bitnami/charts/issues/33646)
+
+## <small>4.8.7 (2025-05-07)</small>
+
+* [bitnami/seaweedfs] Release 4.8.7 (#33539) ([b54fa9d](https://github.com/bitnami/charts/commit/b54fa9dcfbc769bcee71b1e9fd4f5abe14755760)), closes [#33539](https://github.com/bitnami/charts/issues/33539)
+
+## <small>4.8.6 (2025-05-06)</small>
+
+* [bitnami/seaweedfs] chore: :recycle: :arrow_up: Update common and remove k8s < 1.23 references (#334 ([3789e42](https://github.com/bitnami/charts/commit/3789e42484b6f398325c81a52f273d9218129b89)), closes [#33434](https://github.com/bitnami/charts/issues/33434)
+
+## <small>4.8.5 (2025-05-05)</small>
+
+* [bitnami/seaweedfs] Release 4.8.5 (#33315) ([af40402](https://github.com/bitnami/charts/commit/af40402b56235183cc899c55777c0267e0c50312)), closes [#33315](https://github.com/bitnami/charts/issues/33315)
+
+## <small>4.8.4 (2025-05-02)</small>
+
+* [bitnami/seaweedfs] Release 4.8.4 (#33300) ([6078309](https://github.com/bitnami/charts/commit/60783099201f5864d286b6da2f272c5c9bdfa1db)), closes [#33300](https://github.com/bitnami/charts/issues/33300)
+
+## <small>4.8.3 (2025-04-02)</small>
+
+* [bitnami/*] Add tanzuCategory annotation (#32409) ([a8fba5c](https://github.com/bitnami/charts/commit/a8fba5cb01f6f4464ca7f69c50b0fbe97d837a95)), closes [#32409](https://github.com/bitnami/charts/issues/32409)
+* [bitnami/seaweedfs] Release 4.8.3 (#32763) ([e6f401a](https://github.com/bitnami/charts/commit/e6f401a180a1ba2452c52072192119442b72c8a5)), closes [#32763](https://github.com/bitnami/charts/issues/32763)
 
 ## <small>4.8.2 (2025-03-10)</small>
 

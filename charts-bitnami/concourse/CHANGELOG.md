@@ -1,8 +1,33 @@
 # Changelog
 
-## 5.1.26 (2025-04-29)
+## 5.1.32 (2025-05-23)
 
-* [bitnami/concourse] Release 5.1.26 ([#33252](https://github.com/bitnami/charts/pull/33252))
+* [bitnami/concourse] :zap: :arrow_up: Update dependency references ([#33868](https://github.com/bitnami/charts/pull/33868))
+
+## <small>5.1.31 (2025-05-16)</small>
+
+* [bitnami/concourse] :zap: :arrow_up: Update dependency references (#33754) ([efe9468](https://github.com/bitnami/charts/commit/efe94689d045c518a84580da4653a2e7607b272d)), closes [#33754](https://github.com/bitnami/charts/issues/33754)
+* [bitnami/kubeapps] Deprecation followup (#33579) ([77e312c](https://github.com/bitnami/charts/commit/77e312c1772d4d7c4dc5d3ac0e80f4e452e3a062)), closes [#33579](https://github.com/bitnami/charts/issues/33579)
+
+## <small>5.1.30 (2025-05-08)</small>
+
+* [bitnami/concourse] :zap: :arrow_up: Update dependency references (#33560) ([0c0c895](https://github.com/bitnami/charts/commit/0c0c895389674cbb26f604b2e46fe545bc175f50)), closes [#33560](https://github.com/bitnami/charts/issues/33560)
+
+## <small>5.1.29 (2025-05-07)</small>
+
+* [bitnami/concourse] Release 5.1.29 (#33510) ([eb6f982](https://github.com/bitnami/charts/commit/eb6f9826cd4e472ea98a705d3f2ed2e870a01972)), closes [#33510](https://github.com/bitnami/charts/issues/33510)
+
+## <small>5.1.28 (2025-05-06)</small>
+
+* [bitnami/concourse] chore: :recycle: :arrow_up: Update common and remove k8s < 1.23 references (#333 ([20e8c18](https://github.com/bitnami/charts/commit/20e8c18fa51f6435d4768e712a73e4447ecaf3ff)), closes [#33348](https://github.com/bitnami/charts/issues/33348)
+
+## <small>5.1.27 (2025-05-05)</small>
+
+* [bitnami/concourse] Release 5.1.27 (#33328) ([32a1154](https://github.com/bitnami/charts/commit/32a11548d42e2faa90ca978552d0831c17da3b53)), closes [#33328](https://github.com/bitnami/charts/issues/33328)
+
+## <small>5.1.26 (2025-04-29)</small>
+
+* [bitnami/concourse] Release 5.1.26 (#33252) ([2b044e8](https://github.com/bitnami/charts/commit/2b044e855625a0047c1ebe713bceebb872bffb68)), closes [#33252](https://github.com/bitnami/charts/issues/33252)
 
 ## <small>5.1.25 (2025-04-25)</small>
 

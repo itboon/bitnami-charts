@@ -1,8 +1,41 @@
 # Changelog
 
-## 24.6.3 (2025-04-30)
+## 24.7.3 (2025-05-28)
 
-* [bitnami/keycloak] Release 24.6.3 ([#33258](https://github.com/bitnami/charts/pull/33258))
+* [bitnami/keycloak] :zap: :arrow_up: Update dependency references ([#33943](https://github.com/bitnami/charts/pull/33943))
+
+## <small>24.7.2 (2025-05-28)</small>
+
+* [bitnami/keycloak] :zap: :arrow_up: Update dependency references (#33930) ([41ef43f](https://github.com/bitnami/charts/commit/41ef43f4ef7d091f75739eba41916b6e716e8e3f)), closes [#33930](https://github.com/bitnami/charts/issues/33930)
+
+## <small>24.7.1 (2025-05-22)</small>
+
+* [bitnami/keycloak] fix: preserve timestamps in init script (#33812) ([f3ec521](https://github.com/bitnami/charts/commit/f3ec521adf17b1e836760f963c99f8e129bbd276)), closes [#33812](https://github.com/bitnami/charts/issues/33812)
+
+## 24.7.0 (2025-05-19)
+
+* [bitnami/keycloak] Improvements to Keycloak cache handling (#32885) ([b2500eb](https://github.com/bitnami/charts/commit/b2500ebf9a4b983f8975d0d426a9c1473453fe1f)), closes [#32885](https://github.com/bitnami/charts/issues/32885)
+
+## <small>24.6.7 (2025-05-13)</small>
+
+* [bitnami/keycloak] :zap: :arrow_up: Update dependency references (#33671) ([15a8f8a](https://github.com/bitnami/charts/commit/15a8f8a55a365316236d089a3f802f7364a4d060)), closes [#33671](https://github.com/bitnami/charts/issues/33671)
+* [bitnami/kubeapps] Deprecation followup (#33579) ([77e312c](https://github.com/bitnami/charts/commit/77e312c1772d4d7c4dc5d3ac0e80f4e452e3a062)), closes [#33579](https://github.com/bitnami/charts/issues/33579)
+
+## <small>24.6.6 (2025-05-08)</small>
+
+* [bitnami/keycloak] :zap: :arrow_up: Update dependency references (#33565) ([e750bc1](https://github.com/bitnami/charts/commit/e750bc1d7f2228c15181e003b6589eff8133d155)), closes [#33565](https://github.com/bitnami/charts/issues/33565)
+
+## <small>24.6.5 (2025-05-06)</small>
+
+* [bitnami/keycloak] chore: :recycle: :arrow_up: Update common and remove k8s < 1.23 references (#3338 ([c347b21](https://github.com/bitnami/charts/commit/c347b21d2da034bce20f223f6bc2b7db9514b6d4)), closes [#33380](https://github.com/bitnami/charts/issues/33380)
+
+## <small>24.6.4 (2025-05-05)</small>
+
+* [bitnami/keycloak] Release 24.6.4 (#33327) ([848d1fd](https://github.com/bitnami/charts/commit/848d1fd7d3d1c44af4e2f098a1d367b79d3cb9d5)), closes [#33327](https://github.com/bitnami/charts/issues/33327)
+
+## <small>24.6.3 (2025-04-30)</small>
+
+* [bitnami/keycloak] Release 24.6.3 (#33258) ([442b42e](https://github.com/bitnami/charts/commit/442b42e0cbc6fc37765ff46030315d0260a01075)), closes [#33258](https://github.com/bitnami/charts/issues/33258)
 
 ## <small>24.6.2 (2025-04-29)</small>
 

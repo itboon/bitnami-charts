@@ -1,8 +1,48 @@
 # Changelog
 
-## 9.2.6 (2025-05-30)
+## 9.3.8 (2025-06-27)
 
-* [bitnami/clickhouse] :zap: :arrow_up: Update dependency references ([#34001](https://github.com/bitnami/charts/pull/34001))
+* [bitnami/clickhouse] :zap: :arrow_up: Update dependency references ([#34695](https://github.com/bitnami/charts/pull/34695))
+
+## <small>9.3.7 (2025-06-26)</small>
+
+* [bitnami/clickhouse] :zap: :arrow_up: Update dependency references (#34671) ([321ca30](https://github.com/bitnami/charts/commit/321ca30734698c763c233274f3ed508b6e50f9eb)), closes [#34671](https://github.com/bitnami/charts/issues/34671)
+
+## <small>9.3.6 (2025-06-26)</small>
+
+* [bitnami/clickhouse] :zap: :arrow_up: Update dependency references (#34664) ([eaa64a6](https://github.com/bitnami/charts/commit/eaa64a698636f871df89e00c509e099806875dd5)), closes [#34664](https://github.com/bitnami/charts/issues/34664)
+
+## <small>9.3.5 (2025-06-26)</small>
+
+* [bitnami/clickhouse] Update dependencies (#34647) ([08fb26c](https://github.com/bitnami/charts/commit/08fb26ce60273f1bf7f9cf2995d60507e6620987)), closes [#34647](https://github.com/bitnami/charts/issues/34647)
+
+## <small>9.3.4 (2025-06-20)</small>
+
+* [bitnami/clickhouse] :zap: :arrow_up: Update dependency references (#34570) ([d00e319](https://github.com/bitnami/charts/commit/d00e319eeaabb35420364078e18b6e6d2741536a)), closes [#34570](https://github.com/bitnami/charts/issues/34570)
+
+## <small>9.3.3 (2025-06-13)</small>
+
+* [bitnami/clickhouse] :zap: :arrow_up: Update dependency references (#34412) ([27dacea](https://github.com/bitnami/charts/commit/27dacea8b42af8b09fd372c17d6b7601a6dd2c6b)), closes [#34412](https://github.com/bitnami/charts/issues/34412)
+
+## <small>9.3.2 (2025-06-06)</small>
+
+* [bitnami/clickhouse] :zap: :arrow_up: Update dependency references (#34242) ([88c1463](https://github.com/bitnami/charts/commit/88c14631f9c84360b14f5782ff4b2edbb417247f)), closes [#34242](https://github.com/bitnami/charts/issues/34242)
+
+## <small>9.3.1 (2025-06-06)</small>
+
+* [bitnami/clickhouse] Add CHOWN capability to volume-permissions init container (#34225) ([eb89ebc](https://github.com/bitnami/charts/commit/eb89ebc57f39a36e01e71140a51c263c5b232bd0)), closes [#34225](https://github.com/bitnami/charts/issues/34225)
+
+## 9.3.0 (2025-06-04)
+
+* [bitnami/clickhouse] Add persistence.volumeName (#33991) ([cc78215](https://github.com/bitnami/charts/commit/cc78215c73cf597e3b928019204edb48d7537521)), closes [#33991](https://github.com/bitnami/charts/issues/33991)
+
+## <small>9.2.7 (2025-06-03)</small>
+
+* [bitnami/clickhouse] :zap: :arrow_up: Update dependency references (#34067) ([c77cc95](https://github.com/bitnami/charts/commit/c77cc95447711fb5af803c033cd67424fc23a5fc)), closes [#34067](https://github.com/bitnami/charts/issues/34067)
+
+## <small>9.2.6 (2025-05-30)</small>
+
+* [bitnami/clickhouse] :zap: :arrow_up: Update dependency references (#34001) ([83007bd](https://github.com/bitnami/charts/commit/83007bd27de053be5ed3e8fb99481ceb064cd27a)), closes [#34001](https://github.com/bitnami/charts/issues/34001)
 
 ## <small>9.2.5 (2025-05-29)</small>
 

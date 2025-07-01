@@ -1,8 +1,56 @@
 # Changelog
 
-## 4.8.15 (2025-05-30)
+## 5.0.1 (2025-06-30)
 
-* [bitnami/seaweedfs] :zap: :arrow_up: Update dependency references ([#34011](https://github.com/bitnami/charts/pull/34011))
+* [bitnami/seaweedfs] :zap: :arrow_up: Update dependency references ([#34720](https://github.com/bitnami/charts/pull/34720))
+
+## 5.0.0 (2025-06-25)
+
+* [bitnami/seaweedfs] Upgrade MariaDB 11.8 (#34637) ([794aac8](https://github.com/bitnami/charts/commit/794aac83b56a912424db088a59249f6ae19f0fa8)), closes [#34637](https://github.com/bitnami/charts/issues/34637)
+
+## <small>4.8.25 (2025-06-25)</small>
+
+* [bitnami/seaweedfs] :zap: :arrow_up: Update dependency references (#34621) ([12c69d7](https://github.com/bitnami/charts/commit/12c69d7e6824d15d8adfa63a74f5e10a3c2da888)), closes [#34621](https://github.com/bitnami/charts/issues/34621)
+
+## <small>4.8.24 (2025-06-23)</small>
+
+* [bitnami/seaweedfs] :zap: :arrow_up: Update dependency references (#34579) ([e5e5ad9](https://github.com/bitnami/charts/commit/e5e5ad987a506b7c8aca9ea3d79129807912c451)), closes [#34579](https://github.com/bitnami/charts/issues/34579)
+
+## <small>4.8.23 (2025-06-16)</small>
+
+* [bitnami/seaweedfs] :zap: :arrow_up: Update dependency references (#34494) ([3c505ef](https://github.com/bitnami/charts/commit/3c505ef83678553c670af74df3a2f96700607ec9)), closes [#34494](https://github.com/bitnami/charts/issues/34494)
+
+## <small>4.8.22 (2025-06-12)</small>
+
+* [bitnami/seaweedfs] :zap: :arrow_up: Update dependency references (#34379) ([3cd5bfa](https://github.com/bitnami/charts/commit/3cd5bfad07088463ac34cb991708dc47afe141e3)), closes [#34379](https://github.com/bitnami/charts/issues/34379)
+
+## <small>4.8.21 (2025-06-11)</small>
+
+* [bitnami/seaweedfs] :zap: :arrow_up: Update dependency references (#34355) ([8bd11ef](https://github.com/bitnami/charts/commit/8bd11ef67b8f641d44c5d0d2559a95043d1da03a)), closes [#34355](https://github.com/bitnami/charts/issues/34355)
+
+## <small>4.8.20 (2025-06-11)</small>
+
+* [bitnami/seaweedfs] :zap: :arrow_up: Update dependency references (#34337) ([8c0d697](https://github.com/bitnami/charts/commit/8c0d697edc740e6af1f5dc27f5cdb0c4a8f9a637)), closes [#34337](https://github.com/bitnami/charts/issues/34337)
+
+## <small>4.8.19 (2025-06-09)</small>
+
+* [bitnami/seaweedfs] :zap: :arrow_up: Update dependency references (#34257) ([a1e2525](https://github.com/bitnami/charts/commit/a1e2525389fb7ebaddc0ac7afb3b324614dc020d)), closes [#34257](https://github.com/bitnami/charts/issues/34257)
+
+## <small>4.8.18 (2025-06-08)</small>
+
+* [bitnami/seaweedfs] :zap: :arrow_up: Update dependency references (#34220) ([fd5e9ff](https://github.com/bitnami/charts/commit/fd5e9ffa796b16bb3b55f570cea32915304fc3d1)), closes [#34220](https://github.com/bitnami/charts/issues/34220)
+
+## <small>4.8.17 (2025-06-04)</small>
+
+* [bitnami/seaweedfs] :zap: :arrow_up: Update dependency references (#34077) ([42a401e](https://github.com/bitnami/charts/commit/42a401e4669bd94f17e9a2d1d0216df816220eec)), closes [#34077](https://github.com/bitnami/charts/issues/34077)
+
+## <small>4.8.16 (2025-06-03)</small>
+
+* [bitnami/seaweedfs] :zap: :arrow_up: Update dependency references (#34050) ([6877a53](https://github.com/bitnami/charts/commit/6877a538684491a22d2adc4de8c049a4d6a564ae)), closes [#34050](https://github.com/bitnami/charts/issues/34050)
+
+## <small>4.8.15 (2025-05-30)</small>
+
+* [bitnami/seaweedfs] :zap: :arrow_up: Update dependency references (#34011) ([7808ca0](https://github.com/bitnami/charts/commit/7808ca0078d6234fe846ae3085f32e4f70cc0948)), closes [#34011](https://github.com/bitnami/charts/issues/34011)
 
 ## <small>4.8.14 (2025-05-30)</small>
 

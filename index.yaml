@@ -35480,6 +35480,48 @@ entries:
       tanzuCategory: service
     apiVersion: v2
     appVersion: 2025.7.23
+    created: "2026-01-01T02:41:33.057370139Z"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: MinIO(R) is an object storage server, compatible with Amazon S3 cloud
+      storage service, mainly used for storing unstructured data (such as photos,
+      videos, log files, etc.).
+    digest: 5d059979043e08cc00546477a7cd189bcdcd6fd18b356e7ff684a097a06f60c6
+    home: https://bitnami.com
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/minio/img/minio-stack-220x234.png
+    keywords:
+    - minio
+    - storage
+    - object-storage
+    - s3
+    - cluster
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/bitnami/charts
+    name: minio
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/minio
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/minio-17.0.23/minio-17.0.23.tgz
+    version: 17.0.23
+  - annotations:
+      images: |
+        - name: minio
+          image: docker.io/bitnami/minio:2025.7.23-debian-12-r3
+        - name: minio-client
+          image: docker.io/bitnami/minio-client:2025.7.21-debian-12-r2
+        - name: minio-object-browser
+          image: docker.io/bitnami/minio-object-browser:2.0.2-debian-12-r3
+        - name: os-shell
+          image: docker.io/bitnami/os-shell:12-debian-12-r50
+      licenses: Apache-2.0
+      tanzuCategory: service
+    apiVersion: v2
+    appVersion: 2025.7.23
     created: "2025-10-01T02:23:13.359839777Z"
     dependencies:
     - name: common
@@ -39051,6 +39093,46 @@ entries:
     - https://helm-charts.itboon.top/github/itboon/bitnami-charts/releases/download/mxnet-3.3.8/mxnet-3.3.8.tgz
     version: 3.3.8
   mysql:
+  - annotations:
+      images: |
+        - name: mysql
+          image: docker.io/bitnami/mysql:9.4.0-debian-12-r1
+        - name: mysqld-exporter
+          image: docker.io/bitnami/mysqld-exporter:0.17.2-debian-12-r16
+        - name: os-shell
+          image: docker.io/bitnami/os-shell:12-debian-12-r50
+      licenses: Apache-2.0
+      tanzuCategory: service
+    apiVersion: v2
+    appVersion: 9.4.0
+    created: "2026-01-01T02:41:33.207789243Z"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: MySQL is a fast, reliable, scalable, and easy to use open source
+      relational database system. Designed to handle mission-critical, heavy-load
+      production applications.
+    digest: 029feb89881d7dc96ecd94b96a1abb94af28760189fde7b5409a715e8d1ac030
+    home: https://bitnami.com
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/mysql/img/mysql-stack-220x234.png
+    keywords:
+    - mysql
+    - database
+    - sql
+    - cluster
+    - high availability
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/bitnami/charts
+    name: mysql
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/mysql
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/mysql-14.0.5/mysql-14.0.5.tgz
+    version: 14.0.5
   - annotations:
       images: |
         - name: mysql
@@ -48771,6 +48853,48 @@ entries:
       tanzuCategory: service
     apiVersion: v2
     appVersion: 2.16.1
+    created: "2026-01-01T02:41:33.397315968Z"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: The RabbitMQ Cluster Kubernetes Operator automates provisioning,
+      management, and operations of RabbitMQ clusters running on Kubernetes.
+    digest: cf554199d9c77a3d81a432305f7bd9e971a3c53aee28038345ce90443deb57ab
+    home: https://bitnami.com
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/rabbitmq-cluster-operator/img/rabbitmq-cluster-operator-stack-220x234.png
+    keywords:
+    - rabbitmq
+    - operator
+    - infrastructure
+    - message queue
+    - AMQP
+    kubeVersion: '>= 1.19.0-0'
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/bitnami/charts
+    name: rabbitmq-cluster-operator
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/rabbitmq-cluster-operator
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/rabbitmq-cluster-operator-4.4.37/rabbitmq-cluster-operator-4.4.37.tgz
+    version: 4.4.37
+  - annotations:
+      images: |
+        - name: rabbitmq
+          image: docker.io/bitnami/rabbitmq:4.1.3-debian-12-r1
+        - name: rabbitmq-cluster-operator
+          image: docker.io/bitnami/rabbitmq-cluster-operator:2.16.1-debian-12-r0
+        - name: rmq-default-credential-updater
+          image: docker.io/bitnami/rmq-default-credential-updater:1.0.8-debian-12-r0
+        - name: rmq-messaging-topology-operator
+          image: docker.io/bitnami/rmq-messaging-topology-operator:1.17.4-debian-12-r0
+      licenses: Apache-2.0
+      tanzuCategory: service
+    apiVersion: v2
+    appVersion: 2.16.1
     created: "2025-12-01T02:42:55.617028157Z"
     dependencies:
     - name: common
@@ -49340,6 +49464,48 @@ entries:
     - https://helm-charts.itboon.top/github/itboon/bitnami-charts/releases/download/rabbitmq-cluster-operator-3.15.1/rabbitmq-cluster-operator-3.15.1.tgz
     version: 3.15.1
   redis:
+  - annotations:
+      images: |
+        - name: kubectl
+          image: docker.io/bitnami/kubectl:1.33.4-debian-12-r0
+        - name: os-shell
+          image: docker.io/bitnami/os-shell:12-debian-12-r51
+        - name: redis
+          image: docker.io/bitnami/redis:8.2.1-debian-12-r0
+        - name: redis-exporter
+          image: docker.io/bitnami/redis-exporter:1.76.0-debian-12-r0
+        - name: redis-sentinel
+          image: docker.io/bitnami/redis-sentinel:8.2.1-debian-12-r0
+      licenses: Apache-2.0
+      tanzuCategory: service
+    apiVersion: v2
+    appVersion: 8.2.1
+    created: "2026-01-01T02:41:33.573004151Z"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Redis(R) is an open source, advanced key-value store. It is often
+      referred to as a data structure server since keys can contain strings, hashes,
+      lists, sets and sorted sets.
+    digest: a27a875f724286ab3029fede3206f3203d002015824b98440b68a8b70482d186
+    home: https://bitnami.com
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/redis/img/redis-stack-220x234.png
+    keywords:
+    - redis
+    - keyvalue
+    - database
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/bitnami/charts
+    name: redis
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/redis
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/redis-23.0.5/redis-23.0.5.tgz
+    version: 23.0.5
   - annotations:
       images: |
         - name: kubectl
@@ -52460,6 +52626,60 @@ entries:
     - https://helm-charts.itboon.top/github/itboon/bitnami-charts/releases/download/sealed-secrets-1.8.1/sealed-secrets-1.8.1.tgz
     version: 1.8.1
   seaweedfs:
+  - annotations:
+      images: |
+        - name: mariadb
+          image: docker.io/bitnami/mariadb:12.0.2-debian-12-r0
+        - name: os-shell
+          image: docker.io/bitnami/os-shell:12-debian-12-r51
+        - name: postgresql
+          image: docker.io/bitnami/postgresql:17.6.0-debian-12-r4
+        - name: seaweedfs
+          image: docker.io/bitnami/seaweedfs:3.96.0-debian-12-r2
+      licenses: Apache-2.0
+      tanzuCategory: clusterUtility
+    apiVersion: v2
+    appVersion: 3.96.0
+    created: "2026-01-01T02:41:33.79754448Z"
+    dependencies:
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - seaweedfs-database
+      version: 22.x.x
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - seaweedfs-database
+      version: 16.x.x
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: SeaweedFS is a simple and highly scalable distributed file system.
+    digest: e9cc571232f18364ee0234c05361927e344544fc6ff55ae4c08a7ae7e46892e6
+    home: https://bitnami.com
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/seaweedfs/img/seaweedfs-stack-220x234.png
+    keywords:
+    - seaweedfs
+    - storage
+    - blob-storage
+    - file-storage
+    - object-storage
+    - s3
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/bitnami/charts
+    name: seaweedfs
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/seawwedfs
+    - https://github.com/bitnami/containers/tree/main/bitnami/seaweedfs
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/seaweedfs-6.0.4/seaweedfs-6.0.4.tgz
+    version: 6.0.4
   - annotations:
       images: |
         - name: mariadb
@@ -61506,4 +61726,4 @@ entries:
     urls:
     - https://helm-charts.itboon.top/github/itboon/bitnami-charts/releases/download/zookeeper-12.7.0/zookeeper-12.7.0.tgz
     version: 12.7.0
-generated: "2025-12-01T02:42:58.860458207Z"
+generated: "2026-01-01T02:41:33.800972929Z"

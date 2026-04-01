@@ -19705,6 +19705,41 @@ entries:
       tanzuCategory: application
     apiVersion: v2
     appVersion: 5.19.4
+    created: "2026-04-01T03:48:35.606057301Z"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Grafana Operator is a Kubernetes operator that enables the installation
+      and management of Grafana instances, dashboards and plugins.
+    digest: fa8e685e13a7ed7f769c302e302f02d9651d1decf58ec53d2f47a879f96f885f
+    home: https://bitnami.com
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/grafana/img/grafana-stack-220x234.png
+    keywords:
+    - grafana
+    - operator
+    - monitoring
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/bitnami/charts
+    name: grafana-operator
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/grafana-operator
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/grafana-operator-4.10.0/grafana-operator-4.10.0.tgz
+    version: 4.10.0
+  - annotations:
+      images: |
+        - name: grafana
+          image: docker.io/bitnami/grafana:12.1.1-debian-12-r1
+        - name: grafana-operator
+          image: docker.io/bitnami/grafana-operator:5.19.4-debian-12-r2
+      licenses: Apache-2.0
+      tanzuCategory: application
+    apiVersion: v2
+    appVersion: 5.19.4
     created: "2025-10-01T02:23:09.051338641Z"
     dependencies:
     - name: common
@@ -41345,6 +41380,46 @@ entries:
       tanzuCategory: clusterUtility
     apiVersion: v2
     appVersion: 1.29.1
+    created: "2026-04-01T03:48:35.725070043Z"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: NGINX Open Source is a web server that can be also used as a reverse
+      proxy, load balancer, and HTTP cache. Recommended for high-demanding sites due
+      to its ability to provide faster content.
+    digest: 16d5dfcbbf2dda1b8efb2eead60505c418167c686ea27bc81cbdc4df19c5666e
+    home: https://bitnami.com
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/nginx/img/nginx-stack-220x234.png
+    keywords:
+    - nginx
+    - http
+    - web
+    - www
+    - reverse proxy
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/bitnami/charts
+    name: nginx
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/nginx
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/nginx-22.1.1/nginx-22.1.1.tgz
+    version: 22.1.1
+  - annotations:
+      images: |
+        - name: git
+          image: docker.io/bitnami/git:2.51.0-debian-12-r0
+        - name: nginx
+          image: docker.io/bitnami/nginx:1.29.1-debian-12-r0
+        - name: nginx-exporter
+          image: docker.io/bitnami/nginx-exporter:1.4.2-debian-12-r9
+      licenses: Apache-2.0
+      tanzuCategory: clusterUtility
+    apiVersion: v2
+    appVersion: 1.29.1
     created: "2025-11-01T02:21:52.340293377Z"
     dependencies:
     - name: common
@@ -51563,6 +51638,46 @@ entries:
     - https://helm-charts.itboon.top/github/itboon/bitnami-charts/releases/download/redmine-26.3.2/redmine-26.3.2.tgz
     version: 26.3.2
   schema-registry:
+  - annotations:
+      images: |
+        - name: schema-registry
+          image: docker.io/bitnami/schema-registry:8.0.0-debian-12-r4
+      licenses: Apache-2.0
+      tanzuCategory: clusterUtility
+    apiVersion: v2
+    appVersion: 8.0.0
+    created: "2026-04-01T03:48:35.887215826Z"
+    dependencies:
+    - condition: kafka.enabled
+      name: kafka
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 32.x.x
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Confluent Schema Registry provides a RESTful interface by adding
+      a serving layer for your metadata on top of Kafka. It expands Kafka enabling
+      support for Apache Avro, JSON, and Protobuf schemas.
+    digest: 63ee7fa88254ebe2d4c7599b176e8cf53b61167055ae344e88e608b4165064bc
+    home: https://bitnami.com
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/schema-registry/img/schema-registry-stack-220x234.png
+    keywords:
+    - schema-registry
+    - confluent
+    - kafka
+    - zookeeper
+    - streaming
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/bitnami/charts
+    name: schema-registry
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/schema-registry
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/schema-registry-26.1.1/schema-registry-26.1.1.tgz
+    version: 26.1.1
   - annotations:
       images: |
         - name: schema-registry
@@ -62249,4 +62364,4 @@ entries:
     urls:
     - https://helm-charts.itboon.top/github/itboon/bitnami-charts/releases/download/zookeeper-12.7.0/zookeeper-12.7.0.tgz
     version: 12.7.0
-generated: "2026-03-01T03:27:02.131415524Z"
+generated: "2026-04-01T03:48:35.890254441Z"

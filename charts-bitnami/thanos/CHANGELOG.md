@@ -1,8 +1,20 @@
 # Changelog
 
-## 17.4.1 (2026-03-23)
+## 17.5.2 (2026-05-20)
 
-* [bitnami/thanos] Fix invalid YAML syntax on the query deployment template when `storegateway.useEndpointGroup` is false ([#36485](https://github.com/bitnami/charts/pull/36485))
+* [bitnami/thanos] Fix `containerPorts` in query deployment ([#36533](https://github.com/bitnami/charts/pull/36533))
+
+## <small>17.5.1 (2026-05-19)</small>
+
+* [bitnami/thanos] Change hpa bucketweb component label to bucketweb (#36531) ([242f0b8](https://github.com/bitnami/charts/commit/242f0b8106575d3853509806fe23d4bad067846c)), closes [#36531](https://github.com/bitnami/charts/issues/36531)
+
+## 17.5.0 (2026-05-19)
+
+* [bitnami/thanos] Add Thanos httproute (#36529) ([73c0faa](https://github.com/bitnami/charts/commit/73c0faa841fdb2f6b604bb6662dafa29a074df18)), closes [#36529](https://github.com/bitnami/charts/issues/36529)
+
+## <small>17.4.1 (2026-04-17)</small>
+
+* [bitnami/thanos] Fix invalid YAML syntax on the query deployment template when `storegateway.useEndp ([a7fb7ee](https://github.com/bitnami/charts/commit/a7fb7ee67a1afdbf4de5b4afb48e7ffeeea1397c)), closes [#36485](https://github.com/bitnami/charts/issues/36485)
 
 ## 17.4.0 (2026-02-09)
 

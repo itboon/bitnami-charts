@@ -7709,6 +7709,32 @@ entries:
   - annotations:
       licenses: Apache-2.0
     apiVersion: v2
+    appVersion: 2.31.10
+    created: "2026-07-01T05:03:52.270198573Z"
+    description: A Library Helm Chart for grouping common logic between bitnami charts.
+      This chart is not deployable by itself.
+    digest: 12591261352dd05cf2e44ba66bb4621d24c08f46f414bb85144fd6a233848426
+    home: https://bitnami.com
+    icon: https://dyltqmyl993wv.cloudfront.net/downloads/logos/bitnami-mark.png
+    keywords:
+    - common
+    - helper
+    - template
+    - function
+    - bitnami
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/bitnami/charts
+    name: common
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/common
+    type: library
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/common-2.31.10/common-2.31.10.tgz
+    version: 2.31.10
+  - annotations:
+      licenses: Apache-2.0
+    apiVersion: v2
     appVersion: 2.31.9
     created: "2026-06-01T05:23:32.438754461Z"
     description: A Library Helm Chart for grouping common logic between bitnami charts.
@@ -25460,6 +25486,45 @@ entries:
       tanzuCategory: application
     apiVersion: v2
     appVersion: 26.3.3
+    created: "2026-07-01T05:03:52.46088278Z"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 16.x.x
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Keycloak is a high performance Java-based identity and access management
+      solution. It lets developers add an authentication layer to their applications
+      with minimum effort.
+    digest: b3e4f509277a82089504a1571c985977f4730dec3ff41a56e8ecfc10ece1f522
+    home: https://bitnami.com
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/keycloak/img/keycloak-stack-220x234.png
+    keywords:
+    - keycloak
+    - access-management
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/bitnami/charts
+    name: keycloak
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/keycloak
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/keycloak-25.4.0/keycloak-25.4.0.tgz
+    version: 25.4.0
+  - annotations:
+      images: |
+        - name: keycloak
+          image: docker.io/bitnami/keycloak:26.3.3-debian-12-r0
+        - name: keycloak-config-cli
+          image: docker.io/bitnami/keycloak-config-cli:6.4.0-debian-12-r11
+      licenses: Apache-2.0
+      tanzuCategory: application
+    apiVersion: v2
+    appVersion: 26.3.3
     created: "2026-03-01T03:27:01.43773948Z"
     dependencies:
     - condition: postgresql.enabled
@@ -36583,6 +36648,56 @@ entries:
     - https://github.com/itboon/bitnami-charts/releases/download/minio-operator-0.1.7/minio-operator-0.1.7.tgz
     version: 0.1.7
   mlflow:
+  - annotations:
+      images: |
+        - name: git
+          image: docker.io/bitnami/git:2.51.0-debian-12-r0
+        - name: mlflow
+          image: docker.io/bitnami/mlflow:3.3.2-debian-12-r0
+        - name: os-shell
+          image: docker.io/bitnami/os-shell:12-debian-12-r51
+      licenses: Apache-2.0
+      tanzuCategory: application
+    apiVersion: v2
+    appVersion: 3.3.2
+    created: "2026-07-01T05:03:52.676116269Z"
+    dependencies:
+    - condition: minio.enabled
+      name: minio
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 17.x.x
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 16.x.x
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: MLflow is an open-source platform designed to manage the end-to-end
+      machine learning lifecycle. It allows you to track experiments, package code
+      into reproducible runs, and share and deploy models.
+    digest: 27c85aa4b3304b4cc3dd7d20200f30a9ac59008559e6748bb27d27b445b950f9
+    home: https://bitnami.com
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/mlflow/img/mlflow-stack-220x234.png
+    keywords:
+    - mlflow
+    - models
+    - python
+    - machine
+    - learning
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/bitnami/charts
+    name: mlflow
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/mlflow
+    - https://github.com/bitnami/containers/tree/main/bitnami/mlflow
+    - https://github.com/mlflow/mlflow
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/mlflow-5.3.0/mlflow-5.3.0.tgz
+    version: 5.3.0
   - annotations:
       images: |
         - name: git
@@ -47935,6 +48050,48 @@ entries:
       tanzuCategory: clusterUtility
     apiVersion: v2
     appVersion: 3.5.0
+    created: "2026-07-01T05:03:52.871626392Z"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Prometheus is an open source monitoring and alerting system. It enables
+      sysadmins to monitor their infrastructures by collecting metrics from configured
+      targets at given intervals.
+    digest: 76d4d909783e355be0f6b42a75b277467f35f88edaa5c60326baa869e3dc5f64
+    home: https://github.com/prometheus/prometheus
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/prometheus/img/prometheus-stack-220x234.png
+    keywords:
+    - prometheus
+    - monitoring
+    maintainers:
+    - name: Bitnami
+      url: https://github.com/bitnami/charts
+    name: prometheus
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/prometheus
+    - https://github.com/bitnami/containers/tree/main/bitnami/prometheus
+    - https://github.com/prometheus/prometheus
+    - https://github.com/prometheus-community/helm-charts
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/prometheus-2.3.0/prometheus-2.3.0.tgz
+    version: 2.3.0
+  - annotations:
+      images: |
+        - name: alertmanager
+          image: docker.io/bitnami/alertmanager:0.28.1-debian-12-r15
+        - name: os-shell
+          image: docker.io/bitnami/os-shell:12-debian-12-r50
+        - name: prometheus
+          image: docker.io/bitnami/prometheus:3.5.0-debian-12-r3
+        - name: thanos
+          image: docker.io/bitnami/thanos:0.39.2-debian-12-r2
+      licenses: Apache-2.0
+      tanzuCategory: clusterUtility
+    apiVersion: v2
+    appVersion: 3.5.0
     created: "2026-06-01T05:23:32.867453771Z"
     dependencies:
     - name: common
@@ -49582,6 +49739,48 @@ entries:
     - https://helm-charts.itboon.top/github/itboon/bitnami-charts/releases/download/rabbitmq-12.9.0/rabbitmq-12.9.0.tgz
     version: 12.9.0
   rabbitmq-cluster-operator:
+  - annotations:
+      images: |
+        - name: rabbitmq
+          image: docker.io/bitnami/rabbitmq:4.1.3-debian-12-r1
+        - name: rabbitmq-cluster-operator
+          image: docker.io/bitnami/rabbitmq-cluster-operator:2.16.1-debian-12-r0
+        - name: rmq-default-credential-updater
+          image: docker.io/bitnami/rmq-default-credential-updater:1.0.8-debian-12-r0
+        - name: rmq-messaging-topology-operator
+          image: docker.io/bitnami/rmq-messaging-topology-operator:1.17.4-debian-12-r0
+      licenses: Apache-2.0
+      tanzuCategory: service
+    apiVersion: v2
+    appVersion: 2.16.1
+    created: "2026-07-01T05:03:53.074106548Z"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: The RabbitMQ Cluster Kubernetes Operator automates provisioning,
+      management, and operations of RabbitMQ clusters running on Kubernetes.
+    digest: fe9603ff62a95cdb94b1cc2fe6347a161119e60fced70522219c16d0224af01c
+    home: https://bitnami.com
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/rabbitmq-cluster-operator/img/rabbitmq-cluster-operator-stack-220x234.png
+    keywords:
+    - rabbitmq
+    - operator
+    - infrastructure
+    - message queue
+    - AMQP
+    kubeVersion: '>= 1.19.0-0'
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/bitnami/charts
+    name: rabbitmq-cluster-operator
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/rabbitmq-cluster-operator
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/rabbitmq-cluster-operator-4.4.40/rabbitmq-cluster-operator-4.4.40.tgz
+    version: 4.4.40
   - annotations:
       images: |
         - name: rabbitmq
@@ -57295,6 +57494,47 @@ entries:
       tanzuCategory: application
     apiVersion: v2
     appVersion: 0.39.2
+    created: "2026-07-01T05:03:53.303413681Z"
+    dependencies:
+    - condition: minio.enabled
+      name: minio
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 17.x.x
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Thanos is a highly available metrics system that can be added on
+      top of existing Prometheus deployments, providing a global query view across
+      all Prometheus installations.
+    digest: 46c2b1b05b1f62f14499b5ea47d99510dd6d0067e7b5357d49189db397e5bf9d
+    home: https://bitnami.com
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/thanos/img/thanos-stack-220x234.png
+    keywords:
+    - analytics
+    - monitoring
+    - prometheus
+    - thanos
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/bitnami/charts
+    name: thanos
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/thanos
+    urls:
+    - https://github.com/itboon/bitnami-charts/releases/download/thanos-17.6.0/thanos-17.6.0.tgz
+    version: 17.6.0
+  - annotations:
+      images: |
+        - name: os-shell
+          image: docker.io/bitnami/os-shell:12-debian-12-r50
+        - name: thanos
+          image: docker.io/bitnami/thanos:0.39.2-debian-12-r2
+      licenses: Apache-2.0
+      tanzuCategory: application
+    apiVersion: v2
+    appVersion: 0.39.2
     created: "2026-06-01T05:23:33.22664005Z"
     dependencies:
     - condition: minio.enabled
@@ -62797,4 +63037,4 @@ entries:
     urls:
     - https://helm-charts.itboon.top/github/itboon/bitnami-charts/releases/download/zookeeper-12.7.0/zookeeper-12.7.0.tgz
     version: 12.7.0
-generated: "2026-06-01T05:23:33.229714732Z"
+generated: "2026-07-01T05:03:53.306784435Z"
